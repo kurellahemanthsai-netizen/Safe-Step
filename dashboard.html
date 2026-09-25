@@ -1,0 +1,1591 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dashboard</title>
+
+    <meta
+      name="description"
+      content="Safe Step Client Dashboard - Track your installation, maintenance, warranty, technician visits and payments."
+    />
+
+    <!-- Raleway -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Dashboard CSS -->
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+
+  <body class="dashboard-body">
+    <!-- =====================================================
+         SIDEBAR
+    ====================================================== -->
+
+    <aside class="dashboard-sidebar" id="sidebar">
+      <!-- Mobile Close -->
+      <button
+        class="sidebar-close"
+        id="sidebarClose"
+        type="button"
+        aria-label="Close menu"
+      >
+        <i data-lucide="x"></i>
+      </button>
+
+      <!-- =========================
+             LOGO
+        ========================== -->
+
+      <div class="sidebar-brand">
+        <a href="index.html" class="sidebar-logo">
+          <img src="images/logo.png" alt="Safe Step Logo" />
+
+          <div class="sidebar-logo-text">
+            <h2>Safe<span>Step</span></h2>
+
+            <span> Accessibility Solutions </span>
+          </div>
+        </a>
+
+        <!-- Desktop Collapse -->
+        <button
+          class="sidebar-collapse-btn"
+          id="sidebarCollapseBtn"
+          type="button"
+          aria-label="Collapse sidebar"
+        >
+          <i data-lucide="panel-left-close"></i>
+        </button>
+      </div>
+
+      <!-- =========================
+             CLIENT PROFILE
+        ========================== -->
+
+      <div class="sidebar-client">
+        <div class="sidebar-client-avatar">
+          <span>JD</span>
+        </div>
+
+        <div class="sidebar-client-info">
+          <h4>John Doe</h4>
+
+          <span>Client</span>
+        </div>
+      </div>
+
+      <!-- =========================
+             NAVIGATION
+        ========================== -->
+
+      <nav class="sidebar-nav" aria-label="Client dashboard navigation">
+        <button
+          class="nav-item active"
+          data-panel="dashboard"
+          data-title="Dashboard"
+          type="button"
+        >
+          <i data-lucide="layout-dashboard"></i>
+
+          <span>Dashboard</span>
+        </button>
+
+        <button
+          class="nav-item"
+          data-panel="installation"
+          data-title="Installation Project"
+          type="button"
+        >
+          <i data-lucide="construction"></i>
+
+          <span>Installation Project</span>
+        </button>
+
+        <button
+          class="nav-item"
+          data-panel="maintenance"
+          data-title="Maintenance"
+          type="button"
+        >
+          <i data-lucide="calendar-cog"></i>
+
+          <span>Maintenance</span>
+        </button>
+
+        <button
+          class="nav-item"
+          data-panel="warranty"
+          data-title="Warranty & Service"
+          type="button"
+        >
+          <i data-lucide="shield-check"></i>
+
+          <span>Warranty & Service</span>
+        </button>
+
+        <button
+          class="nav-item"
+          data-panel="technicians"
+          data-title="Technician Visits"
+          type="button"
+        >
+          <i data-lucide="hard-hat"></i>
+
+          <span>Technician Visits</span>
+        </button>
+
+        <button
+          class="nav-item"
+          data-panel="invoices"
+          data-title="Invoices & Payments"
+          type="button"
+        >
+          <i data-lucide="receipt"></i>
+
+          <span>Invoices & Payments</span>
+        </button>
+
+        <div class="sidebar-nav-divider"></div>
+
+        <button
+          class="nav-item"
+          data-panel="profile"
+          data-title="My Profile"
+          type="button"
+        >
+          <i data-lucide="user-round"></i>
+
+          <span>My Profile</span>
+        </button>
+
+        <button
+          class="nav-item"
+          data-panel="settings"
+          data-title="Settings"
+          type="button"
+        >
+          <i data-lucide="settings"></i>
+
+          <span>Settings</span>
+        </button>
+      </nav>
+
+      <!-- =========================
+             SIDEBAR FOOTER
+        ========================== -->
+
+      <div class="sidebar-footer">
+        <button class="sidebar-logout" type="button" id="logoutBtn">
+          <i data-lucide="log-out"></i>
+
+          <span>Logout</span>
+        </button>
+      </div>
+    </aside>
+
+    <!-- =====================================================
+         MOBILE OVERLAY
+    ====================================================== -->
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <!-- =====================================================
+         MAIN DASHBOARD
+    ====================================================== -->
+
+    <main class="dashboard-main">
+      <!-- =================================================
+             TOP BAR
+        ================================================== -->
+
+      <header class="dashboard-header">
+        <!-- LEFT -->
+
+        <div class="header-left">
+          <button
+            class="mobile-menu-btn"
+            id="mobileMenuBtn"
+            type="button"
+            aria-label="Open menu"
+          >
+            <i data-lucide="menu"></i>
+          </button>
+
+          <div class="page-heading">
+            <span>CLIENT PORTAL</span>
+
+            <h1 id="pageTitle">Dashboard</h1>
+          </div>
+        </div>
+
+        <!-- RIGHT -->
+
+        <div class="header-right">
+          <!-- Search -->
+
+          <div class="dashboard-search">
+            <i data-lucide="search"></i>
+
+            <input
+              type="search"
+              id="dashboardSearch"
+              placeholder="Search..."
+              aria-label="Search dashboard"
+            />
+          </div>
+
+          <!-- Dark Mode -->
+
+          <button
+            class="header-icon-btn"
+            id="themeToggle"
+            type="button"
+            aria-label="Toggle dark mode"
+          >
+            <i data-lucide="moon"></i>
+          </button>
+
+          <!-- RTL -->
+
+          <button
+            class="header-icon-btn"
+            id="rtlToggle"
+            type="button"
+            aria-label="Toggle RTL"
+          >
+            <i data-lucide="arrow-left-right" aria-hidden="true"></i>
+          </button>
+
+          <!-- Notifications -->
+
+          <button
+            class="header-icon-btn notification-btn"
+            id="notificationBtn"
+            type="button"
+            aria-label="Notifications"
+          >
+            <i data-lucide="bell"></i>
+
+            <span class="notification-badge"> 3 </span>
+          </button>
+
+          <!-- Profile -->
+
+          <div class="profile-dropdown">
+            <button class="profile-trigger" id="profileToggle" type="button">
+              <div class="profile-avatar">JD</div>
+
+              <span>John Doe</span>
+
+              <i data-lucide="chevron-down"></i>
+            </button>
+
+            <div class="profile-menu" id="profileMenu">
+              <button class="profile-menu-item" id="profileLink" type="button">
+                <i data-lucide="user-round"></i>
+
+                <span>My Profile</span>
+              </button>
+
+              <button
+                class="profile-menu-item"
+                id="dashboardLink"
+                type="button"
+              >
+                <i data-lucide="layout-dashboard"></i>
+
+                <span>Dashboard</span>
+              </button>
+
+              <button
+                class="profile-menu-item logout"
+                id="profileLogout"
+                type="button"
+              >
+                <i data-lucide="log-out"></i>
+
+                <span>Logout</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- =================================================
+             PANELS CONTAINER
+        ================================================== -->
+
+      <div class="panels-container">
+        <!-- =================================================
+                 PANEL 1 — DASHBOARD
+            ================================================== -->
+
+        <section class="dashboard-panel active" id="panel-dashboard">
+          <!-- Panel Header -->
+
+          <div class="panel-header">
+            <div>
+              <span class="panel-eyebrow"> SAFE STEP CLIENT PORTAL </span>
+
+              <h2>Welcome Back, John</h2>
+
+              <p>
+                Keep track of your home accessibility project, services,
+                maintenance and payments from one place.
+              </p>
+            </div>
+
+            <button
+              class="primary-btn"
+              data-open-panel="maintenance"
+              type="button"
+            >
+              <i data-lucide="calendar-plus"></i>
+
+              Schedule Maintenance
+            </button>
+          </div>
+
+          <!-- Welcome Banner -->
+
+          <section class="dashboard-welcome">
+            <div class="welcome-content">
+              <span class="welcome-label">
+                YOUR HOME ACCESSIBILITY PROJECT
+              </span>
+
+              <h3>Your home is moving toward greater comfort.</h3>
+
+              <p>
+                Your installation project is currently
+                <strong>in progress</strong>. Here's what is happening next.
+              </p>
+
+              <div class="welcome-progress">
+                <div class="progress-header">
+                  <span> Installation Progress </span>
+
+                  <strong> 68% </strong>
+                </div>
+
+                <div class="progress-track">
+                  <div class="progress-fill" style="width: 68%"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="welcome-icon">
+              <i data-lucide="house"></i>
+            </div>
+          </section>
+
+          <!-- Statistics -->
+
+          <section class="dashboard-stats">
+            <article class="dashboard-stat-card">
+              <div class="stat-icon">
+                <i data-lucide="construction"></i>
+              </div>
+
+              <span class="stat-label"> Installation </span>
+
+              <h3>68%</h3>
+
+              <p>In Progress</p>
+            </article>
+
+            <article class="dashboard-stat-card">
+              <div class="stat-icon maintenance">
+                <i data-lucide="calendar-check"></i>
+              </div>
+
+              <span class="stat-label"> Next Maintenance </span>
+
+              <h3>18 Oct</h3>
+
+              <p>10:00 AM</p>
+            </article>
+
+            <article class="dashboard-stat-card">
+              <div class="stat-icon warranty">
+                <i data-lucide="shield-check"></i>
+              </div>
+
+              <span class="stat-label"> Warranty </span>
+
+              <h3>Active</h3>
+
+              <p>Until Oct 2028</p>
+            </article>
+
+            <article class="dashboard-stat-card">
+              <div class="stat-icon invoice">
+                <i data-lucide="credit-card"></i>
+              </div>
+
+              <span class="stat-label"> Outstanding </span>
+
+              <h3>₹24,500</h3>
+
+              <p>Due this month</p>
+            </article>
+          </section>
+
+          <!-- Main Dashboard Grid -->
+
+          <section class="dashboard-content-grid">
+            <!-- Installation -->
+
+            <article class="dashboard-card installation-overview">
+              <div class="card-header">
+                <div>
+                  <span class="card-eyebrow"> CURRENT PROJECT </span>
+
+                  <h3>Installation Project</h3>
+                </div>
+
+                <button
+                  class="card-link"
+                  data-open-panel="installation"
+                  type="button"
+                >
+                  View Details
+
+                  <i data-lucide="arrow-up-right"></i>
+                </button>
+              </div>
+
+              <div class="project-summary">
+                <div class="project-product">
+                  <div class="product-icon">
+                    <i data-lucide="accessibility"></i>
+                  </div>
+
+                  <div>
+                    <strong> Stairlift Installation </strong>
+
+                    <span> Project ID: SS-2026-0148 </span>
+                  </div>
+                </div>
+
+                <div class="project-stage">
+                  <div class="stage-item completed">
+                    <span class="stage-dot">
+                      <i data-lucide="check"></i>
+                    </span>
+
+                    <span> Assessment </span>
+                  </div>
+
+                  <div class="stage-line completed"></div>
+
+                  <div class="stage-item completed">
+                    <span class="stage-dot">
+                      <i data-lucide="check"></i>
+                    </span>
+
+                    <span> Product Selected </span>
+                  </div>
+
+                  <div class="stage-line completed"></div>
+
+                  <div class="stage-item current">
+                    <span class="stage-dot">
+                      <i data-lucide="wrench"></i>
+                    </span>
+
+                    <span> Installation </span>
+                  </div>
+
+                  <div class="stage-line"></div>
+
+                  <div class="stage-item">
+                    <span class="stage-dot"> 4 </span>
+
+                    <span> Completion </span>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <!-- Quick Actions -->
+
+            <article class="dashboard-card quick-actions-card">
+              <div class="card-header">
+                <div>
+                  <span class="card-eyebrow"> QUICK ACCESS </span>
+
+                  <h3>Quick Actions</h3>
+                </div>
+              </div>
+
+              <div class="quick-actions">
+                <button data-open-panel="maintenance" type="button">
+                  <span class="quick-icon">
+                    <i data-lucide="calendar-cog"></i>
+                  </span>
+
+                  <span> Schedule Maintenance </span>
+                </button>
+
+                <button data-open-panel="technicians" type="button">
+                  <span class="quick-icon">
+                    <i data-lucide="hard-hat"></i>
+                  </span>
+
+                  <span> Technician Visits </span>
+                </button>
+
+                <button data-open-panel="warranty" type="button">
+                  <span class="quick-icon">
+                    <i data-lucide="shield-check"></i>
+                  </span>
+
+                  <span> Warranty Details </span>
+                </button>
+
+                <button data-open-panel="invoices" type="button">
+                  <span class="quick-icon">
+                    <i data-lucide="receipt"></i>
+                  </span>
+
+                  <span> View Invoices </span>
+                </button>
+              </div>
+            </article>
+          </section>
+
+          <!-- Recent Activity -->
+
+          <article class="dashboard-card activity-card">
+            <div class="card-header">
+              <div>
+                <span class="card-eyebrow"> RECENT ACTIVITY </span>
+
+                <h3>Project Updates</h3>
+              </div>
+            </div>
+
+            <div class="activity-list">
+              <div class="activity-item">
+                <div class="activity-icon completed">
+                  <i data-lucide="check"></i>
+                </div>
+
+                <div class="activity-content">
+                  <h4>Home assessment completed</h4>
+
+                  <p>
+                    Our team completed the accessibility assessment for your
+                    home.
+                  </p>
+
+                  <span> 2 days ago </span>
+                </div>
+              </div>
+
+              <div class="activity-item">
+                <div class="activity-icon">
+                  <i data-lucide="package-check"></i>
+                </div>
+
+                <div class="activity-content">
+                  <h4>Stairlift product confirmed</h4>
+
+                  <p>
+                    Your selected stairlift is ready for the installation stage.
+                  </p>
+
+                  <span> 5 days ago </span>
+                </div>
+              </div>
+
+              <div class="activity-item">
+                <div class="activity-icon">
+                  <i data-lucide="calendar-check"></i>
+                </div>
+
+                <div class="activity-content">
+                  <h4>Maintenance visit scheduled</h4>
+
+                  <p>
+                    Your next maintenance visit has been scheduled for 18
+                    October.
+                  </p>
+
+                  <span> 1 week ago </span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <!-- =================================================
+                 PANEL 2 — INSTALLATION
+            ================================================== -->
+
+        <section class="dashboard-panel" id="panel-installation">
+          <div class="panel-header">
+            <div>
+              <span class="panel-eyebrow"> YOUR PROJECT </span>
+
+              <h2>Installation Project</h2>
+
+              <p>
+                Track your accessibility installation from assessment through
+                completion.
+              </p>
+            </div>
+
+            <span class="status-badge progress-status">
+              <i data-lucide="loader-circle"></i>
+              In Progress
+            </span>
+          </div>
+
+          <!-- Project Hero -->
+
+          <article class="project-banner">
+            <div>
+              <span> PROJECT SS-2026-0148 </span>
+
+              <h3>Stairlift Installation</h3>
+
+              <p>
+                Designed and installed around your home's staircase, comfort and
+                accessibility needs.
+              </p>
+            </div>
+
+            <div class="project-progress-circle">
+              <strong> 68% </strong>
+
+              <span> Complete </span>
+            </div>
+          </article>
+
+          <!-- Project Information -->
+
+          <section class="installation-grid">
+            <article class="dashboard-card">
+              <div class="card-header">
+                <h3>Project Details</h3>
+              </div>
+
+              <div class="detail-list">
+                <div class="detail-row">
+                  <span> Solution </span>
+
+                  <strong> Stairlift </strong>
+                </div>
+
+                <div class="detail-row">
+                  <span> Installation Type </span>
+
+                  <strong> Straight Staircase </strong>
+                </div>
+
+                <div class="detail-row">
+                  <span> Project Started </span>
+
+                  <strong> 05 Oct 2026 </strong>
+                </div>
+
+                <div class="detail-row">
+                  <span> Estimated Completion </span>
+
+                  <strong> 22 Oct 2026 </strong>
+                </div>
+
+                <div class="detail-row">
+                  <span> Assigned Team </span>
+
+                  <strong> Safe Step Installation Team </strong>
+                </div>
+              </div>
+            </article>
+
+            <article class="dashboard-card">
+              <div class="card-header">
+                <h3>Installation Timeline</h3>
+              </div>
+
+              <div class="vertical-timeline">
+                <div class="timeline-step completed">
+                  <span class="timeline-marker">
+                    <i data-lucide="check"></i>
+                  </span>
+
+                  <div>
+                    <strong> Initial Consultation </strong>
+
+                    <span> Completed · 02 Oct 2026 </span>
+                  </div>
+                </div>
+
+                <div class="timeline-step completed">
+                  <span class="timeline-marker">
+                    <i data-lucide="check"></i>
+                  </span>
+
+                  <div>
+                    <strong> Home Assessment </strong>
+
+                    <span> Completed · 04 Oct 2026 </span>
+                  </div>
+                </div>
+
+                <div class="timeline-step completed">
+                  <span class="timeline-marker">
+                    <i data-lucide="check"></i>
+                  </span>
+
+                  <div>
+                    <strong> Product Preparation </strong>
+
+                    <span> Completed · 08 Oct 2026 </span>
+                  </div>
+                </div>
+
+                <div class="timeline-step current">
+                  <span class="timeline-marker">
+                    <i data-lucide="wrench"></i>
+                  </span>
+
+                  <div>
+                    <strong> Installation </strong>
+
+                    <span> In Progress </span>
+                  </div>
+                </div>
+
+                <div class="timeline-step">
+                  <span class="timeline-marker"> 5 </span>
+
+                  <div>
+                    <strong> Final Inspection </strong>
+
+                    <span> Upcoming </span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </section>
+
+          <!-- Next Milestone -->
+
+          <article class="dashboard-card milestone-card">
+            <div class="milestone-icon">
+              <i data-lucide="flag"></i>
+            </div>
+
+            <div>
+              <span> NEXT MILESTONE </span>
+
+              <h3>Installation Completion & Safety Check</h3>
+
+              <p>
+                Our technician will complete the installation, test the system
+                and walk you through safe operation.
+              </p>
+            </div>
+
+            <strong> 22 Oct 2026 </strong>
+          </article>
+        </section>
+
+        <!-- =================================================
+                 PANEL 3 — MAINTENANCE
+            ================================================== -->
+
+        <section class="dashboard-panel" id="panel-maintenance">
+          <div class="panel-header">
+            <div>
+              <span class="panel-eyebrow"> CARE & SUPPORT </span>
+
+              <h2>Maintenance</h2>
+
+              <p>
+                Schedule visits and keep your accessibility system performing
+                reliably.
+              </p>
+            </div>
+
+            <button
+              class="primary-btn"
+              id="scheduleMaintenanceBtn"
+              type="button"
+            >
+              <i data-lucide="calendar-plus"></i>
+
+              Schedule Visit
+            </button>
+          </div>
+
+          <section class="dashboard-stats">
+            <article class="dashboard-stat-card">
+              <div class="stat-icon maintenance">
+                <i data-lucide="calendar-check"></i>
+              </div>
+
+              <span class="stat-label"> Next Visit </span>
+
+              <h3>18 Oct</h3>
+
+              <p>10:00 AM</p>
+            </article>
+
+            <article class="dashboard-stat-card">
+              <div class="stat-icon">
+                <i data-lucide="wrench"></i>
+              </div>
+
+              <span class="stat-label"> Last Service </span>
+
+              <h3>14 Sep</h3>
+
+              <p>Completed</p>
+            </article>
+
+            <article class="dashboard-stat-card">
+              <div class="stat-icon warranty">
+                <i data-lucide="shield-check"></i>
+              </div>
+
+              <span class="stat-label"> System Status </span>
+
+              <h3>Good</h3>
+
+              <p>No issues reported</p>
+            </article>
+
+            <article class="dashboard-stat-card">
+              <div class="stat-icon invoice">
+                <i data-lucide="calendar-clock"></i>
+              </div>
+
+              <span class="stat-label"> Service Frequency </span>
+
+              <h3>6 Months</h3>
+
+              <p>Recommended</p>
+            </article>
+          </section>
+
+          <article class="dashboard-card">
+            <div class="card-header">
+              <div>
+                <span class="card-eyebrow"> UPCOMING </span>
+
+                <h3>Next Maintenance Visit</h3>
+              </div>
+
+              <span class="status-badge confirmed-status"> Confirmed </span>
+            </div>
+
+            <div class="maintenance-summary">
+              <div class="maintenance-date">
+                <span> OCT </span>
+
+                <strong> 18 </strong>
+
+                <small> 2026 </small>
+              </div>
+
+              <div class="maintenance-info">
+                <h4>Routine Stairlift Maintenance</h4>
+
+                <p>
+                  Complete system inspection, safety testing, cleaning and
+                  performance check.
+                </p>
+
+                <div class="maintenance-meta">
+                  <span>
+                    <i data-lucide="clock-3"></i>
+                    10:00 AM – 11:00 AM
+                  </span>
+
+                  <span>
+                    <i data-lucide="map-pin"></i>
+                    Your Home
+                  </span>
+                </div>
+              </div>
+
+              <div class="maintenance-actions">
+                <button class="secondary-btn" type="button">Reschedule</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="dashboard-card">
+            <div class="card-header">
+              <h3>Maintenance History</h3>
+            </div>
+
+            <div class="table-wrapper">
+              <table class="dashboard-table">
+                <thead>
+                  <tr>
+                    <th>Date</th>
+
+                    <th>Service</th>
+
+                    <th>Technician</th>
+
+                    <th>Status</th>
+
+                    <th>Action</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>14 Sep 2026</td>
+
+                    <td>Routine Maintenance</td>
+
+                    <td>Ravi Kumar</td>
+
+                    <td>
+                      <span class="table-status completed"> Completed </span>
+                    </td>
+
+                    <td>
+                      <button class="table-action">View</button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>18 Mar 2026</td>
+
+                    <td>Safety Inspection</td>
+
+                    <td>Arjun Rao</td>
+
+                    <td>
+                      <span class="table-status completed"> Completed </span>
+                    </td>
+
+                    <td>
+                      <button class="table-action">View</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+        </section>
+
+        <!-- =================================================
+                 PANEL 4 — WARRANTY
+            ================================================== -->
+
+        <section class="dashboard-panel" id="panel-warranty">
+          <div class="panel-header">
+            <div>
+              <span class="panel-eyebrow"> PROTECTION & SERVICE </span>
+
+              <h2>Warranty & Service</h2>
+
+              <p>Access your warranty coverage and service records.</p>
+            </div>
+
+            <button class="secondary-btn" type="button">
+              <i data-lucide="headset"></i>
+
+              Request Service
+            </button>
+          </div>
+
+          <!-- Warranty Banner -->
+
+          <article class="warranty-banner">
+            <div class="warranty-banner-icon">
+              <i data-lucide="shield-check"></i>
+            </div>
+
+            <div>
+              <span> WARRANTY STATUS </span>
+
+              <h3>Your Warranty Is Active</h3>
+
+              <p>
+                Your stairlift installation is currently covered under the Safe
+                Step warranty.
+              </p>
+            </div>
+
+            <div class="warranty-date">
+              <span> VALID UNTIL </span>
+
+              <strong> 31 Oct 2028 </strong>
+            </div>
+          </article>
+
+          <section class="warranty-grid">
+            <article class="dashboard-card">
+              <div class="card-header">
+                <h3>Warranty Coverage</h3>
+              </div>
+
+              <div class="coverage-list">
+                <div class="coverage-item">
+                  <div class="coverage-icon">
+                    <i data-lucide="settings-2"></i>
+                  </div>
+
+                  <div>
+                    <strong> Product Components </strong>
+
+                    <span> Covered </span>
+                  </div>
+
+                  <i data-lucide="check-circle" class="coverage-check"> </i>
+                </div>
+
+                <div class="coverage-item">
+                  <div class="coverage-icon">
+                    <i data-lucide="wrench"></i>
+                  </div>
+
+                  <div>
+                    <strong> Installation Work </strong>
+
+                    <span> Covered </span>
+                  </div>
+
+                  <i data-lucide="check-circle" class="coverage-check"> </i>
+                </div>
+
+                <div class="coverage-item">
+                  <div class="coverage-icon">
+                    <i data-lucide="shield"></i>
+                  </div>
+
+                  <div>
+                    <strong> Safety Components </strong>
+
+                    <span> Covered </span>
+                  </div>
+
+                  <i data-lucide="check-circle" class="coverage-check"> </i>
+                </div>
+              </div>
+            </article>
+
+            <article class="dashboard-card">
+              <div class="card-header">
+                <div>
+                  <span class="card-eyebrow"> SERVICE RECORDS </span>
+
+                  <h3>Recent Service</h3>
+                </div>
+              </div>
+
+              <div class="service-record">
+                <div class="service-record-icon">
+                  <i data-lucide="wrench"></i>
+                </div>
+
+                <div>
+                  <h4>Routine Maintenance</h4>
+
+                  <p>Full system inspection and safety check</p>
+
+                  <span> 14 Sep 2026 </span>
+                </div>
+              </div>
+
+              <div class="service-record">
+                <div class="service-record-icon">
+                  <i data-lucide="clipboard-check"></i>
+                </div>
+
+                <div>
+                  <h4>Initial Safety Inspection</h4>
+
+                  <p>Post-installation system verification</p>
+
+                  <span> 25 Aug 2026 </span>
+                </div>
+              </div>
+            </article>
+          </section>
+        </section>
+
+        <!-- =================================================
+                 PANEL 5 — TECHNICIANS
+            ================================================== -->
+
+        <section class="dashboard-panel" id="panel-technicians">
+          <div class="panel-header">
+            <div>
+              <span class="panel-eyebrow"> SERVICE TEAM </span>
+
+              <h2>Technician Visits</h2>
+
+              <p>View upcoming visits and your technician history.</p>
+            </div>
+          </div>
+
+          <!-- Upcoming Technician -->
+
+          <article class="dashboard-card technician-upcoming">
+            <div class="technician-date">
+              <span> OCT </span>
+
+              <strong> 18 </strong>
+            </div>
+
+            <div class="technician-info">
+              <span class="card-eyebrow"> UPCOMING VISIT </span>
+
+              <h3>Ravi Kumar</h3>
+
+              <p>Certified Safe Step Service Technician</p>
+
+              <div class="technician-meta">
+                <span>
+                  <i data-lucide="calendar"></i>
+                  18 October 2026
+                </span>
+
+                <span>
+                  <i data-lucide="clock-3"></i>
+                  10:00 AM
+                </span>
+
+                <span>
+                  <i data-lucide="wrench"></i>
+                  Routine Maintenance
+                </span>
+              </div>
+            </div>
+
+            <div class="technician-status">
+              <span class="status-badge confirmed-status"> Confirmed </span>
+
+              <button class="secondary-btn">Reschedule</button>
+            </div>
+          </article>
+
+          <!-- Visit History -->
+
+          <article class="dashboard-card">
+            <div class="card-header">
+              <h3>Technician Visit History</h3>
+            </div>
+
+            <div class="technician-list">
+              <div class="technician-history-item">
+                <div class="technician-avatar">RK</div>
+
+                <div class="technician-history-info">
+                  <h4>Ravi Kumar</h4>
+
+                  <p>Routine Maintenance</p>
+
+                  <span> 14 Sep 2026 · 11:00 AM </span>
+                </div>
+
+                <span class="table-status completed"> Completed </span>
+              </div>
+
+              <div class="technician-history-item">
+                <div class="technician-avatar">AR</div>
+
+                <div class="technician-history-info">
+                  <h4>Arjun Rao</h4>
+
+                  <p>Safety Inspection</p>
+
+                  <span> 25 Aug 2026 · 03:30 PM </span>
+                </div>
+
+                <span class="table-status completed"> Completed </span>
+              </div>
+
+              <div class="technician-history-item">
+                <div class="technician-avatar">SK</div>
+
+                <div class="technician-history-info">
+                  <h4>Suresh Kumar</h4>
+
+                  <p>Installation Assessment</p>
+
+                  <span> 04 Aug 2026 · 10:30 AM </span>
+                </div>
+
+                <span class="table-status completed"> Completed </span>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <!-- =================================================
+                 PANEL 6 — INVOICES
+            ================================================== -->
+
+        <section class="dashboard-panel" id="panel-invoices">
+          <div class="panel-header">
+            <div>
+              <span class="panel-eyebrow"> PAYMENTS </span>
+
+              <h2>Invoices & Payments</h2>
+
+              <p>
+                View invoices, payment history and outstanding amounts for your
+                Safe Step project.
+              </p>
+            </div>
+          </div>
+
+          <!-- Invoice Stats -->
+
+          <section class="dashboard-stats">
+            <article class="dashboard-stat-card">
+              <div class="stat-icon invoice">
+                <i data-lucide="receipt"></i>
+              </div>
+
+              <span class="stat-label"> Total Project </span>
+
+              <h3>₹1,24,500</h3>
+
+              <p>Project value</p>
+            </article>
+
+            <article class="dashboard-stat-card">
+              <div class="stat-icon warranty">
+                <i data-lucide="circle-check"></i>
+              </div>
+
+              <span class="stat-label"> Paid </span>
+
+              <h3>₹1,00,000</h3>
+
+              <p>Paid to date</p>
+            </article>
+
+            <article class="dashboard-stat-card">
+              <div class="stat-icon maintenance">
+                <i data-lucide="clock-3"></i>
+              </div>
+
+              <span class="stat-label"> Outstanding </span>
+
+              <h3>₹24,500</h3>
+
+              <p>Current balance</p>
+            </article>
+
+            <article class="dashboard-stat-card">
+              <div class="stat-icon">
+                <i data-lucide="file-check-2"></i>
+              </div>
+
+              <span class="stat-label"> Invoices </span>
+
+              <h3>4</h3>
+
+              <p>Total invoices</p>
+            </article>
+          </section>
+
+          <!-- Payment Summary -->
+
+          <article class="dashboard-card payment-summary">
+            <div>
+              <span class="card-eyebrow"> CURRENT BALANCE </span>
+
+              <h3>₹24,500</h3>
+
+              <p>Your outstanding project balance</p>
+            </div>
+
+            <button class="primary-btn" id="payNowBtn" type="button">
+              <i data-lucide="credit-card"></i>
+
+              Pay Now
+            </button>
+          </article>
+
+          <!-- Invoice Table -->
+
+          <article class="dashboard-card">
+            <div class="card-header">
+              <h3>Invoice History</h3>
+            </div>
+
+            <div class="table-wrapper">
+              <table class="dashboard-table">
+                <thead>
+                  <tr>
+                    <th>Invoice</th>
+
+                    <th>Date</th>
+
+                    <th>Description</th>
+
+                    <th>Amount</th>
+
+                    <th>Status</th>
+
+                    <th>Action</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td>#SS-INV-001</td>
+
+                    <td>05 Aug 2026</td>
+
+                    <td>Initial Consultation</td>
+
+                    <td>₹10,000</td>
+
+                    <td>
+                      <span class="table-status paid"> Paid </span>
+                    </td>
+
+                    <td>
+                      <button class="table-action">View</button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>#SS-INV-002</td>
+
+                    <td>12 Aug 2026</td>
+
+                    <td>Product & Installation</td>
+
+                    <td>₹90,000</td>
+
+                    <td>
+                      <span class="table-status paid"> Paid </span>
+                    </td>
+
+                    <td>
+                      <button class="table-action">View</button>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td>#SS-INV-003</td>
+
+                    <td>05 Oct 2026</td>
+
+                    <td>Installation Balance</td>
+
+                    <td>₹24,500</td>
+
+                    <td>
+                      <span class="table-status pending"> Pending </span>
+                    </td>
+
+                    <td>
+                      <button class="table-action primary">Pay Now</button>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </article>
+        </section>
+
+        <!-- =================================================
+                 PANEL 7 — PROFILE
+            ================================================== -->
+
+        <section class="dashboard-panel" id="panel-profile">
+          <div class="panel-header">
+            <div>
+              <span class="panel-eyebrow"> ACCOUNT </span>
+
+              <h2>My Profile</h2>
+
+              <p>Manage your personal and contact information.</p>
+            </div>
+
+            <button class="primary-btn" id="saveProfileBtn" type="button">
+              <i data-lucide="save"></i>
+
+              Save Changes
+            </button>
+          </div>
+
+          <section class="profile-layout">
+            <article class="dashboard-card profile-card">
+              <div class="profile-large-avatar">JD</div>
+
+              <h3>John Doe</h3>
+
+              <span> Safe Step Client </span>
+
+              <div class="profile-project">
+                <i data-lucide="house"></i>
+
+                <div>
+                  <strong> Active Project </strong>
+
+                  <span> Stairlift Installation </span>
+                </div>
+              </div>
+            </article>
+
+            <article class="dashboard-card">
+              <div class="card-header">
+                <h3>Personal Information</h3>
+              </div>
+
+              <form class="profile-form">
+                <div class="form-grid">
+                  <div class="form-group">
+                    <label> Full Name </label>
+
+                    <input type="text" value="John Doe" />
+                  </div>
+
+                  <div class="form-group">
+                    <label> Phone Number </label>
+
+                    <input type="tel" value="+91 98765 43210" />
+                  </div>
+
+                  <div class="form-group">
+                    <label> Email Address </label>
+
+                    <input type="email" value="john@example.com" />
+                  </div>
+
+                  <div class="form-group">
+                    <label> City </label>
+
+                    <input type="text" value="Hyderabad" />
+                  </div>
+
+                  <div class="form-group full">
+                    <label> Home Address </label>
+
+                    <textarea rows="4">Your registered home address</textarea>
+                  </div>
+                </div>
+              </form>
+            </article>
+          </section>
+        </section>
+
+        <!-- =================================================
+                 PANEL 8 — SETTINGS
+            ================================================== -->
+
+        <section class="dashboard-panel" id="panel-settings">
+          <div class="panel-header">
+            <div>
+              <span class="panel-eyebrow"> PREFERENCES </span>
+
+              <h2>Settings</h2>
+
+              <p>Customize your Safe Step client portal.</p>
+            </div>
+          </div>
+
+          <article class="dashboard-card settings-card">
+            <div class="settings-row">
+              <div class="settings-row-icon">
+                <i data-lucide="moon"></i>
+              </div>
+
+              <div class="settings-row-content">
+                <h3>Dark Mode</h3>
+
+                <p>Use a darker interface for comfortable viewing.</p>
+              </div>
+
+              <label class="switch">
+                <input type="checkbox" id="settingsThemeToggle" />
+
+                <span class="switch-slider"></span>
+              </label>
+            </div>
+
+            <div class="settings-row">
+              <div class="settings-row-icon">
+                <i data-lucide="arrow-right-left"></i>
+              </div>
+
+              <div class="settings-row-content">
+                <h3>Right-to-Left Layout</h3>
+
+                <p>Switch the dashboard layout to RTL.</p>
+              </div>
+
+              <label class="switch">
+                <input type="checkbox" id="settingsRtlToggle" />
+
+                <span class="switch-slider"></span>
+              </label>
+            </div>
+
+            <div class="settings-row">
+              <div class="settings-row-icon">
+                <i data-lucide="bell"></i>
+              </div>
+
+              <div class="settings-row-content">
+                <h3>Notifications</h3>
+
+                <p>Receive updates about your project and services.</p>
+              </div>
+
+              <label class="switch">
+                <input type="checkbox" checked />
+
+                <span class="switch-slider"></span>
+              </label>
+            </div>
+
+            <div class="settings-row">
+              <div class="settings-row-icon">
+                <i data-lucide="mail"></i>
+              </div>
+
+              <div class="settings-row-content">
+                <h3>Email Updates</h3>
+
+                <p>Receive invoices, service records and project updates.</p>
+              </div>
+
+              <label class="switch">
+                <input type="checkbox" checked />
+
+                <span class="switch-slider"></span>
+              </label>
+            </div>
+          </article>
+        </section>
+      </div>
+    </main>
+
+    <!-- Dashboard JS -->
+
+    <script src="dashboard.js"></script>
+    <script src="global.js"></script>
+  </body>
+</html>

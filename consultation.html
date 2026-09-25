@@ -1,0 +1,1028 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logo.png" />
+
+    <title>Consultation</title>
+
+    <!-- =========================================
+       GOOGLE FONT
+       ========================================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =========================================
+       LUCIDE ICONS
+       ========================================= -->
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="consultation.css" />
+  </head>
+  <body>
+    <!-- =========================================================
+     SAFE STEP
+     HEADER
+     ========================================================= -->
+
+    <header class="site-header">
+      <div class="header-container">
+        <!-- =================================================
+         LOGO
+    ================================================== -->
+
+        <div class="logo">
+          <a href="index.html" aria-label="Safe Step Home">
+            <img src="images/logo.png" alt="Safe Step Logo" />
+          </a>
+
+          <div class="logo-text" onclick="window.location.href = 'index.html'">
+            <h1>
+              <span class="safe">Safe</span><span class="step">Step</span>
+            </h1>
+
+            <p>Accessibility Solutions</p>
+          </div>
+        </div>
+
+        <!-- =================================================
+         NAVIGATION
+    ================================================== -->
+
+        <nav class="navbar" aria-label="Primary Navigation">
+          <ul class="nav-links">
+            <!-- HOME -->
+
+            <li class="dropdown">
+              <a href="index.html">
+                <span>Home</span>
+
+                <i data-lucide="chevron-down" aria-hidden="true"></i>
+              </a>
+
+              <!-- HOME DROPDOWN -->
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="index.html">
+                    <i data-lucide="house" aria-hidden="true"></i>
+
+                    <span>Home 1 - Classic</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="home2.html">
+                    <i data-lucide="sparkles" aria-hidden="true"></i>
+
+                    <span>Home 2 - Premium</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- ABOUT -->
+
+            <li>
+              <a href="about.html">
+                <span>About</span>
+              </a>
+            </li>
+
+            <!-- SERVICES -->
+
+            <li>
+              <a href="services.html">
+                <span>Services</span>
+              </a>
+            </li>
+
+            <!-- PRODUCTS -->
+
+            <li>
+              <a href="products.html">
+                <span>Products</span>
+              </a>
+            </li>
+
+            <!-- CONSULTATION -->
+
+            <li>
+              <a href="consultation.html">
+                <span>Consultation</span>
+              </a>
+            </li>
+
+            <!-- PRICING -->
+
+            <li>
+              <a href="pricing.html">
+                <span>Pricing</span>
+              </a>
+            </li>
+
+            <!-- CONTACT -->
+
+            <li>
+              <a href="contact.html">
+                <span>Contact</span>
+              </a>
+            </li>
+
+            <!-- DASHBOARD -->
+
+            <li>
+              <a href="dashboard.html">
+                <span>Dashboard</span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- MOBILE LOGIN -->
+
+          <div class="mobile-login">
+            <a href="login.html" class="login-btn mobile-login-btn">
+              <i data-lucide="log-in" aria-hidden="true"></i>
+
+              <span>Login</span>
+            </a>
+          </div>
+        </nav>
+
+        <!-- =================================================
+         HEADER ACTIONS
+    ================================================== -->
+
+        <div class="header-buttons">
+          <!-- RTL -->
+
+          <button
+            class="icon-btn"
+            id="rtlToggle"
+            type="button"
+            title="RTL Mode"
+            aria-label="Toggle RTL mode"
+            aria-pressed="false"
+          >
+            <i data-lucide="arrow-left-right" aria-hidden="true"></i>
+          </button>
+
+          <!-- DARK MODE -->
+
+          <button
+            class="icon-btn"
+            id="darkToggle"
+            type="button"
+            title="Dark Mode"
+            aria-label="Toggle dark mode"
+          >
+            <i data-lucide="moon" aria-hidden="true"></i>
+          </button>
+
+          <!-- LOGIN -->
+
+          <a href="login.html" class="login-btn desktop-login">
+            <i data-lucide="log-in" aria-hidden="true"></i>
+
+            <span>Login</span>
+          </a>
+
+          <!-- MOBILE MENU -->
+
+          <button
+            class="icon-btn menu-btn"
+            id="menuToggle"
+            type="button"
+            title="Menu"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- =========================
+     CONSULTATION HERO
+========================= -->
+    <section class="consultation-hero" id="consultation-hero">
+      <div class="consultation-hero-overlay"></div>
+
+      <div class="consultation-hero-lines consultation-hero-lines-left"></div>
+      <div class="consultation-hero-lines consultation-hero-lines-right"></div>
+
+      <div class="consultation-hero-content">
+        <div class="about-hero-eyebrow">
+          <span class="about-hero-eyebrow-line"></span>
+          <span>SAFE STEP CONSULTATION</span>
+        </div>
+        <h1 class="consultation-hero-title">
+          Let’s Find the Right Solution
+          <span>for Your Home.</span>
+        </h1>
+
+        <p class="consultation-hero-description">
+          Tell us about your home, your accessibility needs, and what you would
+          like to make easier. Our consultation process helps you understand
+          your options and take the next step with confidence.
+        </p>
+
+        <div class="consultation-hero-actions">
+          <a
+            href="#consultation-form"
+            class="consultation-hero-btn consultation-hero-btn-primary"
+          >
+            <span>Book a Consultation</span>
+
+            <i data-lucide="arrow-right"></i>
+          </a>
+
+          <a
+            href="products.html"
+            class="consultation-hero-btn consultation-hero-btn-secondary"
+          >
+            <span>Explore Our Products</span>
+
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <a href="#consultation-intro" class="consultation-hero-scroll">
+        <span>SCROLL TO EXPLORE</span>
+
+        <i data-lucide="arrow-down"></i>
+      </a>
+    </section>
+
+    <!-- =========================
+     CONSULTATION INTRO
+========================= -->
+    <section class="consultation-intro" id="consultation-intro">
+      <div class="consultation-intro-heading">
+        <div class="about-hero-eyebrow-1">
+          <span class="about-hero-eyebrow-line"></span>
+          <span>sTART WITH A CONVERSATION</span>
+        </div>
+
+        <h2 class="consultation-section-title">
+          Every Home Has Different Needs.
+          <span>Your Consultation Should Too.</span>
+        </h2>
+
+        <p class="consultation-section-description">
+          We begin by understanding your home, your accessibility needs, and the
+          way you move through your everyday spaces. This helps us have a more
+          meaningful conversation about what could work for you.
+        </p>
+      </div>
+
+      <div class="consultation-intro-main">
+        <!-- Image -->
+        <div class="consultation-intro-image-wrap">
+          <img
+            src="images/consultation.png"
+            alt="Safe Step home accessibility consultation"
+            class="consultation-intro-image"
+          />
+
+          <div class="consultation-intro-image-label">
+            <span>01</span>
+            <strong>UNDERSTANDING YOUR HOME</strong>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="consultation-intro-content">
+          <div class="consultation-intro-item">
+            <div class="consultation-intro-number">01</div>
+
+            <div class="consultation-intro-item-content">
+              <span>YOUR NEEDS</span>
+
+              <h3>Understand What You Need.</h3>
+
+              <p>
+                Tell us about the areas of your home where you would like
+                greater comfort, confidence, or independence.
+              </p>
+            </div>
+          </div>
+
+          <div class="consultation-intro-item">
+            <div class="consultation-intro-number">02</div>
+
+            <div class="consultation-intro-item-content">
+              <span>YOUR HOME</span>
+
+              <h3>Understand Your Space.</h3>
+
+              <p>
+                We consider your staircase, entrances, floors, and the available
+                space within your home.
+              </p>
+            </div>
+          </div>
+
+          <div class="consultation-intro-item">
+            <div class="consultation-intro-number">03</div>
+
+            <div class="consultation-intro-item-content">
+              <span>YOUR LIFESTYLE</span>
+
+              <h3>Understand How You Live.</h3>
+
+              <p>
+                Your everyday routine helps us understand what kind of
+                accessibility support may fit naturally into your home.
+              </p>
+            </div>
+          </div>
+
+          <div class="consultation-intro-item">
+            <div class="consultation-intro-number">04</div>
+
+            <div class="consultation-intro-item-content">
+              <span>YOUR GOALS</span>
+
+              <h3>Understand What Comes Next.</h3>
+
+              <p>
+                We discuss what you would like to make easier today and what
+                your home may need in the future.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+     CONSULTATION FORM
+========================= -->
+    <section class="consultation-form-section" id="consultation-form">
+      <div class="consultation-form-heading">
+        <div class="about-hero-eyebrow-1">
+          <span class="about-hero-eyebrow-line"></span>
+          <span>TEL US ABOUT HOME</span>
+        </div>
+
+        <h2 class="consultation-section-title">
+          A Few Details Help Us Understand
+          <span>Where to Begin.</span>
+        </h2>
+
+        <p class="consultation-section-description">
+          Share a few details about your home and what you would like to make
+          easier. We'll use this information to prepare for a more meaningful
+          consultation.
+        </p>
+      </div>
+
+      <div class="consultation-form-main">
+        <!-- LEFT CONTENT -->
+        <div class="consultation-form-info">
+          <span class="consultation-form-info-label">
+            START WITH WHAT MATTERS MOST
+          </span>
+
+          <h3>Tell Us What You Need.</h3>
+
+          <p>
+            You don't need to know exactly which solution is right for your
+            home. Simply tell us what you're experiencing, and we'll help you
+            explore the possibilities.
+          </p>
+
+          <div class="consultation-form-points">
+            <div class="consultation-form-point">
+              <div class="consultation-form-point-icon">
+                <i data-lucide="accessibility"></i>
+              </div>
+
+              <div>
+                <strong>Your Accessibility Needs</strong>
+                <span> Tell us where movement feels difficult. </span>
+              </div>
+            </div>
+
+            <div class="consultation-form-point">
+              <div class="consultation-form-point-icon">
+                <i data-lucide="house"></i>
+              </div>
+
+              <div>
+                <strong>Your Home Layout</strong>
+                <span>
+                  Share the areas of your home you'd like to improve.
+                </span>
+              </div>
+            </div>
+
+            <div class="consultation-form-point">
+              <div class="consultation-form-point-icon">
+                <i data-lucide="messages-square"></i>
+              </div>
+
+              <div>
+                <strong>Your Consultation Preference</strong>
+                <span> Choose how you'd prefer to speak with us. </span>
+              </div>
+            </div>
+
+            <div class="consultation-form-point">
+              <div class="consultation-form-point-icon">
+                <i data-lucide="target"></i>
+              </div>
+
+              <div>
+                <strong>Your Priorities</strong>
+                <span> Tell us what you'd like to make easier. </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FORM -->
+        <div class="consultation-form-box">
+          <div class="consultation-form-box-heading">
+            <span>CONSULTATION REQUEST</span>
+
+            <p>Fields marked with * are required.</p>
+          </div>
+
+          <form id="safeStepConsultationForm">
+            <div class="consultation-form-row">
+              <div class="consultation-field">
+                <label for="consultation-name"> Full Name * </label>
+
+                <input
+                  type="text"
+                  id="consultation-name"
+                  name="name"
+                  placeholder="Your full name"
+                  required
+                />
+              </div>
+
+              <div class="consultation-field">
+                <label for="consultation-phone"> Phone Number * </label>
+
+                <input
+                  type="tel"
+                  id="consultation-phone"
+                  name="phone"
+                  placeholder="Your phone number"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="consultation-field">
+              <label for="consultation-email"> Email Address * </label>
+
+              <input
+                type="email"
+                id="consultation-email"
+                name="email"
+                placeholder="Your email address"
+                required
+              />
+            </div>
+
+            <div class="consultation-form-row">
+              <div class="consultation-field">
+                <label for="consultation-solution">
+                  What are you interested in?
+                </label>
+
+                <select id="consultation-solution" name="solution">
+                  <option value="">Select a solution</option>
+
+                  <option value="stairlift">Stairlift</option>
+
+                  <option value="home-elevator">Home Elevator</option>
+
+                  <option value="ramp">Accessibility Ramp</option>
+
+                  <option value="not-sure">Not Sure Yet</option>
+                </select>
+              </div>
+
+              <div class="consultation-field">
+                <label for="consultation-area"> Where do you need help? </label>
+
+                <select id="consultation-area" name="area">
+                  <option value="">Select an area</option>
+
+                  <option value="stairs">Moving Between Levels</option>
+
+                  <option value="entry">Entering / Leaving the Home</option>
+
+                  <option value="multiple">Multiple Areas</option>
+
+                  <option value="general">General Accessibility</option>
+
+                  <option value="not-sure">Not Sure Yet</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="consultation-field">
+              <label for="consultation-message">
+                Tell Us About Your Needs
+              </label>
+
+              <textarea
+                id="consultation-message"
+                name="message"
+                rows="5"
+                placeholder="Tell us a little about your home or what you would like to make easier..."
+              ></textarea>
+            </div>
+
+            <div class="consultation-preference">
+              <span> Preferred Consultation Method </span>
+
+              <div class="consultation-radio-group">
+                <label>
+                  <input
+                    type="radio"
+                    name="consultation-method"
+                    value="phone"
+                  />
+                  <span>Phone</span>
+                </label>
+
+                <label>
+                  <input
+                    type="radio"
+                    name="consultation-method"
+                    value="video"
+                  />
+                  <span>Video Call</span>
+                </label>
+
+                <label>
+                  <input type="radio" name="consultation-method" value="home" />
+                  <span>In-Home</span>
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" class="consultation-form-submit">
+              <span>Request a Consultation</span>
+
+              <i data-lucide="arrow-right"></i>
+            </button>
+
+            <div class="consultation-form-note">
+              <i data-lucide="shield-check"></i>
+
+              <span>
+                YOUR INFORMATION IS USED TO HELP US PREPARE FOR YOUR
+                CONSULTATION.
+              </span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+     CONSULTATION TIMELINE
+========================= -->
+    <section class="consultation-process" id="consultation-process">
+      <div class="consultation-process-heading">
+        <div class="about-hero-eyebrow-1">
+          <span class="about-hero-eyebrow-line"></span>
+          <span>WHAT HAPPENS NEXT</span>
+        </div>
+        <h2 class="consultation-section-title">
+          From Your First Conversation
+          <span>to a Clearer Path Forward.</span>
+        </h2>
+
+        <p class="consultation-section-description">
+          Once you share your requirements, we take the time to understand your
+          home and help you explore the right accessibility approach.
+        </p>
+      </div>
+
+      <div class="consultation-timeline">
+        <!-- STEP 01 -->
+        <article class="consultation-timeline-step">
+          <div class="consultation-timeline-header">
+            <span class="consultation-timeline-number"> 01 </span>
+
+            <div class="consultation-timeline-icon">
+              <i data-lucide="messages-square"></i>
+            </div>
+          </div>
+
+          <div class="consultation-timeline-line">
+            <span class="consultation-timeline-dot"></span>
+          </div>
+
+          <div class="consultation-timeline-content">
+            <span class="consultation-timeline-label"> CONSULTATION </span>
+
+            <h3>Start With a Conversation.</h3>
+
+            <p>
+              Tell us about your needs, your home, and what you would like to
+              make easier.
+            </p>
+          </div>
+        </article>
+
+        <!-- STEP 02 -->
+        <article class="consultation-timeline-step">
+          <div class="consultation-timeline-header">
+            <span class="consultation-timeline-number"> 02 </span>
+
+            <div class="consultation-timeline-icon">
+              <i data-lucide="house"></i>
+            </div>
+          </div>
+
+          <div class="consultation-timeline-line">
+            <span class="consultation-timeline-dot"></span>
+          </div>
+
+          <div class="consultation-timeline-content">
+            <span class="consultation-timeline-label"> HOME ASSESSMENT </span>
+
+            <h3>Understand Your Space.</h3>
+
+            <p>
+              We consider your home's layout, staircase, entrances, access
+              points, and available space.
+            </p>
+          </div>
+        </article>
+
+        <!-- STEP 03 -->
+        <article class="consultation-timeline-step">
+          <div class="consultation-timeline-header">
+            <span class="consultation-timeline-number"> 03 </span>
+
+            <div class="consultation-timeline-icon">
+              <i data-lucide="clipboard-list"></i>
+            </div>
+          </div>
+
+          <div class="consultation-timeline-line">
+            <span class="consultation-timeline-dot"></span>
+          </div>
+
+          <div class="consultation-timeline-content">
+            <span class="consultation-timeline-label"> SOLUTION PLANNING </span>
+
+            <h3>Explore the Right Approach.</h3>
+
+            <p>
+              We discuss accessibility solutions that could work naturally
+              within your home.
+            </p>
+          </div>
+        </article>
+
+        <!-- STEP 04 -->
+        <article class="consultation-timeline-step">
+          <div class="consultation-timeline-header">
+            <span class="consultation-timeline-number"> 04 </span>
+
+            <div class="consultation-timeline-icon">
+              <i data-lucide="arrow-right"></i>
+            </div>
+          </div>
+
+          <div class="consultation-timeline-line">
+            <span class="consultation-timeline-dot"></span>
+          </div>
+
+          <div class="consultation-timeline-content">
+            <span class="consultation-timeline-label"> NEXT STEPS </span>
+
+            <h3>Move Forward With Confidence.</h3>
+
+            <p>
+              Understand the recommended path forward and decide how you would
+              like to proceed.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- =========================
+     CONSULTATION FINAL CTA
+========================= -->
+    <section class="consultation-final-cta" id="consultation-final-cta">
+      <div class="consultation-final-cta-box">
+ <div class="about-hero-eyebrow-1">
+          <span class="about-hero-eyebrow-line"></span>
+          <span>TAKE THE NEXT STEP</span>
+        </div>
+        <h2>
+          Ready to Make Your Home
+          <span>More Accessible?</span>
+        </h2>
+
+        <p>
+          Start with a conversation. Tell us what you need, and we'll help you
+          understand the possibilities for your home.
+        </p>
+
+        <div class="consultation-final-cta-actions">
+          <a
+            href="#consultation-form"
+            class="consultation-final-cta-btn consultation-final-cta-btn-primary"
+          >
+            <span>Book a Consultation</span>
+
+            <i data-lucide="arrow-right"></i>
+          </a>
+
+          <a
+            href="contact.html"
+            class="consultation-final-cta-btn consultation-final-cta-btn-secondary"
+          >
+            <span>Talk to Safe Step</span>
+
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+
+        <div class="consultation-final-cta-note">
+          <i data-lucide="shield-check"></i>
+
+          <span> THOUGHTFUL GUIDANCE. CAREFULLY PLANNED. </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     SAFE STEP
+     FOOTER
+     ========================================================= -->
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- =================================================
+         BRAND
+    ================================================== -->
+
+        <div class="footer-col footer-brand">
+          <div class="footer-logo">
+            <a href="index.html" aria-label="Safe Step Home">
+              <img src="images/logo.png" alt="Safe Step Logo" />
+            </a>
+
+            <div
+              class="footer-branding"
+              onclick="window.location.href = 'index.html'"
+            >
+              <h2>
+                <span class="safe">Safe</span><span class="step">Step</span>
+              </h2>
+
+              <p>Accessibility Solutions</p>
+            </div>
+          </div>
+
+          <!-- DESCRIPTION -->
+
+          <p class="footer-about">
+            Safe Step provides reliable home accessibility solutions designed to
+            help people move safely, comfortably, and independently throughout
+            their homes.
+          </p>
+
+          <!-- SOCIAL MEDIA -->
+
+          <div class="social-media">
+            <!-- INSTAGRAM -->
+
+            <a href="#" aria-label="Instagram" title="Instagram">
+              <i data-lucide="camera" aria-hidden="true"></i>
+            </a>
+
+            <!-- FACEBOOK -->
+
+            <a href="#" aria-label="Facebook" title="Facebook">
+              <i data-lucide="users" aria-hidden="true"></i>
+            </a>
+
+            <!-- YOUTUBE -->
+
+            <a href="#" aria-label="YouTube" title="YouTube">
+              <i data-lucide="play" aria-hidden="true"></i>
+            </a>
+
+            <!-- EMAIL -->
+
+            <a href="mailto:info@aquacare.com" aria-label="Email" title="Email">
+              <i data-lucide="mail" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- =================================================
+         QUICK LINKS
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="about.html">About</a>
+            </li>
+
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+
+            <li>
+              <a href="products.html">Products</a>
+            </li>
+
+            <li>
+              <a href="pricing.html">Pricing</a>
+            </li>
+
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         OUR SOLUTIONS
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Our Solutions</h3>
+
+          <ul>
+            <li>
+              <a href="products.html#stairlifts"> Stairlifts </a>
+            </li>
+
+            <li>
+              <a href="products.html#elevators"> Home Elevators </a>
+            </li>
+
+            <li>
+              <a href="products.html#ramps"> Accessibility Ramps </a>
+            </li>
+
+            <li>
+              <a href="services.html#installation">
+                Professional Installation
+              </a>
+            </li>
+
+            <li>
+              <a href="services.html#maintenance"> Maintenance & Support </a>
+            </li>
+
+            <li>
+              <a href="services.html#assessment"> Accessibility Assessment </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         CLIENT SERVICES
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Client Services</h3>
+
+          <ul>
+            <li>
+              <a href="dashboard.html"> Client Dashboard </a>
+            </li>
+
+            <li>
+              <a href="dashboard.html"> Project Status </a>
+            </li>
+
+            <li>
+              <a href="dashboard.html"> Maintenance </a>
+            </li>
+
+            <li>
+              <a href="consultation.html">Consultation</a>
+            </li>
+            <li>
+              <a href="404.html">404</a>
+            </li>
+            <li>
+              <a href="comming.html">Commingsoon...</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         CONTACT
+    ================================================== -->
+
+        <div class="footer-col footer-contact">
+          <h3>Get In Touch</h3>
+
+          <ul>
+            <!-- LOCATION -->
+
+            <li>
+              <i data-lucide="map-pin" aria-hidden="true"></i>
+
+              <span> Your Service Area </span>
+            </li>
+
+            <!-- PHONE -->
+
+            <li>
+              <i data-lucide="phone" aria-hidden="true"></i>
+
+              <a href="tel:+10000000000"> +1 (000) 000-0000 </a>
+            </li>
+
+            <!-- EMAIL -->
+
+            <li>
+              <i data-lucide="mail" aria-hidden="true"></i>
+
+              <a href="mailto:info@safestep.com"> info@safestep.com </a>
+            </li>
+
+            <!-- HOURS -->
+
+            <li>
+              <i data-lucide="clock" aria-hidden="true"></i>
+
+              <span> Mon – Sat: 8 AM – 6 PM </span>
+            </li>
+          </ul>
+
+          <!-- CTA -->
+
+          <a href="consultation.html" class="footer-cta">
+            <span>Book a Consultation</span>
+
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- =================================================
+       FOOTER BOTTOM
+  ================================================== -->
+
+      <div class="footer-bottom">
+        <p>
+          © 2026
+
+          <span class="safe">Safe</span>
+          <span class="step">Step</span>. All Rights Reserved.
+        </p>
+
+        <div class="footer-bottom-links">
+          <a href="privacy.html"> Privacy Policy </a>
+
+          <a href="terms.html"> Terms & Conditions </a>
+
+          <a href="cookies.html"> Cookies </a>
+
+          <!-- BACK TO TOP -->
+
+          <a
+            href="#"
+            class="top-btn"
+            aria-label="Back to top"
+            title="Back to top"
+          >
+            <i data-lucide="arrow-up" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="global.js"></script>
+  </body>
+</html>

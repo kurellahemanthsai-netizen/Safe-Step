@@ -1,0 +1,1108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logo.png" />
+
+    <title>Services</title>
+
+    <!-- =========================================
+       GOOGLE FONT
+       ========================================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =========================================
+       LUCIDE ICONS
+       ========================================= -->
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="service-d.css" />
+  </head>
+  <body>
+    <!-- =========================================================
+     SAFE STEP
+     HEADER
+     ========================================================= -->
+
+    <header class="site-header">
+      <div class="header-container">
+        <!-- =================================================
+         LOGO
+    ================================================== -->
+
+        <div class="logo">
+          <a href="index.html" aria-label="Safe Step Home">
+            <img src="images/logo.png" alt="Safe Step Logo" />
+          </a>
+
+          <div class="logo-text" onclick="window.location.href = 'index.html'">
+            <h1>
+              <span class="safe">Safe</span><span class="step">Step</span>
+            </h1>
+
+            <p>Accessibility Solutions</p>
+          </div>
+        </div>
+
+        <!-- =================================================
+         NAVIGATION
+    ================================================== -->
+
+        <nav class="navbar" aria-label="Primary Navigation">
+          <ul class="nav-links">
+            <!-- HOME -->
+
+            <li class="dropdown">
+              <a href="index.html">
+                <span>Home</span>
+
+                <i data-lucide="chevron-down" aria-hidden="true"></i>
+              </a>
+
+              <!-- HOME DROPDOWN -->
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="index.html">
+                    <i data-lucide="house" aria-hidden="true"></i>
+
+                    <span>Home 1 - Classic</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="home2.html">
+                    <i data-lucide="sparkles" aria-hidden="true"></i>
+
+                    <span>Home 2 - Premium</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- ABOUT -->
+
+            <li>
+              <a href="about.html">
+                <span>About</span>
+              </a>
+            </li>
+
+            <!-- SERVICES -->
+
+            <li>
+              <a href="services.html" class="active">
+                <span>Services</span>
+              </a>
+            </li>
+
+            <!-- PRODUCTS -->
+
+            <li>
+              <a href="products.html">
+                <span>Products</span>
+              </a>
+            </li>
+
+            <!-- CONSULTATION -->
+
+            <li>
+              <a href="consultation.html">
+                <span>Consultation</span>
+              </a>
+            </li>
+
+            <!-- PRICING -->
+
+            <li>
+              <a href="pricing.html">
+                <span>Pricing</span>
+              </a>
+            </li>
+
+            <!-- CONTACT -->
+
+            <li>
+              <a href="contact.html">
+                <span>Contact</span>
+              </a>
+            </li>
+
+            <!-- DASHBOARD -->
+
+            <li>
+              <a href="dashboard.html">
+                <span>Dashboard</span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- MOBILE LOGIN -->
+
+          <div class="mobile-login">
+            <a href="login.html" class="login-btn mobile-login-btn">
+              <i data-lucide="log-in" aria-hidden="true"></i>
+
+              <span>Login</span>
+            </a>
+          </div>
+        </nav>
+
+        <!-- =================================================
+         HEADER ACTIONS
+    ================================================== -->
+
+        <div class="header-buttons">
+          <!-- RTL -->
+
+          <button
+            class="icon-btn"
+            id="rtlToggle"
+            type="button"
+            title="RTL Mode"
+            aria-label="Toggle RTL mode"
+            aria-pressed="false"
+          >
+            <i data-lucide="arrow-left-right" aria-hidden="true"></i>
+          </button>
+
+          <!-- DARK MODE -->
+
+          <button
+            class="icon-btn"
+            id="darkToggle"
+            type="button"
+            title="Dark Mode"
+            aria-label="Toggle dark mode"
+          >
+            <i data-lucide="moon" aria-hidden="true"></i>
+          </button>
+
+          <!-- LOGIN -->
+
+          <a href="login.html" class="login-btn desktop-login">
+            <i data-lucide="log-in" aria-hidden="true"></i>
+
+            <span>Login</span>
+          </a>
+
+          <!-- MOBILE MENU -->
+
+          <button
+            class="icon-btn menu-btn"
+            id="menuToggle"
+            type="button"
+            title="Menu"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- =========================================================
+     STAIRLIFT INSTALLATION
+     SECTION 1 — HERO
+     ========================================================= -->
+
+    <section class="stairlift-hero" id="stairliftHero">
+      <!-- BACKGROUND OVERLAY -->
+      <div class="stairlift-hero-overlay"></div>
+
+      <!-- ARCHITECTURAL LINES -->
+      <span class="stairlift-hero-line stairlift-hero-line-left"></span>
+      <span class="stairlift-hero-line stairlift-hero-line-right"></span>
+
+      <!-- HERO CONTENT -->
+      <div class="stairlift-hero-content">
+        <div class="stairlift-hero-eyebrow">
+          <span class="stairlift-hero-eyebrow-line"></span>
+
+          <span>STAIRLIFT INSTALLATION</span>
+        </div>
+
+        <h1 class="stairlift-hero-title">
+          Move Between Levels
+          <span>With Greater Ease.</span>
+        </h1>
+
+        <p class="stairlift-hero-description">
+          Thoughtfully installed stairlift solutions designed around your
+          staircase, your home, and the way you live.
+        </p>
+
+        <!-- ACTIONS -->
+        <div class="stairlift-hero-actions">
+          <a
+            href="consultation.html"
+            class="stairlift-hero-button stairlift-hero-button-primary"
+          >
+            <span>Book a Consultation</span>
+            <i data-lucide="arrow-right"></i>
+          </a>
+
+          <a
+            href="products.html"
+            class="stairlift-hero-button stairlift-hero-button-secondary"
+          >
+            <span>Explore Stairlifts</span>
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- SCROLL INDICATOR -->
+      <div class="stairlift-hero-scroll">
+        <span>SCROLL TO EXPLORE</span>
+
+        <span class="stairlift-hero-scroll-line"></span>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     STAIRLIFT INSTALLATION
+     SECTION 2 — MOVE WITH CONFIDENCE
+     ========================================================= -->
+
+    <section class="stairlift-confidence" id="stairliftConfidence">
+      <!-- TOP INTRO -->
+      <div class="stairlift-confidence-intro">
+        <div class="stairlift-confidence-eyebrow">
+          <span class="stairlift-confidence-eyebrow-line"></span>
+          <span>WHY A STAIRLIFT?</span>
+        </div>
+
+        <h2 class="stairlift-confidence-title">
+          Move Between Levels
+          <span>With Greater Confidence.</span>
+        </h2>
+
+        <p class="stairlift-confidence-description">
+          A stairlift can make everyday movement between floors easier while
+          helping you continue to enjoy the spaces throughout your home.
+        </p>
+      </div>
+
+      <!-- LEFT IMAGE + RIGHT CONTENT -->
+      <div class="stairlift-confidence-main">
+        <!-- LEFT IMAGE -->
+        <div class="stairlift-confidence-image-wrap">
+          <img
+            src="images/stairlift-installation.png"
+            alt="Stairlift installed on a residential staircase"
+            class="stairlift-confidence-image"
+          />
+
+          <div class="stairlift-confidence-image-label">
+            <span class="stairlift-confidence-image-number"> 01 </span>
+
+            <div class="stairlift-confidence-image-text">
+              <strong>FREEDOM ON EVERY LEVEL</strong>
+              <span>Designed around the way you live.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div class="stairlift-confidence-content">
+          <div class="stairlift-confidence-content-inner">
+            <span class="stairlift-confidence-content-eyebrow">
+              DESIGNED AROUND YOU
+            </span>
+
+            <h3>
+              Your Home Should Still
+              <span>Feel Like Your Home.</span>
+            </h3>
+
+            <p class="stairlift-confidence-text">
+              The right stairlift should make movement between levels feel
+              easier without taking away from the character, comfort, or
+              everyday feel of your home.
+            </p>
+
+            <p class="stairlift-confidence-text">
+              We consider your staircase, your routines, and the way you use
+              your home when helping you explore a suitable stairlift solution.
+            </p>
+
+            <!-- POINTS -->
+            <div class="stairlift-confidence-points">
+              <!-- POINT 01 -->
+              <div class="stairlift-confidence-point">
+                <span class="stairlift-confidence-point-number"> 01 </span>
+
+                <div class="stairlift-confidence-point-content">
+                  <span class="stairlift-confidence-point-label">
+                    MOVE WITH CONFIDENCE
+                  </span>
+
+                  <h4>Easier Everyday Movement.</h4>
+
+                  <p>
+                    Move between floors with a more comfortable and convenient
+                    way to navigate your staircase.
+                  </p>
+                </div>
+              </div>
+
+              <!-- POINT 02 -->
+              <div class="stairlift-confidence-point">
+                <span class="stairlift-confidence-point-number"> 02 </span>
+
+                <div class="stairlift-confidence-point-content">
+                  <span class="stairlift-confidence-point-label">
+                    STAY INDEPENDENT
+                  </span>
+
+                  <h4>Keep Your Freedom at Home.</h4>
+
+                  <p>
+                    Continue accessing the rooms and spaces that are part of
+                    your everyday life.
+                  </p>
+                </div>
+              </div>
+
+              <!-- POINT 03 -->
+              <div class="stairlift-confidence-point">
+                <span class="stairlift-confidence-point-number"> 03 </span>
+
+                <div class="stairlift-confidence-point-content">
+                  <span class="stairlift-confidence-point-label">
+                    ENJOY EVERY LEVEL
+                  </span>
+
+                  <h4>Make More of Your Home.</h4>
+
+                  <p>
+                    Help keep every level of your home accessible, comfortable,
+                    and part of everyday living.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     STAIRLIFT SECTION 3
+     A STAIRLIFT DESIGNED AROUND YOUR HOME
+========================================================= -->
+
+    <section class="stairlift-designed" id="stairliftDesigned">
+      <!-- INTRO -->
+      <div class="stairlift-designed-intro">
+        <div class="stairlift-designed-eyebrow">
+          <span class="stairlift-designed-eyebrow-line"></span>
+          <span>DESIGNED AROUND YOUR HOME</span>
+        </div>
+
+        <h2 class="stairlift-designed-title">
+          A Stairlift Designed
+          <span>Around Your Home.</span>
+        </h2>
+
+        <p class="stairlift-designed-description">
+          Every staircase is different. We look at the shape of your stairs, the
+          way you use your home, and the comfort you need to help create a
+          stairlift solution that feels natural within your space.
+        </p>
+      </div>
+
+      <!-- FEATURE 01 -->
+      <div class="stairlift-designed-feature stairlift-designed-feature-one">
+        <div class="stairlift-designed-image-wrap">
+          <img
+            src="images/solution-follows.png"
+            alt="Stairlift installed along a residential staircase"
+            class="stairlift-designed-image"
+          />
+
+          <div class="stairlift-designed-image-number">01</div>
+        </div>
+
+        <div class="stairlift-designed-content">
+          <span class="stairlift-designed-number"> 01 </span>
+
+          <div class="stairlift-designed-icon">
+            <i data-lucide="move-up-right"></i>
+          </div>
+
+          <span class="stairlift-designed-label"> YOUR STAIRCASE </span>
+
+          <h3>
+            A Solution That
+            <span>Follows Your Stairs.</span>
+          </h3>
+
+          <p>
+            Whether your staircase is straight, curved, narrow, or more complex,
+            the right stairlift should work with the shape and structure of your
+            home.
+          </p>
+
+          <div class="stairlift-designed-detail">
+            <span>01</span>
+            <strong>SPACE CONSIDERED</strong>
+            <p>
+              We consider your staircase layout and available space when helping
+              you explore a suitable installation.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FEATURE 02 -->
+      <div class="stairlift-designed-feature stairlift-designed-feature-two">
+        <div class="stairlift-designed-content">
+          <span class="stairlift-designed-number"> 02 </span>
+
+          <div class="stairlift-designed-icon">
+            <i data-lucide="armchair"></i>
+          </div>
+
+          <span class="stairlift-designed-label"> YOUR COMFORT </span>
+
+          <h3>
+            Designed for
+            <span>Comfortable Movement.</span>
+          </h3>
+
+          <p>
+            A stairlift should feel comfortable and straightforward to use
+            throughout your everyday routine, from getting seated to reaching
+            the next level.
+          </p>
+
+          <div class="stairlift-designed-detail">
+            <span>02</span>
+            <strong>EVERYDAY EASE</strong>
+            <p>
+              Thoughtful seating, controls, and movement help make everyday
+              journeys between floors more comfortable.
+            </p>
+          </div>
+        </div>
+
+        <div class="stairlift-designed-image-wrap">
+          <img
+            src="images/comfortable-movement.png"
+            alt="Comfortable stairlift seating in a modern home"
+            class="stairlift-designed-image"
+          />
+
+          <div class="stairlift-designed-image-number">02</div>
+        </div>
+      </div>
+
+      <!-- FEATURE 03 -->
+      <div class="stairlift-designed-feature stairlift-designed-feature-three">
+        <div class="stairlift-designed-image-wrap">
+          <img
+            src="images/accessibility-belongs.png"
+            alt="Discreet stairlift installation within a modern home"
+            class="stairlift-designed-image"
+          />
+
+          <div class="stairlift-designed-image-number">03</div>
+        </div>
+
+        <div class="stairlift-designed-content">
+          <span class="stairlift-designed-number"> 03 </span>
+
+          <div class="stairlift-designed-icon">
+            <i data-lucide="house"></i>
+          </div>
+
+          <span class="stairlift-designed-label"> YOUR HOME </span>
+
+          <h3>
+            Accessibility That
+            <span>Belongs in Your Space.</span>
+          </h3>
+
+          <p>
+            Your stairlift is part of your home. We aim for an installation that
+            supports accessibility while respecting the character and everyday
+            feel of your interiors.
+          </p>
+
+          <div class="stairlift-designed-detail">
+            <span>03</span>
+            <strong>THOUGHTFULLY INSTALLED</strong>
+            <p>
+              Every detail is considered with your home, routines, and long-term
+              use in mind.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     STAIRLIFT SECTION 4
+     FROM ASSESSMENT TO INSTALLATION
+========================================================= -->
+
+    <section class="stairlift-process" id="stairliftProcess">
+      <!-- INTRO -->
+      <div class="stairlift-process-intro">
+        <div class="stairlift-process-eyebrow">
+          <span class="stairlift-process-eyebrow-line"></span>
+          <span>OUR INSTALLATION PROCESS</span>
+        </div>
+
+        <h2 class="stairlift-process-title">
+          From First Conversation
+          <span>To Installation.</span>
+        </h2>
+
+        <p class="stairlift-process-description">
+          We keep the process clear and considered, taking the time to
+          understand your home before helping you move forward with the right
+          stairlift solution.
+        </p>
+      </div>
+
+      <!-- PROCESS -->
+      <div class="stairlift-process-grid">
+        <!-- STEP 01 -->
+        <div class="stairlift-process-item">
+          <div class="stairlift-process-top">
+            <span class="stairlift-process-number">01</span>
+
+            <div class="stairlift-process-icon">
+              <i data-lucide="messages-square"></i>
+            </div>
+          </div>
+
+          <span class="stairlift-process-label">
+            START WITH A CONVERSATION
+          </span>
+
+          <h3>Consultation</h3>
+
+          <p>
+            Tell us about your home, your staircase, and what you would like to
+            make easier in your everyday routine.
+          </p>
+
+          <div class="stairlift-process-line"></div>
+        </div>
+
+        <!-- STEP 02 -->
+        <div class="stairlift-process-item">
+          <div class="stairlift-process-top">
+            <span class="stairlift-process-number">02</span>
+
+            <div class="stairlift-process-icon">
+              <i data-lucide="house"></i>
+            </div>
+          </div>
+
+          <span class="stairlift-process-label"> UNDERSTAND YOUR SPACE </span>
+
+          <h3>Home Assessment</h3>
+
+          <p>
+            We look carefully at your staircase, available space, access points,
+            and the practical requirements of your home.
+          </p>
+
+          <div class="stairlift-process-line"></div>
+        </div>
+
+        <!-- STEP 03 -->
+        <div class="stairlift-process-item">
+          <div class="stairlift-process-top">
+            <span class="stairlift-process-number">03</span>
+
+            <div class="stairlift-process-icon">
+              <i data-lucide="clipboard-list"></i>
+            </div>
+          </div>
+
+          <span class="stairlift-process-label"> FIND THE RIGHT APPROACH </span>
+
+          <h3>Recommendation</h3>
+
+          <p>
+            Based on your home and requirements, we help you explore a stairlift
+            configuration suited to your space .
+          </p>
+
+          <div class="stairlift-process-line"></div>
+        </div>
+
+        <!-- STEP 04 -->
+        <div class="stairlift-process-item">
+          <div class="stairlift-process-top">
+            <span class="stairlift-process-number">04</span>
+
+            <div class="stairlift-process-icon">
+              <i data-lucide="wrench"></i>
+            </div>
+          </div>
+
+          <span class="stairlift-process-label"> BRING IT TO LIFE </span>
+
+          <h3>Installation</h3>
+
+          <p>
+            Our installation process is handled with care, with attention to
+            your staircase, your home, and the finished result.
+          </p>
+
+          <div class="stairlift-process-line"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     STAIRLIFT SECTION 5
+     SUPPORT BEYOND INSTALLATION
+========================================================= -->
+
+    <section class="stairlift-support" id="stairliftSupport">
+      <!-- INTRO -->
+      <div class="stairlift-support-intro">
+        <div class="stairlift-support-eyebrow">
+          <span class="stairlift-support-eyebrow-line"></span>
+          <span>CONTINUED SUPPORT</span>
+        </div>
+
+        <h2 class="stairlift-support-title">
+          Support That Continues
+          <span>Beyond Installation.</span>
+        </h2>
+
+        <p class="stairlift-support-description">
+          Your stairlift is part of your everyday life. Our support continues
+          beyond installation to help you keep your solution performing
+          comfortably over time.
+        </p>
+      </div>
+
+      <!-- SUPPORT LIST -->
+      <div class="stairlift-support-list">
+        <!-- 01 -->
+        <div class="stairlift-support-row">
+          <div class="stairlift-support-number">01</div>
+
+          <div class="stairlift-support-icon">
+            <i data-lucide="settings"></i>
+          </div>
+
+          <div class="stairlift-support-content">
+            <span class="stairlift-support-label"> KEEP IT PERFORMING </span>
+
+            <h3>Maintenance</h3>
+
+            <p>
+              Ongoing maintenance helps keep your stairlift operating smoothly
+              and comfortably as part of your everyday routine.
+            </p>
+          </div>
+
+          <div class="stairlift-support-arrow">
+            <i data-lucide="arrow-up-right"></i>
+          </div>
+        </div>
+
+        <!-- 02 -->
+        <div class="stairlift-support-row">
+          <div class="stairlift-support-number">02</div>
+
+          <div class="stairlift-support-icon">
+            <i data-lucide="headset"></i>
+          </div>
+
+          <div class="stairlift-support-content">
+            <span class="stairlift-support-label"> HELP WHEN YOU NEED IT </span>
+
+            <h3>Service Support</h3>
+
+            <p>
+              When you need assistance, our service support is there to help you
+              understand and address your stairlift needs.
+            </p>
+          </div>
+
+          <div class="stairlift-support-arrow">
+            <i data-lucide="arrow-up-right"></i>
+          </div>
+        </div>
+
+        <!-- 03 -->
+        <div class="stairlift-support-row">
+          <div class="stairlift-support-number">03</div>
+
+          <div class="stairlift-support-icon">
+            <i data-lucide="shield-check"></i>
+          </div>
+
+          <div class="stairlift-support-content">
+            <span class="stairlift-support-label">
+              CONTINUED PEACE OF MIND
+            </span>
+
+            <h3>Warranty Support</h3>
+
+            <p>
+              Warranty support gives you continued assistance and reassurance
+              after your stairlift has been installed.
+            </p>
+          </div>
+
+          <div class="stairlift-support-arrow">
+            <i data-lucide="arrow-up-right"></i>
+          </div>
+        </div>
+
+        <!-- 04 -->
+        <div class="stairlift-support-row">
+          <div class="stairlift-support-number">04</div>
+
+          <div class="stairlift-support-icon">
+            <i data-lucide="calendar-cog"></i>
+          </div>
+
+          <div class="stairlift-support-content">
+            <span class="stairlift-support-label">
+              READY FOR WHAT COMES NEXT
+            </span>
+
+            <h3>Future Needs</h3>
+
+            <p>
+              As your needs change, we can help you consider future
+              accessibility requirements for your home.
+            </p>
+          </div>
+
+          <div class="stairlift-support-arrow">
+            <i data-lucide="arrow-up-right"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========================================================
+     STAIRLIFT SECTION 6
+     FINAL CTA
+========================================================= -->
+
+    <section class="stairlift-final-cta" id="stairliftFinalCta">
+      <div class="stairlift-final-cta-box">
+        <div class="stairlift-final-cta-eyebrow">
+          <span class="stairlift-final-cta-line"></span>
+
+          <span>TAKE THE NEXT STEP</span>
+
+        </div>
+
+        <h2 class="stairlift-final-cta-title">
+          Ready to Move
+          <span>With Greater Ease?</span>
+        </h2>
+
+        <p class="stairlift-final-cta-description">
+          Let's talk about your home, your staircase, and what you would like to
+          make easier. We'll help you explore a stairlift solution designed
+          around the way you live.
+        </p>
+
+        <div class="stairlift-final-cta-actions">
+          <a
+            href="consultation.html"
+            class="stairlift-final-cta-button stairlift-final-cta-button-primary"
+          >
+            <span>Book a Consultation</span>
+            <i data-lucide="arrow-right"></i>
+          </a>
+
+          <a
+            href="products.html"
+            class="stairlift-final-cta-button stairlift-final-cta-button-secondary"
+          >
+            <span>Explore Stairlifts</span>
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+
+        <div class="stairlift-final-cta-note">
+          <i data-lucide="shield-check"></i>
+
+          <span>
+            Thoughtful solutions. Professional installation. Continued support.
+          </span>
+        </div>
+      </div>
+    </section>
+    <!-- =========================================================
+     SAFE STEP
+     FOOTER
+     ========================================================= -->
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- =================================================
+         BRAND
+    ================================================== -->
+
+        <div class="footer-col footer-brand">
+          <div class="footer-logo">
+            <a href="index.html" aria-label="Safe Step Home">
+              <img src="images/logo.png" alt="Safe Step Logo" />
+            </a>
+
+            <div
+              class="footer-branding"
+              onclick="window.location.href = 'index.html'"
+            >
+              <h2>
+                <span class="safe">Safe</span><span class="step">Step</span>
+              </h2>
+
+              <p>Accessibility Solutions</p>
+            </div>
+          </div>
+
+          <!-- DESCRIPTION -->
+
+          <p class="footer-about">
+            Safe Step provides reliable home accessibility solutions designed to
+            help people move safely, comfortably, and independently throughout
+            their homes.
+          </p>
+
+          <!-- SOCIAL MEDIA -->
+
+          <div class="social-media">
+            <!-- INSTAGRAM -->
+
+            <a href="#" aria-label="Instagram" title="Instagram">
+              <i data-lucide="camera" aria-hidden="true"></i>
+            </a>
+
+            <!-- FACEBOOK -->
+
+            <a href="#" aria-label="Facebook" title="Facebook">
+              <i data-lucide="users" aria-hidden="true"></i>
+            </a>
+
+            <!-- YOUTUBE -->
+
+            <a href="#" aria-label="YouTube" title="YouTube">
+              <i data-lucide="play" aria-hidden="true"></i>
+            </a>
+
+            <!-- EMAIL -->
+
+            <a href="mailto:info@aquacare.com" aria-label="Email" title="Email">
+              <i data-lucide="mail" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- =================================================
+         QUICK LINKS
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="about.html">About</a>
+            </li>
+
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+
+            <li>
+              <a href="products.html">Products</a>
+            </li>
+
+            <li>
+              <a href="pricing.html">Pricing</a>
+            </li>
+
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         OUR SOLUTIONS
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Our Solutions</h3>
+
+          <ul>
+            <li>
+              <a href="products.html#stairlifts"> Stairlifts </a>
+            </li>
+
+            <li>
+              <a href="products.html#elevators"> Home Elevators </a>
+            </li>
+
+            <li>
+              <a href="products.html#ramps"> Accessibility Ramps </a>
+            </li>
+
+            <li>
+              <a href="services.html#installation">
+                Professional Installation
+              </a>
+            </li>
+
+            <li>
+              <a href="services.html#maintenance"> Maintenance & Support </a>
+            </li>
+
+            <li>
+              <a href="services.html#assessment"> Accessibility Assessment </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         CLIENT SERVICES
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Client Services</h3>
+
+          <ul>
+            <li>
+              <a href="dashboard.html"> Client Dashboard </a>
+            </li>
+
+            <li>
+              <a href="dashboard.html"> Project Status </a>
+            </li>
+
+            <li>
+              <a href="dashboard.html"> Maintenance </a>
+            </li>
+
+            <li>
+              <a href="consultation.html">Consultation</a>
+            </li>
+            <li>
+              <a href="404.html">404</a>
+            </li>
+            <li>
+              <a href="comming.html">Commingsoon...</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         CONTACT
+    ================================================== -->
+
+        <div class="footer-col footer-contact">
+          <h3>Get In Touch</h3>
+
+          <ul>
+            <!-- LOCATION -->
+
+            <li>
+              <i data-lucide="map-pin" aria-hidden="true"></i>
+
+              <span> Your Service Area </span>
+            </li>
+
+            <!-- PHONE -->
+
+            <li>
+              <i data-lucide="phone" aria-hidden="true"></i>
+
+              <a href="tel:+10000000000"> +1 (000) 000-0000 </a>
+            </li>
+
+            <!-- EMAIL -->
+
+            <li>
+              <i data-lucide="mail" aria-hidden="true"></i>
+
+              <a href="mailto:info@safestep.com"> info@safestep.com </a>
+            </li>
+
+            <!-- HOURS -->
+
+            <li>
+              <i data-lucide="clock" aria-hidden="true"></i>
+
+              <span> Mon – Sat: 8 AM – 6 PM </span>
+            </li>
+          </ul>
+
+          <!-- CTA -->
+
+          <a href="consultation.html" class="footer-cta">
+            <span>Book a Consultation</span>
+
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- =================================================
+       FOOTER BOTTOM
+  ================================================== -->
+
+      <div class="footer-bottom">
+        <p>
+          © 2026
+
+          <span class="safe">Safe</span>
+          <span class="step">Step</span>. All Rights Reserved.
+        </p>
+
+        <div class="footer-bottom-links">
+          <a href="privacy.html"> Privacy Policy </a>
+
+          <a href="terms.html"> Terms & Conditions </a>
+
+          <a href="cookies.html"> Cookies </a>
+
+          <!-- BACK TO TOP -->
+
+          <a
+            href="#"
+            class="top-btn"
+            aria-label="Back to top"
+            title="Back to top"
+          >
+            <i data-lucide="arrow-up" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="global.js"></script>
+  </body>
+</html>

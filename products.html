@@ -1,0 +1,1094 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logo.png" />
+
+    <title>Products</title>
+
+    <!-- =========================================
+       GOOGLE FONT
+       ========================================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =========================================
+       LUCIDE ICONS
+       ========================================= -->
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="products.css" />
+  </head>
+  <body>
+    <!-- =========================================================
+     SAFE STEP
+     HEADER
+     ========================================================= -->
+
+    <header class="site-header">
+      <div class="header-container">
+        <!-- =================================================
+         LOGO
+    ================================================== -->
+
+        <div class="logo">
+          <a href="index.html" aria-label="Safe Step Home">
+            <img src="images/logo.png" alt="Safe Step Logo" />
+          </a>
+
+          <div class="logo-text" onclick="window.location.href = 'index.html'">
+            <h1>
+              <span class="safe">Safe</span><span class="step">Step</span>
+            </h1>
+
+            <p>Accessibility Solutions</p>
+          </div>
+        </div>
+
+        <!-- =================================================
+         NAVIGATION
+    ================================================== -->
+
+        <nav class="navbar" aria-label="Primary Navigation">
+          <ul class="nav-links">
+            <!-- HOME -->
+
+            <li class="dropdown">
+              <a href="index.html">
+                <span>Home</span>
+
+                <i data-lucide="chevron-down" aria-hidden="true"></i>
+              </a>
+
+              <!-- HOME DROPDOWN -->
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="index.html">
+                    <i data-lucide="house" aria-hidden="true"></i>
+
+                    <span>Home 1 - Classic</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="home2.html">
+                    <i data-lucide="sparkles" aria-hidden="true"></i>
+
+                    <span>Home 2 - Premium</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- ABOUT -->
+
+            <li>
+              <a href="about.html">
+                <span>About</span>
+              </a>
+            </li>
+
+            <!-- SERVICES -->
+
+            <li>
+              <a href="services.html">
+                <span>Services</span>
+              </a>
+            </li>
+
+            <!-- PRODUCTS -->
+
+            <li>
+              <a href="products.html">
+                <span>Products</span>
+              </a>
+            </li>
+
+            <!-- CONSULTATION -->
+
+            <li>
+              <a href="consultation.html">
+                <span>Consultation</span>
+              </a>
+            </li>
+
+            <!-- PRICING -->
+
+            <li>
+              <a href="pricing.html">
+                <span>Pricing</span>
+              </a>
+            </li>
+
+            <!-- CONTACT -->
+
+            <li>
+              <a href="contact.html">
+                <span>Contact</span>
+              </a>
+            </li>
+
+            <!-- DASHBOARD -->
+
+            <li>
+              <a href="dashboard.html">
+                <span>Dashboard</span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- MOBILE LOGIN -->
+
+          <div class="mobile-login">
+            <a href="login.html" class="login-btn mobile-login-btn">
+              <i data-lucide="log-in" aria-hidden="true"></i>
+
+              <span>Login</span>
+            </a>
+          </div>
+        </nav>
+
+        <!-- =================================================
+         HEADER ACTIONS
+    ================================================== -->
+
+        <div class="header-buttons">
+          <!-- RTL -->
+
+          <button
+            class="icon-btn"
+            id="rtlToggle"
+            type="button"
+            title="RTL Mode"
+            aria-label="Toggle RTL mode"
+            aria-pressed="false"
+          >
+            <i data-lucide="arrow-left-right" aria-hidden="true"></i>
+          </button>
+
+          <!-- DARK MODE -->
+
+          <button
+            class="icon-btn"
+            id="darkToggle"
+            type="button"
+            title="Dark Mode"
+            aria-label="Toggle dark mode"
+          >
+            <i data-lucide="moon" aria-hidden="true"></i>
+          </button>
+
+          <!-- LOGIN -->
+
+          <a href="login.html" class="login-btn desktop-login">
+            <i data-lucide="log-in" aria-hidden="true"></i>
+
+            <span>Login</span>
+          </a>
+
+          <!-- MOBILE MENU -->
+
+          <button
+            class="icon-btn menu-btn"
+            id="menuToggle"
+            type="button"
+            title="Menu"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- =========================================================
+     PRODUCTS HERO
+     ========================================================= -->
+
+    <section class="products-hero" id="products-hero">
+      <!-- Background Overlay -->
+      <div class="products-hero-overlay"></div>
+
+      <!-- Architectural Side Lines -->
+      <div class="products-hero-lines products-hero-lines-left"></div>
+      <div class="products-hero-lines products-hero-lines-right"></div>
+
+      <!-- Hero Content -->
+      <div class="products-hero-content">
+        <div class="about-hero-eyebrow">
+          <span class="about-hero-eyebrow-line"></span>
+          <span>SAFE STEP PRODUCTS</span>
+        </div>
+
+        <h1 class="products-hero-title">
+          Accessibility Solutions
+          <span>Designed for Your Home.</span>
+        </h1>
+
+        <p class="products-hero-description">
+          Thoughtfully designed stairlifts, home elevators, and accessibility
+          ramps that help you move through your home with greater comfort,
+          confidence, and independence.
+        </p>
+
+        <div class="products-hero-actions">
+          <a
+            href="#products-solutions"
+            class="products-hero-btn products-hero-btn-primary"
+          >
+            <span>Explore Our Solutions</span>
+
+            <i data-lucide="arrow-right"></i>
+          </a>
+
+          <a
+            href="consultation.html"
+            class="products-hero-btn products-hero-btn-secondary"
+          >
+            <span>Book a Consultation</span>
+
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <a href="#products-solutions" class="products-hero-scroll">
+        <span>SCROLL TO EXPLORE</span>
+
+        <i data-lucide="arrow-down"></i>
+      </a>
+    </section>
+
+    <!-- =========================================================
+     PRODUCTS SECTION 2
+     EXPLORE OUR SOLUTIONS
+     ========================================================= -->
+
+    <section class="products-solutions" id="products-solutions">
+      <!-- Section Intro -->
+      <div class="products-solutions-intro">
+        <div class="about-hero-eyebrow-1">
+          <span class="about-hero-eyebrow-line"></span>
+          <span>Our Solution</span>
+        </div>
+
+        <h2 class="products-section-title">
+          Three Ways to Make
+          <span>Every Level More Accessible.</span>
+        </h2>
+
+        <p class="products-section-description">
+          From moving between floors to creating an easier way into your home,
+          Safe Step offers thoughtfully considered accessibility solutions
+          designed around the way you live.
+        </p>
+      </div>
+
+      <!-- Products -->
+      <div class="products-solutions-grid">
+        <!-- =================================================
+             PRODUCT 01 — STAIRLIFT
+             ================================================= -->
+
+        <article class="product-solution-card">
+          <div class="product-solution-image-wrap">
+            <img
+              src="images/stairlift-installation.png"
+              alt="Stairlift installed inside a residential home"
+              class="product-solution-image"
+            />
+
+            <span class="product-solution-number"> 01 </span>
+
+            <span class="product-solution-label"> STAIRLIFTS </span>
+          </div>
+
+          <div class="product-solution-content">
+            <div class="product-solution-icon">
+              <i data-lucide="accessibility"></i>
+            </div>
+
+            <span class="product-solution-eyebrow"> STAIRLIFT SOLUTIONS </span>
+
+            <h3>
+              Move Between Levels
+              <span>With Greater Ease.</span>
+            </h3>
+
+            <p>
+              Comfortable and dependable stairlift solutions designed to help
+              you move between floors while keeping the character and comfort of
+              your home.
+            </p>
+
+            <a href="stairlift-installation.html" class="product-solution-link">
+              <span>Explore Stairlifts</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- =================================================
+             PRODUCT 02 — HOME ELEVATOR
+             ================================================= -->
+
+        <article class="product-solution-card">
+          <div class="product-solution-image-wrap">
+            <img
+              src="images/home-elevator.png"
+              alt="Modern home elevator inside a residential interior"
+              class="product-solution-image"
+            />
+
+            <span class="product-solution-number"> 02 </span>
+
+            <span class="product-solution-label"> HOME ELEVATORS </span>
+          </div>
+
+          <div class="product-solution-content">
+            <div class="product-solution-icon">
+              <i data-lucide="arrow-up-down"></i>
+            </div>
+
+            <span class="product-solution-eyebrow"> HOME ELEVATORS </span>
+
+            <h3>
+              Elevate Every Level
+              <span>of Your Home.</span>
+            </h3>
+
+            <p>
+              Elegant home elevator solutions that connect multiple levels with
+              comfort, convenience, and a design that belongs naturally within
+              your space.
+            </p>
+
+            <a href="contact.html" class="product-solution-link">
+              <span>Explore Home Elevators</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- =================================================
+             PRODUCT 03 — ACCESSIBILITY RAMPS
+             ================================================= -->
+
+        <article class="product-solution-card">
+          <div class="product-solution-image-wrap">
+            <img
+              src="images/ramp-installation.png"
+              alt="Accessibility ramp installed at a residential entrance"
+              class="product-solution-image"
+            />
+
+            <span class="product-solution-number"> 03 </span>
+
+            <span class="product-solution-label"> ACCESSIBILITY RAMPS </span>
+          </div>
+
+          <div class="product-solution-content">
+            <div class="product-solution-icon">
+              <i data-lucide="move-up-right"></i>
+            </div>
+
+            <span class="product-solution-eyebrow"> ACCESSIBILITY RAMPS </span>
+
+            <h3>
+              A More Comfortable
+              <span>Way In.</span>
+            </h3>
+
+            <p>
+              Thoughtfully planned ramps that create a smoother, safer
+              transition into your home while fitting naturally into your
+              entrance and surroundings.
+            </p>
+
+            <a href="contact.html" class="product-solution-link">
+              <span>Explore Accessibility Ramps</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     PRODUCTS SECTION 3
+     FIND THE RIGHT SOLUTION
+     ========================================================= -->
+
+    <section class="products-right-solution" id="right-solution">
+      <div class="products-right-solution-intro">
+        <div class="about-hero-eyebrow-1">
+          <span class="about-hero-eyebrow-line"></span>
+          <span>FIND YOUR FIT</span>
+        </div>
+
+        <h2 class="products-section-title">
+          The Right Solution
+          <span>Starts With Your Home.</span>
+        </h2>
+
+        <p class="products-section-description">
+          Every home has its own layout, character, and everyday needs. We help
+          you explore accessibility solutions that work naturally with your
+          space and the way you live.
+        </p>
+      </div>
+
+      <div class="products-right-solution-main">
+        <!-- =================================================
+             IMAGE
+             ================================================= -->
+
+        <div class="products-right-solution-image-wrap">
+          <img
+            src="images/comfort.png"
+            alt="Accessible modern residential home interior"
+            class="products-right-solution-image"
+          />
+
+          <div class="products-right-solution-image-label">
+            <span>DESIGNED AROUND YOU</span>
+          </div>
+        </div>
+
+        <!-- =================================================
+             CONTENT
+             ================================================= -->
+
+        <div class="products-right-solution-content">
+          <div class="about-hero-eyebrow-1">
+            <span class="about-hero-eyebrow-line"></span>
+            <span>YOUR.HOME.YOUR.FIT</span>
+          </div>
+          <h3>
+            Accessibility Should Feel
+            <span>Natural Within Your Space.</span>
+          </h3>
+
+          <p class="products-right-solution-text">
+            Whether you need easier movement between floors or a more accessible
+            entrance, the right solution depends on your home, your staircase,
+            and how you use your space every day.
+          </p>
+
+          <!-- Solution Row 01 -->
+
+          <div class="products-fit-row">
+            <div class="products-fit-icon">
+              <i data-lucide="accessibility"></i>
+            </div>
+
+            <div class="products-fit-content">
+              <span class="products-fit-number"> 01 </span>
+
+              <h4>Moving Between Levels</h4>
+
+              <p>
+                Stairlifts and home elevators can help make different levels of
+                your home easier to reach.
+              </p>
+            </div>
+          </div>
+
+          <!-- Solution Row 02 -->
+
+          <div class="products-fit-row">
+            <div class="products-fit-icon">
+              <i data-lucide="house"></i>
+            </div>
+
+            <div class="products-fit-content">
+              <span class="products-fit-number"> 02 </span>
+
+              <h4>Creating Easier Entry</h4>
+
+              <p>
+                Accessibility ramps can provide a smoother transition between
+                your entrance and home.
+              </p>
+            </div>
+          </div>
+
+          <!-- Solution Row 03 -->
+
+          <div class="products-fit-row">
+            <div class="products-fit-icon">
+              <i data-lucide="accessibility"></i>
+            </div>
+
+            <div class="products-fit-content">
+              <span class="products-fit-number"> 03 </span>
+
+              <h4>Supporting Everyday Independence</h4>
+
+              <p>
+                Thoughtful accessibility solutions can help you move through
+                your home with greater comfort and confidence.
+              </p>
+            </div>
+          </div>
+
+          <a href="consultation.html" class="products-right-solution-link">
+            <span>Talk About Your Home</span>
+
+            <i data-lucide="arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     PRODUCTS SECTION 4
+     DESIGNED AROUND YOUR HOME
+     ========================================================= -->
+
+    <section class="products-designed" id="products-designed">
+      <!-- Section Intro -->
+      <div class="products-designed-intro">
+        <div class="about-hero-eyebrow-1">
+          <span class="about-hero-eyebrow-line"></span>
+          <span>DESIGNED ARIUND YOU</span>
+        </div>
+        <h2 class="products-section-title">
+          Accessibility That
+          <span>Belongs in Your Home.</span>
+        </h2>
+
+        <p class="products-section-description">
+          The best accessibility solution is one that works with your home
+          rather than against it. Every recommendation is considered around your
+          space, comfort, and everyday routine.
+        </p>
+      </div>
+
+      <!-- Main Content -->
+      <div class="products-designed-main">
+        <!-- Left Statement -->
+        <div class="products-designed-statement">
+          <span class="products-designed-number"> 01 </span>
+
+          <h3>
+            Your Home Should Still
+            <span>Feel Like Your Home.</span>
+          </h3>
+
+          <p>
+            Accessibility does not have to change the character of your space.
+            We consider how each solution can integrate naturally with your
+            home's existing layout, architecture, and design. From stairlifts
+            and home elevators to thoughtfully designed ramps and mobility
+            solutions, every detail is planned to feel comfortable, practical,
+            and visually harmonious. Our goal is to make everyday movement
+            easier while preserving the warmth, style, and character that make
+            your home feel like your own.
+          </p>
+        </div>
+
+        <!-- Right Features -->
+        <div class="products-designed-features">
+          <!-- Feature 01 -->
+
+          <div class="products-designed-feature">
+            <div class="products-designed-feature-icon">
+              <i data-lucide="ruler"></i>
+            </div>
+
+            <div class="products-designed-feature-content">
+              <span> 01 / YOUR SPACE </span>
+
+              <h4>Designed for Your Layout</h4>
+
+              <p>
+                We consider your staircase, floor plan, entrance, and available
+                space before recommending a solution.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 02 -->
+
+          <div class="products-designed-feature">
+            <div class="products-designed-feature-icon">
+              <i data-lucide="armchair"></i>
+            </div>
+
+            <div class="products-designed-feature-content">
+              <span> 02 / YOUR COMFORT </span>
+
+              <h4>Made for Everyday Movement</h4>
+
+              <p>
+                Comfort and ease of use remain central to the way we consider
+                every accessibility solution.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 03 -->
+
+          <div class="products-designed-feature">
+            <div class="products-designed-feature-icon">
+              <i data-lucide="heart"></i>
+            </div>
+
+            <div class="products-designed-feature-content">
+              <span> 03 / YOUR LIFESTYLE </span>
+
+              <h4>Built Around the Way You Live</h4>
+
+              <p>
+                Your daily routines and priorities help shape the solution we
+                recommend for your home.
+              </p>
+            </div>
+          </div>
+
+          <!-- Feature 04 -->
+
+          <div class="products-designed-feature">
+            <div class="products-designed-feature-icon">
+              <i data-lucide="calendar-cog"></i>
+            </div>
+
+            <div class="products-designed-feature-content">
+              <span> 04 / YOUR FUTURE </span>
+
+              <h4>Ready for What Comes Next</h4>
+
+              <p>
+                We think beyond today's requirements to help create a solution
+                that continues to support your home over time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     PRODUCTS SECTION 5
+     FIND YOUR RIGHT SOLUTION
+     ========================================================= -->
+
+    <section class="products-choice" id="products-choice">
+      <!-- Section Intro -->
+      <div class="products-choice-intro">
+        <div class="about-hero-eyebrow-1">
+          <span class="about-hero-eyebrow-line"></span>
+          <span>FIND YOUR SOLUTION</span>
+        </div>
+        <h2 class="products-section-title">
+          Choose the Solution
+          <span>That Fits Your Home.</span>
+        </h2>
+
+        <p class="products-section-description">
+          Explore our accessibility solutions and discover a comfortable way to
+          move through every part of your home.
+        </p>
+      </div>
+
+      <!-- Compact Cards -->
+      <div class="products-choice-grid">
+        <!-- Card 01 -->
+        <article class="products-choice-card">
+          <div class="products-choice-card-top">
+            <span class="products-choice-number"> 01 </span>
+
+            <div class="products-choice-icon">
+              <i data-lucide="accessibility"></i>
+            </div>
+          </div>
+
+          <span class="products-choice-label"> STAIRLIFTS </span>
+
+          <h3>
+            Move Between Levels
+            <span>With Greater Ease.</span>
+          </h3>
+
+          <p>
+            A comfortable way to make your staircase easier to navigate every
+            day.
+          </p>
+
+          <a href="stairlift-installation.html" class="products-choice-link">
+            <span>Explore Stairlifts</span>
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+        </article>
+
+        <!-- Card 02 -->
+        <article class="products-choice-card">
+          <div class="products-choice-card-top">
+            <span class="products-choice-number"> 02 </span>
+
+            <div class="products-choice-icon">
+              <i data-lucide="arrow-up-down"></i>
+            </div>
+          </div>
+
+          <span class="products-choice-label"> HOME ELEVATORS </span>
+
+          <h3>
+            Elevate Every Level
+            <span>of Your Home.</span>
+          </h3>
+
+          <p>
+            Connect multiple levels with a refined solution designed around your
+            home.
+          </p>
+
+          <a href="#" class="products-choice-link">
+            <span>Explore Home Elevators</span>
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+        </article>
+
+        <!-- Card 03 -->
+        <article class="products-choice-card">
+          <div class="products-choice-card-top">
+            <span class="products-choice-number"> 03 </span>
+
+            <div class="products-choice-icon">
+              <i data-lucide="move-up-right"></i>
+            </div>
+          </div>
+
+          <span class="products-choice-label"> ACCESSIBILITY RAMPS </span>
+
+          <h3>
+            A More Comfortable
+            <span>Way In.</span>
+          </h3>
+
+          <p>
+            Create a smoother transition into your home with a thoughtfully
+            planned accessibility ramp.
+          </p>
+
+          <a href="#" class="products-choice-link">
+            <span>Explore Ramps</span>
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     PRODUCTS SECTION 6
+     FINAL CTA
+     ========================================================= -->
+
+    <section class="products-final-cta" id="products-final-cta">
+      <div class="products-final-cta-box">
+ <div class="about-hero-eyebrow-1">
+          <span class="about-hero-eyebrow-line"></span>
+          <span>TAKE THE NEXT STEP</span>
+        </div>
+        <h2>
+          Ready to Find the Right
+          <span>Solution for Your Home?</span>
+        </h2>
+
+        <p>
+          Tell us about your home, your needs, and what you would like to make
+          easier. We'll help you explore the right accessibility solution with
+          clarity and care.
+        </p>
+
+        <div class="products-final-cta-actions">
+          <a
+            href="consultation.html"
+            class="products-final-cta-btn products-final-cta-btn-primary"
+          >
+            <span>Book a Consultation</span>
+            <i data-lucide="arrow-right"></i>
+          </a>
+
+          <a
+            href="contact.html"
+            class="products-final-cta-btn products-final-cta-btn-secondary"
+          >
+            <span>Talk to Safe Step</span>
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+
+        <div class="products-final-cta-note">
+          <i data-lucide="shield-check"></i>
+
+          <span> THOUGHTFUL SOLUTIONS. CAREFULLY INSTALLED. </span>
+        </div>
+      </div>
+    </section>
+    <!-- =========================================================
+     SAFE STEP
+     FOOTER
+     ========================================================= -->
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- =================================================
+         BRAND
+    ================================================== -->
+
+        <div class="footer-col footer-brand">
+          <div class="footer-logo">
+            <a href="index.html" aria-label="Safe Step Home">
+              <img src="images/logo.png" alt="Safe Step Logo" />
+            </a>
+
+            <div
+              class="footer-branding"
+              onclick="window.location.href = 'index.html'"
+            >
+              <h2>
+                <span class="safe">Safe</span><span class="step">Step</span>
+              </h2>
+
+              <p>Accessibility Solutions</p>
+            </div>
+          </div>
+
+          <!-- DESCRIPTION -->
+
+          <p class="footer-about">
+            Safe Step provides reliable home accessibility solutions designed to
+            help people move safely, comfortably, and independently throughout
+            their homes.
+          </p>
+
+          <!-- SOCIAL MEDIA -->
+
+          <div class="social-media">
+            <!-- INSTAGRAM -->
+
+            <a href="#" aria-label="Instagram" title="Instagram">
+              <i data-lucide="camera" aria-hidden="true"></i>
+            </a>
+
+            <!-- FACEBOOK -->
+
+            <a href="#" aria-label="Facebook" title="Facebook">
+              <i data-lucide="users" aria-hidden="true"></i>
+            </a>
+
+            <!-- YOUTUBE -->
+
+            <a href="#" aria-label="YouTube" title="YouTube">
+              <i data-lucide="play" aria-hidden="true"></i>
+            </a>
+
+            <!-- EMAIL -->
+
+            <a href="mailto:info@aquacare.com" aria-label="Email" title="Email">
+              <i data-lucide="mail" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- =================================================
+         QUICK LINKS
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="about.html">About</a>
+            </li>
+
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+
+            <li>
+              <a href="products.html">Products</a>
+            </li>
+
+            <li>
+              <a href="pricing.html">Pricing</a>
+            </li>
+
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         OUR SOLUTIONS
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Our Solutions</h3>
+
+          <ul>
+            <li>
+              <a href="products.html#stairlifts"> Stairlifts </a>
+            </li>
+
+            <li>
+              <a href="products.html#elevators"> Home Elevators </a>
+            </li>
+
+            <li>
+              <a href="products.html#ramps"> Accessibility Ramps </a>
+            </li>
+
+            <li>
+              <a href="services.html#installation">
+                Professional Installation
+              </a>
+            </li>
+
+            <li>
+              <a href="services.html#maintenance"> Maintenance & Support </a>
+            </li>
+
+            <li>
+              <a href="services.html#assessment"> Accessibility Assessment </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         CLIENT SERVICES
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Client Services</h3>
+
+          <ul>
+            <li>
+              <a href="dashboard.html"> Client Dashboard </a>
+            </li>
+
+            <li>
+              <a href="dashboard.html"> Project Status </a>
+            </li>
+
+            <li>
+              <a href="dashboard.html"> Maintenance </a>
+            </li>
+
+            <li>
+              <a href="consultation.html">Consultation</a>
+            </li>
+            <li>
+              <a href="404.html">404</a>
+            </li>
+            <li>
+              <a href="comming.html">Commingsoon...</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         CONTACT
+    ================================================== -->
+
+        <div class="footer-col footer-contact">
+          <h3>Get In Touch</h3>
+
+          <ul>
+            <!-- LOCATION -->
+
+            <li>
+              <i data-lucide="map-pin" aria-hidden="true"></i>
+
+              <span> Your Service Area </span>
+            </li>
+
+            <!-- PHONE -->
+
+            <li>
+              <i data-lucide="phone" aria-hidden="true"></i>
+
+              <a href="tel:+10000000000"> +1 (000) 000-0000 </a>
+            </li>
+
+            <!-- EMAIL -->
+
+            <li>
+              <i data-lucide="mail" aria-hidden="true"></i>
+
+              <a href="mailto:info@safestep.com"> info@safestep.com </a>
+            </li>
+
+            <!-- HOURS -->
+
+            <li>
+              <i data-lucide="clock" aria-hidden="true"></i>
+
+              <span> Mon – Sat: 8 AM – 6 PM </span>
+            </li>
+          </ul>
+
+          <!-- CTA -->
+
+          <a href="consultation.html" class="footer-cta">
+            <span>Book a Consultation</span>
+
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- =================================================
+       FOOTER BOTTOM
+  ================================================== -->
+
+      <div class="footer-bottom">
+        <p>
+          © 2026
+
+          <span class="safe">Safe</span>
+          <span class="step">Step</span>. All Rights Reserved.
+        </p>
+
+        <div class="footer-bottom-links">
+          <a href="privacy.html"> Privacy Policy </a>
+
+          <a href="terms.html"> Terms & Conditions </a>
+
+          <a href="cookies.html"> Cookies </a>
+
+          <!-- BACK TO TOP -->
+
+          <a
+            href="#"
+            class="top-btn"
+            aria-label="Back to top"
+            title="Back to top"
+          >
+            <i data-lucide="arrow-up" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="global.js"></script>
+  </body>
+</html>

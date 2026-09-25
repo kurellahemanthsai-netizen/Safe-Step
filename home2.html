@@ -1,0 +1,1421 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logo.png" />
+
+    <title>Home</title>
+
+    <!-- =========================================
+       GOOGLE FONT
+       ========================================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =========================================
+       LUCIDE ICONS
+       ========================================= -->
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="home2.css" />
+  </head>
+  <body>
+    <!-- =========================================================
+     SAFE STEP
+     HEADER
+     ========================================================= -->
+
+    <header class="site-header">
+      <div class="header-container">
+        <!-- =================================================
+         LOGO
+    ================================================== -->
+
+        <div class="logo">
+          <a href="index.html" aria-label="Safe Step Home">
+            <img src="images/logo.png" alt="Safe Step Logo" />
+          </a>
+
+          <div class="logo-text" onclick="window.location.href = 'index.html'">
+            <h1>
+              <span class="safe">Safe</span><span class="step">Step</span>
+            </h1>
+
+            <p>Accessibility Solutions</p>
+          </div>
+        </div>
+
+        <!-- =================================================
+         NAVIGATION
+    ================================================== -->
+
+        <nav class="navbar" aria-label="Primary Navigation">
+          <ul class="nav-links">
+            <!-- HOME -->
+
+            <li class="dropdown">
+              <a href="index.html" class="active">
+                <span>Home</span>
+
+                <i data-lucide="chevron-down" aria-hidden="true"></i>
+              </a>
+
+              <!-- HOME DROPDOWN -->
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="index.html">
+                    <i data-lucide="house" aria-hidden="true"></i>
+
+                    <span>Home 1 - Classic</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="home2.html" class="active">
+                    <i data-lucide="sparkles" aria-hidden="true"></i>
+
+                    <span>Home 2 - Premium</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- ABOUT -->
+
+            <li>
+              <a href="about.html">
+                <span>About</span>
+              </a>
+            </li>
+
+            <!-- SERVICES -->
+
+            <li>
+              <a href="services.html">
+                <span>Services</span>
+              </a>
+            </li>
+
+            <!-- PRODUCTS -->
+
+            <li>
+              <a href="products.html">
+                <span>Products</span>
+              </a>
+            </li>
+
+            <!-- CONSULTATION -->
+
+            <li>
+              <a href="consultation.html">
+                <span>Consultation</span>
+              </a>
+            </li>
+
+            <!-- PRICING -->
+
+            <li>
+              <a href="pricing.html">
+                <span>Pricing</span>
+              </a>
+            </li>
+
+            <!-- CONTACT -->
+
+            <li>
+              <a href="contact.html">
+                <span>Contact</span>
+              </a>
+            </li>
+
+            <!-- DASHBOARD -->
+
+            <li>
+              <a href="dashboard.html">
+                <span>Dashboard</span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- MOBILE LOGIN -->
+
+          <div class="mobile-login">
+            <a href="login.html" class="login-btn mobile-login-btn">
+              <i data-lucide="log-in" aria-hidden="true"></i>
+
+              <span>Login</span>
+            </a>
+          </div>
+        </nav>
+
+        <!-- =================================================
+         HEADER ACTIONS
+    ================================================== -->
+
+        <div class="header-buttons">
+          <!-- RTL -->
+
+          <button
+            class="icon-btn"
+            id="rtlToggle"
+            type="button"
+            title="RTL Mode"
+            aria-label="Toggle RTL mode"
+            aria-pressed="false"
+          >
+            <i data-lucide="arrow-left-right" aria-hidden="true"></i>
+          </button>
+
+          <!-- DARK MODE -->
+
+          <button
+            class="icon-btn"
+            id="darkToggle"
+            type="button"
+            title="Dark Mode"
+            aria-label="Toggle dark mode"
+          >
+            <i data-lucide="moon" aria-hidden="true"></i>
+          </button>
+
+          <!-- LOGIN -->
+
+          <a href="login.html" class="login-btn desktop-login">
+            <i data-lucide="log-in" aria-hidden="true"></i>
+
+            <span>Login</span>
+          </a>
+
+          <!-- MOBILE MENU -->
+
+          <button
+            class="icon-btn menu-btn"
+            id="menuToggle"
+            type="button"
+            title="Menu"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- =========================================================
+     SAFE STEP — HOME 2 HERO
+     ========================================================= -->
+
+    <section class="home2-hero" id="home2Hero">
+      <!-- =====================================================
+         HERO BACKGROUND
+         ===================================================== -->
+
+      <div class="home2-hero-media">
+        <img
+          src="images/hero-2.png"
+          alt="Luxury residential interior with home elevator and staircase"
+          class="home2-hero-image"
+        />
+
+        <div class="home2-hero-overlay"></div>
+
+        <div class="home2-hero-glow"></div>
+      </div>
+
+      <!-- =====================================================
+         LEFT CONTENT
+         ===================================================== -->
+
+      <div class="home2-hero-content">
+        <!-- Eyebrow -->
+        <div class="home2-hero-eyebrow">
+          <span class="home2-eyebrow-line"></span>
+
+          <span>ELEVATED HOME ACCESSIBILITY</span>
+        </div>
+
+        <!-- Heading -->
+        <h1 class="home2-hero-title">
+          Move Freely.
+
+          <span>Live Beautifully.</span>
+        </h1>
+
+        <!-- Description -->
+        <p class="home2-hero-description">
+          Thoughtfully designed home elevators, stairlifts, and accessibility
+          solutions created around the way you live.
+        </p>
+
+        <!-- =================================================
+             ACTIONS
+             ================================================= -->
+
+        <div class="home2-hero-actions">
+          <a href="consultation.html" class="home2-hero-primary">
+            <span>Book a Consultation</span>
+
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+
+          <a href="products.html" class="home2-hero-secondary">
+            <span>Explore Solutions</span>
+
+            <i data-lucide="arrow-right"></i>
+          </a>
+        </div>
+
+        <!-- =================================================
+             TRUST / SERVICE POINTS
+             ================================================= -->
+
+        <div class="home2-hero-trust">
+          <div class="home2-trust-item">
+            <div class="home2-trust-icon">
+              <i data-lucide="gem"></i>
+            </div>
+
+            <div class="home2-trust-text">
+              <strong>Bespoke Design</strong>
+
+              <span>Designed around your home</span>
+            </div>
+          </div>
+
+          <div class="home2-trust-divider"></div>
+
+          <div class="home2-trust-item">
+            <div class="home2-trust-icon">
+              <i data-lucide="settings-2"></i>
+            </div>
+
+            <div class="home2-trust-text">
+              <strong>Professional Installation</strong>
+
+              <span>Carefully installed</span>
+            </div>
+          </div>
+
+          <div class="home2-trust-divider"></div>
+
+          <div class="home2-trust-item">
+            <div class="home2-trust-icon">
+              <i data-lucide="heart-handshake"></i>
+            </div>
+
+            <div class="home2-trust-text">
+              <strong>Ongoing Care</strong>
+
+              <span>Support when you need it</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- =====================================================
+         RIGHT SIDE SLIDE INDICATOR
+         ===================================================== -->
+
+      <div class="home2-hero-slider">
+        <button
+          class="home2-slider-dot active"
+          data-slide="1"
+          aria-label="Hero slide 1"
+        ></button>
+
+        <button
+          class="home2-slider-dot"
+          data-slide="2"
+          aria-label="Hero slide 2"
+        ></button>
+
+        <button
+          class="home2-slider-dot"
+          data-slide="3"
+          aria-label="Hero slide 3"
+        ></button>
+      </div>
+
+      <!-- =====================================================
+         SCROLL INDICATOR
+         ===================================================== -->
+
+      <a href="#home2Intro" class="home2-scroll">
+        <span class="home2-scroll-line"></span>
+
+        <span class="home2-scroll-text"> SCROLL TO EXPLORE </span>
+
+        <i data-lucide="arrow-down"></i>
+      </a>
+
+      <!-- =====================================================
+         DECORATIVE ARCHITECTURAL LINES
+         ===================================================== -->
+
+      <div class="home2-hero-corner home2-corner-top"></div>
+
+      <div class="home2-hero-corner home2-corner-bottom"></div>
+    </section>
+
+    <!-- =========================================================
+     SAFE STEP — HOME 2
+     SECTION 2 — THE FREEDOM TO MOVE
+     ========================================================= -->
+
+    <section class="home2-freedom" id="home2Freedom">
+      <!-- =====================================================
+         CENTERED SECTION INTRO
+         ===================================================== -->
+
+      <div class="home2-freedom-intro">
+        <div class="home2-freedom-eyebrow">
+          <span class="home2-freedom-eyebrow-line"></span>
+
+          <span>THE FREEDOM TO MOVE</span>
+        </div>
+
+        <h2 class="home2-freedom-title">
+          Your Home Should Never Feel <span class="span">Limited</span>
+        </h2>
+
+        <p class="home2-freedom-description">
+          Your home should continue to support the way you live, today and for
+          the years ahead. Thoughtful accessibility can make every level easier
+          to reach while helping you remain comfortable, confident, and
+          independent.
+        </p>
+      </div>
+
+      <!-- =====================================================
+         MAIN SECTION CONTENT
+         ===================================================== -->
+
+      <div class="home2-freedom-container">
+        <!-- =================================================
+             LEFT — IMAGE
+             ================================================= -->
+
+        <div class="home2-freedom-image-wrap">
+          <img
+            src="images/mordern.png"
+            alt="Modern accessible home interior"
+            class="home2-freedom-image"
+          />
+
+          <!-- Image Label -->
+          <div class="home2-freedom-image-label">
+            <span class="home2-freedom-image-number"> 01 </span>
+
+            <div>
+              <strong>FREEDOM ON EVERY LEVEL</strong>
+
+              <span> Designed around the way you live. </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- =================================================
+             RIGHT — CONTENT
+             ================================================= -->
+
+        <div class="home2-freedom-content">
+          <div class="home2-freedom-content-intro">
+            <span class="home2-freedom-content-eyebrow">
+              DESIGNED AROUND YOU
+            </span>
+
+            <h3>Your Home. Your Freedom.</h3>
+
+            <p>
+              Every level of your home should remain within reach while
+              preserving the comfort, character, and beauty of the space you
+              love.
+            </p>
+          </div>
+
+          <!-- =================================================
+                 THREE POINT BOXES
+                 ================================================= -->
+
+          <div class="home2-freedom-points">
+            <!-- BOX 01 -->
+
+            <div class="home2-freedom-point">
+              <span class="home2-freedom-point-number"> 01 </span>
+
+              <span class="home2-freedom-point-line"></span>
+
+              <h4>Move With Confidence</h4>
+
+              <p>
+                Make everyday movement between levels easier and more
+                comfortable.
+              </p>
+            </div>
+
+            <!-- BOX 02 -->
+
+            <div class="home2-freedom-point">
+              <span class="home2-freedom-point-number"> 02 </span>
+
+              <span class="home2-freedom-point-line"></span>
+
+              <h4>Stay Independent</h4>
+
+              <p>
+                Enjoy greater freedom to move through your home on your own
+                terms.
+              </p>
+            </div>
+
+            <!-- BOX 03 -->
+
+            <div class="home2-freedom-point">
+              <span class="home2-freedom-point-number"> 03 </span>
+
+              <span class="home2-freedom-point-line"></span>
+
+              <h4>Live Without Limits</h4>
+
+              <p>
+                Keep the rooms, routines, and moments that matter within reach.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     SAFE STEP — HOME 2
+     SECTION 3 — FREEDOM ON EVERY LEVEL
+     ========================================================= -->
+
+    <section class="home2-levels" id="home2Levels">
+      <!-- =====================================================
+         MAIN EDITORIAL AREA
+         ===================================================== -->
+
+      <div class="home2-levels-main">
+        <!-- LEFT CONTENT -->
+        <div class="home2-levels-content">
+          <span class="home2-levels-eyebrow"> FREEDOM ON EVERY LEVEL </span>
+
+          <h2 class="home2-levels-title">
+            Every Part of
+            <span>Home Within Reach.</span>
+          </h2>
+
+          <p class="home2-levels-description">
+            Your home should give you the freedom to enjoy every level, room,
+            and moment without unnecessary limitations. Thoughtfully designed
+            spaces and accessible features create a safer, more comfortable
+            environment where everyone can move freely and live with confidence
+            every day.
+          </p>
+
+          <a href="products.html" class="home2-levels-button">
+            <span>Explore Freedom</span>
+
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+
+        <!-- RIGHT IMAGE -->
+        <div class="home2-levels-visual">
+          <div class="home2-levels-image-wrap">
+            <img
+              src="images/multi-level.png"
+              alt="Elegant multi-level residential interior"
+              class="home2-levels-image"
+            />
+
+            <div class="home2-levels-image-label">
+              <span>FREEDOM</span>
+
+              <strong>ON EVERY LEVEL</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- =====================================================
+         DIVIDER
+         ===================================================== -->
+
+      <div class="home2-levels-divider"></div>
+
+      <!-- =====================================================
+         THREE BENEFIT BOXES
+         ===================================================== -->
+
+      <div class="home2-levels-points">
+        <!-- POINT 01 -->
+
+        <article class="home2-levels-point">
+          <div class="home2-levels-point-number">01</div>
+
+          <div class="home2-levels-point-content">
+            <h3>Move Freely</h3>
+
+            <p>
+              Move between levels with greater ease and confidence. Thoughtfully
+              designed spaces and accessible features help make every transition
+              smoother, safer, and more comfortable for everyone, every single
+              day.
+            </p>
+          </div>
+        </article>
+
+        <!-- POINT 02 -->
+
+        <article class="home2-levels-point">
+          <div class="home2-levels-point-number">02</div>
+
+          <div class="home2-levels-point-content">
+            <h3>Stay Connected</h3>
+
+            <p>
+              Stay connected with the people and spaces that matter. Create a
+              welcoming home where thoughtful design, comfort, and accessibility
+              bring everyone closer together, making everyday moments more
+              meaningful.
+            </p>
+          </div>
+        </article>
+
+        <!-- POINT 03 -->
+
+        <article class="home2-levels-point">
+          <div class="home2-levels-point-number">03</div>
+
+          <div class="home2-levels-point-content">
+            <h3>Enjoy Every Space</h3>
+
+            <p>
+              Make every room part of everyday life. Create a home where
+              comfort, accessibility, and modern design come together.
+              Thoughtfully designed spaces make daily routines easier, safer,
+              and more enjoyable for everyone.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     SAFE STEP — HOME 2
+     SECTION 4 — SOLUTIONS DESIGNED AROUND YOUR HOME
+     ========================================================= -->
+
+    <section class="home2-solutions" id="home2Solutions">
+      <!-- =====================================================
+         SECTION INTRO
+         ===================================================== -->
+
+      <div class="home2-solutions-intro">
+        <div class="home2-solutions-eyebrow">
+          <span class="home2-solutions-eyebrow-line"></span>
+          <span>OUR SOLUTIONS</span>
+        </div>
+
+        <h2 class="home2-solutions-title">
+          Solutions Designed Around Your <span class="span">Home.</span>
+        </h2>
+
+        <p class="home2-solutions-description">
+          Accessibility should feel like a natural part of your home.
+          Thoughtfully selected solutions can make everyday movement easier
+          while preserving the character, comfort, and beauty of your space.
+        </p>
+      </div>
+
+      <!-- =====================================================
+         SOLUTIONS LAYOUT
+         ===================================================== -->
+
+      <div class="home2-solutions-layout">
+        <!-- =================================================
+             LEFT — SOLUTION LIST
+             ================================================= -->
+
+        <div class="home2-solutions-list">
+          <!-- STAIRLIFTS -->
+
+          <article class="home2-solution-item">
+            <div class="home2-solution-number">01</div>
+
+            <div class="home2-solution-content">
+              <span class="home2-solution-label"> STAIRLIFTS </span>
+
+              <h3>Move Between Levels With Greater Ease.</h3>
+
+              <p>
+                Enjoy smoother movement between floors with a stairlift designed
+                around your staircase, your comfort, and the way you use your
+                home.
+              </p>
+
+              <a href="products.html" class="home2-solution-link">
+                <span>Explore Stairlifts</span>
+                <i data-lucide="arrow-up-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- HOME ELEVATORS -->
+
+          <article class="home2-solution-item">
+            <div class="home2-solution-number">02</div>
+
+            <div class="home2-solution-content">
+              <span class="home2-solution-label"> HOME ELEVATORS </span>
+
+              <h3>Elegant Vertical Movement at Home.</h3>
+
+              <p>
+                Bring effortless access between levels with a residential
+                elevator designed to complement the architecture and character
+                of your home.
+              </p>
+
+              <a href="products.html" class="home2-solution-link">
+                <span>Explore Home Elevators</span>
+                <i data-lucide="arrow-up-right"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <!-- =================================================
+             RIGHT — LARGE IMAGE
+             ================================================= -->
+
+        <div class="home2-solutions-visual">
+          <div class="home2-solutions-image-wrap">
+            <img
+              src="images/solutions.png"
+              alt="Elegant residential accessibility solution"
+              class="home2-solutions-image"
+            />
+
+            <div class="home2-solutions-image-caption">
+              <span>03</span>
+
+              <div>
+                <strong>ACCESSIBILITY</strong>
+                <small>Designed around your home.</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     SAFE STEP — HOME 2
+     SECTION 5 — SAFETY & COMFORT
+     ========================================================= -->
+
+    <section class="home2-safety" id="home2Safety">
+      <!-- =====================================================
+         SECTION INTRO
+         ===================================================== -->
+
+      <div class="home2-safety-intro">
+        <div class="home2-safety-eyebrow">
+          <span class="home2-safety-eyebrow-line"></span>
+          <span>SAFETY &amp; COMFORT</span>
+        </div>
+
+        <h2 class="home2-safety-title">
+          Where Safety Meets
+          <span>Sophisticated Design.</span>
+        </h2>
+
+        <p class="home2-safety-description">
+          Accessibility should feel natural within your home. Every detail is
+          considered to provide greater safety, everyday comfort, and a solution
+          that fits beautifully into the way you live.
+        </p>
+      </div>
+
+      <!-- =====================================================
+         SAFETY FEATURES
+         ===================================================== -->
+
+      <div class="home2-safety-list">
+        <!-- FEATURE 01 -->
+
+        <article class="home2-safety-item">
+          <div class="home2-safety-number">01</div>
+
+          <div class="home2-safety-content">
+            <div class="home2-safety-heading">
+              <span>SAFETY FIRST</span>
+
+              <i data-lucide="shield-check"></i>
+            </div>
+
+            <p>
+              Thoughtful features help create secure, confident movement
+              throughout your home.
+            </p>
+          </div>
+        </article>
+
+        <!-- FEATURE 02 -->
+
+        <article class="home2-safety-item">
+          <div class="home2-safety-number">02</div>
+
+          <div class="home2-safety-content">
+            <div class="home2-safety-heading">
+              <span>COMFORTABLE DESIGN</span>
+
+              <i data-lucide="armchair"></i>
+            </div>
+
+            <p>
+              Solutions are designed around the way your home is used, helping
+              everyday movement feel natural and comfortable.
+            </p>
+          </div>
+        </article>
+
+        <!-- FEATURE 03 -->
+
+        <article class="home2-safety-item">
+          <div class="home2-safety-number">03</div>
+
+          <div class="home2-safety-content">
+            <div class="home2-safety-heading">
+              <span>PROFESSIONAL INSTALLATION</span>
+
+              <i data-lucide="wrench"></i>
+            </div>
+
+            <p>
+              Careful installation helps your accessibility solution integrate
+              naturally into your home.
+            </p>
+          </div>
+        </article>
+
+        <!-- FEATURE 04 -->
+
+        <article class="home2-safety-item">
+          <div class="home2-safety-number">04</div>
+
+          <div class="home2-safety-content">
+            <div class="home2-safety-heading">
+              <span>ONGOING SUPPORT</span>
+
+              <i data-lucide="headphones"></i>
+            </div>
+
+            <p>
+              Continued care and support help keep your solution working
+              comfortably for years to come.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     SAFE STEP — HOME 2
+     SECTION 6 — EVERY HOME IS DIFFERENT
+     ========================================================= -->
+
+    <section class="home2-bespoke-cards" id="home2BespokeCards">
+      <!-- =====================================================
+         SECTION INTRO
+         ===================================================== -->
+
+      <div class="home2-bespoke-cards-intro">
+        <div class="home2-bespoke-cards-eyebrow">
+          <span class="home2-bespoke-cards-eyebrow-line"></span>
+
+          <span>YOUR HOME, YOUR WAY</span>
+        </div>
+
+        <h2 class="home2-bespoke-cards-title">
+          Every Home Is Different.
+          <span>Your Solution Should Be Too.</span>
+        </h2>
+
+        <p class="home2-bespoke-cards-description">
+          Your space, your routines, and your plans for the future all deserve
+          to be considered when creating a more accessible way to move through
+          your home.
+        </p>
+      </div>
+
+      <!-- =====================================================
+         CARDS
+         ===================================================== -->
+
+      <div class="home2-bespoke-cards-grid">
+        <!-- =================================================
+             CARD 01 — YOUR SPACE
+             ================================================= -->
+
+        <article class="home2-bespoke-card">
+          <div class="home2-bespoke-card-image-wrap">
+            <img
+              src="images/your-space.jpeg"
+              alt="Elegant residential interior representing your space"
+              class="home2-bespoke-card-image"
+            />
+          </div>
+
+          <div class="home2-bespoke-card-content">
+            <span class="home2-bespoke-card-label"> YOUR SPACE </span>
+
+            <h3>Designed Around Your Home.</h3>
+
+            <p>
+              Every home has its own layout, character, and architectural
+              details. Your solution should work naturally within it.
+            </p>
+
+            <a href="consultation.html" class="home2-bespoke-card-link">
+              <span>Explore Your Options</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- =================================================
+             CARD 02 — YOUR ROUTINE
+             ================================================= -->
+
+        <article class="home2-bespoke-card">
+          <div class="home2-bespoke-card-image-wrap">
+            <img
+              src="images/your-routein.jpeg"
+              alt="Comfortable modern home representing everyday routine"
+              class="home2-bespoke-card-image"
+            />
+          </div>
+
+          <div class="home2-bespoke-card-content">
+            <span class="home2-bespoke-card-label"> YOUR ROUTINE </span>
+
+            <h3>Built Around The Way You Live.</h3>
+
+            <p>
+              Accessibility should support the way you actually live, making
+              everyday movement feel easier, smoother, and more natural.
+            </p>
+
+            <a href="consultation.html" class="home2-bespoke-card-link">
+              <span>Explore Your Options</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- =================================================
+             CARD 03 — YOUR FUTURE
+             ================================================= -->
+
+        <article class="home2-bespoke-card">
+          <div class="home2-bespoke-card-image-wrap">
+            <img
+              src="images/future.jpeg"
+              alt="Elegant family home representing future accessibility"
+              class="home2-bespoke-card-image"
+            />
+          </div>
+
+          <div class="home2-bespoke-card-content">
+            <span class="home2-bespoke-card-label"> YOUR FUTURE </span>
+
+            <h3>Ready For The Years Ahead.</h3>
+
+            <p>
+              Thoughtful accessibility solutions can help your home remain
+              comfortable, practical, and ready for the way life changes over
+              time.
+            </p>
+
+            <a href="consultation.html" class="home2-bespoke-card-link">
+              <span>Explore Your Options</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     HOME 2 — SECTION 7
+     DESIGNED FOR TODAY. READY FOR TOMORROW.
+     ========================================================= -->
+
+    <section class="home2-future" id="home2Future">
+      <!-- SECTION INTRO -->
+      <div class="home2-future-intro">
+        <div class="home2-bespoke-cards-eyebrow">
+          <span class="home2-bespoke-cards-eyebrow-line"></span>
+
+          <span>Family + Future</span>
+        </div>
+
+        <h2 class="home2-future-title">
+          <span>Designed for Today.</span>
+          <span>Ready for Tomorrow.</span>
+        </h2>
+
+        <div class="home2-future-divider"></div>
+
+        <h3 class="home2-future-subtitle">Your Home Evolves.</h3>
+
+        <p class="home2-future-description">
+          Life changes. Your home should be ready to change with it.
+        </p>
+      </div>
+
+      <!-- MAIN COMPARISON PANEL -->
+      <div class="home2-future-panel">
+        <!-- TODAY IMAGE -->
+        <div class="home2-future-image home2-future-image-today">
+          <img
+            src="images/today.jpeg"
+            alt="Elegant modern living room representing everyday comfort"
+          />
+        </div>
+
+        <!-- TODAY CONTENT -->
+        <div class="home2-future-side home2-future-today">
+          <h4 class="home2-future-side-title">Today</h4>
+
+          <div class="home2-future-feature-list">
+            <!-- Comfort -->
+            <div class="home2-future-feature">
+              <div class="home2-future-icon">
+                <i data-lucide="armchair"></i>
+              </div>
+
+              <div class="home2-future-feature-content">
+                <span>Comfort</span>
+                <p>Make everyday living easier.</p>
+              </div>
+            </div>
+
+            <!-- Freedom -->
+            <div class="home2-future-feature">
+              <div class="home2-future-icon">
+                <i data-lucide="heart"></i>
+              </div>
+
+              <div class="home2-future-feature-content">
+                <span>Freedom</span>
+                <p>Keep every level within reach.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CENTER TRANSITION -->
+        <div class="home2-future-transition">
+          <span class="home2-future-transition-line"></span>
+
+          <div class="home2-future-arrow">
+            <span></span>
+            <i data-lucide="arrow-right"></i>
+          </div>
+
+          <span class="home2-future-transition-line"></span>
+        </div>
+
+        <!-- TOMORROW CONTENT -->
+        <div class="home2-future-side home2-future-tomorrow">
+          <h4 class="home2-future-side-title">Tomorrow</h4>
+
+          <div class="home2-future-feature-list">
+            <!-- Adaptability -->
+            <div class="home2-future-feature">
+              <div class="home2-future-icon">
+                <i data-lucide="leaf"></i>
+              </div>
+
+              <div class="home2-future-feature-content">
+                <span>Adaptability</span>
+                <p>A home that adjusts to your changing needs.</p>
+              </div>
+            </div>
+
+            <!-- Confidence -->
+            <div class="home2-future-feature">
+              <div class="home2-future-icon">
+                <i data-lucide="shield-check"></i>
+              </div>
+
+              <div class="home2-future-feature-content">
+                <span>Confidence</span>
+                <p>Feel prepared for what's ahead.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TOMORROW IMAGE -->
+        <div class="home2-future-image home2-future-image-tomorrow">
+          <img
+            src="images/home2-tomorrow.jpg"
+            alt="Modern stairlift installed within an elegant residential staircase"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     HOME 2 — SECTION 8
+     FINAL CTA
+     ========================================================= -->
+
+<section class="home2-final-cta" id="home2FinalCta">
+
+  <div class="home2-final-cta-panel">
+
+    <!-- =====================================================
+         EYEBROW
+         ===================================================== -->
+
+    <div class="home2-final-cta-eyebrow">
+
+      <span class="home2-final-cta-eyebrow-line"></span>
+
+      <span class="home2-final-cta-eyebrow-text">
+        TAKE THE NEXT STEP
+      </span>
+
+
+    </div>
+
+
+    <!-- =====================================================
+         MAIN HEADING
+         ===================================================== -->
+
+    <h2 class="home2-final-cta-title">
+      Ready to make every level
+      <span>easier to enjoy?</span>
+    </h2>
+
+
+    <!-- =====================================================
+         HIGHLIGHT STATEMENT
+         ===================================================== -->
+
+    <h3 class="home2-final-cta-highlight">
+      Let's create a home that moves with you.
+    </h3>
+
+
+    <!-- =====================================================
+         DESCRIPTION
+         ===================================================== -->
+
+    <p class="home2-final-cta-description">
+      Tell us about your home, your needs, and the way you want to live.
+      We'll help you explore thoughtful accessibility solutions designed
+      around your space, your lifestyle, and your future.
+    </p>
+
+
+    <!-- =====================================================
+         CTA BUTTONS
+         ===================================================== -->
+
+    <div class="home2-final-cta-actions">
+
+      <a
+        href="consultation.html"
+        class="home2-final-cta-button home2-final-cta-button-primary"
+      >
+        <span>Book a Consultation</span>
+        <i data-lucide="arrow-right"></i>
+      </a>
+
+
+      <a
+        href="contact.html"
+        class="home2-final-cta-button home2-final-cta-button-secondary"
+      >
+        Contact Safe Step
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+    <!-- =========================================================
+     SAFE STEP
+     FOOTER
+     ========================================================= -->
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- =================================================
+         BRAND
+    ================================================== -->
+
+        <div class="footer-col footer-brand">
+          <div class="footer-logo">
+            <a href="index.html" aria-label="Safe Step Home">
+              <img src="images/logo.png" alt="Safe Step Logo" />
+            </a>
+
+            <div
+              class="footer-branding"
+              onclick="window.location.href = 'index.html'"
+            >
+              <h2>
+                <span class="safe">Safe</span><span class="step">Step</span>
+              </h2>
+
+              <p>Accessibility Solutions</p>
+            </div>
+          </div>
+
+          <!-- DESCRIPTION -->
+
+          <p class="footer-about">
+            Safe Step provides reliable home accessibility solutions designed to
+            help people move safely, comfortably, and independently throughout
+            their homes.
+          </p>
+
+          <!-- SOCIAL MEDIA -->
+
+          <div class="social-media">
+            <!-- INSTAGRAM -->
+
+            <a href="#" aria-label="Instagram" title="Instagram">
+              <i data-lucide="camera" aria-hidden="true"></i>
+            </a>
+
+            <!-- FACEBOOK -->
+
+            <a href="#" aria-label="Facebook" title="Facebook">
+              <i data-lucide="users" aria-hidden="true"></i>
+            </a>
+
+            <!-- YOUTUBE -->
+
+            <a href="#" aria-label="YouTube" title="YouTube">
+              <i data-lucide="play" aria-hidden="true"></i>
+            </a>
+
+            <!-- EMAIL -->
+
+            <a href="mailto:info@aquacare.com" aria-label="Email" title="Email">
+              <i data-lucide="mail" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- =================================================
+         QUICK LINKS
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="about.html">About</a>
+            </li>
+
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+
+            <li>
+              <a href="products.html">Products</a>
+            </li>
+
+            <li>
+              <a href="pricing.html">Pricing</a>
+            </li>
+
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         OUR SOLUTIONS
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Our Solutions</h3>
+
+          <ul>
+            <li>
+              <a href="products.html#stairlifts"> Stairlifts </a>
+            </li>
+
+            <li>
+              <a href="products.html#elevators"> Home Elevators </a>
+            </li>
+
+            <li>
+              <a href="products.html#ramps"> Accessibility Ramps </a>
+            </li>
+
+            <li>
+              <a href="services.html#installation">
+                Professional Installation
+              </a>
+            </li>
+
+            <li>
+              <a href="services.html#maintenance"> Maintenance & Support </a>
+            </li>
+
+            <li>
+              <a href="services.html#assessment"> Accessibility Assessment </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         CLIENT SERVICES
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Client Services</h3>
+
+          <ul>
+            <li>
+              <a href="dashboard.html"> Client Dashboard </a>
+            </li>
+
+            <li>
+              <a href="dashboard.html"> Project Status </a>
+            </li>
+
+            <li>
+              <a href="dashboard.html"> Maintenance </a>
+            </li>
+
+            <li>
+              <a href="consultation.html">Consultation</a>
+            </li>
+            <li>
+              <a href="404.html">404</a>
+            </li>
+            <li>
+              <a href="comming.html">Commingsoon...</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         CONTACT
+    ================================================== -->
+
+        <div class="footer-col footer-contact">
+          <h3>Get In Touch</h3>
+
+          <ul>
+            <!-- LOCATION -->
+
+            <li>
+              <i data-lucide="map-pin" aria-hidden="true"></i>
+
+              <span> Your Service Area </span>
+            </li>
+
+            <!-- PHONE -->
+
+            <li>
+              <i data-lucide="phone" aria-hidden="true"></i>
+
+              <a href="tel:+10000000000"> +1 (000) 000-0000 </a>
+            </li>
+
+            <!-- EMAIL -->
+
+            <li>
+              <i data-lucide="mail" aria-hidden="true"></i>
+
+              <a href="mailto:info@safestep.com"> info@safestep.com </a>
+            </li>
+
+            <!-- HOURS -->
+
+            <li>
+              <i data-lucide="clock" aria-hidden="true"></i>
+
+              <span> Mon – Sat: 8 AM – 6 PM </span>
+            </li>
+          </ul>
+
+          <!-- CTA -->
+
+          <a href="consultation.html" class="footer-cta">
+            <span>Book a Consultation</span>
+
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- =================================================
+       FOOTER BOTTOM
+  ================================================== -->
+
+      <div class="footer-bottom">
+        <p>
+          © 2026
+
+          <span class="safe">Safe</span>
+          <span class="step">Step</span>. All Rights Reserved.
+        </p>
+
+        <div class="footer-bottom-links">
+          <a href="privacy.html"> Privacy Policy </a>
+
+          <a href="terms.html"> Terms & Conditions </a>
+
+          <a href="cookies.html"> Cookies </a>
+
+          <!-- BACK TO TOP -->
+
+          <a
+            href="#"
+            class="top-btn"
+            aria-label="Back to top"
+            title="Back to top"
+          >
+            <i data-lucide="arrow-up" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="global.js"></script>
+    <script src="home2.js"></script>
+  </body>
+</html>

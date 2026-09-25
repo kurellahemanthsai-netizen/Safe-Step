@@ -1,0 +1,5117 @@
+/* =========================================================
+   SAFE STEP — HERO SECTION
+   HOME 1 | CLASSIC DESIGN
+   ========================================================= */
+
+/* =========================================================
+   HERO SECTION
+   ========================================================= */
+
+.safe-hero {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  margin-top: 78px;
+
+  display: flex;
+  align-items: center;
+
+  background: var(--site-bg);
+
+  padding: 100px 0 90px;
+
+  overflow: hidden;
+}
+
+/* =========================================================
+   HERO CONTAINER
+   ========================================================= */
+
+.safe-hero-container {
+  width: min(1350px, calc(100% - 80px));
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+
+  align-items: center;
+
+  gap: 90px;
+}
+
+/* =========================================================
+   HERO CONTENT
+   ========================================================= */
+
+.safe-hero-content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 650px;
+}
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.safe-hero-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 24px;
+
+  color: var(--primary);
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+  line-height: 1.4;
+}
+
+.safe-hero-eyebrow-line {
+  width: 34px;
+  height: 1px;
+
+  flex-shrink: 0;
+
+  background: var(--secondary);
+}
+
+/* =========================================================
+   HERO TITLE
+   ========================================================= */
+
+.safe-hero-title {
+  margin: 0;
+
+  color: var(--text);
+
+  font-size: 4.5rem;
+  font-weight: 500;
+
+  line-height: 1.02;
+  letter-spacing: -2.8px;
+}
+
+.safe-hero-title span {
+  display: block;
+
+  color: var(--secondary);
+}
+
+/* =========================================================
+   HERO DESCRIPTION
+   ========================================================= */
+
+.safe-hero-description {
+  max-width: 570px;
+
+  margin: 30px 0 0;
+
+  color: var(--muted);
+
+  font-size: 17px;
+  font-weight: 400;
+
+  line-height: 1.85;
+}
+
+/* =========================================================
+   HERO ACTIONS
+   ========================================================= */
+
+.safe-hero-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 14px;
+
+  margin-top: 38px;
+}
+
+/* =========================================================
+   HERO BUTTON — BASE
+   ========================================================= */
+
+.safe-hero-btn {
+  min-height: 54px;
+
+  padding: 0 22px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  border: 1px solid transparent;
+  border-radius: 8px;
+
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 0.2px;
+
+  text-decoration: none;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.safe-hero-btn svg {
+  width: 17px;
+  height: 17px;
+
+  flex-shrink: 0;
+}
+
+/* =========================================================
+   PRIMARY BUTTON
+   ========================================================= */
+
+.safe-hero-btn-primary {
+  color: #ffffff;
+
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+.safe-hero-btn-primary:hover {
+  color: #ffffff;
+
+  background: var(--secondary);
+  border-color: var(--secondary);
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 10px 24px rgba(52, 78, 65, 0.18);
+}
+
+/* =========================================================
+   SECONDARY BUTTON
+   ========================================================= */
+
+.safe-hero-btn-secondary {
+  color: var(--primary);
+
+  background: transparent;
+
+  border-color: var(--border);
+}
+
+.safe-hero-btn-secondary:hover {
+  color: var(--primary);
+
+  background: var(--surface-hover);
+
+  border-color: var(--secondary);
+
+  transform: translateY(-2px);
+}
+
+/* =========================================================
+   TRUST POINTS
+   ========================================================= */
+
+.safe-hero-trust {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  gap: 18px 25px;
+
+  margin-top: 35px;
+  padding-top: 24px;
+
+  border-top: 1px solid var(--border);
+}
+
+.safe-hero-trust-item {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  color: var(--muted);
+
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* =========================================================
+   TRUST CHECK ICON
+   ========================================================= */
+
+.safe-hero-check {
+  width: 18px;
+  height: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  color: var(--secondary);
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+
+  border-radius: 50%;
+}
+
+.safe-hero-check svg {
+  width: 10px;
+  height: 10px;
+
+  stroke-width: 2.5;
+}
+
+/* =========================================================
+   HERO VISUAL
+   ========================================================= */
+
+.safe-hero-visual {
+  position: relative;
+
+  min-height: 600px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =========================================================
+   IMAGE WRAPPER
+   ========================================================= */
+
+.safe-hero-image-wrapper {
+  position: relative;
+
+  width: 100%;
+  max-width: 720px;
+
+  height: 600px;
+
+  overflow: hidden;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+
+  box-shadow: 0 24px 60px rgba(38, 51, 44, 0.12);
+}
+
+/* =========================================================
+   HERO IMAGE
+   ========================================================= */
+
+.safe-hero-image {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center;
+
+  transition: transform 0.7s ease;
+}
+
+.safe-hero-image-wrapper:hover .safe-hero-image {
+  transform: scale(1.025);
+}
+
+/* =========================================================
+   IMAGE OVERLAY
+   ========================================================= */
+
+.safe-hero-image-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.02) 0%,
+    rgba(0, 0, 0, 0.05) 100%
+  );
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   FLOATING SAFETY CARD
+   ========================================================= */
+
+.safe-hero-floating-card {
+  position: absolute;
+
+  left: -38px;
+  bottom: 55px;
+
+  width: 300px;
+
+  padding: 20px 22px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+
+  box-shadow: 0 18px 45px rgba(38, 51, 44, 0.13);
+
+  z-index: 4;
+}
+
+/* =========================================================
+   FLOATING CARD ICON
+   ========================================================= */
+
+.safe-hero-floating-icon {
+  width: 45px;
+  height: 45px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--secondary);
+
+  background: rgba(212, 180, 131, 0.18);
+
+  border: 1px solid rgba(212, 180, 131, 0.45);
+}
+
+.safe-hero-floating-icon svg {
+  width: 21px;
+  height: 21px;
+}
+
+/* =========================================================
+   FLOATING CARD CONTENT
+   ========================================================= */
+
+.safe-hero-floating-content {
+  display: flex;
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.safe-hero-floating-content strong {
+  color: var(--text);
+
+  font-size: 13px;
+  font-weight: 700;
+
+  line-height: 1.3;
+}
+
+.safe-hero-floating-content span {
+  color: var(--muted);
+
+  font-size: 10px;
+  font-weight: 500;
+
+  line-height: 1.5;
+}
+
+/* =========================================================
+   DECORATIVE DOTS
+   ========================================================= */
+
+.safe-hero-decoration {
+  position: absolute;
+
+  top: 22px;
+  right: -28px;
+
+  width: 100px;
+  height: 100px;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 9px;
+
+  opacity: 0.7;
+
+  z-index: 1;
+}
+
+.safe-hero-decoration span {
+  width: 7px;
+  height: 7px;
+
+  display: block;
+
+  background: var(--secondary);
+
+  border-radius: 50%;
+}
+
+/* =========================================================
+   SCROLL INDICATOR
+   ========================================================= */
+
+.safe-hero-scroll {
+  position: absolute;
+
+  left: 40px;
+  bottom: 28px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  color: var(--muted);
+
+  font-size: 10px;
+  font-weight: 700;
+  margin-left: 50px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+
+  text-decoration: none;
+
+  transition: color 0.25s ease;
+}
+
+.safe-hero-scroll:hover {
+  color: var(--primary);
+}
+
+.safe-hero-scroll-icon {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--border);
+}
+
+.safe-hero-scroll-icon svg {
+  width: 14px;
+  height: 14px;
+
+  animation: safeHeroScroll 1.8s ease-in-out infinite;
+}
+
+@keyframes safeHeroScroll {
+  0%,
+  100% {
+    transform: translateY(-2px);
+  }
+
+  50% {
+    transform: translateY(3px);
+  }
+}
+
+/* =========================================================
+   SAFE STEP — SECTION 2
+   INDEPENDENCE AT EVERY LEVEL
+   ========================================================= */
+
+/* =========================================================
+   SECTION
+   ========================================================= */
+
+.safe-independence {
+  position: relative;
+
+  width: 100%;
+
+  padding: 120px 0;
+
+  background: var(--site-bg);
+
+  overflow: hidden;
+}
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.safe-independence-container {
+  width: min(1350px, calc(100% - 80px));
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   CENTERED HEADING
+   ========================================================= */
+
+.safe-independence-heading {
+  max-width: 850px;
+
+  margin: 0 auto 75px;
+
+  text-align: center;
+}
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.safe-independence-eyebrow {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  margin-bottom: 22px;
+
+  color: var(--primary);
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  line-height: 1.4;
+}
+
+.safe-independence-eyebrow-line {
+  width: 32px;
+  height: 1px;
+
+  flex-shrink: 0;
+
+  background: var(--secondary);
+}
+
+/* =========================================================
+   MAIN HEADING
+   ========================================================= */
+
+.safe-independence-heading h2 {
+  margin: 0;
+
+  color: var(--text);
+
+  font-size: 3.5rem;
+
+  font-weight: 500;
+
+  line-height: 1.08;
+
+  letter-spacing: -2.2px;
+}
+.safe-independence-heading h2 span {
+  color: var(--secondary);
+}
+
+/* =========================================================
+   INTRO TEXT
+   ========================================================= */
+
+.safe-independence-heading p {
+  max-width: 680px;
+
+  margin: 25px auto 0;
+
+  color: var(--muted);
+
+  font-size: 16px;
+
+  font-weight: 400;
+
+  line-height: 1.85;
+}
+
+/* =========================================================
+   MAIN CONTENT
+   ========================================================= */
+
+.safe-independence-content {
+  display: grid;
+
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+
+  align-items: center;
+
+  gap: 85px;
+}
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+.safe-independence-image {
+  position: relative;
+
+  width: 100%;
+
+  height: 610px;
+
+  overflow: hidden;
+
+  background: var(--site-bg);
+
+  border: 1px solid var(--border);
+}
+
+.safe-independence-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center;
+
+  transition: transform 0.7s ease;
+}
+
+.safe-independence-image:hover img {
+  transform: scale(1.025);
+}
+
+/* =========================================================
+   IMAGE OVERLAY
+   ========================================================= */
+
+.safe-independence-image-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.01) 0%,
+    rgba(0, 0, 0, 0.07) 100%
+  );
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   RIGHT CONTENT
+   ========================================================= */
+
+.safe-independence-info {
+  max-width: 540px;
+
+  padding: 20px 0;
+}
+
+/* =========================================================
+   SMALL LABEL
+   ========================================================= */
+
+.safe-independence-small-label {
+  display: block;
+
+  margin-bottom: 18px;
+
+  color: var(--secondary);
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.8px;
+}
+
+/* =========================================================
+   CONTENT HEADING
+   ========================================================= */
+
+.safe-independence-info h3 {
+  margin: 0;
+
+  color: var(--text);
+
+  font-size: 3rem;
+
+  font-weight: 500;
+
+  line-height: 1.08;
+
+  letter-spacing: -1.5px;
+}
+
+.safe-independence-info h3 span {
+  /* display: block; */
+
+  color: var(--primary);
+}
+
+/* =========================================================
+   CONTENT DESCRIPTION
+   ========================================================= */
+
+.safe-independence-info-text {
+  max-width: 500px;
+
+  margin: 24px 0 0;
+
+  color: var(--muted);
+
+  font-size: 15px;
+
+  line-height: 1.85;
+}
+
+/* =========================================================
+   DIVIDER
+   ========================================================= */
+
+.safe-independence-divider {
+  width: 100%;
+
+  height: 1px;
+
+  margin: 32px 0 5px;
+
+  background: var(--border);
+}
+
+/* =========================================================
+   BENEFIT POINT
+   ========================================================= */
+
+.safe-independence-point {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 18px;
+
+  padding: 22px 0;
+
+  border-bottom: 1px solid var(--border);
+
+  transition:
+    padding-left 0.25s ease,
+    background 0.25s ease;
+}
+
+.safe-independence-point:last-child {
+  border-bottom: none;
+}
+
+/* =========================================================
+   POINT ICON
+   ========================================================= */
+
+.safe-independence-point-icon {
+  width: 42px;
+  height: 42px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: var(--secondary);
+
+  background: rgba(212, 180, 131, 0.12);
+
+  border: 1px solid rgba(212, 180, 131, 0.35);
+}
+
+.safe-independence-point-icon svg {
+  width: 19px;
+  height: 19px;
+}
+
+/* =========================================================
+   POINT CONTENT
+   ========================================================= */
+
+.safe-independence-point-content {
+  flex: 1;
+}
+
+.safe-independence-point-content h4 {
+  margin: 0;
+
+  color: var(--text);
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  line-height: 1.4;
+}
+
+.safe-independence-point-content p {
+  max-width: 430px;
+
+  margin: 6px 0 0;
+
+  color: var(--muted);
+
+  font-size: 12px;
+
+  line-height: 1.7;
+}
+
+/* =========================================================
+   SAFE STEP — SECTION 3
+   OUR ACCESSIBILITY SOLUTIONS
+   ========================================================= */
+
+/* =========================================================
+   SECTION
+   ========================================================= */
+
+.safe-solutions {
+  position: relative;
+
+  width: 100%;
+
+  padding: 120px 0;
+
+  background: var(--site-bg);
+  margin-top: -150px;
+
+  overflow: hidden;
+}
+
+/* =========================================================
+   CONTAINER
+   ========================================================= */
+
+.safe-solutions-container {
+  width: min(1280px, calc(100% - 80px));
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   SECTION HEADING
+   ========================================================= */
+
+.safe-solutions-heading {
+  max-width: 820px;
+
+  margin: 0 auto 70px;
+
+  text-align: center;
+}
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.safe-solutions-eyebrow {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  margin-bottom: 22px;
+
+  color: var(--primary);
+
+  font-size: 11px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  line-height: 1.4;
+}
+
+.safe-solutions-eyebrow-line {
+  width: 32px;
+  height: 1px;
+
+  flex-shrink: 0;
+
+  background: var(--secondary);
+}
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.safe-solutions-heading h2 {
+  margin: 0;
+
+  color: var(--text);
+
+  font-size: 3.5rem;
+
+  font-weight: 500;
+
+  line-height: 1.06;
+
+  letter-spacing: -2px;
+}
+
+.safe-solutions-heading h2 span {
+  display: block;
+
+  color: var(--secondary);
+}
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.safe-solutions-heading p {
+  max-width: 650px;
+
+  margin: 25px auto 0;
+
+  color: var(--muted);
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+/* =========================================================
+   SOLUTIONS GRID
+   ========================================================= */
+
+.safe-solutions-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+/* =========================================================
+   SOLUTION CARD
+   ========================================================= */
+
+.safe-solution-card {
+  min-width: 0;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.safe-solution-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 18px 45px rgba(38, 51, 44, 0.1);
+}
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+.safe-solution-image {
+  position: relative;
+
+  display: block;
+
+  width: 100%;
+
+  height: 330px;
+
+  overflow: hidden;
+
+  background: var(--surface);
+}
+
+.safe-solution-image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.7s ease;
+}
+
+.safe-solution-card:hover .safe-solution-image img {
+  transform: scale(1.035);
+}
+
+/* =========================================================
+   IMAGE OVERLAY
+   ========================================================= */
+
+.safe-solution-image-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.01) 40%,
+    rgba(0, 0, 0, 0.28) 100%
+  );
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   CARD CONTENT
+   ========================================================= */
+
+.safe-solution-content {
+  padding: 30px 30px 32px;
+}
+
+/* =========================================================
+   CATEGORY
+   ========================================================= */
+
+.safe-solution-category {
+  display: block;
+
+  margin-bottom: 12px;
+
+  color: var(--secondary);
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.8px;
+}
+
+/* =========================================================
+   CARD HEADING
+   ========================================================= */
+
+.safe-solution-content h3 {
+  margin: 0;
+
+  color: var(--text);
+
+  font-size: 25px;
+
+  font-weight: 500;
+
+  line-height: 1.25;
+}
+
+/* =========================================================
+   CARD DESCRIPTION
+   ========================================================= */
+
+.safe-solution-content p {
+  min-height: 72px;
+
+  margin: 13px 0 22px;
+
+  color: var(--muted);
+
+  font-size: 13px;
+
+  line-height: 1.75;
+}
+
+/* =========================================================
+   CARD LINK
+   ========================================================= */
+
+.safe-solution-link {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  color: var(--secondary);
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition:
+    color 0.25s ease,
+    gap 0.25s ease;
+}
+
+.safe-solution-link svg {
+  width: 15px;
+  height: 15px;
+}
+
+.safe-solution-link:hover {
+  color: var(--primary);
+
+  gap: 13px;
+}
+
+/* =========================================================
+   SAFE STEP
+   SECTION 4 — SAFETY & COMFORT
+   ========================================================= */
+
+/* =========================================================
+   MAIN SECTION
+   ========================================================= */
+
+.safe-safety {
+  width: 100%;
+
+  padding: 115px 0;
+
+  background: var(--site-bg);
+  margin-top: -100px;
+
+  color: var(--text);
+
+  overflow: hidden;
+}
+
+/* =========================================================
+   CENTERED INTRO
+   ========================================================= */
+
+.safe-safety-intro {
+  width: min(820px, calc(100% - 48px));
+
+  margin: 0 auto 70px;
+
+  text-align: center;
+}
+
+/* =========================================================
+   EYEBROW WRAPPER
+   ========================================================= */
+
+.safe-safety-eyebrow-wrapper {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 14px;
+
+  margin-bottom: 20px;
+}
+
+/* =========================================================
+   EYEBROW LINES
+   ========================================================= */
+
+.eyebrow-line {
+  display: block;
+
+  width: 42px;
+
+  height: 1px;
+
+  flex-shrink: 0;
+
+  background: var(--secondary);
+}
+
+/* =========================================================
+   EYEBROW TEXT
+   ========================================================= */
+
+.safe-safety-eyebrow {
+  display: inline-block;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  line-height: 1.4;
+
+  letter-spacing: 2.8px;
+
+  color: var(--primary);
+}
+
+/* =========================================================
+   MAIN HEADING
+   ========================================================= */
+
+.safe-safety-title {
+  margin: 0;
+
+  font-size: 3.5rem;
+
+  font-weight: 500;
+
+  line-height: 1.08;
+
+  letter-spacing: -1.8px;
+
+  color: var(--text);
+}
+
+.safe-safety-title span {
+  display: inline;
+
+  color: var(--secondary);
+}
+
+/* =========================================================
+   INTRO DESCRIPTION
+   ========================================================= */
+
+.safe-safety-description {
+  width: min(680px, 100%);
+
+  margin: 24px auto 0;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+
+  color: var(--muted);
+}
+
+/* =========================================================
+   CONTENT + IMAGE CONTAINER
+   ========================================================= */
+
+.safe-safety-container {
+  width: min(1180px, calc(100% - 48px));
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.9fr)
+    minmax(0, 1.1fr);
+
+  gap: 75px;
+
+  align-items: center;
+}
+
+/* =========================================================
+   LEFT CONTENT
+   ========================================================= */
+
+.safe-safety-content {
+  width: 100%;
+
+  max-width: 530px;
+}
+
+/* =========================================================
+   FEATURE DIVIDER
+   ========================================================= */
+
+.safe-safety-divider {
+  width: 100%;
+
+  height: 1px;
+
+  margin-bottom: 4px;
+
+  background: var(--border);
+}
+
+/* =========================================================
+   FEATURE ITEM
+   ========================================================= */
+
+.safe-safety-feature {
+  display: grid;
+
+  grid-template-columns: 55px 1fr;
+
+  gap: 20px;
+
+  padding: 25px 0;
+
+  border-bottom: 1px solid var(--border);
+
+  transition:
+    padding-left 0.3s ease,
+    background 0.3s ease;
+}
+
+.safe-safety-feature:last-child {
+  border-bottom: none;
+}
+
+/* =========================================================
+   FEATURE HOVER
+   ========================================================= */
+
+.safe-safety-feature:hover {
+  padding-left: 8px;
+}
+
+/* =========================================================
+   FEATURE NUMBER
+   ========================================================= */
+
+.safe-safety-number {
+  padding-top: 2px;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  color: var(--secondary);
+}
+
+/* =========================================================
+   FEATURE CONTENT
+   ========================================================= */
+
+.safe-safety-feature-content {
+  min-width: 0;
+}
+
+.safe-safety-feature-content h3 {
+  margin: 0 0 8px;
+
+  font-size: 17px;
+
+  font-weight: 600;
+
+  line-height: 1.4;
+
+  color: var(--text);
+}
+
+.safe-safety-feature-content p {
+  max-width: 430px;
+
+  margin: 0;
+
+  font-size: 14px;
+
+  line-height: 1.75;
+
+  color: var(--muted);
+}
+
+/* =========================================================
+   RIGHT VISUAL
+   ========================================================= */
+
+.safe-safety-visual {
+  width: 100%;
+}
+
+/* =========================================================
+   IMAGE WRAPPER
+   ========================================================= */
+
+.safe-safety-image-wrapper {
+  position: relative;
+
+  width: 100%;
+
+  height: 650px;
+
+  overflow: hidden;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+
+  box-shadow: 0 18px 45px rgba(38, 51, 44, 0.08);
+}
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+.safe-safety-image {
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.7s ease;
+}
+
+/* =========================================================
+   IMAGE HOVER
+   ========================================================= */
+
+.safe-safety-image-wrapper:hover .safe-safety-image {
+  transform: scale(1.025);
+}
+
+/* =========================================================
+   IMAGE OVERLAY
+   ========================================================= */
+
+.safe-safety-image-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 1;
+
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(0, 0, 0, 0.35) 100%
+  );
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   SAFETY BADGE
+   ========================================================= */
+
+.safe-safety-badge {
+  position: absolute;
+
+  left: 28px;
+
+  bottom: 28px;
+
+  z-index: 2;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  padding: 15px 18px;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.14);
+}
+
+/* =========================================================
+   BADGE ICON
+   ========================================================= */
+
+.safe-safety-badge-icon {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 42px;
+
+  height: 42px;
+
+  flex-shrink: 0;
+
+  background: var(--primary);
+
+  color: var(--secondary);
+}
+
+.safe-safety-badge-icon svg {
+  width: 21px;
+
+  height: 21px;
+}
+
+/* =========================================================
+   BADGE CONTENT
+   ========================================================= */
+
+.safe-safety-badge-content {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.safe-safety-badge-content strong {
+  font-size: 14px;
+
+  font-weight: 700;
+
+  color: var(--text);
+}
+
+.safe-safety-badge-content span {
+  font-size: 11px;
+
+  line-height: 1.4;
+
+  color: var(--muted);
+}
+
+/* =========================================================
+   IMAGE FALLBACK
+   ========================================================= */
+
+.safe-safety-image-fallback {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: linear-gradient(135deg, var(--surface), var(--surface-hover));
+}
+
+.safe-safety-image-fallback::before {
+  content: "Safe Step";
+
+  position: absolute;
+
+  font-size: 24px;
+
+  font-weight: 600;
+
+  letter-spacing: 1px;
+
+  color: var(--primary);
+}
+/* =========================================================
+   SAFE STEP
+   SECTION 5 — HOW SAFE STEP WORKS
+   ========================================================= */
+
+/* =========================================================
+   MAIN SECTION
+   ========================================================= */
+
+.safe-process {
+  width: 100%;
+
+  padding: 115px 0;
+
+  background: var(--site-bg);
+  margin-top: -90px;
+  color: var(--text);
+
+  overflow: hidden;
+}
+
+/* =========================================================
+   CENTERED INTRO
+   ========================================================= */
+
+.safe-process-intro {
+  width: min(820px, calc(100% - 48px));
+
+  margin: 0 auto 75px;
+
+  text-align: center;
+}
+
+/* =========================================================
+   EYEBROW WRAPPER
+   ========================================================= */
+
+.safe-process-eyebrow-wrapper {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 14px;
+
+  margin-bottom: 20px;
+}
+
+/* =========================================================
+   EYEBROW LINES
+   ========================================================= */
+
+.process-eyebrow-line {
+  display: block;
+
+  width: 42px;
+
+  height: 1px;
+
+  flex-shrink: 0;
+
+  background: var(--secondary);
+}
+
+/* =========================================================
+   EYEBROW TEXT
+   ========================================================= */
+
+.safe-process-eyebrow {
+  display: inline-block;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  line-height: 1.4;
+
+  letter-spacing: 2.8px;
+
+  color: var(--primary);
+}
+
+/* =========================================================
+   MAIN TITLE
+   ========================================================= */
+
+.safe-process-title {
+  margin: 0;
+
+  font-size: 3.5rem;
+
+  font-weight: 500;
+
+  line-height: 1.08;
+
+  letter-spacing: -1.8px;
+
+  color: var(--text);
+}
+
+.safe-process-title span {
+  color: var(--secondary);
+}
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.safe-process-description {
+  width: min(680px, 100%);
+
+  margin: 24px auto 0;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+
+  color: var(--muted);
+}
+
+/* =========================================================
+   PROCESS CONTAINER
+   ========================================================= */
+
+.safe-process-container {
+  width: min(1200px, calc(100% - 48px));
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   TIMELINE
+   ========================================================= */
+
+.safe-process-timeline {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+
+  gap: 0;
+}
+
+/* =========================================================
+   CONNECTING LINE
+   ========================================================= */
+
+.safe-process-timeline::before {
+  content: "";
+
+  position: absolute;
+
+  top: 27px;
+
+  left: 7%;
+
+  right: 7%;
+
+  height: 1px;
+
+  background: var(--border);
+
+  z-index: 0;
+}
+
+/* =========================================================
+   PROCESS STEP
+   ========================================================= */
+
+.safe-process-step {
+  position: relative;
+
+  min-width: 0;
+
+  padding: 0 15px;
+
+  z-index: 1;
+}
+
+/* =========================================================
+   STEP TOP
+   ========================================================= */
+
+.safe-process-step-top {
+  position: relative;
+
+  height: 55px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+/* =========================================================
+   STEP NUMBER
+   ========================================================= */
+
+.safe-process-number {
+  position: absolute;
+
+  top: -1px;
+
+  left: 0;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  color: var(--secondary);
+}
+
+/* =========================================================
+   STEP DOT
+   ========================================================= */
+
+.safe-process-dot {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 54px;
+
+  height: 54px;
+
+  border: 1px solid var(--border);
+
+  border-radius: 50%;
+
+  background: var(--surface);
+
+  color: var(--secondary);
+
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+.safe-process-dot svg {
+  width: 20px;
+
+  height: 20px;
+}
+
+/* =========================================================
+   STEP HOVER
+   ========================================================= */
+
+.safe-process-step:hover .safe-process-dot {
+  background: var(--primary);
+
+  border-color: var(--primary);
+
+  color: var(--secondary);
+
+  transform: translateY(-4px);
+}
+
+/* =========================================================
+   STEP CONTENT
+   ========================================================= */
+
+.safe-process-step-content {
+  padding-top: 28px;
+
+  text-align: center;
+}
+
+/* =========================================================
+   STEP LABEL
+   ========================================================= */
+
+.safe-process-step-label {
+  display: block;
+
+  margin-bottom: 9px;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  color: var(--secondary);
+}
+
+/* =========================================================
+   STEP TITLE
+   ========================================================= */
+
+.safe-process-step-content h3 {
+  margin: 0 auto 11px;
+
+  max-width: 170px;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  line-height: 1.45;
+
+  color: var(--text);
+}
+
+/* =========================================================
+   STEP DESCRIPTION
+   ========================================================= */
+
+.safe-process-step-content p {
+  max-width: 170px;
+
+  margin: 0 auto;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+
+  color: var(--muted);
+}
+
+/* =========================================================
+   CTA
+   ========================================================= */
+
+.safe-process-cta {
+  display: flex;
+
+  justify-content: center;
+
+  margin-top: 65px;
+}
+
+/* =========================================================
+   CTA BUTTON
+   ========================================================= */
+
+.safe-process-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  min-height: 50px;
+
+  padding: 0 24px;
+
+  border-radius: 8px;
+
+  background: var(--primary);
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  letter-spacing: 0.2px;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.safe-process-button svg {
+  width: 17px;
+
+  height: 17px;
+
+  color: white;
+
+  transition: transform 0.3s ease;
+}
+
+.safe-process-button:hover {
+  background: var(--secondary);
+
+  color: white;
+
+  transform: translateY(-2px);
+}
+
+.safe-process-button:hover svg {
+  transform: translate(3px, -3px);
+}
+
+/* =========================================================
+   SAFE STEP
+   SECTION 6 — WHY SAFE STEP
+   ========================================================= */
+
+/* =========================================================
+   MAIN SECTION
+   ========================================================= */
+
+.safe-why {
+  width: 100%;
+
+  padding: 120px 0;
+
+  background: var(--site-bg);
+  margin-top: -90px;
+
+  color: var(--text);
+
+  overflow: hidden;
+}
+
+/* =========================================================
+   CENTERED INTRO
+   ========================================================= */
+
+.safe-why-intro {
+  width: min(800px, calc(100% - 48px));
+
+  margin: 0 auto 75px;
+
+  text-align: center;
+}
+
+/* =========================================================
+   EYEBROW WRAPPER
+   ========================================================= */
+
+.safe-why-eyebrow-wrapper {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 14px;
+
+  margin-bottom: 20px;
+}
+
+/* =========================================================
+   EYEBROW LINES
+   ========================================================= */
+
+.why-eyebrow-line {
+  display: block;
+
+  width: 42px;
+
+  height: 1px;
+
+  flex-shrink: 0;
+
+  background: var(--secondary);
+}
+
+/* =========================================================
+   EYEBROW TEXT
+   ========================================================= */
+
+.safe-why-eyebrow {
+  display: inline-block;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  line-height: 1.4;
+
+  letter-spacing: 2.8px;
+
+  color: var(--primary);
+}
+
+/* =========================================================
+   MAIN HEADING
+   ========================================================= */
+
+.safe-why-title {
+  margin: 0;
+
+  font-size: 3.5rem;
+
+  font-weight: 500;
+
+  line-height: 1.08;
+
+  letter-spacing: -1.8px;
+
+  color: var(--text);
+}
+
+.safe-why-title span {
+  color: var(--secondary);
+}
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.safe-why-description {
+  width: min(650px, 100%);
+
+  margin: 24px auto 0;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+
+  color: var(--muted);
+}
+
+/* =========================================================
+   MAIN GRID
+   ========================================================= */
+
+.safe-why-container {
+  width: min(1080px, calc(100% - 48px));
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1fr)
+    minmax(280px, 360px)
+    minmax(0, 1fr);
+
+  grid-template-rows: auto auto;
+
+  column-gap: 70px;
+
+  row-gap: 60px;
+
+  align-items: center;
+
+  justify-content: center;
+}
+
+/* =========================================================
+   FEATURE
+   ========================================================= */
+
+.safe-why-feature {
+  position: relative;
+
+  width: 100%;
+
+  max-width: 300px;
+
+  padding: 5px 0 25px;
+
+  border-bottom: 1px solid var(--border);
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease;
+}
+
+/* =========================================================
+   FEATURE HOVER
+   ========================================================= */
+
+.safe-why-feature:hover {
+  transform: translateY(-4px);
+
+  border-color: var(--secondary);
+}
+
+/* =========================================================
+   FEATURE NUMBER
+   ========================================================= */
+
+.safe-why-number {
+  display: block;
+
+  margin-bottom: 18px;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.8px;
+
+  color: var(--secondary);
+}
+
+/* =========================================================
+   FEATURE HEADING
+   ========================================================= */
+
+.safe-why-feature h3 {
+  margin: 0;
+
+  font-size: 21px;
+
+  font-weight: 600;
+
+  line-height: 1.3;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.3px;
+
+  color: var(--text);
+}
+
+.safe-why-feature h3 span {
+  display: block;
+
+  color: var(--primary);
+}
+
+/* =========================================================
+   FEATURE DESCRIPTION
+   ========================================================= */
+
+.safe-why-feature p {
+  max-width: 270px;
+
+  margin: 14px 0 0;
+
+  font-size: 14px;
+
+  line-height: 1.75;
+
+  color: var(--muted);
+}
+
+/* =========================================================
+   FEATURE POSITIONS
+   ========================================================= */
+
+.safe-why-feature-01 {
+  grid-column: 1;
+
+  grid-row: 1;
+
+  justify-self: end;
+
+  text-align: right;
+}
+
+.safe-why-feature-02 {
+  grid-column: 3;
+
+  grid-row: 1;
+
+  justify-self: start;
+
+  text-align: left;
+}
+
+.safe-why-feature-03 {
+  grid-column: 1;
+
+  grid-row: 2;
+
+  justify-self: end;
+
+  text-align: right;
+}
+
+.safe-why-feature-04 {
+  grid-column: 3;
+
+  grid-row: 2;
+
+  justify-self: start;
+
+  text-align: left;
+}
+
+/* =========================================================
+   CENTER IMAGE
+   ========================================================= */
+
+.safe-why-image {
+  grid-column: 2;
+
+  grid-row: 1 / 3;
+
+  width: 100%;
+
+  align-self: center;
+}
+
+.safe-why-image-wrapper {
+  position: relative;
+
+  width: 100%;
+
+  height: 520px;
+
+  overflow: hidden;
+
+  border: 1px solid var(--border);
+
+  background: var(--surface);
+
+  box-shadow: 0 20px 50px rgba(38, 51, 44, 0.08);
+}
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+.safe-why-image-element {
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.8s ease;
+}
+
+.safe-why-image-wrapper:hover .safe-why-image-element {
+  transform: scale(1.025);
+}
+
+/* =========================================================
+   IMAGE OVERLAY
+   ========================================================= */
+
+.safe-why-image-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 1;
+
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.02) 40%,
+    rgba(0, 0, 0, 0.42) 100%
+  );
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   IMAGE LABEL
+   ========================================================= */
+
+.safe-why-image-label {
+  position: absolute;
+
+  left: 50%;
+
+  bottom: 24px;
+
+  z-index: 2;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  transform: translateX(-50%);
+
+  padding: 10px 15px;
+
+  white-space: nowrap;
+
+  background: rgba(255, 255, 255, 0.92);
+
+  border: 1px solid rgba(255, 255, 255, 0.6);
+
+  backdrop-filter: blur(8px);
+}
+
+.safe-why-image-label span {
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.6px;
+
+  color: var(--primary);
+}
+
+.safe-why-image-label svg {
+  width: 12px;
+
+  height: 12px;
+
+  color: var(--secondary);
+}
+
+/* =========================================================
+   SAFE STEP
+   YOUR FIRST STEP / CONSULTATION
+   ========================================================= */
+
+/* =========================================================
+   SECTION
+   ========================================================= */
+
+.safe-consultation {
+  width: 100%;
+  padding: 120px 6%;
+  background: var(--site-bg);
+  margin-top: -90px;
+  color: var(--text);
+  overflow: hidden;
+}
+
+/* =========================================================
+   INTRO
+   ========================================================= */
+
+.safe-consultation-intro {
+  width: min(850px, 100%);
+  margin: 0 auto 70px;
+  text-align: center;
+}
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.safe-consultation-eyebrow-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.safe-consultation-eyebrow {
+  color: var(--primary);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.consultation-eyebrow-line {
+  width: 28px;
+  height: 1px;
+  background: var(--secondary);
+  flex-shrink: 0;
+}
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.safe-consultation-title {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: clamp(2.4rem, 4vw, 3.6rem);
+  line-height: 1.15;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  color: var(--text);
+}
+
+.safe-consultation-title span {
+  color: var(--secondary);
+}
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.safe-consultation-description {
+  max-width: 680px;
+  margin: 25px auto 0;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.9;
+  font-weight: 400;
+}
+
+/* =========================================================
+   STEPS CONTAINER
+   ========================================================= */
+
+.safe-consultation-container {
+  width: min(1000px, 100%);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* =========================================================
+   INDIVIDUAL STEP
+   ========================================================= */
+
+.safe-consultation-item {
+  width: 100%;
+  min-height: 150px;
+
+  display: flex;
+  align-items: center;
+  gap: 35px;
+
+  padding: 32px 38px;
+
+  background: var(--site-bg);
+  border: 1px solid var(--border);
+
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.safe-consultation-item:hover {
+  background: var(--surface-hover);
+  border-color: var(--secondary);
+  transform: translateY(-3px);
+}
+
+/* =========================================================
+   NUMBER BOX
+   ========================================================= */
+
+.safe-consultation-number {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border: 1px solid var(--primary);
+  border-radius: 50px;
+
+  color: var(--primary);
+
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.safe-consultation-content {
+  flex: 1;
+}
+
+.safe-consultation-content h3 {
+  margin: 0 0 10px;
+
+  color: var(--text);
+
+  font-family: "Raleway", sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.safe-consultation-content p {
+  max-width: 700px;
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 0.96rem;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+/* =========================================================
+   CTA
+   ========================================================= */
+
+.safe-consultation-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 55px;
+}
+
+.safe-consultation-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  min-height: 52px;
+  padding: 0 26px;
+
+  background: var(--primary);
+  color: #ffffff;
+
+  border-radius: 8px;
+  text-decoration: none;
+
+  font-family: "Raleway", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.safe-consultation-button i {
+  width: 17px;
+  height: 17px;
+  transition: transform 0.3s ease;
+}
+
+.safe-consultation-button:hover {
+  background: var(--secondary);
+  border-color: var(--secondary);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.safe-consultation-button:hover i {
+  transform: translate(3px, -3px);
+}
+/* =========================================================
+   SAFE STEP
+   FINAL CONSULTATION CTA
+   ========================================================= */
+
+/* =========================================================
+   SECTION
+   ========================================================= */
+
+.safe-final-cta {
+  position: relative;
+  width: 100%;
+  height: 500px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 120px 6%;
+
+  background: var(--primary);
+  color: #ffffff;
+
+  overflow: hidden;
+}
+
+/* =========================================================
+   INNER CONTENT
+   ========================================================= */
+
+.safe-final-cta-inner {
+  position: relative;
+  z-index: 2;
+
+  width: min(900px, 100%);
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.safe-final-cta-eyebrow-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 18px;
+
+  margin-bottom: 26px;
+}
+
+.safe-final-cta-eyebrow {
+  color: var(--secondary);
+
+  font-family: "Raleway", sans-serif;
+
+  font-size: 0.78rem;
+  font-weight: 700;
+
+  letter-spacing: 0.22em;
+
+  text-transform: uppercase;
+
+  white-space: nowrap;
+}
+
+.final-cta-eyebrow-line {
+  width: 55px;
+  height: 1px;
+
+  background: var(--secondary);
+
+  flex-shrink: 0;
+}
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.safe-final-cta-title {
+  max-width: 850px;
+
+  margin: 0 auto;
+
+  color: #ffffff;
+
+  font-family: "Raleway", sans-serif;
+
+  font-size: 4rem;
+
+  line-height: 1.12;
+
+  font-weight: 500;
+
+  letter-spacing: -0.035em;
+}
+
+.safe-final-cta-title span {
+  display: block;
+
+  color: var(--secondary);
+}
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.safe-final-cta-description {
+  max-width: 680px;
+
+  margin: 30px auto 0;
+
+  color: rgba(255, 255, 255, 0.78);
+
+  font-size: 1rem;
+
+  line-height: 1.9;
+
+  font-weight: 400;
+}
+
+/* =========================================================
+   ACTIONS
+   ========================================================= */
+
+.safe-final-cta-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 28px;
+
+  margin-top: 45px;
+}
+
+/* =========================================================
+   PRIMARY BUTTON
+   ========================================================= */
+
+.safe-final-cta-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+
+  min-height: 54px;
+
+  padding: 0 28px;
+
+  background: var(--primary);
+  color: white;
+
+  border: 1px solid var(--secondary);
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-family: "Raleway", sans-serif;
+
+  font-size: 0.84rem;
+  font-weight: 700;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.safe-final-cta-primary i {
+  width: 17px;
+  height: 17px;
+
+  transition: transform 0.3s ease;
+}
+
+.safe-final-cta-primary:hover {
+  background: var(--secondary);
+  border: 1px solid var(--secondary);
+
+  color: white;
+
+  transform: translateY(-2px);
+}
+
+.safe-final-cta-primary:hover i {
+  transform: translate(3px, -3px);
+}
+
+/* =========================================================
+   SECONDARY LINK
+   ========================================================= */
+
+.safe-final-cta-secondary {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 10px;
+
+  min-height: 54px;
+
+  color: #ffffff;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.55);
+
+  text-decoration: none;
+
+  font-family: "Raleway", sans-serif;
+
+  font-size: 0.84rem;
+  font-weight: 600;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.safe-final-cta-secondary i {
+  width: 16px;
+  height: 16px;
+
+  transition: transform 0.3s ease;
+}
+
+.safe-final-cta-secondary:hover {
+  color: var(--secondary);
+
+  border-color: var(--secondary);
+}
+
+.safe-final-cta-secondary:hover i {
+  transform: translateX(4px);
+}
+
+/* =========================================================
+   DECORATIVE ARCHITECTURAL LINES
+   ========================================================= */
+
+.safe-final-cta-decoration {
+  position: absolute;
+
+  width: 260px;
+  height: 260px;
+
+  border: 1px solid rgba(212, 180, 131, 0.18);
+
+  pointer-events: none;
+}
+
+.safe-final-cta-decoration-left {
+  left: -130px;
+  bottom: -130px;
+
+  transform: rotate(45deg);
+}
+
+.safe-final-cta-decoration-right {
+  right: -130px;
+  top: -130px;
+
+  transform: rotate(45deg);
+}
+
+
+/* =========================================================
+   SAFE STEP
+   RESPONSIVE MEDIA QUERIES
+   ========================================================= */
+
+
+/* =========================================================
+   SAMSUNG GALAXY S8+
+   360px - 740px
+   ========================================================= */
+
+@media screen and (min-width: 360px) and (max-width: 740px) {
+
+  /* =======================================================
+     HERO
+     ======================================================= */
+
+  .safe-hero {
+    height: auto;
+    min-height: auto;
+    margin-top: 78px;
+    padding: 70px 20px 75px;
+  }
+
+  .safe-hero-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+  }
+
+  .safe-hero-content {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .safe-hero-eyebrow {
+    justify-content: center;
+    gap: 9px;
+    margin-bottom: 18px;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+  }
+
+  .safe-hero-eyebrow-line {
+    width: 24px;
+  }
+
+  .safe-hero-title {
+    font-size: 2.45rem;
+    line-height: 1.08;
+    letter-spacing: -1.3px;
+  }
+
+  .safe-hero-title span {
+    display: block;
+  }
+
+  .safe-hero-description {
+    max-width: 100%;
+    margin: 22px auto 0;
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  .safe-hero-actions {
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 28px;
+  }
+
+  .safe-hero-btn {
+    width: 100%;
+    max-width: 310px;
+    min-height: 50px;
+    padding: 0 18px;
+    font-size: 11px;
+  }
+
+  .safe-hero-trust {
+    justify-content: center;
+    gap: 12px 18px;
+    margin-top: 28px;
+    padding-top: 20px;
+  }
+
+  .safe-hero-trust-item {
+    font-size: 9px;
+  }
+
+  .safe-hero-check {
+    width: 16px;
+    height: 16px;
+  }
+
+  .safe-hero-check svg {
+    width: 9px;
+    height: 9px;
+  }
+
+  .safe-hero-visual {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .safe-hero-image-wrapper {
+    width: 100%;
+    height: 390px;
+    max-width: 100%;
+  }
+
+  .safe-hero-floating-card {
+    left: 12px;
+    bottom: 20px;
+    width: calc(100% - 24px);
+    padding: 14px 16px;
+    gap: 12px;
+  }
+
+  .safe-hero-floating-icon {
+    width: 38px;
+    height: 38px;
+  }
+
+  .safe-hero-floating-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .safe-hero-floating-content strong {
+    font-size: 11px;
+  }
+
+  .safe-hero-floating-content span {
+    font-size: 9px;
+  }
+
+  .safe-hero-decoration {
+    top: 10px;
+    right: -20px;
+    width: 70px;
+    height: 70px;
+    gap: 6px;
+  }
+
+  .safe-hero-decoration span {
+    width: 5px;
+    height: 5px;
+  }
+
+  .safe-hero-scroll {
+    display: none;
+  }
+
+
+  /* =======================================================
+     INDEPENDENCE
+     ======================================================= */
+
+  .safe-independence {
+    padding: 80px 20px;
+    margin-top: 0;
+  }
+
+  .safe-independence-container {
+    width: 100%;
+  }
+
+  .safe-independence-heading {
+    width: 100%;
+    margin-bottom: 45px;
+  }
+
+  .safe-independence-eyebrow {
+    gap: 9px;
+    margin-bottom: 17px;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+  }
+
+  .safe-independence-eyebrow-line {
+    width: 24px;
+  }
+
+  .safe-independence-heading h2 {
+    font-size: 2.25rem;
+    line-height: 1.12;
+    letter-spacing: -1px;
+  }
+
+  .safe-independence-heading p {
+    max-width: 100%;
+    margin-top: 18px;
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  .safe-independence-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .safe-independence-image {
+    width: 100%;
+    height: 390px;
+  }
+
+  .safe-independence-info {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .safe-independence-info h3 {
+    font-size: 2rem;
+    line-height: 1.12;
+  }
+
+  .safe-independence-info-text {
+    max-width: 100%;
+    margin-top: 18px;
+    font-size: 13px;
+    line-height: 1.75;
+  }
+
+  .safe-independence-divider {
+    margin: 25px 0 0;
+  }
+
+  .safe-independence-point {
+    gap: 14px;
+    padding: 18px 0;
+  }
+
+  .safe-independence-point-icon {
+    width: 38px;
+    height: 38px;
+  }
+
+  .safe-independence-point-icon svg {
+    width: 17px;
+    height: 17px;
+  }
+
+  .safe-independence-point-content h4 {
+    font-size: 14px;
+  }
+
+  .safe-independence-point-content p {
+    max-width: 100%;
+    font-size: 11px;
+    line-height: 1.65;
+  }
+
+
+  /* =======================================================
+     ACCESSIBILITY SOLUTIONS
+     ======================================================= */
+
+  .safe-solutions {
+    padding: 80px 20px;
+    margin-top: 0;
+  }
+
+  .safe-solutions-container {
+    width: 100%;
+  }
+
+  .safe-solutions-heading {
+    margin-bottom: 42px;
+  }
+
+  .safe-solutions-eyebrow {
+    gap: 9px;
+    margin-bottom: 17px;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+  }
+
+  .safe-solutions-eyebrow-line {
+    width: 24px;
+  }
+
+  .safe-solutions-heading h2 {
+    font-size: 2.25rem;
+    line-height: 1.12;
+    letter-spacing: -1px;
+  }
+
+  .safe-solutions-heading p {
+    max-width: 100%;
+    margin-top: 18px;
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  .safe-solutions-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .safe-solution-image {
+    height: 280px;
+  }
+
+  .safe-solution-content {
+    padding: 24px 22px 26px;
+  }
+
+  .safe-solution-category {
+    margin-bottom: 9px;
+    font-size: 8px;
+  }
+
+  .safe-solution-content h3 {
+    font-size: 21px;
+  }
+
+  .safe-solution-content p {
+    min-height: auto;
+    margin: 10px 0 18px;
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+
+  /* =======================================================
+     SAFETY & COMFORT
+     ======================================================= */
+
+  .safe-safety {
+    padding: 80px 20px;
+    margin-top: 0;
+  }
+
+  .safe-safety-intro {
+    width: 100%;
+    margin-bottom: 45px;
+  }
+
+  .safe-safety-eyebrow-wrapper {
+    gap: 9px;
+    margin-bottom: 17px;
+  }
+
+  .eyebrow-line {
+    width: 24px;
+  }
+
+  .safe-safety-eyebrow {
+    font-size: 9px;
+    letter-spacing: 1.7px;
+  }
+
+  .safe-safety-title {
+    font-size: 2.25rem;
+    line-height: 1.12;
+    letter-spacing: -1px;
+  }
+
+  .safe-safety-description {
+    width: 100%;
+    margin-top: 18px;
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  .safe-safety-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .safe-safety-content {
+    max-width: 100%;
+  }
+
+  .safe-safety-feature {
+    grid-template-columns: 40px 1fr;
+    gap: 15px;
+    padding: 20px 0;
+  }
+
+  .safe-safety-number {
+    font-size: 11px;
+  }
+
+  .safe-safety-feature-content h3 {
+    margin-bottom: 6px;
+    font-size: 15px;
+  }
+
+  .safe-safety-feature-content p {
+    max-width: 100%;
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+  .safe-safety-image-wrapper {
+    height: 390px;
+  }
+
+  .safe-safety-badge {
+    left: 15px;
+    bottom: 15px;
+    gap: 10px;
+    padding: 12px 14px;
+  }
+
+  .safe-safety-badge-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .safe-safety-badge-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .safe-safety-badge-content strong {
+    font-size: 11px;
+  }
+
+  .safe-safety-badge-content span {
+    font-size: 9px;
+  }
+
+
+  /* =======================================================
+     HOW SAFE STEP WORKS
+     ======================================================= */
+
+  .safe-process {
+    padding: 80px 20px;
+    margin-top: 0;
+  }
+
+  .safe-process-intro {
+    width: 100%;
+    margin-bottom: 45px;
+  }
+
+  .safe-process-eyebrow-wrapper {
+    gap: 9px;
+    margin-bottom: 17px;
+  }
+
+  .process-eyebrow-line {
+    width: 24px;
+  }
+
+  .safe-process-eyebrow {
+    font-size: 9px;
+    letter-spacing: 1.7px;
+  }
+
+  .safe-process-title {
+    font-size: 2.25rem;
+    line-height: 1.12;
+    letter-spacing: -1px;
+  }
+
+  .safe-process-description {
+    width: 100%;
+    margin-top: 18px;
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  .safe-process-container {
+    width: 100%;
+  }
+
+  .safe-process-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .safe-process-timeline::before {
+    top: 0;
+    bottom: 0;
+    left: 27px;
+    right: auto;
+    width: 1px;
+    height: auto;
+  }
+
+  .safe-process-step {
+    width: 100%;
+    padding: 0 0 35px 0;
+    display: grid;
+    grid-template-columns: 55px 1fr;
+    gap: 15px;
+  }
+
+  .safe-process-step-top {
+    height: 55px;
+    justify-content: center;
+  }
+
+  .safe-process-number {
+    top: 0;
+    left: 0;
+    font-size: 9px;
+  }
+
+  .safe-process-dot {
+    width: 50px;
+    height: 50px;
+  }
+
+  .safe-process-dot svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .safe-process-step-content {
+    padding-top: 3px;
+    text-align: left;
+  }
+
+  .safe-process-step-label {
+    margin-bottom: 6px;
+    font-size: 8px;
+    letter-spacing: 1.5px;
+  }
+
+  .safe-process-step-content h3 {
+    max-width: 100%;
+    margin: 0 0 8px;
+    font-size: 15px;
+  }
+
+  .safe-process-step-content p {
+    max-width: 100%;
+    font-size: 11px;
+    line-height: 1.65;
+  }
+
+  .safe-process-cta {
+    margin-top: 35px;
+  }
+
+
+  /* =======================================================
+     WHY SAFE STEP
+     ======================================================= */
+
+  .safe-why {
+    padding: 80px 20px;
+    margin-top: 0;
+  }
+
+  .safe-why-intro {
+    width: 100%;
+    margin-bottom: 45px;
+  }
+
+  .safe-why-eyebrow-wrapper {
+    gap: 9px;
+    margin-bottom: 17px;
+  }
+
+  .why-eyebrow-line {
+    width: 24px;
+  }
+
+  .safe-why-eyebrow {
+    font-size: 9px;
+    letter-spacing: 1.7px;
+  }
+
+  .safe-why-title {
+    font-size: 2.25rem;
+    line-height: 1.12;
+    letter-spacing: -1px;
+  }
+
+  .safe-why-description {
+    width: 100%;
+    margin-top: 18px;
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  .safe-why-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .safe-why-image {
+    order: -1;
+    width: 100%;
+  }
+
+  .safe-why-image-wrapper {
+    height: 390px;
+  }
+
+  .safe-why-feature {
+    max-width: 100%;
+    padding: 5px 0 20px;
+    text-align: left;
+  }
+
+  .safe-why-feature-01,
+  .safe-why-feature-02,
+  .safe-why-feature-03,
+  .safe-why-feature-04 {
+    grid-column: auto;
+    grid-row: auto;
+    justify-self: stretch;
+    text-align: left;
+  }
+
+  .safe-why-number {
+    margin-bottom: 12px;
+    font-size: 10px;
+  }
+
+  .safe-why-feature h3 {
+    font-size: 17px;
+  }
+
+  .safe-why-feature p {
+    max-width: 100%;
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 1.7;
+  }
+
+  .safe-why-image-label {
+    bottom: 15px;
+    padding: 8px 12px;
+  }
+
+
+  /* =======================================================
+     CONSULTATION
+     ======================================================= */
+
+  .safe-consultation {
+    padding: 80px 20px;
+    margin-top: 0;
+  }
+
+  .safe-consultation-intro {
+    width: 100%;
+    margin-bottom: 45px;
+  }
+
+  .safe-consultation-eyebrow-wrapper {
+    gap: 10px;
+    margin-bottom: 18px;
+  }
+
+  .consultation-eyebrow-line {
+    width: 24px;
+  }
+
+  .safe-consultation-eyebrow {
+    font-size: 9px;
+    letter-spacing: 0.16em;
+  }
+
+  .safe-consultation-title {
+    font-size: 2.2rem;
+    line-height: 1.16;
+  }
+
+  .safe-consultation-description {
+    max-width: 100%;
+    margin-top: 18px;
+    font-size: 14px;
+    line-height: 1.75;
+  }
+
+  .safe-consultation-container {
+    width: 100%;
+    gap: 15px;
+  }
+
+  .safe-consultation-item {
+    min-height: auto;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 23px 18px;
+  }
+
+  .safe-consultation-number {
+    width: 38px;
+    height: 38px;
+    border-radius: 4px;
+    font-size: 0.82rem;
+  }
+
+  .safe-consultation-content h3 {
+    margin-bottom: 7px;
+    font-size: 0.86rem;
+    line-height: 1.35;
+    letter-spacing: 0.09em;
+  }
+
+  .safe-consultation-content p {
+    max-width: 100%;
+    font-size: 0.82rem;
+    line-height: 1.65;
+  }
+
+  .safe-consultation-cta {
+    margin-top: 32px;
+  }
+
+  .safe-consultation-button {
+    width: 100%;
+    max-width: 310px;
+    min-height: 50px;
+    padding: 0 18px;
+    font-size: 0.74rem;
+  }
+
+
+  /* =======================================================
+     FINAL CTA
+     ======================================================= */
+
+  .safe-final-cta {
+    height: auto;
+    min-height: 520px;
+    padding: 75px 20px;
+  }
+
+  .safe-final-cta-inner {
+    width: 100%;
+  }
+
+  .safe-final-cta-eyebrow-wrapper {
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .final-cta-eyebrow-line {
+    width: 25px;
+  }
+
+  .safe-final-cta-eyebrow {
+    font-size: 9px;
+    letter-spacing: 0.16em;
+  }
+
+  .safe-final-cta-title {
+    max-width: 100%;
+    font-size: 2.2rem;
+    line-height: 1.16;
+    letter-spacing: -0.02em;
+  }
+
+  .safe-final-cta-description {
+    max-width: 100%;
+    margin-top: 20px;
+    font-size: 0.86rem;
+    line-height: 1.7;
+  }
+
+  .safe-final-cta-actions {
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 30px;
+  }
+
+  .safe-final-cta-primary {
+    width: 100%;
+    max-width: 310px;
+    min-height: 50px;
+    padding: 0 18px;
+    font-size: 0.74rem;
+  }
+
+  .safe-final-cta-secondary {
+    min-height: 42px;
+    font-size: 0.74rem;
+  }
+
+  .safe-final-cta-decoration {
+    width: 170px;
+    height: 170px;
+  }
+
+  .safe-final-cta-decoration-left {
+    left: -85px;
+    bottom: -85px;
+  }
+
+  .safe-final-cta-decoration-right {
+    right: -85px;
+    top: -85px;
+  }
+}
+
+
+/* =========================================================
+   iPAD MINI
+   768px - 820px
+   ========================================================= */
+
+@media screen and (min-width: 768px) and (max-width: 820px) {
+
+  /* =======================================================
+     HERO
+     ======================================================= */
+
+  .safe-hero {
+    height: auto;
+    min-height: auto;
+    padding: 85px 40px 90px;
+  }
+
+  .safe-hero-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+  }
+
+  .safe-hero-content {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .safe-hero-eyebrow {
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 10px;
+  }
+
+  .safe-hero-title {
+    font-size: 3.3rem;
+    line-height: 1.06;
+    letter-spacing: -1.8px;
+  }
+
+  .safe-hero-description {
+    max-width: 620px;
+    margin: 24px auto 0;
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .safe-hero-actions {
+    justify-content: center;
+    margin-top: 32px;
+  }
+
+  .safe-hero-trust {
+    justify-content: center;
+  }
+
+  .safe-hero-visual {
+    min-height: auto;
+  }
+
+  .safe-hero-image-wrapper {
+    height: 500px;
+    max-width: 680px;
+  }
+
+  .safe-hero-floating-card {
+    left: 20px;
+    bottom: 30px;
+  }
+
+  .safe-hero-decoration {
+    right: -15px;
+  }
+
+  .safe-hero-scroll {
+    display: none;
+  }
+
+
+  /* =======================================================
+     INDEPENDENCE
+     ======================================================= */
+
+  .safe-independence {
+    padding: 95px 40px;
+    margin-top: 0;
+  }
+
+  .safe-independence-container {
+    width: 100%;
+  }
+
+  .safe-independence-heading {
+    margin-bottom: 55px;
+  }
+
+  .safe-independence-heading h2 {
+    font-size: 2.8rem;
+  }
+
+  .safe-independence-heading p {
+    font-size: 15px;
+  }
+
+  .safe-independence-content {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .safe-independence-image {
+    height: 470px;
+  }
+
+  .safe-independence-info {
+    max-width: 100%;
+  }
+
+  .safe-independence-info h3 {
+    font-size: 2.5rem;
+  }
+
+  .safe-independence-info-text {
+    max-width: 650px;
+  }
+
+
+  /* =======================================================
+     SOLUTIONS
+     ======================================================= */
+
+  .safe-solutions {
+    padding: 95px 40px;
+    margin-top: 0;
+  }
+
+  .safe-solutions-container {
+    width: 100%;
+  }
+
+  .safe-solutions-heading {
+    margin-bottom: 55px;
+  }
+
+  .safe-solutions-heading h2 {
+    font-size: 2.8rem;
+  }
+
+  .safe-solutions-heading p {
+    font-size: 15px;
+  }
+
+  .safe-solutions-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .safe-solution-card:last-child {
+    grid-column: 1 / -1;
+    width: calc(50% - 10px);
+    justify-self: center;
+  }
+
+  .safe-solution-image {
+    height: 300px;
+  }
+
+  .safe-solution-content {
+    padding: 26px 26px 28px;
+  }
+
+
+  /* =======================================================
+     SAFETY
+     ======================================================= */
+
+  .safe-safety {
+    padding: 95px 40px;
+    margin-top: 0;
+  }
+
+  .safe-safety-intro {
+    margin-bottom: 55px;
+  }
+
+  .safe-safety-title {
+    font-size: 2.8rem;
+  }
+
+  .safe-safety-description {
+    font-size: 15px;
+  }
+
+  .safe-safety-container {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .safe-safety-content {
+    max-width: 100%;
+  }
+
+  .safe-safety-image-wrapper {
+    height: 500px;
+  }
+
+
+  /* =======================================================
+     PROCESS
+     ======================================================= */
+
+  .safe-process {
+    padding: 95px 40px;
+    margin-top: 0;
+  }
+
+  .safe-process-intro {
+    margin-bottom: 55px;
+  }
+
+  .safe-process-title {
+    font-size: 2.8rem;
+  }
+
+  .safe-process-description {
+    font-size: 15px;
+  }
+
+  .safe-process-container {
+    width: 100%;
+  }
+
+  .safe-process-timeline {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 45px 25px;
+  }
+
+  .safe-process-timeline::before {
+    display: none;
+  }
+
+  .safe-process-step {
+    padding: 0;
+  }
+
+  .safe-process-step-top {
+    height: 55px;
+  }
+
+  .safe-process-number {
+    left: 15px;
+  }
+
+  .safe-process-step-content {
+    padding-top: 20px;
+  }
+
+  .safe-process-step-content h3,
+  .safe-process-step-content p {
+    max-width: 260px;
+  }
+
+  .safe-process-cta {
+    margin-top: 50px;
+  }
+
+
+  /* =======================================================
+     WHY SAFE STEP
+     ======================================================= */
+
+  .safe-why {
+    padding: 95px 40px;
+    margin-top: 0;
+  }
+
+  .safe-why-intro {
+    margin-bottom: 55px;
+  }
+
+  .safe-why-title {
+    font-size: 2.8rem;
+  }
+
+  .safe-why-description {
+    font-size: 15px;
+  }
+
+  .safe-why-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px 25px;
+  }
+
+  .safe-why-image {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    order: -1;
+  }
+
+  .safe-why-image-wrapper {
+    height: 500px;
+  }
+
+  .safe-why-feature-01,
+  .safe-why-feature-02,
+  .safe-why-feature-03,
+  .safe-why-feature-04 {
+    grid-column: auto;
+    grid-row: auto;
+    justify-self: stretch;
+    text-align: left;
+  }
+
+  .safe-why-feature {
+    max-width: 100%;
+  }
+
+  .safe-why-feature p {
+    max-width: 100%;
+  }
+
+
+  /* =======================================================
+     CONSULTATION
+     ======================================================= */
+
+  .safe-consultation {
+    padding: 90px 40px;
+    margin-top: 0;
+  }
+
+  .safe-consultation-intro {
+    width: min(680px, 100%);
+    margin-bottom: 55px;
+  }
+
+  .safe-consultation-title {
+    font-size: 2.7rem;
+  }
+
+  .safe-consultation-description {
+    font-size: 0.94rem;
+  }
+
+  .safe-consultation-container {
+    width: min(700px, 100%);
+    gap: 18px;
+  }
+
+  .safe-consultation-item {
+    min-height: 145px;
+    gap: 25px;
+    padding: 28px 30px;
+  }
+
+  .safe-consultation-number {
+    width: 42px;
+    height: 42px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+  }
+
+  .safe-consultation-content h3 {
+    font-size: 0.96rem;
+  }
+
+  .safe-consultation-content p {
+    font-size: 0.9rem;
+  }
+
+  .safe-consultation-cta {
+    margin-top: 42px;
+  }
+
+
+  /* =======================================================
+     FINAL CTA
+     ======================================================= */
+
+  .safe-final-cta {
+    height: auto;
+    min-height: 540px;
+    padding: 90px 40px;
+  }
+
+  .safe-final-cta-inner {
+    width: min(700px, 100%);
+  }
+
+  .safe-final-cta-title {
+    font-size: 3rem;
+    line-height: 1.15;
+  }
+
+  .safe-final-cta-description {
+    max-width: 620px;
+    font-size: 0.94rem;
+  }
+
+  .safe-final-cta-actions {
+    gap: 25px;
+    margin-top: 38px;
+  }
+
+  .safe-final-cta-decoration {
+    width: 210px;
+    height: 210px;
+  }
+
+  .safe-final-cta-decoration-left {
+    left: -105px;
+    bottom: -105px;
+  }
+
+  .safe-final-cta-decoration-right {
+    right: -105px;
+    top: -105px;
+  }
+}
+
+
+/* =========================================================
+   iPAD PRO 11"
+   821px - 1024px
+   ========================================================= */
+
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+
+  /* =======================================================
+     HERO
+     ======================================================= */
+
+  .safe-hero {
+    height: auto;
+    min-height: auto;
+    padding: 90px 50px 100px;
+  }
+
+  .safe-hero-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+  }
+
+  .safe-hero-content {
+    width: min(800px, 100%);
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .safe-hero-eyebrow {
+    justify-content: center;
+  }
+
+  .safe-hero-title {
+    font-size: 3.8rem;
+    line-height: 1.05;
+  }
+
+  .safe-hero-description {
+    max-width: 700px;
+    margin: 26px auto 0;
+    font-size: 16px;
+  }
+
+  .safe-hero-actions {
+    justify-content: center;
+    margin-top: 34px;
+  }
+
+  .safe-hero-trust {
+    justify-content: center;
+  }
+
+  .safe-hero-visual {
+    min-height: auto;
+  }
+
+  .safe-hero-image-wrapper {
+    height: 570px;
+    max-width: 850px;
+  }
+
+  .safe-hero-floating-card {
+    left: 25px;
+    bottom: 35px;
+  }
+
+  .safe-hero-decoration {
+    right: -15px;
+  }
+
+  .safe-hero-scroll {
+    display: none;
+  }
+
+
+  /* =======================================================
+     INDEPENDENCE
+     ======================================================= */
+
+  .safe-independence {
+    padding: 105px 50px;
+    margin-top: 0;
+  }
+
+  .safe-independence-heading {
+    margin-bottom: 60px;
+  }
+
+  .safe-independence-heading h2 {
+    font-size: 3.1rem;
+  }
+
+  .safe-independence-heading p {
+    font-size: 15px;
+  }
+
+  .safe-independence-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+  }
+
+  .safe-independence-image {
+    height: 550px;
+  }
+
+  .safe-independence-info {
+    max-width: 100%;
+  }
+
+  .safe-independence-info h3 {
+    font-size: 2.6rem;
+  }
+
+
+  /* =======================================================
+     SOLUTIONS
+     ======================================================= */
+
+  .safe-solutions {
+    padding: 105px 50px;
+    margin-top: 0;
+  }
+
+  .safe-solutions-container {
+    width: 100%;
+  }
+
+  .safe-solutions-heading {
+    margin-bottom: 60px;
+  }
+
+  .safe-solutions-heading h2 {
+    font-size: 3.1rem;
+  }
+
+  .safe-solutions-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+
+  .safe-solution-image {
+    height: 270px;
+  }
+
+  .safe-solution-content {
+    padding: 25px 22px 28px;
+  }
+
+  .safe-solution-content h3 {
+    font-size: 22px;
+  }
+
+  .safe-solution-content p {
+    min-height: 85px;
+    font-size: 12px;
+  }
+
+
+  /* =======================================================
+     SAFETY
+     ======================================================= */
+
+  .safe-safety {
+    padding: 105px 50px;
+    margin-top: 0;
+  }
+
+  .safe-safety-intro {
+    margin-bottom: 60px;
+  }
+
+  .safe-safety-title {
+    font-size: 3.1rem;
+  }
+
+  .safe-safety-container {
+    width: 100%;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 45px;
+  }
+
+  .safe-safety-content {
+    max-width: 100%;
+  }
+
+  .safe-safety-feature {
+    grid-template-columns: 45px 1fr;
+    gap: 15px;
+    padding: 22px 0;
+  }
+
+  .safe-safety-feature-content h3 {
+    font-size: 16px;
+  }
+
+  .safe-safety-feature-content p {
+    font-size: 12px;
+  }
+
+  .safe-safety-image-wrapper {
+    height: 560px;
+  }
+
+
+  /* =======================================================
+     PROCESS
+     ======================================================= */
+
+  .safe-process {
+    padding: 105px 50px;
+    margin-top: 0;
+  }
+
+  .safe-process-intro {
+    margin-bottom: 60px;
+  }
+
+  .safe-process-title {
+    font-size: 3.1rem;
+  }
+
+  .safe-process-container {
+    width: 100%;
+  }
+
+  .safe-process-timeline {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px 20px;
+  }
+
+  .safe-process-timeline::before {
+    display: none;
+  }
+
+  .safe-process-step {
+    padding: 0;
+  }
+
+  .safe-process-step-content {
+    padding-top: 22px;
+  }
+
+  .safe-process-step-content h3,
+  .safe-process-step-content p {
+    max-width: 210px;
+  }
+
+  .safe-process-cta {
+    margin-top: 55px;
+  }
+
+
+  /* =======================================================
+     WHY SAFE STEP
+     ======================================================= */
+
+  .safe-why {
+    padding: 105px 50px;
+    margin-top: 0;
+  }
+
+  .safe-why-intro {
+    margin-bottom: 60px;
+  }
+
+  .safe-why-title {
+    font-size: 3.1rem;
+  }
+
+  .safe-why-container {
+    width: 100%;
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(250px, 310px)
+      minmax(0, 1fr);
+
+    column-gap: 35px;
+    row-gap: 45px;
+  }
+
+  .safe-why-image-wrapper {
+    height: 500px;
+  }
+
+  .safe-why-feature {
+    max-width: 100%;
+  }
+
+  .safe-why-feature h3 {
+    font-size: 18px;
+  }
+
+  .safe-why-feature p {
+    max-width: 100%;
+    font-size: 12px;
+  }
+
+
+  /* =======================================================
+     CONSULTATION
+     ======================================================= */
+
+  .safe-consultation {
+    padding: 100px 50px;
+    margin-top: 0;
+  }
+
+  .safe-consultation-intro {
+    width: min(760px, 100%);
+    margin-bottom: 60px;
+  }
+
+  .safe-consultation-title {
+    font-size: 3.1rem;
+  }
+
+  .safe-consultation-description {
+    font-size: 0.96rem;
+  }
+
+  .safe-consultation-container {
+    width: min(850px, 100%);
+    gap: 20px;
+  }
+
+  .safe-consultation-item {
+    min-height: 150px;
+    gap: 30px;
+    padding: 30px 34px;
+  }
+
+  .safe-consultation-number {
+    width: 44px;
+    height: 44px;
+    border-radius: 4px;
+  }
+
+  .safe-consultation-content h3 {
+    font-size: 1rem;
+  }
+
+  .safe-consultation-content p {
+    font-size: 0.93rem;
+  }
+
+  .safe-consultation-cta {
+    margin-top: 48px;
+  }
+
+
+  /* =======================================================
+     FINAL CTA
+     ======================================================= */
+
+  .safe-final-cta {
+    height: auto;
+    min-height: 560px;
+    padding: 100px 50px;
+  }
+
+  .safe-final-cta-inner {
+    width: min(800px, 100%);
+  }
+
+  .safe-final-cta-title {
+    font-size: 3.5rem;
+    line-height: 1.14;
+  }
+
+  .safe-final-cta-description {
+    max-width: 650px;
+    font-size: 0.96rem;
+  }
+
+  .safe-final-cta-actions {
+    gap: 28px;
+    margin-top: 40px;
+  }
+
+  .safe-final-cta-decoration {
+    width: 230px;
+    height: 230px;
+  }
+
+  .safe-final-cta-decoration-left {
+    left: -115px;
+    bottom: -115px;
+  }
+
+  .safe-final-cta-decoration-right {
+    right: -115px;
+    top: -115px;
+  }
+}
+
+
+/* =========================================================
+   NEST HUB
+   1024px × 600px
+   ========================================================= */
+
+@media screen and (width: 1024px) and (height: 600px) {
+
+  /* =======================================================
+     HERO
+     ======================================================= */
+
+  .safe-hero {
+    height: 600px;
+    min-height: 600px;
+    padding: 60px 45px 70px;
+  }
+
+  .safe-hero-container {
+    width: 100%;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 40px;
+  }
+
+  .safe-hero-content {
+    max-width: 430px;
+  }
+
+  .safe-hero-eyebrow {
+    margin-bottom: 15px;
+    font-size: 9px;
+  }
+
+  .safe-hero-title {
+    font-size: 3rem;
+    line-height: 1.02;
+    letter-spacing: -1.8px;
+  }
+
+  .safe-hero-description {
+    max-width: 400px;
+    margin-top: 18px;
+    font-size: 12px;
+    line-height: 1.65;
+  }
+
+  .safe-hero-actions {
+    gap: 10px;
+    margin-top: 22px;
+  }
+
+  .safe-hero-btn {
+    min-height: 45px;
+    padding: 0 16px;
+    font-size: 10px;
+  }
+
+  .safe-hero-trust {
+    gap: 10px 15px;
+    margin-top: 20px;
+    padding-top: 15px;
+  }
+
+  .safe-hero-trust-item {
+    font-size: 8px;
+  }
+
+  .safe-hero-visual {
+    min-height: 430px;
+  }
+
+  .safe-hero-image-wrapper {
+    height: 430px;
+    max-width: 470px;
+  }
+
+  .safe-hero-floating-card {
+    left: -15px;
+    bottom: 20px;
+    width: 230px;
+    padding: 12px 14px;
+    gap: 10px;
+  }
+
+  .safe-hero-floating-icon {
+    width: 34px;
+    height: 34px;
+  }
+
+  .safe-hero-floating-content strong {
+    font-size: 10px;
+  }
+
+  .safe-hero-floating-content span {
+    font-size: 8px;
+  }
+
+  .safe-hero-decoration {
+    top: 8px;
+    right: -15px;
+    width: 65px;
+    height: 65px;
+    gap: 5px;
+  }
+
+  .safe-hero-decoration span {
+    width: 5px;
+    height: 5px;
+  }
+
+  .safe-hero-scroll {
+    left: 25px;
+    bottom: 18px;
+    margin-left: 0;
+  }
+
+
+  /* =======================================================
+     INDEPENDENCE
+     ======================================================= */
+
+  .safe-independence {
+    padding: 75px 45px;
+    margin-top: 0;
+  }
+
+  .safe-independence-heading {
+    margin-bottom: 45px;
+  }
+
+  .safe-independence-heading h2 {
+    font-size: 2.6rem;
+  }
+
+  .safe-independence-heading p {
+    margin-top: 18px;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .safe-independence-content {
+    gap: 45px;
+  }
+
+  .safe-independence-image {
+    height: 440px;
+  }
+
+  .safe-independence-info h3 {
+    font-size: 2.3rem;
+  }
+
+  .safe-independence-info-text {
+    margin-top: 18px;
+    font-size: 12px;
+  }
+
+  .safe-independence-point {
+    padding: 16px 0;
+    gap: 14px;
+  }
+
+  .safe-independence-point-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .safe-independence-point-content h4 {
+    font-size: 13px;
+  }
+
+  .safe-independence-point-content p {
+    font-size: 10px;
+  }
+
+
+  /* =======================================================
+     SOLUTIONS
+     ======================================================= */
+
+  .safe-solutions {
+    padding: 75px 45px;
+    margin-top: 0;
+  }
+
+  .safe-solutions-heading {
+    margin-bottom: 45px;
+  }
+
+  .safe-solutions-heading h2 {
+    font-size: 2.6rem;
+  }
+
+  .safe-solutions-heading p {
+    font-size: 13px;
+  }
+
+  .safe-solutions-grid {
+    gap: 15px;
+  }
+
+  .safe-solution-image {
+    height: 230px;
+  }
+
+  .safe-solution-content {
+    padding: 20px 18px 22px;
+  }
+
+  .safe-solution-content h3 {
+    font-size: 19px;
+  }
+
+  .safe-solution-content p {
+    min-height: 65px;
+    margin: 9px 0 15px;
+    font-size: 10px;
+    line-height: 1.6;
+  }
+
+  .safe-solution-category,
+  .safe-solution-link {
+    font-size: 8px;
+  }
+
+
+  /* =======================================================
+     SAFETY
+     ======================================================= */
+
+  .safe-safety {
+    padding: 75px 45px;
+    margin-top: 0;
+  }
+
+  .safe-safety-intro {
+    margin-bottom: 45px;
+  }
+
+  .safe-safety-title {
+    font-size: 2.6rem;
+  }
+
+  .safe-safety-description {
+    margin-top: 18px;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  .safe-safety-container {
+    gap: 40px;
+  }
+
+  .safe-safety-feature {
+    grid-template-columns: 42px 1fr;
+    gap: 14px;
+    padding: 18px 0;
+  }
+
+  .safe-safety-feature-content h3 {
+    font-size: 14px;
+  }
+
+  .safe-safety-feature-content p {
+    font-size: 11px;
+    line-height: 1.6;
+  }
+
+  .safe-safety-image-wrapper {
+    height: 470px;
+  }
+
+  .safe-safety-badge {
+    left: 18px;
+    bottom: 18px;
+    padding: 11px 13px;
+  }
+
+  .safe-safety-badge-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .safe-safety-badge-content strong {
+    font-size: 10px;
+  }
+
+  .safe-safety-badge-content span {
+    font-size: 8px;
+  }
+
+
+  /* =======================================================
+     PROCESS
+     ======================================================= */
+
+  .safe-process {
+    padding: 75px 45px;
+    margin-top: 0;
+  }
+
+  .safe-process-intro {
+    margin-bottom: 45px;
+  }
+
+  .safe-process-title {
+    font-size: 2.6rem;
+  }
+
+  .safe-process-description {
+    font-size: 13px;
+  }
+
+  .safe-process-container {
+    width: 100%;
+  }
+
+  .safe-process-timeline {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px 15px;
+  }
+
+  .safe-process-timeline::before {
+    display: none;
+  }
+
+  .safe-process-step {
+    padding: 0;
+  }
+
+  .safe-process-step-content {
+    padding-top: 18px;
+  }
+
+  .safe-process-step-content h3 {
+    max-width: 150px;
+    font-size: 14px;
+  }
+
+  .safe-process-step-content p {
+    max-width: 150px;
+    font-size: 10px;
+    line-height: 1.55;
+  }
+
+  .safe-process-step-label {
+    font-size: 8px;
+  }
+
+  .safe-process-number {
+    font-size: 9px;
+  }
+
+  .safe-process-dot {
+    width: 48px;
+    height: 48px;
+  }
+
+  .safe-process-cta {
+    margin-top: 35px;
+  }
+
+
+  /* =======================================================
+     WHY SAFE STEP
+     ======================================================= */
+
+  .safe-why {
+    padding: 75px 45px;
+    margin-top: 0;
+  }
+
+  .safe-why-intro {
+    margin-bottom: 45px;
+  }
+
+  .safe-why-title {
+    font-size: 2.6rem;
+  }
+
+  .safe-why-description {
+    font-size: 13px;
+  }
+
+  .safe-why-container {
+    width: 100%;
+    grid-template-columns:
+      minmax(0, 1fr)
+      minmax(230px, 280px)
+      minmax(0, 1fr);
+
+    column-gap: 25px;
+    row-gap: 35px;
+  }
+
+  .safe-why-image-wrapper {
+    height: 430px;
+  }
+
+  .safe-why-feature {
+    max-width: 240px;
+    padding-bottom: 18px;
+  }
+
+  .safe-why-feature h3 {
+    font-size: 16px;
+  }
+
+  .safe-why-feature p {
+    max-width: 220px;
+    font-size: 10px;
+    line-height: 1.6;
+  }
+
+  .safe-why-number {
+    margin-bottom: 12px;
+    font-size: 9px;
+  }
+
+
+  /* =======================================================
+     CONSULTATION
+     ======================================================= */
+
+  .safe-consultation {
+    padding: 70px 45px;
+    margin-top: 0;
+  }
+
+  .safe-consultation-intro {
+    margin-bottom: 42px;
+  }
+
+  .safe-consultation-eyebrow-wrapper {
+    gap: 14px;
+    margin-bottom: 17px;
+  }
+
+  .consultation-eyebrow-line {
+    width: 35px;
+  }
+
+  .safe-consultation-title {
+    font-size: 2.7rem;
+    line-height: 1.12;
+  }
+
+  .safe-consultation-description {
+    margin-top: 16px;
+    font-size: 0.86rem;
+    line-height: 1.65;
+  }
+
+  .safe-consultation-container {
+    width: min(850px, 100%);
+    gap: 14px;
+  }
+
+  .safe-consultation-item {
+    min-height: 110px;
+    gap: 24px;
+    padding: 20px 26px;
+  }
+
+  .safe-consultation-number {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+  }
+
+  .safe-consultation-content h3 {
+    margin-bottom: 6px;
+    font-size: 0.88rem;
+  }
+
+  .safe-consultation-content p {
+    font-size: 0.8rem;
+    line-height: 1.55;
+  }
+
+  .safe-consultation-cta {
+    margin-top: 28px;
+  }
+
+  .safe-consultation-button {
+    min-height: 48px;
+    padding: 0 23px;
+    font-size: 0.74rem;
+  }
+
+
+  /* =======================================================
+     FINAL CTA
+     ======================================================= */
+
+  .safe-final-cta {
+    height: 500px;
+    min-height: 500px;
+    padding: 65px 45px;
+  }
+
+  .safe-final-cta-inner {
+    width: min(850px, 100%);
+  }
+
+  .safe-final-cta-eyebrow-wrapper {
+    gap: 14px;
+    margin-bottom: 18px;
+  }
+
+  .final-cta-eyebrow-line {
+    width: 40px;
+  }
+
+  .safe-final-cta-title {
+    font-size: 3rem;
+    line-height: 1.1;
+  }
+
+  .safe-final-cta-title span {
+    display: inline;
+  }
+
+  .safe-final-cta-description {
+    max-width: 620px;
+    margin-top: 18px;
+    font-size: 0.84rem;
+    line-height: 1.6;
+  }
+
+  .safe-final-cta-actions {
+    gap: 22px;
+    margin-top: 27px;
+  }
+
+  .safe-final-cta-primary,
+  .safe-final-cta-secondary {
+    min-height: 50px;
+  }
+
+  .safe-final-cta-primary {
+    padding: 0 23px;
+    font-size: 0.74rem;
+  }
+
+  .safe-final-cta-secondary {
+    font-size: 0.74rem;
+  }
+
+  .safe-final-cta-decoration {
+    width: 195px;
+    height: 195px;
+  }
+
+  .safe-final-cta-decoration-left {
+    left: -97px;
+    bottom: -97px;
+  }
+
+  .safe-final-cta-decoration-right {
+    right: -97px;
+    top: -97px;
+  }
+}

@@ -1,0 +1,1026 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logo.png" />
+
+    <title>Services</title>
+
+    <!-- =========================================
+       GOOGLE FONT
+       ========================================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =========================================
+       LUCIDE ICONS
+       ========================================= -->
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="services.css" />
+  </head>
+  <body>
+    <!-- =========================================================
+     SAFE STEP
+     HEADER
+     ========================================================= -->
+
+    <header class="site-header">
+      <div class="header-container">
+        <!-- =================================================
+         LOGO
+    ================================================== -->
+
+        <div class="logo">
+          <a href="index.html" aria-label="Safe Step Home">
+            <img src="images/logo.png" alt="Safe Step Logo" />
+          </a>
+
+          <div class="logo-text" onclick="window.location.href = 'index.html'">
+            <h1>
+              <span class="safe">Safe</span><span class="step">Step</span>
+            </h1>
+
+            <p>Accessibility Solutions</p>
+          </div>
+        </div>
+
+        <!-- =================================================
+         NAVIGATION
+    ================================================== -->
+
+        <nav class="navbar" aria-label="Primary Navigation">
+          <ul class="nav-links">
+            <!-- HOME -->
+
+            <li class="dropdown">
+              <a href="index.html">
+                <span>Home</span>
+
+                <i data-lucide="chevron-down" aria-hidden="true"></i>
+              </a>
+
+              <!-- HOME DROPDOWN -->
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="index.html">
+                    <i data-lucide="house" aria-hidden="true"></i>
+
+                    <span>Home 1 - Classic</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="home2.html">
+                    <i data-lucide="sparkles" aria-hidden="true"></i>
+
+                    <span>Home 2 - Premium</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- ABOUT -->
+
+            <li>
+              <a href="about.html">
+                <span>About</span>
+              </a>
+            </li>
+
+            <!-- SERVICES -->
+
+            <li>
+              <a href="services.html">
+                <span>Services</span>
+              </a>
+            </li>
+
+            <!-- PRODUCTS -->
+
+            <li>
+              <a href="products.html">
+                <span>Products</span>
+              </a>
+            </li>
+
+            <!-- CONSULTATION -->
+
+            <li>
+              <a href="consultation.html">
+                <span>Consultation</span>
+              </a>
+            </li>
+
+            <!-- PRICING -->
+
+            <li>
+              <a href="pricing.html">
+                <span>Pricing</span>
+              </a>
+            </li>
+
+            <!-- CONTACT -->
+
+            <li>
+              <a href="contact.html">
+                <span>Contact</span>
+              </a>
+            </li>
+
+            <!-- DASHBOARD -->
+
+            <li>
+              <a href="dashboard.html">
+                <span>Dashboard</span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- MOBILE LOGIN -->
+
+          <div class="mobile-login">
+            <a href="login.html" class="login-btn mobile-login-btn">
+              <i data-lucide="log-in" aria-hidden="true"></i>
+
+              <span>Login</span>
+            </a>
+          </div>
+        </nav>
+
+        <!-- =================================================
+         HEADER ACTIONS
+    ================================================== -->
+
+        <div class="header-buttons">
+          <!-- RTL -->
+
+          <button
+            class="icon-btn"
+            id="rtlToggle"
+            type="button"
+            title="RTL Mode"
+            aria-label="Toggle RTL mode"
+            aria-pressed="false"
+          >
+            <i data-lucide="arrow-left-right" aria-hidden="true"></i>
+          </button>
+
+          <!-- DARK MODE -->
+
+          <button
+            class="icon-btn"
+            id="darkToggle"
+            type="button"
+            title="Dark Mode"
+            aria-label="Toggle dark mode"
+          >
+            <i data-lucide="moon" aria-hidden="true"></i>
+          </button>
+
+          <!-- LOGIN -->
+
+          <a href="login.html" class="login-btn desktop-login">
+            <i data-lucide="log-in" aria-hidden="true"></i>
+
+            <span>Login</span>
+          </a>
+
+          <!-- MOBILE MENU -->
+
+          <button
+            class="icon-btn menu-btn"
+            id="menuToggle"
+            type="button"
+            title="Menu"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- =========================================================
+     SERVICES PAGE — SECTION 01
+     HERO
+========================================================= -->
+
+    <section class="services-hero" id="servicesHero">
+      <!-- Background Overlay -->
+      <div class="services-hero-overlay"></div>
+
+      <!-- Architectural Lines -->
+      <span class="services-hero-line services-hero-line-left"></span>
+      <span class="services-hero-line services-hero-line-right"></span>
+
+      <!-- Hero Content -->
+      <div class="services-hero-content">
+        <div class="services-hero-eyebrow">
+          <span class="services-hero-eyebrow-line"></span>
+          <span>SAFE STEP SERVICES</span>
+        </div>
+
+        <h1 class="services-hero-title">
+          Accessibility Services,
+          <span>Thoughtfully Delivered.</span>
+        </h1>
+
+        <p class="services-hero-description">
+          From understanding your home to installing the right accessibility
+          solution, Safe Step provides a considered approach designed around
+          your space, your needs, and the way you live.
+        </p>
+
+        <div class="services-hero-actions">
+          <a
+            href="#servicesList"
+            class="services-hero-btn services-hero-btn-primary"
+          >
+            Explore Our Services
+          </a>
+
+          <a
+            href="consultation.html"
+            class="services-hero-btn services-hero-btn-secondary"
+          >
+            Book a Consultation
+          </a>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="services-hero-scroll">
+        <span>SCROLL TO EXPLORE</span>
+
+        <span class="services-hero-scroll-line"></span>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     SERVICES PAGE — SECTION 02
+     ACCESSIBILITY DESIGNED AROUND YOU
+========================================================= -->
+
+    <section class="services-philosophy" id="servicesPhilosophy">
+      <!-- Section Intro -->
+      <div class="services-philosophy-intro">
+        <div class="services-philosophy-eyebrow">
+          <span class="services-philosophy-eyebrow-line"></span>
+          <span>OUR SERVICE PHILOSOPHY</span>
+        </div>
+
+        <h2 class="services-philosophy-title">
+          Accessibility Should Work Naturally
+          <span class="span">Within Your Home.</span>
+        </h2>
+
+        <p class="services-philosophy-description">
+          Every home has its own layout, character, routines, and requirements.
+          Our approach begins by understanding those details before considering
+          the right accessibility solution.
+        </p>
+      </div>
+
+      <!-- Main Content -->
+      <div class="services-philosophy-container">
+        <!-- Image -->
+        <div class="services-philosophy-image-wrap">
+          <img
+            src="images/philosophy-around.png"
+            alt="Elegant accessible residential interior"
+            class="services-philosophy-image"
+          />
+
+          <div class="services-philosophy-image-label">
+            <span class="services-philosophy-image-number"> 01 </span>
+
+            <div class="services-philosophy-image-text">
+              <strong>DESIGNED TO BELONG</strong>
+              <span>Accessibility that feels at home.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="services-philosophy-content">
+          <span class="services-philosophy-content-eyebrow">
+            DESIGNED AROUND YOU
+          </span>
+
+          <h3>Solutions That Fit the Way You Live.</h3>
+
+          <p class="services-philosophy-content-description">
+            We don't believe accessibility should feel like an afterthought. The
+            right solution should work naturally within your home while
+            supporting the way you move, live, and use your space every day.
+          </p>
+
+          <!-- Points -->
+          <div class="services-philosophy-points">
+            <div class="services-philosophy-point">
+              <span class="services-philosophy-point-number"> 01 </span>
+
+              <div class="services-philosophy-point-content">
+                <h4>Understand Your Needs</h4>
+
+                <p>
+                  We take the time to understand your priorities, routines, and
+                  everyday challenges.
+                </p>
+              </div>
+            </div>
+
+            <div class="services-philosophy-point">
+              <span class="services-philosophy-point-number"> 02 </span>
+
+              <div class="services-philosophy-point-content">
+                <h4>Consider Your Space</h4>
+
+                <p>
+                  We look at your home's layout, access points, available space,
+                  and architectural character.
+                </p>
+              </div>
+            </div>
+
+            <div class="services-philosophy-point">
+              <span class="services-philosophy-point-number"> 03 </span>
+
+              <div class="services-philosophy-point-content">
+                <h4>Deliver With Care</h4>
+
+                <p>
+                  We guide you through the process and approach installation
+                  with care for your home.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     SERVICES SECTION 3
+     OUR SERVICES
+     ========================================================= -->
+
+    <section class="services-list" id="servicesList">
+      <!-- SECTION INTRO -->
+      <div class="services-list-intro">
+        <div class="services-list-eyebrow">
+          <span class="services-list-eyebrow-line"></span>
+          <span>OUR SERVICES</span>
+        </div>
+
+        <h2 class="services-list-title">
+          Accessibility Solutions,
+          <span>Designed Around Your Home.</span>
+        </h2>
+
+        <p class="services-list-description">
+          From everyday movement between levels to long-term accessibility, our
+          services are thoughtfully considered around your space, your needs,
+          and the way you live.
+        </p>
+      </div>
+
+      <!-- SERVICES GRID -->
+      <div class="services-list-grid">
+        <!-- SERVICE 01 -->
+        <article class="services-list-card">
+          <div class="services-list-image-wrap">
+            <img
+              src="images/stairlift-installation.png"
+              alt="Residential stairlift installation"
+              class="services-list-image"
+            />
+
+            <span class="services-list-image-number"> 01 </span>
+          </div>
+
+          <div class="services-list-content">
+            <span class="services-list-card-label">
+              STAIRLIFT INSTALLATION
+            </span>
+
+            <h3 class="services-list-card-title">
+              Move Between Levels
+              <span>With Greater Ease.</span>
+            </h3>
+
+            <p class="services-list-card-description">
+              Thoughtfully installed stairlift solutions that can make everyday
+              movement between floors more comfortable, accessible, and
+              convenient.
+            </p>
+
+            <a href="service-d.html" class="services-list-card-link">
+              Explore Stairlifts
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- SERVICE 02 -->
+        <article class="services-list-card">
+          <div class="services-list-image-wrap">
+            <img
+              src="images/homelift-installation.png"
+              alt="Modern residential home elevator"
+              class="services-list-image"
+            />
+
+            <span class="services-list-image-number"> 02 </span>
+          </div>
+
+          <div class="services-list-content">
+            <span class="services-list-card-label">
+              HOME ELEVATOR INSTALLATION
+            </span>
+
+            <h3 class="services-list-card-title">
+              Elevate Every Level
+              <span>Of Your Home.</span>
+            </h3>
+
+            <p class="services-list-card-description">
+              Residential elevator solutions designed to connect multiple levels
+              while complementing the character and comfort of your home.
+            </p>
+
+            <a href="service-d.html" class="services-list-card-link">
+              Explore Home Elevators
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- SERVICE 03 -->
+        <article class="services-list-card">
+          <div class="services-list-image-wrap">
+            <img
+              src="images/ramp-installation.png"
+              alt="Residential accessibility ramp"
+              class="services-list-image"
+            />
+
+            <span class="services-list-image-number"> 03 </span>
+          </div>
+
+          <div class="services-list-content">
+            <span class="services-list-card-label">
+              ACCESSIBILITY RAMP INSTALLATION
+            </span>
+
+            <h3 class="services-list-card-title">
+              A More Comfortable
+              <span>Way In.</span>
+            </h3>
+
+            <p class="services-list-card-description">
+              Carefully considered ramp solutions that make entrances and
+              transitions easier to navigate while fitting naturally into your
+              home's exterior.
+            </p>
+
+            <a href="service-d.html" class="services-list-card-link">
+              Explore Ramps
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     SERVICES SECTION 4
+     FROM FIRST CONVERSATION TO INSTALLATION
+     ========================================================= -->
+
+    <section class="services-process" id="servicesProcess">
+      <!-- SECTION INTRO -->
+      <div class="services-process-intro">
+        <div class="services-process-eyebrow">
+          <span class="services-process-eyebrow-line"></span>
+          <span>THE SAFE STEP PROCESS</span>
+        </div>
+
+        <h2 class="services-process-title">
+          A Clearer Way From
+          <span>Idea to Installation.</span>
+        </h2>
+
+        <p class="services-process-description">
+          We keep the process straightforward, taking the time to understand
+          your home before moving forward with a solution designed around you.
+        </p>
+      </div>
+
+      <!-- PROCESS -->
+      <div class="services-process-list">
+        <!-- STEP 01 -->
+        <article class="services-process-item">
+          <div class="services-process-number">01</div>
+
+          <div class="services-process-icon">
+            <i data-lucide="messages-square"></i>
+          </div>
+
+          <div class="services-process-content">
+            <span class="services-process-label"> CONSULTATION </span>
+
+            <h3>Start With a Conversation.</h3>
+
+            <p>
+              We begin by understanding your needs, priorities, routines, and
+              what you would like your home to do for you.
+            </p>
+          </div>
+        </article>
+
+        <!-- STEP 02 -->
+        <article class="services-process-item">
+          <div class="services-process-number">02</div>
+
+          <div class="services-process-icon">
+            <i data-lucide="house"></i>
+          </div>
+
+          <div class="services-process-content">
+            <span class="services-process-label"> HOME ASSESSMENT </span>
+
+            <h3>Understand Your Space.</h3>
+
+            <p>
+              We consider your home's layout, access points, available space,
+              and architectural details to understand what could work.
+            </p>
+          </div>
+        </article>
+
+        <!-- STEP 03 -->
+        <article class="services-process-item">
+          <div class="services-process-number">03</div>
+
+          <div class="services-process-icon">
+            <i data-lucide="clipboard-list"></i>
+          </div>
+
+          <div class="services-process-content">
+            <span class="services-process-label"> RECOMMENDATION </span>
+
+            <h3>Explore the Right Solution.</h3>
+
+            <p>
+              We discuss suitable options and guide you toward an accessibility
+              solution that fits your home and your everyday needs.
+            </p>
+          </div>
+        </article>
+
+        <!-- STEP 04 -->
+        <article class="services-process-item">
+          <div class="services-process-number">04</div>
+
+          <div class="services-process-icon">
+            <i data-lucide="wrench"></i>
+          </div>
+
+          <div class="services-process-content">
+            <span class="services-process-label"> INSTALLATION </span>
+
+            <h3>Bring Your Solution to Life.</h3>
+
+            <p>
+              Our installation process is approached with care, attention to
+              detail, and respect for your home.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     SERVICES SECTION 5
+     CARE BEYOND INSTALLATION
+     ========================================================= -->
+
+    <section class="services-support" id="servicesSupport">
+      <!-- SECTION INTRO -->
+      <div class="services-support-intro">
+        <div class="services-support-eyebrow">
+          <span class="services-support-eyebrow-line"></span>
+          <span>ONGOING SUPPORT</span>
+        </div>
+
+        <h2 class="services-support-title">
+          Our Service Doesn't End
+          <span>at Installation.</span>
+        </h2>
+
+        <p class="services-support-description">
+          We believe continued care is an important part of creating confidence
+          at home. Our support is there to help you maintain your solution and
+          feel comfortable using it over time.
+        </p>
+      </div>
+
+      <!-- SUPPORT LIST -->
+      <div class="services-support-list">
+        <!-- SUPPORT 01 -->
+        <article class="services-support-item">
+          <div class="services-support-number">01</div>
+
+          <div class="services-support-icon">
+            <i data-lucide="settings"></i>
+          </div>
+
+          <div class="services-support-content">
+            <span class="services-support-label"> MAINTENANCE </span>
+
+            <h3>Keep Your Solution Performing Well.</h3>
+
+            <p>
+              Ongoing maintenance can help keep your accessibility solution
+              operating comfortably and reliably over time.
+            </p>
+          </div>
+        </article>
+
+        <!-- SUPPORT 02 -->
+        <article class="services-support-item">
+          <div class="services-support-number">02</div>
+
+          <div class="services-support-icon">
+            <i data-lucide="headset"></i>
+          </div>
+
+          <div class="services-support-content">
+            <span class="services-support-label"> SERVICE SUPPORT </span>
+
+            <h3>Help When You Need It.</h3>
+
+            <p>
+              When questions or service needs arise, our team can help you
+              understand the next steps and available support.
+            </p>
+          </div>
+        </article>
+
+        <!-- SUPPORT 03 -->
+        <article class="services-support-item">
+          <div class="services-support-number">03</div>
+
+          <div class="services-support-icon">
+            <i data-lucide="shield-check"></i>
+          </div>
+
+          <div class="services-support-content">
+            <span class="services-support-label"> WARRANTY SUPPORT </span>
+
+            <h3>Continued Peace of Mind.</h3>
+
+            <p>
+              We provide guidance around your warranty and help you understand
+              the support available for your installation.
+            </p>
+          </div>
+        </article>
+
+        <!-- SUPPORT 04 -->
+        <article class="services-support-item">
+          <div class="services-support-number">04</div>
+
+          <div class="services-support-icon">
+            <i data-lucide="calendar-cog"></i>
+          </div>
+
+          <div class="services-support-content">
+            <span class="services-support-label"> FUTURE NEEDS </span>
+
+            <h3>Ready for What Comes Next.</h3>
+
+            <p>
+              As your home and needs change, continued guidance can help you
+              consider the next steps for accessibility.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     SERVICES SECTION 6
+     FINAL CTA
+     ========================================================= -->
+
+    <section class="services-final-cta" id="servicesFinalCta">
+      <div class="services-final-cta-box">
+        <div class="services-final-cta-content">
+          <!-- EYEBROW -->
+          <div class="services-final-cta-eyebrow">
+            <span class="services-final-cta-eyebrow-line"></span>
+            <span>START WITH A CONVERSATION</span>
+          </div>
+
+          <!-- TITLE -->
+          <h2 class="services-final-cta-title">
+            Let's Find the Right
+            <span>Solution for Your Home.</span>
+          </h2>
+
+          <!-- DESCRIPTION -->
+          <p class="services-final-cta-description">
+            Tell us about your home, your needs, and the way you want to live.
+            We'll help you explore thoughtful accessibility solutions designed
+            around your space and your future.
+          </p>
+
+          <!-- BUTTONS -->
+          <div class="services-final-cta-actions">
+            <a
+              href="consultation.html"
+              class="services-final-cta-button services-final-cta-button-primary"
+            >
+              <span>Book a Consultation</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+
+            <a
+              href="contact.html"
+              class="services-final-cta-button services-final-cta-button-secondary"
+            >
+              <span>Contact Safe Step</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     SAFE STEP
+     FOOTER
+     ========================================================= -->
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- =================================================
+         BRAND
+    ================================================== -->
+
+        <div class="footer-col footer-brand">
+          <div class="footer-logo">
+            <a href="index.html" aria-label="Safe Step Home">
+              <img src="images/logo.png" alt="Safe Step Logo" />
+            </a>
+
+            <div
+              class="footer-branding"
+              onclick="window.location.href = 'index.html'"
+            >
+              <h2>
+                <span class="safe">Safe</span><span class="step">Step</span>
+              </h2>
+
+              <p>Accessibility Solutions</p>
+            </div>
+          </div>
+
+          <!-- DESCRIPTION -->
+
+          <p class="footer-about">
+            Safe Step provides reliable home accessibility solutions designed to
+            help people move safely, comfortably, and independently throughout
+            their homes.
+          </p>
+
+          <!-- SOCIAL MEDIA -->
+
+          <div class="social-media">
+            <!-- INSTAGRAM -->
+
+            <a href="#" aria-label="Instagram" title="Instagram">
+              <i data-lucide="camera" aria-hidden="true"></i>
+            </a>
+
+            <!-- FACEBOOK -->
+
+            <a href="#" aria-label="Facebook" title="Facebook">
+              <i data-lucide="users" aria-hidden="true"></i>
+            </a>
+
+            <!-- YOUTUBE -->
+
+            <a href="#" aria-label="YouTube" title="YouTube">
+              <i data-lucide="play" aria-hidden="true"></i>
+            </a>
+
+            <!-- EMAIL -->
+
+            <a href="mailto:info@aquacare.com" aria-label="Email" title="Email">
+              <i data-lucide="mail" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- =================================================
+         QUICK LINKS
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="about.html">About</a>
+            </li>
+
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+
+            <li>
+              <a href="products.html">Products</a>
+            </li>
+
+            <li>
+              <a href="pricing.html">Pricing</a>
+            </li>
+
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         OUR SOLUTIONS
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Our Solutions</h3>
+
+          <ul>
+            <li>
+              <a href="products.html#stairlifts"> Stairlifts </a>
+            </li>
+
+            <li>
+              <a href="products.html#elevators"> Home Elevators </a>
+            </li>
+
+            <li>
+              <a href="products.html#ramps"> Accessibility Ramps </a>
+            </li>
+
+            <li>
+              <a href="services.html#installation">
+                Professional Installation
+              </a>
+            </li>
+
+            <li>
+              <a href="services.html#maintenance"> Maintenance & Support </a>
+            </li>
+
+            <li>
+              <a href="services.html#assessment"> Accessibility Assessment </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         CLIENT SERVICES
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Client Services</h3>
+
+          <ul>
+            <li>
+              <a href="dashboard.html"> Client Dashboard </a>
+            </li>
+
+            <li>
+              <a href="dashboard.html"> Project Status </a>
+            </li>
+
+            <li>
+              <a href="dashboard.html"> Maintenance </a>
+            </li>
+
+            <li>
+              <a href="consultation.html">Consultation</a>
+            </li>
+            <li>
+              <a href="404.html">404</a>
+            </li>
+            <li>
+              <a href="comming.html">Commingsoon...</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         CONTACT
+    ================================================== -->
+
+        <div class="footer-col footer-contact">
+          <h3>Get In Touch</h3>
+
+          <ul>
+            <!-- LOCATION -->
+
+            <li>
+              <i data-lucide="map-pin" aria-hidden="true"></i>
+
+              <span> Your Service Area </span>
+            </li>
+
+            <!-- PHONE -->
+
+            <li>
+              <i data-lucide="phone" aria-hidden="true"></i>
+
+              <a href="tel:+10000000000"> +1 (000) 000-0000 </a>
+            </li>
+
+            <!-- EMAIL -->
+
+            <li>
+              <i data-lucide="mail" aria-hidden="true"></i>
+
+              <a href="mailto:info@safestep.com"> info@safestep.com </a>
+            </li>
+
+            <!-- HOURS -->
+
+            <li>
+              <i data-lucide="clock" aria-hidden="true"></i>
+
+              <span> Mon – Sat: 8 AM – 6 PM </span>
+            </li>
+          </ul>
+
+          <!-- CTA -->
+
+          <a href="consultation.html" class="footer-cta">
+            <span>Book a Consultation</span>
+
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- =================================================
+       FOOTER BOTTOM
+  ================================================== -->
+
+      <div class="footer-bottom">
+        <p>
+          © 2026
+
+          <span class="safe">Safe</span>
+          <span class="step">Step</span>. All Rights Reserved.
+        </p>
+
+        <div class="footer-bottom-links">
+          <a href="privacy.html"> Privacy Policy </a>
+
+          <a href="terms.html"> Terms & Conditions </a>
+
+          <a href="cookies.html"> Cookies </a>
+
+          <!-- BACK TO TOP -->
+
+          <a
+            href="#"
+            class="top-btn"
+            aria-label="Back to top"
+            title="Back to top"
+          >
+            <i data-lucide="arrow-up" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="global.js"></script>
+  </body>
+</html>

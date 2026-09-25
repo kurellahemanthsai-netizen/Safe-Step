@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="images/logo.png" />
+
+    <title>Page Not Found | Safe Step</title>
+
+    <!-- =====================================================
+         GOOGLE FONT
+    ====================================================== -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =====================================================
+         LUCIDE ICONS
+    ====================================================== -->
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- =====================================================
+         404 CSS
+    ====================================================== -->
+
+    <link rel="stylesheet" href="404.css" />
+  </head>
+
+  <body class="error-page">
+    <!-- =====================================================
+         TOP CONTROLS
+    ====================================================== -->
+
+    <div class="error-controls">
+      <button
+        type="button"
+        class="error-control-btn"
+        id="darkToggle"
+        aria-label="Switch to dark mode"
+        title="Dark Mode"
+      >
+        <i data-lucide="moon"></i>
+      </button>
+
+      <button
+        type="button"
+        class="error-control-btn"
+        id="rtlToggle"
+        aria-label="Switch to right-to-left mode"
+        title="RTL Mode"
+      >
+        <i data-lucide="arrow-left-right"></i>
+      </button>
+    </div>
+
+    <!-- =====================================================
+         MAIN 404 CONTENT
+    ====================================================== -->
+
+    <main class="error-wrapper">
+      <!-- =================================================
+             SAFE STEP LOGO
+        ================================================== -->
+
+      <div class="logo">
+        <a href="index.html" aria-label="Safe Step Home">
+          <img src="images/logo.png" alt="Safe Step Logo" />
+        </a>
+
+        <div class="logo-text" onclick="window.location.href = 'index.html'">
+          <h1>
+            <span class="safe"> Safe </span>
+
+            <span class="step"> Step </span>
+          </h1>
+
+          <p>Accessibility Solutions</p>
+        </div>
+      </div>
+
+      <!-- =================================================
+             404 CONTENT
+        ================================================== -->
+
+      <section class="error-content">
+        <!-- Decorative 404 -->
+
+        <div class="error-number" aria-hidden="true">404</div>
+
+        <div class="error-icon">
+          <i data-lucide="map-pin-off"></i>
+        </div>
+
+        <span class="error-eyebrow"> PAGE NOT FOUND </span>
+
+        <h2>
+          Looks Like You Took
+          <span>A Wrong Turn.</span>
+        </h2>
+
+        <p class="error-description">
+          The page you're looking for may have been moved, removed, or is
+          temporarily unavailable. Let's get you back on the right path.
+        </p>
+
+        <!-- =================================================
+                 ACTIONS
+            ================================================== -->
+
+        <div class="error-actions">
+          <a href="index.html" class="error-primary-btn">
+            <i data-lucide="house"></i>
+
+            <span> Back to Home </span>
+          </a>
+
+          <button
+            type="button"
+            class="error-secondary-btn"
+            onclick="window.history.back()"
+          >
+            <i data-lucide="arrow-left"></i>
+
+            <span> Go Back </span>
+          </button>
+        </div>
+
+        <!-- =================================================
+                 SUPPORT MESSAGE
+            ================================================== -->
+
+        <p class="error-support">
+          Need help?
+
+          <a href="contact.html"> Contact Safe Step </a>
+        </p>
+      </section>
+
+      <!-- =================================================
+             FOOTER NOTE
+        ================================================== -->
+
+      <div class="error-footer">
+        <span> Safe Step </span>
+
+        <span class="footer-dot"> • </span>
+
+        <span> Accessibility Solutions </span>
+      </div>
+    </main>
+
+    <!-- =====================================================
+         GLOBAL JS
+    ====================================================== -->
+
+    <script src="global.js"></script>
+
+    <!-- =====================================================
+         404 JS
+    ====================================================== -->
+
+    <script src="404.js"></script>
+  </body>
+</html>

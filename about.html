@@ -1,0 +1,1043 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logo.png" />
+
+    <title>About</title>
+
+    <!-- =========================================
+       GOOGLE FONT
+       ========================================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =========================================
+       LUCIDE ICONS
+       ========================================= -->
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="about.css" />
+  </head>
+  <body>
+    <!-- =========================================================
+     SAFE STEP
+     HEADER
+     ========================================================= -->
+
+    <header class="site-header">
+      <div class="header-container">
+        <!-- =================================================
+         LOGO
+    ================================================== -->
+
+        <div class="logo">
+          <a href="index.html" aria-label="Safe Step Home">
+            <img src="images/logo.png" alt="Safe Step Logo" />
+          </a>
+
+          <div class="logo-text" onclick="window.location.href = 'index.html'">
+            <h1>
+              <span class="safe">Safe</span><span class="step">Step</span>
+            </h1>
+
+            <p>Accessibility Solutions</p>
+          </div>
+        </div>
+
+        <!-- =================================================
+         NAVIGATION
+    ================================================== -->
+
+        <nav class="navbar" aria-label="Primary Navigation">
+          <ul class="nav-links">
+            <!-- HOME -->
+
+            <li class="dropdown">
+              <a href="index.html">
+                <span>Home</span>
+
+                <i data-lucide="chevron-down" aria-hidden="true"></i>
+              </a>
+
+              <!-- HOME DROPDOWN -->
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="index.html">
+                    <i data-lucide="house" aria-hidden="true"></i>
+
+                    <span>Home 1 - Classic</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="home2.html">
+                    <i data-lucide="sparkles" aria-hidden="true"></i>
+
+                    <span>Home 2 - Premium</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- ABOUT -->
+
+            <li>
+              <a href="about.html">
+                <span>About</span>
+              </a>
+            </li>
+
+            <!-- SERVICES -->
+
+            <li>
+              <a href="services.html">
+                <span>Services</span>
+              </a>
+            </li>
+
+            <!-- PRODUCTS -->
+
+            <li>
+              <a href="products.html">
+                <span>Products</span>
+              </a>
+            </li>
+
+            <!-- CONSULTATION -->
+
+            <li>
+              <a href="consultation.html">
+                <span>Consultation</span>
+              </a>
+            </li>
+
+            <!-- PRICING -->
+
+            <li>
+              <a href="pricing.html">
+                <span>Pricing</span>
+              </a>
+            </li>
+
+            <!-- CONTACT -->
+
+            <li>
+              <a href="contact.html">
+                <span>Contact</span>
+              </a>
+            </li>
+
+            <!-- DASHBOARD -->
+
+            <li>
+              <a href="dashboard.html">
+                <span>Dashboard</span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- MOBILE LOGIN -->
+
+          <div class="mobile-login">
+            <a href="login.html" class="login-btn mobile-login-btn">
+              <i data-lucide="log-in" aria-hidden="true"></i>
+
+              <span>Login</span>
+            </a>
+          </div>
+        </nav>
+
+        <!-- =================================================
+         HEADER ACTIONS
+    ================================================== -->
+
+        <div class="header-buttons">
+          <!-- RTL -->
+
+          <button
+            class="icon-btn"
+            id="rtlToggle"
+            type="button"
+            title="RTL Mode"
+            aria-label="Toggle RTL mode"
+            aria-pressed="false"
+          >
+            <i data-lucide="arrow-left-right" aria-hidden="true"></i>
+          </button>
+
+          <!-- DARK MODE -->
+
+          <button
+            class="icon-btn"
+            id="darkToggle"
+            type="button"
+            title="Dark Mode"
+            aria-label="Toggle dark mode"
+          >
+            <i data-lucide="moon" aria-hidden="true"></i>
+          </button>
+
+          <!-- LOGIN -->
+
+          <a href="login.html" class="login-btn desktop-login">
+            <i data-lucide="log-in" aria-hidden="true"></i>
+
+            <span>Login</span>
+          </a>
+
+          <!-- MOBILE MENU -->
+
+          <button
+            class="icon-btn menu-btn"
+            id="menuToggle"
+            type="button"
+            title="Menu"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- =========================================================
+     ABOUT PAGE — HERO SECTION
+     ========================================================= -->
+
+    <section class="about-hero" id="aboutHero">
+      <!-- Background Overlay -->
+      <div class="about-hero-overlay"></div>
+
+      <!-- Decorative Architectural Lines -->
+      <span class="about-hero-line about-hero-line-left"></span>
+      <span class="about-hero-line about-hero-line-right"></span>
+
+      <!-- Hero Content -->
+      <div class="about-hero-content">
+        <div class="about-hero-eyebrow">
+          <span class="about-hero-eyebrow-line"></span>
+          <span>ABOUT SAFE STEP</span>
+        </div>
+
+        <h1 class="about-hero-title">
+          Designed Around Your Home.
+          <span>Built Around Your Life.</span>
+        </h1>
+
+        <p class="about-hero-description">
+          Thoughtful accessibility solutions designed to make every level of
+          your home easier to reach, while preserving the comfort, character,
+          and beauty of the space you love.
+        </p>
+
+        <div class="about-hero-actions">
+          <a
+            href="consultation.html"
+            class="about-hero-btn about-hero-btn-primary"
+          >
+            <span>Discover Our Approach</span>
+            <i data-lucide="arrow-right"></i>
+          </a>
+
+          <a
+            href="consultation.html"
+            class="about-hero-btn about-hero-btn-secondary"
+          >
+            <span>Book a Consultation</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="about-hero-scroll">
+        <span>SCROLL TO EXPLORE</span>
+        <i data-lucide="arrow-down"></i>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     ABOUT PAGE — SECTION 02
+     OUR PHILOSOPHY
+     ========================================================= -->
+
+    <section class="about-philosophy" id="aboutPhilosophy">
+      <!-- Section Intro -->
+      <div class="about-philosophy-intro">
+        <div class="about-philosophy-eyebrow">
+          <span class="about-philosophy-eyebrow-line"></span>
+          <span>OUR PHILOSOPHY</span>
+        </div>
+
+        <h2 class="about-philosophy-title">
+          Accessibility Should Feel Like Part of
+          <span class="span">Your Home.</span>
+        </h2>
+
+        <p class="about-philosophy-description">
+          We believe accessibility should never make a home feel clinical or
+          disconnected from its design. The right solution should feel natural
+          within your space, support the way you live, and provide confidence
+          for the years ahead.
+        </p>
+      </div>
+
+      <!-- Main Content -->
+      <div class="about-philosophy-container">
+        <!-- Image -->
+        <div class="about-philosophy-image-wrap">
+          <img
+            src="images/philosophy.png"
+            alt="Elegant accessible residential interior"
+            class="about-philosophy-image"
+          />
+
+          <div class="about-philosophy-image-label">
+            <span class="about-philosophy-image-number">01</span>
+
+            <div class="about-philosophy-image-text">
+              <strong>DESIGNED TO BELONG</strong>
+              <span>Accessibility that feels at home.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="about-philosophy-content">
+          <span class="about-philosophy-content-eyebrow">
+            DESIGNED AROUND YOU
+          </span>
+
+          <h3>Your Home Should Still Feel Like Your Home.</h3>
+
+          <p class="about-philosophy-content-description">
+            From the layout of your rooms to the details that make your home
+            personal, every consideration matters. We look beyond simply adding
+            accessibility and focus on creating solutions that work naturally
+            within the spaces you already love.
+          </p>
+
+          <!-- Philosophy Points -->
+          <div class="about-philosophy-points">
+            <!-- Point 01 -->
+            <div class="about-philosophy-point">
+              <span class="about-philosophy-point-number">01</span>
+
+              <div class="about-philosophy-point-content">
+                <h4>Function First</h4>
+
+                <p>
+                  Solutions designed to make everyday movement easier, safer,
+                  and more comfortable.
+                </p>
+              </div>
+            </div>
+
+            <!-- Point 02 -->
+            <div class="about-philosophy-point">
+              <span class="about-philosophy-point-number">02</span>
+
+              <div class="about-philosophy-point-content">
+                <h4>Designed to Belong</h4>
+
+                <p>
+                  Accessibility that respects your home's character,
+                  architecture, and existing design.
+                </p>
+              </div>
+            </div>
+
+            <!-- Point 03 -->
+            <div class="about-philosophy-point">
+              <span class="about-philosophy-point-number">03</span>
+
+              <div class="about-philosophy-point-content">
+                <h4>Built for the Future</h4>
+
+                <p>
+                  Thoughtful solutions that can continue to support the way your
+                  life changes over time.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =========================================================
+     ABOUT PAGE — SECTION 03
+     WHAT WE DO
+     ========================================================= -->
+
+    <section class="about-solutions" id="aboutSolutions">
+      <!-- Section Intro -->
+      <div class="about-solutions-intro">
+        <div class="about-solutions-eyebrow">
+          <span class="about-solutions-eyebrow-line"></span>
+          <span>WHAT WE DO</span>
+        </div>
+
+        <h2 class="about-solutions-title">
+          Thoughtful Solutions for Every Level
+          <span class="span">of Home.</span>
+        </h2>
+
+        <p class="about-solutions-description">
+          Designed to improve everyday movement while respecting the character,
+          comfort, and beauty of the home you love.
+        </p>
+      </div>
+
+      <!-- Solutions -->
+      <div class="about-solutions-grid">
+        <!-- =====================================================
+         STAIRLIFTS
+         ===================================================== -->
+
+        <article class="about-solution-card">
+          <div class="about-solution-image-wrap">
+            <img
+              src="images/comfortable.png"
+              alt="Modern residential stairlift"
+              class="about-solution-image"
+            />
+
+            <span class="about-solution-number"> 01 </span>
+          </div>
+
+          <div class="about-solution-content">
+            <span class="about-solution-label"> STAIRLIFTS </span>
+
+            <h3>Easier Movement Between Levels.</h3>
+
+            <p>
+              Smooth, comfortable movement between floors with a stairlift
+              solution designed around your staircase, your home, and the way
+              you live.
+            </p>
+
+            <a href="products.html" class="about-solution-link">
+              <span>Explore Stairlifts</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- =====================================================
+         HOME ELEVATORS
+         ===================================================== -->
+
+        <article class="about-solution-card">
+          <div class="about-solution-image-wrap">
+            <img
+              src="images/easier.png"
+              alt="Elegant residential home elevator"
+              class="about-solution-image"
+            />
+
+            <span class="about-solution-number"> 02 </span>
+          </div>
+
+          <div class="about-solution-content">
+            <span class="about-solution-label"> HOME ELEVATORS </span>
+
+            <h3>Elevate Every Level of Your Home.</h3>
+
+            <p>
+              Elegant vertical mobility solutions that connect multiple levels
+              while complementing the architecture and character of your home.
+            </p>
+
+            <a href="products.html" class="about-solution-link">
+              <span>Explore Home Elevators</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- =====================================================
+         ACCESSIBILITY RAMPS
+         ===================================================== -->
+
+        <article class="about-solution-card">
+          <div class="about-solution-image-wrap">
+            <img
+              src="images/ramp-elevator.png"
+              alt="Residential accessibility ramp"
+              class="about-solution-image"
+            />
+
+            <span class="about-solution-number"> 03 </span>
+          </div>
+
+          <div class="about-solution-content">
+            <span class="about-solution-label"> ACCESSIBILITY RAMPS </span>
+
+            <h3>A More Comfortable Way In.</h3>
+
+            <p>
+              Practical, carefully considered access solutions that make
+              entering and moving around your home easier, while fitting
+              naturally into your surroundings.
+            </p>
+
+            <a href="products.html" class="about-solution-link">
+              <span>Explore Ramps</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     ABOUT PAGE — SECTION 04
+     OUR APPROACH
+     ========================================================= -->
+
+    <section class="about-approach" id="aboutApproach">
+      <!-- Section Intro -->
+      <div class="about-approach-intro">
+        <div class="about-approach-eyebrow">
+          <span class="about-approach-eyebrow-line"></span>
+          <span>THE SAFE STEP APPROACH</span>
+        </div>
+
+        <h2 class="about-approach-title">
+          Every Home Deserves a Thoughtful <span class="span">Solution.</span>
+        </h2>
+
+        <p class="about-approach-description">
+          We take the time to understand your home, your needs, and the way you
+          want to live before recommending a solution designed around you.
+        </p>
+      </div>
+
+      <!-- Process -->
+      <div class="about-approach-process">
+        <!-- 01 -->
+        <div class="about-approach-step">
+          <div class="about-approach-step-top">
+            <span class="about-approach-number">01</span>
+            <span class="about-approach-line"></span>
+          </div>
+
+          <span class="about-approach-label"> LISTEN </span>
+
+          <h3>We Start With You.</h3>
+
+          <p>
+            We understand your needs, priorities, routines, and the everyday
+            challenges you want your home to help solve.
+          </p>
+        </div>
+
+        <!-- 02 -->
+        <div class="about-approach-step">
+          <div class="about-approach-step-top">
+            <span class="about-approach-number">02</span>
+            <span class="about-approach-line"></span>
+          </div>
+
+          <span class="about-approach-label"> ASSESS </span>
+
+          <h3>We Understand Your Space.</h3>
+
+          <p>
+            We look at your home's layout, available space, access points, and
+            architectural details to understand what could work naturally.
+          </p>
+        </div>
+
+        <!-- 03 -->
+        <div class="about-approach-step">
+          <div class="about-approach-step-top">
+            <span class="about-approach-number">03</span>
+            <span class="about-approach-line"></span>
+          </div>
+
+          <span class="about-approach-label"> DESIGN </span>
+
+          <h3>We Recommend the Right Path.</h3>
+
+          <p>
+            We discuss suitable options and guide you toward a solution that
+            balances accessibility, comfort, design, and your future needs.
+          </p>
+        </div>
+
+        <!-- 04 -->
+        <div class="about-approach-step">
+          <div class="about-approach-step-top">
+            <span class="about-approach-number">04</span>
+            <span class="about-approach-line"></span>
+          </div>
+
+          <span class="about-approach-label"> INSTALL & SUPPORT </span>
+
+          <h3>We Bring It to Life.</h3>
+
+          <p>
+            Our team handles the installation with care and remains available to
+            support you after your solution is in place.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- =========================================================
+     ABOUT PAGE — SECTION 05
+     WHY SAFE STEP
+     ========================================================= -->
+
+    <section class="about-why" id="aboutWhy">
+      <!-- CENTERED INTRO -->
+      <div class="about-why-intro">
+        <div class="about-why-eyebrow">
+          <span class="about-why-eyebrow-line"></span>
+          <span>WHY SAFE STEP</span>
+        </div>
+
+        <h2 class="about-why-title">
+          A More Considered Way to Create
+          <span class="span">an Accessible Home.</span>
+        </h2>
+
+        <p class="about-why-description">
+          Thoughtful accessibility begins with understanding your home, your
+          needs, and the way you want to live.
+        </p>
+      </div>
+
+      <!-- IMAGE + RIGHT CONTENT -->
+      <div class="about-why-main">
+        <!-- LEFT IMAGE -->
+        <div class="about-why-image-wrap">
+          <img
+            src="images/safe.png"
+            alt="Elegant accessible residential interior"
+            class="about-why-image"
+          />
+
+          <div class="about-why-image-label">
+            <span>SAFE STEP</span>
+            <strong>ACCESSIBILITY, CONSIDERED.</strong>
+          </div>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="about-why-right">
+          <!-- CONTENT -->
+          <div class="about-why-content">
+            <span class="about-why-content-eyebrow">
+              A THOUGHTFUL DIFFERENCE
+            </span>
+
+            <h3>Designed With Your Home in Mind.</h3>
+
+            <p>
+              We look beyond simply adding accessibility equipment. Our approach
+              considers your home's character, your everyday routines, and the
+              way you want your space to feel.
+            </p>
+
+            <p>
+              From choosing the right solution to professional installation and
+              continued support, every step is approached with clarity and care.
+            </p>
+          </div>
+
+          <!-- POINTS -->
+          <div class="about-why-points">
+            <!-- 01 -->
+            <div class="about-why-point">
+              <span class="about-why-point-number">01</span>
+
+              <div>
+                <span class="about-why-point-label">
+                  PERSONALIZED SOLUTIONS
+                </span>
+
+                <h4>Designed Around Your Home.</h4>
+
+                <p>
+                  Solutions considered around your space, routines, and needs.
+                </p>
+              </div>
+            </div>
+
+            <!-- 02 -->
+            <div class="about-why-point">
+              <span class="about-why-point-number">02</span>
+
+              <div>
+                <span class="about-why-point-label">
+                  PROFESSIONAL INSTALLATION
+                </span>
+
+                <h4>Careful From Start to Finish.</h4>
+
+                <p>Installation approached with attention to your home.</p>
+              </div>
+            </div>
+
+            <!-- 03 -->
+            <div class="about-why-point">
+              <span class="about-why-point-number">03</span>
+
+              <div>
+                <span class="about-why-point-label"> CLEAR GUIDANCE </span>
+
+                <h4>Simple, Straightforward Advice.</h4>
+
+                <p>Clear explanations to help you understand your options.</p>
+              </div>
+            </div>
+
+            <!-- 04 -->
+            <div class="about-why-point">
+              <span class="about-why-point-number">04</span>
+
+              <div>
+                <span class="about-why-point-label"> CONTINUED CARE </span>
+
+                <h4>Support Beyond Installation.</h4>
+
+                <p>Ongoing support when you need help with your solution.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     ABOUT PAGE - SECTION 6
+     FINAL CTA
+========================================================= -->
+
+<section class="about-final-cta" id="aboutFinalCta">
+
+  <div class="about-final-cta-box">
+
+    <div class="about-final-cta-architecture">
+      <span class="about-final-cta-line about-final-cta-line-left"></span>
+      <span class="about-final-cta-line about-final-cta-line-right"></span>
+
+      <span class="about-final-cta-corner about-final-cta-corner-tl"></span>
+      <span class="about-final-cta-corner about-final-cta-corner-tr"></span>
+      <span class="about-final-cta-corner about-final-cta-corner-bl"></span>
+      <span class="about-final-cta-corner about-final-cta-corner-br"></span>
+    </div>
+
+    <div class="about-final-cta-content">
+
+      <div class="about-final-cta-eyebrow">
+        <span class="about-final-cta-eyebrow-line"></span>
+        <span>START WITH A CONVERSATION</span>
+      </div>
+
+      <h2 class="about-final-cta-title">
+        Let's Create a Home
+        <span>That Moves With You.</span>
+      </h2>
+
+      <p class="about-final-cta-description">
+        Tell us about your home, your needs, and the way you want to live.
+        We'll help you explore thoughtful accessibility solutions designed
+        around your space and your future.
+      </p>
+
+      <div class="about-final-cta-actions">
+
+        <a
+          href="consultation.html"
+          class="about-final-cta-button about-final-cta-button-primary"
+        >
+          Book a Consultation
+        </a>
+
+        <a
+          href="contact.html"
+          class="about-final-cta-button about-final-cta-button-secondary"
+        >
+          Contact Safe Step
+        </a>
+
+      </div>
+
+      <div class="about-final-cta-note">
+        <span></span>
+        <p>Thoughtful accessibility. Designed around you.</p>
+        <span></span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+    <!-- =========================================================
+     SAFE STEP
+     FOOTER
+     ========================================================= -->
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- =================================================
+         BRAND
+    ================================================== -->
+
+        <div class="footer-col footer-brand">
+          <div class="footer-logo">
+            <a href="index.html" aria-label="Safe Step Home">
+              <img src="images/logo.png" alt="Safe Step Logo" />
+            </a>
+
+            <div
+              class="footer-branding"
+              onclick="window.location.href = 'index.html'"
+            >
+              <h2>
+                <span class="safe">Safe</span><span class="step">Step</span>
+              </h2>
+
+              <p>Accessibility Solutions</p>
+            </div>
+          </div>
+
+          <!-- DESCRIPTION -->
+
+          <p class="footer-about">
+            Safe Step provides reliable home accessibility solutions designed to
+            help people move safely, comfortably, and independently throughout
+            their homes.
+          </p>
+
+          <!-- SOCIAL MEDIA -->
+
+          <div class="social-media">
+            <!-- INSTAGRAM -->
+
+            <a href="#" aria-label="Instagram" title="Instagram">
+              <i data-lucide="camera" aria-hidden="true"></i>
+            </a>
+
+            <!-- FACEBOOK -->
+
+            <a href="#" aria-label="Facebook" title="Facebook">
+              <i data-lucide="users" aria-hidden="true"></i>
+            </a>
+
+            <!-- YOUTUBE -->
+
+            <a href="#" aria-label="YouTube" title="YouTube">
+              <i data-lucide="play" aria-hidden="true"></i>
+            </a>
+
+            <!-- EMAIL -->
+
+            <a href="mailto:info@aquacare.com" aria-label="Email" title="Email">
+              <i data-lucide="mail" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- =================================================
+         QUICK LINKS
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="about.html">About</a>
+            </li>
+
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+
+            <li>
+              <a href="products.html">Products</a>
+            </li>
+
+            <li>
+              <a href="pricing.html">Pricing</a>
+            </li>
+
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         OUR SOLUTIONS
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Our Solutions</h3>
+
+          <ul>
+            <li>
+              <a href="products.html#stairlifts"> Stairlifts </a>
+            </li>
+
+            <li>
+              <a href="products.html#elevators"> Home Elevators </a>
+            </li>
+
+            <li>
+              <a href="products.html#ramps"> Accessibility Ramps </a>
+            </li>
+
+            <li>
+              <a href="services.html#installation">
+                Professional Installation
+              </a>
+            </li>
+
+            <li>
+              <a href="services.html#maintenance"> Maintenance & Support </a>
+            </li>
+
+            <li>
+              <a href="services.html#assessment"> Accessibility Assessment </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         CLIENT SERVICES
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Client Services</h3>
+
+          <ul>
+            <li>
+              <a href="dashboard.html"> Client Dashboard </a>
+            </li>
+
+            <li>
+              <a href="dashboard.html"> Project Status </a>
+            </li>
+
+            <li>
+              <a href="dashboard.html"> Maintenance </a>
+            </li>
+
+            <li>
+              <a href="consultation.html">Consultation</a>
+            </li>
+            <li>
+              <a href="404.html">404</a>
+            </li>
+            <li>
+              <a href="comming.html">Commingsoon...</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         CONTACT
+    ================================================== -->
+
+        <div class="footer-col footer-contact">
+          <h3>Get In Touch</h3>
+
+          <ul>
+            <!-- LOCATION -->
+
+            <li>
+              <i data-lucide="map-pin" aria-hidden="true"></i>
+
+              <span> Your Service Area </span>
+            </li>
+
+            <!-- PHONE -->
+
+            <li>
+              <i data-lucide="phone" aria-hidden="true"></i>
+
+              <a href="tel:+10000000000"> +1 (000) 000-0000 </a>
+            </li>
+
+            <!-- EMAIL -->
+
+            <li>
+              <i data-lucide="mail" aria-hidden="true"></i>
+
+              <a href="mailto:info@safestep.com"> info@safestep.com </a>
+            </li>
+
+            <!-- HOURS -->
+
+            <li>
+              <i data-lucide="clock" aria-hidden="true"></i>
+
+              <span> Mon – Sat: 8 AM – 6 PM </span>
+            </li>
+          </ul>
+
+          <!-- CTA -->
+
+          <a href="consultation.html" class="footer-cta">
+            <span>Book a Consultation</span>
+
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- =================================================
+       FOOTER BOTTOM
+  ================================================== -->
+
+      <div class="footer-bottom">
+        <p>
+          © 2026
+
+          <span class="safe">Safe</span>
+          <span class="step">Step</span>. All Rights Reserved.
+        </p>
+
+        <div class="footer-bottom-links">
+          <a href="privacy.html"> Privacy Policy </a>
+
+          <a href="terms.html"> Terms & Conditions </a>
+
+          <a href="cookies.html"> Cookies </a>
+
+          <!-- BACK TO TOP -->
+
+          <a
+            href="#"
+            class="top-btn"
+            aria-label="Back to top"
+            title="Back to top"
+          >
+            <i data-lucide="arrow-up" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="global.js"></script>
+  </body>
+</html>

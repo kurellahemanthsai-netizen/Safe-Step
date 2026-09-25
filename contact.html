@@ -1,0 +1,941 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logo.png" />
+
+    <title>Contact</title>
+
+    <!-- =========================================
+       GOOGLE FONT
+       ========================================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =========================================
+       LUCIDE ICONS
+       ========================================= -->
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <!-- =========================================================
+     SAFE STEP
+     HEADER
+     ========================================================= -->
+
+    <header class="site-header">
+      <div class="header-container">
+        <!-- =================================================
+         LOGO
+    ================================================== -->
+
+        <div class="logo">
+          <a href="index.html" aria-label="Safe Step Home">
+            <img src="images/logo.png" alt="Safe Step Logo" />
+          </a>
+
+          <div class="logo-text" onclick="window.location.href = 'index.html'">
+            <h1>
+              <span class="safe">Safe</span><span class="step">Step</span>
+            </h1>
+
+            <p>Accessibility Solutions</p>
+          </div>
+        </div>
+
+        <!-- =================================================
+         NAVIGATION
+    ================================================== -->
+
+        <nav class="navbar" aria-label="Primary Navigation">
+          <ul class="nav-links">
+            <!-- HOME -->
+
+            <li class="dropdown">
+              <a href="index.html">
+                <span>Home</span>
+
+                <i data-lucide="chevron-down" aria-hidden="true"></i>
+              </a>
+
+              <!-- HOME DROPDOWN -->
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="index.html">
+                    <i data-lucide="house" aria-hidden="true"></i>
+
+                    <span>Home 1 - Classic</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="home2.html">
+                    <i data-lucide="sparkles" aria-hidden="true"></i>
+
+                    <span>Home 2 - Premium</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- ABOUT -->
+
+            <li>
+              <a href="about.html">
+                <span>About</span>
+              </a>
+            </li>
+
+            <!-- SERVICES -->
+
+            <li>
+              <a href="services.html">
+                <span>Services</span>
+              </a>
+            </li>
+
+            <!-- PRODUCTS -->
+
+            <li>
+              <a href="products.html">
+                <span>Products</span>
+              </a>
+            </li>
+
+            <!-- CONSULTATION -->
+
+            <li>
+              <a href="consultation.html">
+                <span>Consultation</span>
+              </a>
+            </li>
+
+            <!-- PRICING -->
+
+            <li>
+              <a href="pricing.html">
+                <span>Pricing</span>
+              </a>
+            </li>
+
+            <!-- CONTACT -->
+
+            <li>
+              <a href="contact.html">
+                <span>Contact</span>
+              </a>
+            </li>
+
+            <!-- DASHBOARD -->
+
+            <li>
+              <a href="dashboard.html">
+                <span>Dashboard</span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- MOBILE LOGIN -->
+
+          <div class="mobile-login">
+            <a href="login.html" class="login-btn mobile-login-btn">
+              <i data-lucide="log-in" aria-hidden="true"></i>
+
+              <span>Login</span>
+            </a>
+          </div>
+        </nav>
+
+        <!-- =================================================
+         HEADER ACTIONS
+    ================================================== -->
+
+        <div class="header-buttons">
+          <!-- RTL -->
+
+          <button
+            class="icon-btn"
+            id="rtlToggle"
+            type="button"
+            title="RTL Mode"
+            aria-label="Toggle RTL mode"
+            aria-pressed="false"
+          >
+            <i data-lucide="arrow-left-right" aria-hidden="true"></i>
+          </button>
+
+          <!-- DARK MODE -->
+
+          <button
+            class="icon-btn"
+            id="darkToggle"
+            type="button"
+            title="Dark Mode"
+            aria-label="Toggle dark mode"
+          >
+            <i data-lucide="moon" aria-hidden="true"></i>
+          </button>
+
+          <!-- LOGIN -->
+
+          <a href="login.html" class="login-btn desktop-login">
+            <i data-lucide="log-in" aria-hidden="true"></i>
+
+            <span>Login</span>
+          </a>
+
+          <!-- MOBILE MENU -->
+
+          <button
+            class="icon-btn menu-btn"
+            id="menuToggle"
+            type="button"
+            title="Menu"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- =========================================================
+     CONTACT HERO
+     ========================================================= -->
+
+    <section class="contact-hero" id="contact-hero">
+      <div class="contact-hero-overlay"></div>
+
+      <div class="contact-hero-lines contact-hero-lines-left"></div>
+      <div class="contact-hero-lines contact-hero-lines-right"></div>
+
+      <div class="contact-hero-content">
+        <span class="contact-hero-eyebrow"> GET IN TOUCH </span>
+
+        <h1 class="contact-hero-title">
+          We're Here to Help You
+          <span>Move With Confidence.</span>
+        </h1>
+
+        <p class="contact-hero-description">
+          Have questions about accessibility solutions for your home? Connect
+          with our team and let's explore the right path for your space, needs,
+          and lifestyle.
+        </p>
+
+        <div class="contact-hero-actions">
+          <a
+            href="consultation.html"
+            class="contact-hero-btn contact-hero-btn-primary"
+          >
+            <span>Book a Consultation</span>
+            <i data-lucide="arrow-right"></i>
+          </a>
+
+          <a
+            href="#contact-information"
+            class="contact-hero-btn contact-hero-btn-secondary"
+          >
+            <span>Contact Our Team</span>
+            <i data-lucide="arrow-down"></i>
+          </a>
+        </div>
+      </div>
+
+      <a href="#contact-information" class="contact-hero-scroll">
+        <span>SCROLL TO EXPLORE</span>
+
+        <i data-lucide="arrow-down"></i>
+      </a>
+    </section>
+
+    <!-- =========================================================
+     CONTACT INFORMATION
+     ========================================================= -->
+
+    <section class="contact-information" id="contact-information">
+      <div class="contact-information-heading">
+        <span class="contact-section-eyebrow"> CONTACT SAFE STEP </span>
+
+        <h2 class="contact-section-title">
+          We're Here When
+          <span>You Need Us.</span>
+        </h2>
+
+        <p class="contact-section-description">
+          Whether you're exploring accessibility options or ready to plan your
+          project, our team is here to help you take the next step with
+          confidence.
+        </p>
+      </div>
+
+      <div class="contact-information-grid">
+        <!-- PHONE -->
+
+        <article class="contact-information-card">
+          <div class="contact-information-card-top">
+            <span class="contact-information-number"> 01 </span>
+
+            <div class="contact-information-icon">
+              <i data-lucide="phone"></i>
+            </div>
+          </div>
+
+          <div class="contact-information-card-content">
+            <span class="contact-information-label"> CALL US </span>
+
+            <h3>Speak With Our Team</h3>
+
+            <p>
+              Have a question about our accessibility solutions? Give us a call
+              and we'll be happy to help.
+            </p>
+
+            <a href="tel:+910000000000">
+              +91 98760 12345
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- EMAIL -->
+
+        <article class="contact-information-card">
+          <div class="contact-information-card-top">
+            <span class="contact-information-number"> 02 </span>
+
+            <div class="contact-information-icon">
+              <i data-lucide="mail"></i>
+            </div>
+          </div>
+
+          <div class="contact-information-card-content">
+            <span class="contact-information-label"> EMAIL US </span>
+
+            <h3>Start a Conversation</h3>
+
+            <p>
+              Send us your questions, requirements, or project details and our
+              team will get back to you.
+            </p>
+
+            <a href="mailto:hello@safestep.com">
+              hello@safestep.com
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- OFFICE -->
+
+        <article class="contact-information-card">
+          <div class="contact-information-card-top">
+            <span class="contact-information-number"> 03 </span>
+
+            <div class="contact-information-icon">
+              <i data-lucide="map-pin"></i>
+            </div>
+          </div>
+
+          <div class="contact-information-card-content">
+            <span class="contact-information-label"> OUR OFFICE </span>
+
+            <h3>Visit Safe Step</h3>
+
+            <p>
+              Visit our office to speak with our team and discuss your home's
+              accessibility requirements.
+            </p>
+
+            <a href="#contact-location">
+              View Location
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+        </article>
+
+        <!-- HOURS -->
+
+        <article class="contact-information-card">
+          <div class="contact-information-card-top">
+            <span class="contact-information-number"> 04 </span>
+
+            <div class="contact-information-icon">
+              <i data-lucide="clock-3"></i>
+            </div>
+          </div>
+
+          <div class="contact-information-card-content">
+            <span class="contact-information-label"> WORKING HOURS </span>
+
+            <h3>We're Available</h3>
+
+            <p>
+              Our team is available during the following hours to answer your
+              questions and discuss your requirements.
+            </p>
+
+            <span class="contact-information-hours">
+              Mon – Sat &nbsp; | &nbsp; 9:00 AM – 6:00 PM
+            </span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- =========================
+     SECTION 3 — LOCATION
+========================= -->
+
+    <section class="contact-location" id="contact-location">
+      <div class="contact-location-container">
+        <!-- LEFT CONTENT -->
+        <div class="contact-location-content">
+          <span class="contact-section-eyebrow-1"> FIND US </span>
+
+          <h2 class="contact-location-title">
+            Let's Meet
+            <span>In Person.</span>
+          </h2>
+
+          <p class="contact-location-description">
+            Prefer to speak with us in person? Visit our office to discuss your
+            accessibility requirements, explore your options, and learn more
+            about how Safe Step can support your home.
+          </p>
+
+          <div class="contact-location-details">
+            <div class="contact-location-detail">
+              <div class="contact-location-icon">
+                <i data-lucide="map-pin"></i>
+              </div>
+
+              <div>
+                <span class="contact-location-label"> OUR OFFICE </span>
+
+                <p>
+                  YOUR OFFICE ADDRESS<br />
+                  CITY, STATE, PIN CODE
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-location-detail">
+              <div class="contact-location-icon">
+                <i data-lucide="clock-3"></i>
+              </div>
+
+              <div>
+                <span class="contact-location-label"> OFFICE HOURS </span>
+
+                <p>
+                  Monday – Saturday<br />
+                  9:00 AM – 6:00 PM
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <a
+            href="https://www.google.com/maps"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-location-button"
+          >
+            <span>Get Directions</span>
+
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+
+        <!-- RIGHT GOOGLE MAP -->
+        <div class="contact-location-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.205350804968!2d78.36678137521062!3d17.401930083487724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb95096aa8147b%3A0x23dd9aca79af7f!2sNatures%20Nest!5e0!3m2!1sen!2sin!4v1790320768788!5m2!1sen!2sin"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+          ></iframe>
+
+          <div class="contact-location-map-overlay">
+            <div class="contact-location-map-card">
+              <div class="contact-location-map-card-icon">
+                <i data-lucide="map-pin"></i>
+              </div>
+
+              <div>
+                <span>SAFE STEP</span>
+                <p>Accessibility Solutions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+     SECTION 4 — SEND A MESSAGE
+========================= -->
+
+    <section class="contact-message" id="contact-message">
+      <div class="contact-message-heading">
+        <span class="contact-section-eyebrow"> SEND A MESSAGE </span>
+
+        <h2 class="contact-section-title">
+          Tell Us How
+          <span>We Can Help.</span>
+        </h2>
+
+        <p class="contact-section-description">
+          Have a question, need more information, or want to discuss an
+          accessibility project? Send us a message and our team will get back to
+          you.
+        </p>
+      </div>
+
+      <div class="contact-message-container">
+        <div class="contact-message-intro">
+          <div class="contact-message-intro-number">01</div>
+
+          <h3>
+            Let's Start
+            <span>With a Conversation.</span>
+          </h3>
+
+          <p>
+            Every home and every requirement is different. Share a few details
+            with us and we'll help you understand the next steps.
+          </p>
+
+          <div class="contact-message-points">
+            <div class="contact-message-point">
+              <i data-lucide="check"></i>
+              <span>Personalized guidance</span>
+            </div>
+
+            <div class="contact-message-point">
+              <i data-lucide="check"></i>
+              <span>Solutions designed around your home</span>
+            </div>
+
+            <div class="contact-message-point">
+              <i data-lucide="check"></i>
+              <span>Clear communication from start to finish</span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-message-form" id="contactMessageForm">
+          <div class="contact-form-row">
+            <div class="contact-form-field">
+              <label for="contact-name"> FULL NAME </label>
+
+              <input
+                type="text"
+                id="contact-name"
+                name="name"
+                placeholder="Your full name"
+                required
+              />
+            </div>
+
+            <div class="contact-form-field">
+              <label for="contact-phone"> PHONE NUMBER </label>
+
+              <input
+                type="tel"
+                id="contact-phone"
+                name="phone"
+                placeholder="+91 00000 00000"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="contact-form-row">
+            <div class="contact-form-field">
+              <label for="contact-email"> EMAIL ADDRESS </label>
+
+              <input
+                type="email"
+                id="contact-email"
+                name="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+
+            <div class="contact-form-field">
+              <label for="contact-service"> SERVICE INTEREST </label>
+
+              <select id="contact-service" name="service" required>
+                <option value="" selected disabled>Select a service</option>
+
+                <option value="stairlift">Stairlift Installation</option>
+
+                <option value="home-elevator">
+                  Home Elevator Installation
+                </option>
+
+                <option value="ramp">Accessibility Ramp</option>
+
+                <option value="consultation">General Consultation</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="contact-form-field">
+            <label for="contact-message-text"> YOUR MESSAGE </label>
+
+            <textarea
+              id="contact-message-text"
+              name="message"
+              rows="6"
+              placeholder="Tell us a little about what you need..."
+              required
+            ></textarea>
+          </div>
+
+          <div class="contact-form-bottom">
+            <p class="contact-form-note">
+              <i data-lucide="shield-check"></i>
+              <span>
+                Your information is only used to respond to your enquiry.
+              </span>
+            </p>
+
+            <button type="submit" class="contact-form-submit">
+              <span>Send Message</span>
+              <i data-lucide="arrow-right"></i>
+            </button>
+          </div>
+
+          <p
+            class="contact-form-success"
+            id="contactFormSuccess"
+            aria-live="polite"
+          >
+            Thank you. Your message has been received.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <!-- =========================
+     SECTION 5 — FINAL CTA
+========================= -->
+
+<section class="contact-final-cta" id="contact-final-cta">
+
+    <div class="contact-final-cta-box">
+
+        <span class="contact-final-cta-eyebrow">
+            TAKE THE NEXT STEP
+        </span>
+
+        <h2 class="contact-final-cta-title">
+            Let's Make Your Home
+            <span>Work Better for You.</span>
+        </h2>
+
+        <p class="contact-final-cta-description">
+            Whether you're ready to start your project or simply
+            have questions, our team is here to help you explore
+            the right accessibility solution for your home.
+        </p>
+
+        <div class="contact-final-cta-actions">
+
+            <a href="consultation.html"
+               class="contact-final-cta-btn contact-final-cta-btn-primary">
+
+                <span>Book a Consultation</span>
+
+                <i data-lucide="arrow-right"></i>
+
+            </a>
+
+            <a href="tel:+910000000000"
+               class="contact-final-cta-btn contact-final-cta-btn-secondary">
+
+                <span>Call Our Team</span>
+
+                <i data-lucide="phone"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- =========================================================
+     SAFE STEP
+     FOOTER
+     ========================================================= -->
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- =================================================
+         BRAND
+    ================================================== -->
+
+        <div class="footer-col footer-brand">
+          <div class="footer-logo">
+            <a href="index.html" aria-label="Safe Step Home">
+              <img src="images/logo.png" alt="Safe Step Logo" />
+            </a>
+
+            <div
+              class="footer-branding"
+              onclick="window.location.href = 'index.html'"
+            >
+              <h2>
+                <span class="safe">Safe</span><span class="step">Step</span>
+              </h2>
+
+              <p>Accessibility Solutions</p>
+            </div>
+          </div>
+
+          <!-- DESCRIPTION -->
+
+          <p class="footer-about">
+            Safe Step provides reliable home accessibility solutions designed to
+            help people move safely, comfortably, and independently throughout
+            their homes.
+          </p>
+
+          <!-- SOCIAL MEDIA -->
+
+          <div class="social-media">
+            <!-- INSTAGRAM -->
+
+            <a href="#" aria-label="Instagram" title="Instagram">
+              <i data-lucide="camera" aria-hidden="true"></i>
+            </a>
+
+            <!-- FACEBOOK -->
+
+            <a href="#" aria-label="Facebook" title="Facebook">
+              <i data-lucide="users" aria-hidden="true"></i>
+            </a>
+
+            <!-- YOUTUBE -->
+
+            <a href="#" aria-label="YouTube" title="YouTube">
+              <i data-lucide="play" aria-hidden="true"></i>
+            </a>
+
+            <!-- EMAIL -->
+
+            <a href="mailto:info@aquacare.com" aria-label="Email" title="Email">
+              <i data-lucide="mail" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- =================================================
+         QUICK LINKS
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="about.html">About</a>
+            </li>
+
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+
+            <li>
+              <a href="products.html">Products</a>
+            </li>
+
+            <li>
+              <a href="pricing.html">Pricing</a>
+            </li>
+
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         OUR SOLUTIONS
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Our Solutions</h3>
+
+          <ul>
+            <li>
+              <a href="products.html#stairlifts"> Stairlifts </a>
+            </li>
+
+            <li>
+              <a href="products.html#elevators"> Home Elevators </a>
+            </li>
+
+            <li>
+              <a href="products.html#ramps"> Accessibility Ramps </a>
+            </li>
+
+            <li>
+              <a href="services.html#installation">
+                Professional Installation
+              </a>
+            </li>
+
+            <li>
+              <a href="services.html#maintenance"> Maintenance & Support </a>
+            </li>
+
+            <li>
+              <a href="services.html#assessment"> Accessibility Assessment </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         CLIENT SERVICES
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Client Services</h3>
+
+          <ul>
+            <li>
+              <a href="dashboard.html"> Client Dashboard </a>
+            </li>
+
+            <li>
+              <a href="dashboard.html"> Project Status </a>
+            </li>
+
+            <li>
+              <a href="dashboard.html"> Maintenance </a>
+            </li>
+
+            <li>
+              <a href="consultation.html">Consultation</a>
+            </li>
+            <li>
+              <a href="404.html">404</a>
+            </li>
+            <li>
+              <a href="comming.html">Commingsoon...</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         CONTACT
+    ================================================== -->
+
+        <div class="footer-col footer-contact">
+          <h3>Get In Touch</h3>
+
+          <ul>
+            <!-- LOCATION -->
+
+            <li>
+              <i data-lucide="map-pin" aria-hidden="true"></i>
+
+              <span> Your Service Area </span>
+            </li>
+
+            <!-- PHONE -->
+
+            <li>
+              <i data-lucide="phone" aria-hidden="true"></i>
+
+              <a href="tel:+10000000000"> +1 (000) 000-0000 </a>
+            </li>
+
+            <!-- EMAIL -->
+
+            <li>
+              <i data-lucide="mail" aria-hidden="true"></i>
+
+              <a href="mailto:info@safestep.com"> info@safestep.com </a>
+            </li>
+
+            <!-- HOURS -->
+
+            <li>
+              <i data-lucide="clock" aria-hidden="true"></i>
+
+              <span> Mon – Sat: 8 AM – 6 PM </span>
+            </li>
+          </ul>
+
+          <!-- CTA -->
+
+          <a href="consultation.html" class="footer-cta">
+            <span>Book a Consultation</span>
+
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- =================================================
+       FOOTER BOTTOM
+  ================================================== -->
+
+      <div class="footer-bottom">
+        <p>
+          © 2026
+
+          <span class="safe">Safe</span>
+          <span class="step">Step</span>. All Rights Reserved.
+        </p>
+
+        <div class="footer-bottom-links">
+          <a href="privacy.html"> Privacy Policy </a>
+
+          <a href="terms.html"> Terms & Conditions </a>
+
+          <a href="cookies.html"> Cookies </a>
+
+          <!-- BACK TO TOP -->
+
+          <a
+            href="#"
+            class="top-btn"
+            aria-label="Back to top"
+            title="Back to top"
+          >
+            <i data-lucide="arrow-up" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="global.js"></script>
+  </body>
+</html>

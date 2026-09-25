@@ -1,0 +1,1197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logo.png" />
+
+    <title>Pricing</title>
+
+    <!-- =========================================
+       GOOGLE FONT
+       ========================================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =========================================
+       LUCIDE ICONS
+       ========================================= -->
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="pricing.css" />
+  </head>
+  <body>
+    <!-- =========================================================
+     SAFE STEP
+     HEADER
+     ========================================================= -->
+
+    <header class="site-header">
+      <div class="header-container">
+        <!-- =================================================
+         LOGO
+    ================================================== -->
+
+        <div class="logo">
+          <a href="index.html" aria-label="Safe Step Home">
+            <img src="images/logo.png" alt="Safe Step Logo" />
+          </a>
+
+          <div class="logo-text" onclick="window.location.href = 'index.html'">
+            <h1>
+              <span class="safe">Safe</span><span class="step">Step</span>
+            </h1>
+
+            <p>Accessibility Solutions</p>
+          </div>
+        </div>
+
+        <!-- =================================================
+         NAVIGATION
+    ================================================== -->
+
+        <nav class="navbar" aria-label="Primary Navigation">
+          <ul class="nav-links">
+            <!-- HOME -->
+
+            <li class="dropdown">
+              <a href="index.html">
+                <span>Home</span>
+
+                <i data-lucide="chevron-down" aria-hidden="true"></i>
+              </a>
+
+              <!-- HOME DROPDOWN -->
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="index.html">
+                    <i data-lucide="house" aria-hidden="true"></i>
+
+                    <span>Home 1 - Classic</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="home2.html">
+                    <i data-lucide="sparkles" aria-hidden="true"></i>
+
+                    <span>Home 2 - Premium</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- ABOUT -->
+
+            <li>
+              <a href="about.html">
+                <span>About</span>
+              </a>
+            </li>
+
+            <!-- SERVICES -->
+
+            <li>
+              <a href="services.html">
+                <span>Services</span>
+              </a>
+            </li>
+
+            <!-- PRODUCTS -->
+
+            <li>
+              <a href="products.html">
+                <span>Products</span>
+              </a>
+            </li>
+
+            <!-- CONSULTATION -->
+
+            <li>
+              <a href="consultation.html">
+                <span>Consultation</span>
+              </a>
+            </li>
+
+            <!-- PRICING -->
+
+            <li>
+              <a href="pricing.html">
+                <span>Pricing</span>
+              </a>
+            </li>
+
+            <!-- CONTACT -->
+
+            <li>
+              <a href="contact.html">
+                <span>Contact</span>
+              </a>
+            </li>
+
+            <!-- DASHBOARD -->
+
+            <li>
+              <a href="dashboard.html">
+                <span>Dashboard</span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- MOBILE LOGIN -->
+
+          <div class="mobile-login">
+            <a href="login.html" class="login-btn mobile-login-btn">
+              <i data-lucide="log-in" aria-hidden="true"></i>
+
+              <span>Login</span>
+            </a>
+          </div>
+        </nav>
+
+        <!-- =================================================
+         HEADER ACTIONS
+    ================================================== -->
+
+        <div class="header-buttons">
+          <!-- RTL -->
+
+          <button
+            class="icon-btn"
+            id="rtlToggle"
+            type="button"
+            title="RTL Mode"
+            aria-label="Toggle RTL mode"
+            aria-pressed="false"
+          >
+            <i data-lucide="arrow-left-right" aria-hidden="true"></i>
+          </button>
+
+          <!-- DARK MODE -->
+
+          <button
+            class="icon-btn"
+            id="darkToggle"
+            type="button"
+            title="Dark Mode"
+            aria-label="Toggle dark mode"
+          >
+            <i data-lucide="moon" aria-hidden="true"></i>
+          </button>
+
+          <!-- LOGIN -->
+
+          <a href="login.html" class="login-btn desktop-login">
+            <i data-lucide="log-in" aria-hidden="true"></i>
+
+            <span>Login</span>
+          </a>
+
+          <!-- MOBILE MENU -->
+
+          <button
+            class="icon-btn menu-btn"
+            id="menuToggle"
+            type="button"
+            title="Menu"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- =========================================================
+     PRICING HERO
+     ========================================================= -->
+
+    <section class="pricing-hero" id="pricing-hero">
+      <div class="pricing-hero-overlay"></div>
+
+      <div class="pricing-hero-lines pricing-hero-lines-left"></div>
+      <div class="pricing-hero-lines pricing-hero-lines-right"></div>
+
+      <div class="pricing-hero-content">
+        <span class="pricing-hero-eyebrow"> SAFE STEP PRICING </span>
+
+        <h1 class="pricing-hero-title">
+          Accessibility Solutions
+          <span>That Fit Your Home & Needs.</span>
+        </h1>
+
+        <p class="pricing-hero-description">
+          Explore our flexible accessibility options and understand what each
+          solution can offer before taking the next step.
+        </p>
+
+        <div class="pricing-hero-actions">
+          <a
+            href="#pricing-plans"
+            class="pricing-hero-btn pricing-hero-btn-primary"
+          >
+            <span>Explore Pricing</span>
+            <i data-lucide="arrow-right"></i>
+          </a>
+
+          <a
+            href="consultation.html"
+            class="pricing-hero-btn pricing-hero-btn-secondary"
+          >
+            <span>Book a Consultation</span>
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <a href="#pricing-intro" class="pricing-hero-scroll">
+        <span>SCROLL TO EXPLORE</span>
+
+        <i data-lucide="arrow-down"></i>
+      </a>
+    </section>
+    <!-- =========================================================
+     PRICING SECTION 2
+     UNDERSTANDING YOUR INVESTMENT
+     ========================================================= -->
+
+    <section class="pricing-intro" id="pricing-intro">
+      <div class="pricing-intro-heading">
+        <span class="pricing-section-eyebrow">
+          UNDERSTANDING YOUR INVESTMENT
+        </span>
+
+        <h2 class="pricing-section-title">
+          Every Home Is Different.
+          <span>Your Solution Should Be Too.</span>
+        </h2>
+
+        <p class="pricing-section-description">
+          Accessibility solutions are not one-size-fits-all. Your home's layout,
+          your needs, and the solution you choose all play a role in shaping
+          your overall investment.
+        </p>
+      </div>
+
+      <div class="pricing-intro-main">
+        <!-- IMAGE -->
+
+        <div class="pricing-intro-image-wrap">
+          <img
+            src="images/pricing.png"
+            alt="Safe Step accessibility solution planning"
+            class="pricing-intro-image"
+          />
+
+          <div class="pricing-intro-image-label">
+            <span>01</span>
+            <strong>PLANNED AROUND YOUR HOME</strong>
+          </div>
+        </div>
+
+        <!-- CONTENT -->
+
+        <div class="pricing-intro-content">
+          <div class="pricing-intro-item">
+            <div class="pricing-intro-number">01</div>
+
+            <div class="pricing-intro-item-content">
+              <span>YOUR HOME</span>
+
+              <h3>Your Space Matters.</h3>
+
+              <p>
+                The layout of your home, staircase, entrances, floors, and
+                available space can influence the solution required.
+              </p>
+            </div>
+          </div>
+
+          <div class="pricing-intro-item">
+            <div class="pricing-intro-number">02</div>
+
+            <div class="pricing-intro-item-content">
+              <span>YOUR SOLUTION</span>
+
+              <h3>Choose What Fits Your Needs.</h3>
+
+              <p>
+                Different accessibility solutions have different requirements,
+                specifications, and installation considerations.
+              </p>
+            </div>
+          </div>
+
+          <div class="pricing-intro-item">
+            <div class="pricing-intro-number">03</div>
+
+            <div class="pricing-intro-item-content">
+              <span>YOUR INSTALLATION</span>
+
+              <h3>Installation Is Part of the Plan.</h3>
+
+              <p>
+                Site preparation, installation complexity, and the structure of
+                your home can affect the overall project requirements.
+              </p>
+            </div>
+          </div>
+
+          <div class="pricing-intro-item">
+            <div class="pricing-intro-number">04</div>
+
+            <div class="pricing-intro-item-content">
+              <span>YOUR FUTURE</span>
+
+              <h3>Plan Beyond Today.</h3>
+
+              <p>
+                We can also consider your future accessibility needs so the
+                solution works comfortably for the way you live over time.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     PRICING SECTION 3
+     PRICING PLANS
+     ========================================================= -->
+
+    <section class="pricing-plans" id="pricing-plans">
+      <!-- SECTION HEADING -->
+      <div class="pricing-plans-heading">
+        <span class="pricing-section-eyebrow"> CHOOSE YOUR PLAN </span>
+
+        <h2 class="pricing-section-title">
+          A Plan for Every
+          <span>Level of Support.</span>
+        </h2>
+
+        <p class="pricing-section-description">
+          Choose the level of support that best matches your home's needs. Every
+          plan is designed to give you a clearer path toward greater
+          accessibility.
+        </p>
+      </div>
+
+      <!-- PRICING CARDS -->
+      <div class="pricing-plans-grid">
+        <!-- =================================================
+             BASIC PLAN
+             ================================================= -->
+
+        <article class="pricing-plan-card">
+          <!-- TOP -->
+          <div class="pricing-plan-top">
+            <span class="pricing-plan-number"> 01 </span>
+
+            <div class="pricing-plan-icon">
+              <i data-lucide="circle-check"></i>
+            </div>
+          </div>
+
+          <!-- PLAN HEADING -->
+          <div class="pricing-plan-heading">
+            <span class="pricing-plan-label"> BASIC </span>
+
+            <h3>A Simple Start.</h3>
+
+            <p>
+              A straightforward starting point for homeowners exploring
+              accessibility solutions.
+            </p>
+          </div>
+
+          <!-- PRICE -->
+          <div class="pricing-plan-price">
+            <span class="pricing-plan-price-label"> STARTING FROM </span>
+
+            <strong> ₹49,999 </strong>
+
+            <small> Final pricing based on your home and requirements. </small>
+          </div>
+
+          <!-- DIVIDER -->
+          <div class="pricing-plan-divider"></div>
+
+          <!-- FEATURES -->
+          <div class="pricing-plan-features">
+            <span class="pricing-plan-features-title"> INCLUDED </span>
+
+            <ul>
+              <li>
+                <i data-lucide="check"></i>
+                <span>Initial consultation</span>
+              </li>
+
+              <li>
+                <i data-lucide="check"></i>
+                <span>Basic home assessment</span>
+              </li>
+
+              <li>
+                <i data-lucide="check"></i>
+                <span>Solution recommendation</span>
+              </li>
+
+              <li>
+                <i data-lucide="check"></i>
+                <span>Installation planning</span>
+              </li>
+
+              <li>
+                <i data-lucide="check"></i>
+                <span>Installation support</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- BUTTON -->
+          <a href="consultation.html" class="pricing-plan-btn">
+            <span> Get Started </span>
+
+            <i data-lucide="arrow-right"></i>
+          </a>
+        </article>
+
+        <!-- =================================================
+             MOST POPULAR PLAN
+             ================================================= -->
+
+        <article class="pricing-plan-card pricing-plan-card-popular">
+          <!-- POPULAR BADGE -->
+          <div class="pricing-plan-popular-badge">MOST POPULAR</div>
+
+          <!-- TOP -->
+          <div class="pricing-plan-top">
+            <span class="pricing-plan-number"> 02 </span>
+
+            <div class="pricing-plan-icon">
+              <i data-lucide="sparkles"></i>
+            </div>
+          </div>
+
+          <!-- PLAN HEADING -->
+          <div class="pricing-plan-heading">
+            <span class="pricing-plan-label"> COMPLETE COMFORT </span>
+
+            <h3>More Support. More Confidence.</h3>
+
+            <p>
+              A comprehensive approach for homeowners looking for greater
+              support throughout the accessibility journey.
+            </p>
+          </div>
+
+          <!-- PRICE -->
+          <div class="pricing-plan-price">
+            <span class="pricing-plan-price-label"> STARTING FROM </span>
+
+            <strong> ₹99,999 </strong>
+
+            <small> Final pricing based on your home and requirements. </small>
+          </div>
+
+          <!-- DIVIDER -->
+          <div class="pricing-plan-divider"></div>
+
+          <!-- FEATURES -->
+          <div class="pricing-plan-features">
+            <span class="pricing-plan-features-title"> INCLUDED </span>
+
+            <ul>
+              <li>
+                <i data-lucide="check"></i>
+                <span>Everything in Basic</span>
+              </li>
+
+              <li>
+                <i data-lucide="check"></i>
+                <span>Detailed home assessment</span>
+              </li>
+
+              <li>
+                <i data-lucide="check"></i>
+                <span>Personalized solution planning</span>
+              </li>
+
+              <li>
+                <i data-lucide="check"></i>
+                <span>Installation coordination</span>
+              </li>
+
+              <li>
+                <i data-lucide="check"></i>
+                <span>Post-installation support</span>
+              </li>
+
+              <li>
+                <i data-lucide="check"></i>
+                <span>Maintenance guidance</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- BUTTON -->
+          <a
+            href="consultation.html"
+            class="pricing-plan-btn pricing-plan-btn-primary"
+          >
+            <span> Choose This Plan </span>
+
+            <i data-lucide="arrow-right"></i>
+          </a>
+        </article>
+
+        <!-- =================================================
+             PREMIUM PLAN
+             ================================================= -->
+
+        <article class="pricing-plan-card">
+          <!-- TOP -->
+          <div class="pricing-plan-top">
+            <span class="pricing-plan-number"> 03 </span>
+
+            <div class="pricing-plan-icon">
+              <i data-lucide="shield-check"></i>
+            </div>
+          </div>
+
+          <!-- PLAN HEADING -->
+          <div class="pricing-plan-heading">
+            <span class="pricing-plan-label"> PREMIUM </span>
+
+            <h3>Complete Accessibility.</h3>
+
+            <p>
+              A comprehensive approach for homeowners planning customized or
+              long-term accessibility solutions.
+            </p>
+          </div>
+
+          <!-- PRICE -->
+          <div class="pricing-plan-price">
+            <span class="pricing-plan-price-label"> STARTING FROM </span>
+
+            <strong> ₹1,49,999 </strong>
+
+            <small> Final pricing based on your home and requirements. </small>
+          </div>
+
+          <!-- DIVIDER -->
+          <div class="pricing-plan-divider"></div>
+
+          <!-- FEATURES -->
+          <div class="pricing-plan-features">
+            <span class="pricing-plan-features-title"> INCLUDED </span>
+
+            <ul>
+              <li>
+                <i data-lucide="check"></i>
+                <span>Everything in Complete Comfort</span>
+              </li>
+
+              <li>
+                <i data-lucide="check"></i>
+                <span>Advanced solution planning</span>
+              </li>
+
+              <li>
+                <i data-lucide="check"></i>
+                <span>Customized installation planning</span>
+              </li>
+
+              <li>
+                <i data-lucide="check"></i>
+                <span>Priority service support</span>
+              </li>
+
+              <li>
+                <i data-lucide="check"></i>
+                <span>Comprehensive maintenance planning</span>
+              </li>
+
+              <li>
+                <i data-lucide="check"></i>
+                <span>Long-term accessibility planning</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- BUTTON -->
+          <a href="consultation.html" class="pricing-plan-btn">
+            <span> Talk to an Expert </span>
+
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+        </article>
+      </div>
+    </section>
+    <!-- =========================================================
+     PRICING SECTION 4
+     WHAT SHAPES YOUR PRICING
+     ========================================================= -->
+
+    <section class="pricing-factors-section" id="pricing-factors">
+      <!-- =====================================================
+         SECTION HEADING
+         ===================================================== -->
+
+      <div class="pricing-factors-heading">
+        <span class="pricing-section-eyebrow"> WHAT SHAPES YOUR PRICING </span>
+
+        <h2 class="pricing-section-title">
+          Your Home. Your Needs.
+          <span>Your Investment.</span>
+        </h2>
+
+        <p class="pricing-section-description">
+          The final investment is shaped around your home, your accessibility
+          requirements, and the solution selected for your space.
+        </p>
+      </div>
+
+      <!-- =====================================================
+         FACTOR CARDS
+         ===================================================== -->
+
+      <div class="pricing-factors-grid">
+        <!-- =================================================
+             CARD 01
+             ================================================= -->
+
+        <article class="pricing-factor-card">
+          <div class="pricing-factor-card-top">
+            <span class="pricing-factor-number"> 01 </span>
+
+            <div class="pricing-factor-icon">
+              <i data-lucide="house"></i>
+            </div>
+          </div>
+
+          <div class="pricing-factor-card-content">
+            <span class="pricing-factor-label"> YOUR HOME </span>
+
+            <h3>Home Layout & Space</h3>
+
+            <p>
+              Your home's layout, available space, staircase, entrances, and
+              number of levels can influence the solution required.
+            </p>
+          </div>
+        </article>
+
+        <!-- =================================================
+             CARD 02
+             ================================================= -->
+
+        <article class="pricing-factor-card">
+          <div class="pricing-factor-card-top">
+            <span class="pricing-factor-number"> 02 </span>
+
+            <div class="pricing-factor-icon">
+              <i data-lucide="accessibility"></i>
+            </div>
+          </div>
+
+          <div class="pricing-factor-card-content">
+            <span class="pricing-factor-label"> YOUR SOLUTION </span>
+
+            <h3>Product & Specifications</h3>
+
+            <p>
+              The type of accessibility solution, specifications, features, and
+              customization requirements can affect the investment.
+            </p>
+          </div>
+        </article>
+
+        <!-- =================================================
+             CARD 03
+             ================================================= -->
+
+        <article class="pricing-factor-card">
+          <div class="pricing-factor-card-top">
+            <span class="pricing-factor-number"> 03 </span>
+
+            <div class="pricing-factor-icon">
+              <i data-lucide="wrench"></i>
+            </div>
+          </div>
+
+          <div class="pricing-factor-card-content">
+            <span class="pricing-factor-label"> INSTALLATION </span>
+
+            <h3>Installation Requirements</h3>
+
+            <p>
+              Preparation work, installation complexity, and the conditions of
+              your property can influence the project requirements.
+            </p>
+          </div>
+        </article>
+
+        <!-- =================================================
+             CARD 04
+             ================================================= -->
+
+        <article class="pricing-factor-card">
+          <div class="pricing-factor-card-top">
+            <span class="pricing-factor-number"> 04 </span>
+
+            <div class="pricing-factor-icon">
+              <i data-lucide="calendar-cog"></i>
+            </div>
+          </div>
+
+          <div class="pricing-factor-card-content">
+            <span class="pricing-factor-label"> YOUR FUTURE </span>
+
+            <h3>Ongoing Support & Needs</h3>
+
+            <p>
+              Maintenance, service support, warranty requirements, and future
+              accessibility needs can also to be considered.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="pricing-faq" id="pricing-faq">
+      <div class="pricing-faq-heading">
+        <span class="pricing-section-eyebrow">
+          FREQUENTLY ASKED QUESTIONS
+        </span>
+
+        <h2 class="pricing-section-title">
+          Questions About
+          <span>Pricing?</span>
+        </h2>
+
+        <p class="pricing-section-description">
+          Find answers to some of the common questions homeowners have before
+          planning an accessibility project.
+        </p>
+      </div>
+
+      <div class="pricing-faq-grid">
+        <!-- FAQ 01 -->
+        <article class="pricing-faq-item">
+          <button class="pricing-faq-question" type="button">
+            <span> How much does an accessibility solution cost? </span>
+
+            <i data-lucide="plus"></i>
+          </button>
+
+          <div class="pricing-faq-answer">
+            <p>
+              The overall cost depends on the solution selected, your home's
+              layout, installation requirements, specifications, and any
+              customization needed. Our listed prices are starting prices and
+              the final investment is confirmed after understanding your
+              specific requirements.
+            </p>
+          </div>
+        </article>
+
+        <!-- FAQ 02 -->
+        <article class="pricing-faq-item">
+          <button class="pricing-faq-question" type="button">
+            <span> Are the prices shown on this page final? </span>
+
+            <i data-lucide="plus"></i>
+          </button>
+
+          <div class="pricing-faq-answer">
+            <p>
+              No. The prices shown are starting prices intended to provide an
+              initial understanding of the available options. Final pricing is
+              personalized according to your home, selected solution,
+              installation needs, and requirements.
+            </p>
+          </div>
+        </article>
+
+        <!-- FAQ 03 -->
+        <article class="pricing-faq-item">
+          <button class="pricing-faq-question" type="button">
+            <span> Does installation come with the pricing? </span>
+
+            <i data-lucide="plus"></i>
+          </button>
+
+          <div class="pricing-faq-answer">
+            <p>
+              Installation requirements are considered as part of the overall
+              project planning. The exact scope can vary depending on the
+              property, preparation work, installation complexity, and selected
+              solution.
+            </p>
+          </div>
+        </article>
+
+        <!-- FAQ 04 -->
+        <article class="pricing-faq-item">
+          <button class="pricing-faq-question" type="button">
+            <span> Can the solution be customized for my home? </span>
+
+            <i data-lucide="plus"></i>
+          </button>
+
+          <div class="pricing-faq-answer">
+            <p>
+              Accessibility solutions can be considered around the
+              characteristics of your home and your individual requirements. A
+              consultation allows us to understand your space and discuss
+              suitable options.
+            </p>
+          </div>
+        </article>
+
+        <!-- FAQ 05 -->
+        <article class="pricing-faq-item">
+          <button class="pricing-faq-question" type="button">
+            <span> Do you provide maintenance and support? </span>
+
+            <i data-lucide="plus"></i>
+          </button>
+
+          <div class="pricing-faq-answer">
+            <p>
+              Support and maintenance requirements can be discussed as part of
+              your accessibility project. Available services depend on the
+              selected solution and the support plan associated with it.
+            </p>
+          </div>
+        </article>
+
+        <!-- FAQ 06 -->
+        <article class="pricing-faq-item">
+          <button class="pricing-faq-question" type="button">
+            <span> How do I get an exact quotation? </span>
+
+            <i data-lucide="plus"></i>
+          </button>
+
+          <div class="pricing-faq-answer">
+            <p>
+              The best way to understand the exact investment is to book a
+              consultation. We can discuss your needs, understand your home, and
+              determine the requirements before preparing the appropriate
+              pricing.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="pricing-final-cta" id="pricing-final-cta">
+
+    <div class="pricing-final-cta-box">
+
+        <span class="pricing-final-cta-eyebrow">
+            READY TO TAKE THE NEXT STEP?
+        </span>
+
+        <h2 class="pricing-final-cta-title">
+            Let's Find the Right
+            <span>Solution for Your Home.</span>
+        </h2>
+
+        <p class="pricing-final-cta-description">
+            Every home and every accessibility requirement is different.
+            Start with a conversation and let us help you understand
+            the right solution for your space, needs, and future.
+        </p>
+
+        <div class="pricing-final-cta-actions">
+
+            <a href="consultation.html"
+               class="pricing-final-cta-btn pricing-final-cta-btn-primary">
+
+                <span>Book a Consultation</span>
+                <i data-lucide="arrow-right"></i>
+
+            </a>
+
+            <a href="contact.html"
+               class="pricing-final-cta-btn pricing-final-cta-btn-secondary">
+
+                <span>Contact Our Team</span>
+                <i data-lucide="arrow-up-right"></i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+    <!-- =========================================================
+     SAFE STEP
+     FOOTER
+     ========================================================= -->
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- =================================================
+         BRAND
+    ================================================== -->
+
+        <div class="footer-col footer-brand">
+          <div class="footer-logo">
+            <a href="index.html" aria-label="Safe Step Home">
+              <img src="images/logo.png" alt="Safe Step Logo" />
+            </a>
+
+            <div
+              class="footer-branding"
+              onclick="window.location.href = 'index.html'"
+            >
+              <h2>
+                <span class="safe">Safe</span><span class="step">Step</span>
+              </h2>
+
+              <p>Accessibility Solutions</p>
+            </div>
+          </div>
+
+          <!-- DESCRIPTION -->
+
+          <p class="footer-about">
+            Safe Step provides reliable home accessibility solutions designed to
+            help people move safely, comfortably, and independently throughout
+            their homes.
+          </p>
+
+          <!-- SOCIAL MEDIA -->
+
+          <div class="social-media">
+            <!-- INSTAGRAM -->
+
+            <a href="#" aria-label="Instagram" title="Instagram">
+              <i data-lucide="camera" aria-hidden="true"></i>
+            </a>
+
+            <!-- FACEBOOK -->
+
+            <a href="#" aria-label="Facebook" title="Facebook">
+              <i data-lucide="users" aria-hidden="true"></i>
+            </a>
+
+            <!-- YOUTUBE -->
+
+            <a href="#" aria-label="YouTube" title="YouTube">
+              <i data-lucide="play" aria-hidden="true"></i>
+            </a>
+
+            <!-- EMAIL -->
+
+            <a href="mailto:info@aquacare.com" aria-label="Email" title="Email">
+              <i data-lucide="mail" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- =================================================
+         QUICK LINKS
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="about.html">About</a>
+            </li>
+
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+
+            <li>
+              <a href="products.html">Products</a>
+            </li>
+
+            <li>
+              <a href="pricing.html">Pricing</a>
+            </li>
+
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         OUR SOLUTIONS
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Our Solutions</h3>
+
+          <ul>
+            <li>
+              <a href="products.html#stairlifts"> Stairlifts </a>
+            </li>
+
+            <li>
+              <a href="products.html#elevators"> Home Elevators </a>
+            </li>
+
+            <li>
+              <a href="products.html#ramps"> Accessibility Ramps </a>
+            </li>
+
+            <li>
+              <a href="services.html#installation">
+                Professional Installation
+              </a>
+            </li>
+
+            <li>
+              <a href="services.html#maintenance"> Maintenance & Support </a>
+            </li>
+
+            <li>
+              <a href="services.html#assessment"> Accessibility Assessment </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         CLIENT SERVICES
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Client Services</h3>
+
+          <ul>
+            <li>
+              <a href="dashboard.html"> Client Dashboard </a>
+            </li>
+
+            <li>
+              <a href="dashboard.html"> Project Status </a>
+            </li>
+
+            <li>
+              <a href="dashboard.html"> Maintenance </a>
+            </li>
+
+            <li>
+              <a href="consultation.html">Consultation</a>
+            </li>
+            <li>
+              <a href="404.html">404</a>
+            </li>
+            <li>
+              <a href="comming.html">Commingsoon...</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         CONTACT
+    ================================================== -->
+
+        <div class="footer-col footer-contact">
+          <h3>Get In Touch</h3>
+
+          <ul>
+            <!-- LOCATION -->
+
+            <li>
+              <i data-lucide="map-pin" aria-hidden="true"></i>
+
+              <span> Your Service Area </span>
+            </li>
+
+            <!-- PHONE -->
+
+            <li>
+              <i data-lucide="phone" aria-hidden="true"></i>
+
+              <a href="tel:+10000000000"> +1 (000) 000-0000 </a>
+            </li>
+
+            <!-- EMAIL -->
+
+            <li>
+              <i data-lucide="mail" aria-hidden="true"></i>
+
+              <a href="mailto:info@safestep.com"> info@safestep.com </a>
+            </li>
+
+            <!-- HOURS -->
+
+            <li>
+              <i data-lucide="clock" aria-hidden="true"></i>
+
+              <span> Mon – Sat: 8 AM – 6 PM </span>
+            </li>
+          </ul>
+
+          <!-- CTA -->
+
+          <a href="consultation.html" class="footer-cta">
+            <span>Book a Consultation</span>
+
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- =================================================
+       FOOTER BOTTOM
+  ================================================== -->
+
+      <div class="footer-bottom">
+        <p>
+          © 2026
+
+          <span class="safe">Safe</span>
+          <span class="step">Step</span>. All Rights Reserved.
+        </p>
+
+        <div class="footer-bottom-links">
+          <a href="privacy.html"> Privacy Policy </a>
+
+          <a href="terms.html"> Terms & Conditions </a>
+
+          <a href="cookies.html"> Cookies </a>
+
+          <!-- BACK TO TOP -->
+
+          <a
+            href="#"
+            class="top-btn"
+            aria-label="Back to top"
+            title="Back to top"
+          >
+            <i data-lucide="arrow-up" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="global.js"></script>
+    <script src="pricing.js"></script>
+  </body>
+</html>

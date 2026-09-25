@@ -1,0 +1,3530 @@
+/* =========================================================
+   STAIRLIFT INSTALLATION
+   SECTION 1 — HERO
+   ========================================================= */
+
+.stairlift-hero {
+  position: relative;
+
+  width: 100%;
+  height: 760px;
+  min-height: 88vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  background-image: url("images/hero-5.jpeg");
+  background-size: cover;
+  background-position: center;
+
+  color: #ffffff;
+}
+
+/* =========================================================
+   OVERLAY
+   ========================================================= */
+
+.stairlift-hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    180deg,
+    rgba(20, 30, 24, 0.48) 0%,
+    rgba(20, 30, 24, 0.58) 50%,
+    rgba(20, 30, 24, 0.72) 100%
+  );
+
+  z-index: 1;
+}
+
+/* =========================================================
+   ARCHITECTURAL LINES
+   ========================================================= */
+
+.stairlift-hero-line {
+  position: absolute;
+
+  top: 14%;
+  bottom: 14%;
+
+  width: 1px;
+
+  background: rgba(212, 180, 131, 0.35);
+
+  z-index: 2;
+}
+
+.stairlift-hero-line-left {
+  left: 7%;
+}
+
+.stairlift-hero-line-right {
+  right: 7%;
+}
+
+/* =========================================================
+   HERO CONTENT
+   ========================================================= */
+
+.stairlift-hero-content {
+  position: relative;
+  z-index: 3;
+
+  width: min(950px, 90%);
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.stairlift-hero-eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 16px;
+
+  margin-bottom: 25px;
+
+  color: var(--secondary);
+
+  font-size: 0.72rem;
+  font-weight: 700;
+
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+
+.stairlift-hero-eyebrow-line {
+  width: 38px;
+  height: 1px;
+
+  background: var(--secondary);
+}
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.stairlift-hero-title {
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  color: #ffffff;
+
+  font-size: 4.5rem;
+
+  font-weight: 500;
+
+  line-height: 1.05;
+
+  letter-spacing: -0.045em;
+}
+
+.stairlift-hero-title span {
+  display: block;
+
+  color: var(--secondary);
+}
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.stairlift-hero-description {
+  max-width: 700px;
+
+  margin: 27px auto 0;
+
+  color: rgba(255, 255, 255, 0.82);
+
+  font-size: 1rem;
+
+  line-height: 1.85;
+}
+
+/* =========================================================
+   ACTIONS
+   ========================================================= */
+
+.stairlift-hero-actions {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 15px;
+
+  margin-top: 35px;
+}
+
+/* =========================================================
+   BUTTON
+   ========================================================= */
+
+.stairlift-hero-button {
+  min-height: 56px;
+
+  padding: 0 27px;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 11px;
+
+  border-radius: 8px;
+
+  font-size: 0.73rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.09em;
+
+  text-transform: uppercase;
+
+  text-decoration: none;
+}
+
+/* =========================================================
+   PRIMARY
+   ========================================================= */
+
+.stairlift-hero-button-primary {
+  background: var(--primary);
+
+  border: 1px solid var(--primary);
+
+  color: white;
+}
+.stairlift-hero-button-primary:hover {
+  background-color: var(--secondary);
+  border: var(--secondary);
+  transition: 0.3s;
+}
+
+.stairlift-hero-button-primary i {
+  width: 17px;
+  height: 17px;
+
+  stroke-width: 1.8;
+}
+
+/* =========================================================
+   SECONDARY
+   ========================================================= */
+
+.stairlift-hero-button-secondary {
+  background: rgba(255, 255, 255, 0.04);
+
+  border: 1px solid rgba(255, 255, 255, 0.65);
+
+  color: #ffffff;
+}
+.stairlift-hero-button-secondary:hover {
+  background: var(--secondary);
+  border: var(--secondary);
+}
+
+.stairlift-hero-button-secondary i {
+  width: 17px;
+  height: 17px;
+
+  stroke-width: 1.8;
+}
+
+/* =========================================================
+   SCROLL INDICATOR
+   ========================================================= */
+
+.stairlift-hero-scroll {
+  position: absolute;
+
+  left: 50%;
+  bottom: 25px;
+
+  transform: translateX(-50%);
+
+  z-index: 3;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 9px;
+
+  color: rgba(255, 255, 255, 0.72);
+
+  font-size: 0.58rem;
+
+  font-weight: 600;
+
+  letter-spacing: 0.2em;
+
+  white-space: nowrap;
+}
+
+.stairlift-hero-scroll-line {
+  width: 1px;
+  height: 38px;
+
+  background: var(--secondary);
+}
+
+/* =========================================================
+   STAIRLIFT SECTION 2
+   PROPER LEFT IMAGE / RIGHT CONTENT
+   ========================================================= */
+
+.stairlift-confidence {
+  width: 100%;
+  padding: 125px 6% 135px;
+
+  background: var(--site-bg);
+  color: var(--text);
+}
+
+/* =========================================================
+   TOP INTRO
+   ========================================================= */
+
+.stairlift-confidence-intro {
+  width: min(900px, 100%);
+  margin: 0 auto 70px;
+
+  text-align: center;
+}
+
+.stairlift-confidence-eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  margin-bottom: 24px;
+
+  color: var(--primary);
+
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+
+.stairlift-confidence-eyebrow-line {
+  width: 38px;
+  height: 1px;
+
+  background: var(--secondary);
+}
+
+.stairlift-confidence-title {
+  max-width: 850px;
+  margin: 0 auto;
+
+  color: var(--text);
+
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -0.035em;
+}
+
+.stairlift-confidence-title span {
+  display: block;
+  color: var(--secondary);
+}
+
+.stairlift-confidence-description {
+  max-width: 690px;
+  margin: 25px auto 0;
+
+  color: var(--muted);
+
+  font-size: 0.98rem;
+  line-height: 1.85;
+}
+
+/* =========================================================
+   MAIN TWO-COLUMN AREA
+   ========================================================= */
+
+.stairlift-confidence-main {
+  width: min(1350px, 100%);
+  height: 650px;
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 65px;
+
+  align-items: stretch;
+}
+
+/* =========================================================
+   LEFT IMAGE
+   ========================================================= */
+
+.stairlift-confidence-image-wrap {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+
+  border: 1px solid var(--border);
+
+  background: var(--surface);
+}
+
+.stairlift-confidence-image {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+/* =========================================================
+   IMAGE LABEL
+   ========================================================= */
+
+.stairlift-confidence-image-label {
+  position: absolute;
+
+  left: 24px;
+  bottom: 24px;
+
+  display: flex;
+  align-items: center;
+
+  gap: 15px;
+
+  min-width: 250px;
+
+  padding: 14px 17px;
+
+  background: rgba(255, 255, 255, 0.94);
+
+  border: 1px solid rgba(52, 78, 65, 0.14);
+}
+
+.stairlift-confidence-image-number {
+  width: 38px;
+  height: 38px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--secondary);
+
+  color: var(--primary);
+
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.stairlift-confidence-image-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.stairlift-confidence-image-text strong {
+  color: var(--primary);
+
+  font-size: 0.67rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.stairlift-confidence-image-text span {
+  color: #6e756f;
+
+  font-size: 0.68rem;
+}
+
+/* =========================================================
+   RIGHT CONTENT
+   ========================================================= */
+
+.stairlift-confidence-content {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+}
+
+.stairlift-confidence-content-inner {
+  width: 100%;
+  max-width: 590px;
+
+  margin: 0;
+}
+
+/* =========================================================
+   CONTENT HEADER
+   ========================================================= */
+
+.stairlift-confidence-content-eyebrow {
+  display: block;
+
+  margin-bottom: 17px;
+
+  color: var(--secondary);
+
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.stairlift-confidence-content h3 {
+  margin: 0;
+
+  color: var(--text);
+
+  font-size: clamp(2rem, 3.2vw, 3rem);
+  font-weight: 500;
+
+  line-height: 1.13;
+  letter-spacing: -0.025em;
+}
+
+.stairlift-confidence-content h3 span {
+  display: block;
+  color: var(--primary);
+}
+
+/* =========================================================
+   PARAGRAPHS
+   ========================================================= */
+
+.stairlift-confidence-text {
+  max-width: 560px;
+
+  margin: 21px 0 0;
+
+  color: var(--muted);
+
+  font-size: 0.92rem;
+  line-height: 1.8;
+}
+
+.stairlift-confidence-text + .stairlift-confidence-text {
+  margin-top: 11px;
+}
+
+/* =========================================================
+   POINTS
+   ========================================================= */
+
+.stairlift-confidence-points {
+  width: 100%;
+
+  margin-top: 32px;
+
+  border-top: 1px solid var(--border);
+}
+
+.stairlift-confidence-point {
+  display: grid;
+  grid-template-columns: 45px 1fr;
+
+  gap: 18px;
+
+  padding: 19px 0;
+
+  border-bottom: 1px solid var(--border);
+}
+
+.stairlift-confidence-point-number {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--secondary);
+
+  color: var(--secondary);
+
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+.stairlift-confidence-point-label {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: var(--secondary);
+
+  font-size: 0.63rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.stairlift-confidence-point-content h4 {
+  margin: 0;
+
+  color: var(--text);
+
+  font-size: 0.93rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.stairlift-confidence-point-content p {
+  max-width: 480px;
+
+  margin: 5px 0 0;
+
+  color: var(--muted);
+
+  font-size: 0.8rem;
+  line-height: 1.65;
+}
+
+/* =========================================================
+   STAIRLIFT SECTION 3
+   A STAIRLIFT DESIGNED AROUND YOUR HOME
+========================================================= */
+
+.stairlift-designed {
+  width: 100%;
+  padding: 130px 6% 145px;
+  background: var(--site-bg);
+  color: var(--text);
+}
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.stairlift-designed-intro {
+  width: min(900px, 100%);
+  margin: 0 auto 90px;
+  text-align: center;
+}
+
+.stairlift-designed-eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  margin-bottom: 24px;
+
+  color: var(--primary);
+
+  font-family: "Raleway", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+}
+
+.stairlift-designed-eyebrow-line {
+  width: 42px;
+  height: 1px;
+  background: var(--secondary);
+}
+
+.stairlift-designed-title {
+  margin: 0;
+
+  color: var(--text);
+
+  font-family: "Raleway", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -1.8px;
+}
+
+.stairlift-designed-title span {
+  display: block;
+  color: var(--secondary);
+}
+
+.stairlift-designed-description {
+  max-width: 720px;
+  margin: 28px auto 0;
+
+  color: var(--muted);
+
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.9;
+}
+
+/* =========================================================
+   FEATURE ROW
+========================================================= */
+
+.stairlift-designed-feature {
+  width: min(1350px, 100%);
+  min-height: 560px;
+
+  margin: 0 auto 90px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  background: var(--site-bg);
+
+  border: 1px solid var(--border);
+
+  overflow: hidden;
+}
+
+.stairlift-designed-feature:last-child {
+  margin-bottom: 0;
+}
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.stairlift-designed-image-wrap {
+  position: relative;
+
+  width: 100%;
+  height: 560px;
+
+  overflow: hidden;
+
+  background: var(--surface);
+}
+
+.stairlift-designed-image {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+  object-position: center;
+}
+
+/* IMAGE NUMBER */
+
+.stairlift-designed-image-number {
+  position: absolute;
+
+  top: 28px;
+  left: 30px;
+
+  width: 54px;
+  height: 54px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+
+  color: var(--primary);
+
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.stairlift-designed-content {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 75px 75px;
+
+  background: var(--site-bg);
+}
+
+/* LARGE NUMBER */
+
+.stairlift-designed-number {
+  position: absolute;
+
+  top: 28px;
+  right: 35px;
+
+  color: var(--border);
+
+  font-family: "Raleway", sans-serif;
+  font-size: 82px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+/* ICON */
+
+.stairlift-designed-icon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 28px;
+
+  color: var(--primary);
+
+  border: 1px solid var(--border);
+}
+
+.stairlift-designed-icon svg {
+  width: 21px;
+  height: 21px;
+
+  stroke-width: 1.5;
+}
+
+/* LABEL */
+
+.stairlift-designed-label {
+  display: block;
+
+  margin-bottom: 16px;
+
+  color: var(--secondary);
+
+  font-family: "Raleway", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
+
+/* HEADING */
+
+.stairlift-designed-content h3 {
+  max-width: 510px;
+
+  margin: 0 0 22px;
+
+  color: var(--primary);
+
+  font-family: "Raleway", sans-serif;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1.12;
+  letter-spacing: -1px;
+}
+
+.stairlift-designed-content h3 span {
+  display: block;
+  color: var(--secondary);
+}
+
+/* DESCRIPTION */
+
+.stairlift-designed-content > p {
+  max-width: 530px;
+
+  margin: 0;
+
+  color: var(--muted);
+
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.9;
+}
+
+/* =========================================================
+   DETAIL
+========================================================= */
+
+.stairlift-designed-detail {
+  max-width: 530px;
+
+  margin-top: 32px;
+  padding-top: 22px;
+
+  display: grid;
+  grid-template-columns: 35px 1fr;
+
+  column-gap: 15px;
+
+  border-top: 1px solid var(--border);
+}
+
+.stairlift-designed-detail > span {
+  grid-row: span 2;
+
+  color: var(--secondary);
+
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.stairlift-designed-detail strong {
+  display: block;
+
+  color: var(--primary);
+
+  font-family: "Raleway", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+}
+
+.stairlift-designed-detail p {
+  margin: 7px 0 0;
+
+  color: var(--muted);
+
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  line-height: 1.7;
+}
+/* =========================================================
+   STAIRLIFT SECTION 4
+   FROM ASSESSMENT TO INSTALLATION
+========================================================= */
+
+.stairlift-process {
+  width: 100%;
+  padding: 130px 6% 135px;
+  margin-top: -130px;
+  background: var(--site-bg);
+  color: var(--text);
+}
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.stairlift-process-intro {
+  width: min(850px, 100%);
+  margin: 0 auto 85px;
+
+  text-align: center;
+}
+
+.stairlift-process-eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  margin-bottom: 24px;
+
+  color: var(--primary);
+
+  font-family: "Raleway", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+}
+
+.stairlift-process-eyebrow-line {
+  width: 42px;
+  height: 1px;
+
+  background: var(--secondary);
+}
+
+.stairlift-process-title {
+  margin: 0;
+
+  color: var(--text);
+
+  font-family: "Raleway", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -1.8px;
+}
+
+.stairlift-process-title span {
+  display: block;
+  color: var(--secondary);
+}
+
+.stairlift-process-description {
+  max-width: 700px;
+
+  margin: 28px auto 0;
+
+  color: var(--muted);
+
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.9;
+}
+
+/* =========================================================
+   PROCESS GRID
+========================================================= */
+
+.stairlift-process-grid {
+  width: min(1350px, 100%);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* =========================================================
+   PROCESS ITEM
+========================================================= */
+
+.stairlift-process-item {
+  position: relative;
+
+  min-height: 390px;
+
+  padding: 0 38px;
+
+  border-left: 1px solid var(--border);
+}
+
+.stairlift-process-item:first-child {
+  border-left: none;
+}
+
+/* =========================================================
+   TOP
+========================================================= */
+
+.stairlift-process-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 55px;
+}
+
+/* NUMBER */
+
+.stairlift-process-number {
+  color: var(--secondary);
+
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+/* ICON */
+
+.stairlift-process-icon {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--border);
+
+  color: var(--primary);
+}
+
+.stairlift-process-icon svg {
+  width: 21px;
+  height: 21px;
+
+  stroke-width: 1.5;
+}
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+.stairlift-process-label {
+  display: block;
+
+  margin-bottom: 13px;
+
+  color: var(--secondary);
+
+  font-family: "Raleway", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.stairlift-process-item h3 {
+  margin: 0 0 18px;
+
+  color: var(--primary);
+
+  font-family: "Raleway", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.stairlift-process-item p {
+  max-width: 255px;
+
+  margin: 0;
+
+  color: var(--muted);
+
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.85;
+}
+
+/* =========================================================
+   BOTTOM LINE
+========================================================= */
+
+.stairlift-process-line {
+  width: 38px;
+  height: 1px;
+
+  margin-top: 35px;
+
+  background: var(--secondary);
+}
+/* =========================================================
+   STAIRLIFT SECTION 5
+   SUPPORT BEYOND INSTALLATION
+========================================================= */
+
+.stairlift-support {
+  width: 100%;
+  padding: 130px 6% 140px;
+  margin-top: -120px;
+  background: var(--site-bg);
+  color: var(--text);
+}
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.stairlift-support-intro {
+  width: min(900px, 100%);
+  margin: 0 auto 80px;
+
+  text-align: center;
+}
+
+.stairlift-support-eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  margin-bottom: 24px;
+
+  color: var(--primary);
+
+  font-family: "Raleway", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+}
+
+.stairlift-support-eyebrow-line {
+  width: 42px;
+  height: 1px;
+
+  background: var(--secondary);
+}
+
+.stairlift-support-title {
+  margin: 0;
+
+  color: var(--text);
+
+  font-family: "Raleway", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -1.8px;
+}
+
+.stairlift-support-title span {
+  display: block;
+  color: var(--secondary);
+}
+
+.stairlift-support-description {
+  max-width: 700px;
+
+  margin: 28px auto 0;
+
+  color: var(--muted);
+
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.9;
+}
+
+/* =========================================================
+   SUPPORT LIST
+========================================================= */
+
+.stairlift-support-list {
+  width: min(1250px, 100%);
+  margin: 0 auto;
+}
+
+/* =========================================================
+   SUPPORT ROW
+========================================================= */
+
+.stairlift-support-row {
+  min-height: 175px;
+
+  display: grid;
+  grid-template-columns: 70px 70px minmax(0, 1fr) 60px;
+  align-items: center;
+  column-gap: 30px;
+
+  padding: 30px 0;
+
+  border-top: 1px solid var(--border);
+
+  transition: background-color 0.2s ease;
+}
+
+.stairlift-support-row:last-child {
+  border-bottom: 1px solid var(--border);
+}
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.stairlift-support-number {
+  color: var(--secondary);
+
+  font-family: "Raleway", sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.stairlift-support-icon {
+  width: 54px;
+  height: 54px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--border);
+
+  color: var(--primary);
+}
+
+.stairlift-support-icon svg {
+  width: 21px;
+  height: 21px;
+
+  stroke-width: 1.5;
+}
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.stairlift-support-content {
+  padding-right: 30px;
+}
+
+.stairlift-support-label {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: var(--secondary);
+
+  font-family: "Raleway", sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.stairlift-support-content h3 {
+  margin: 0 0 9px;
+
+  color: var(--primary);
+
+  font-family: "Raleway", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.stairlift-support-content p {
+  max-width: 650px;
+
+  margin: 0;
+
+  color: var(--muted);
+
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+/* =========================================================
+   ARROW
+========================================================= */
+
+.stairlift-support-arrow {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--border);
+
+  color: var(--primary);
+}
+
+.stairlift-support-arrow svg {
+  width: 18px;
+  height: 18px;
+
+  stroke-width: 1.5;
+}
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.stairlift-support-row:hover {
+  background: var(--surface-hover);
+}
+
+.stairlift-support-row:hover .stairlift-support-arrow {
+  background: var(--primary);
+  color: var(--surface);
+}
+/* =========================================================
+   STAIRLIFT SECTION 6
+   FINAL CTA
+========================================================= */
+
+.stairlift-final-cta {
+  width: 100%;
+  margin-top: -100px;
+  padding: 110px 6% 130px;
+
+  background: var(--site-bg);
+  color: var(--text);
+}
+
+/* =========================================================
+   CTA BOX
+========================================================= */
+
+.stairlift-final-cta-box {
+  width: min(900px, 150%);
+
+  margin: 0 auto;
+
+  padding: 90px 40px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+
+  border-radius: 22px;
+
+  box-shadow: 0 18px 55px rgba(0, 0, 0, 0.06);
+}
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.stairlift-final-cta-eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 16px;
+
+  margin-bottom: 24px;
+
+  color: var(--primary);
+
+  font-family: "Raleway", sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.8px;
+}
+
+.stairlift-final-cta-line {
+  width: 42px;
+  height: 1px;
+
+  background: var(--secondary);
+}
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.stairlift-final-cta-title {
+  max-width: 850px;
+
+  margin: 0;
+
+  color: var(--primary);
+
+  font-family: "Raleway", sans-serif;
+  font-size: 3.5rem;
+  font-weight: 500;
+  line-height: 1.06;
+  letter-spacing: -2px;
+}
+
+.stairlift-final-cta-title span {
+  display: block;
+
+  color: var(--secondary);
+}
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.stairlift-final-cta-description {
+  max-width: 680px;
+
+  margin: 28px auto 0;
+
+  color: var(--muted);
+
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.9;
+}
+
+/* =========================================================
+   ACTIONS
+========================================================= */
+
+.stairlift-final-cta-actions {
+  margin-top: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 14px;
+}
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.stairlift-final-cta-button {
+  min-height: 52px;
+
+  padding: 0 24px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 11px;
+
+  border-radius: 8px;
+
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+
+  text-decoration: none;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.stairlift-final-cta-button svg {
+  width: 16px;
+  height: 16px;
+
+  stroke-width: 1.8;
+}
+
+/* =========================================================
+   PRIMARY BUTTON
+========================================================= */
+
+.stairlift-final-cta-button-primary {
+  background: var(--primary);
+
+  border: 1px solid var(--primary);
+
+  color: #ffffff;
+}
+
+.stairlift-final-cta-button-primary:hover {
+  background: var(--secondary);
+
+  border-color: var(--secondary);
+
+  color: white;
+}
+
+/* =========================================================
+   SECONDARY BUTTON
+========================================================= */
+
+.stairlift-final-cta-button-secondary {
+  background: transparent;
+
+  border: 1px solid var(--primary);
+
+  color: var(--primary);
+}
+
+.stairlift-final-cta-button-secondary:hover {
+  background: var(--primary);
+
+  border-color: var(--primary);
+
+  color: #ffffff;
+}
+
+/* =========================================================
+   NOTE
+========================================================= */
+
+.stairlift-final-cta-note {
+  margin-top: 34px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  color: var(--muted);
+
+  font-family: "Raleway", sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+.stairlift-final-cta-note svg {
+  width: 16px;
+  height: 16px;
+
+  color: var(--secondary);
+
+  stroke-width: 1.7;
+}
+
+
+/* =========================================================
+   STAIRLIFT INSTALLATION
+   RESPONSIVE MEDIA QUERIES
+========================================================= */
+
+
+/* =========================================================
+   SAMSUNG GALAXY S8+
+   360px — 740px
+========================================================= */
+
+@media screen and (min-width: 360px) and (max-width: 740px) {
+
+  /* =======================================================
+     GLOBAL SECTION SPACING
+  ======================================================= */
+
+  .stairlift-hero,
+  .stairlift-confidence,
+  .stairlift-designed,
+  .stairlift-process,
+  .stairlift-support,
+  .stairlift-final-cta {
+    width: 100%;
+  }
+
+
+  /* =======================================================
+     SECTION 1 — HERO
+  ======================================================= */
+
+  .stairlift-hero {
+    height: auto;
+    min-height: 680px;
+
+    padding: 100px 5% 100px;
+  }
+
+  .stairlift-hero-line {
+    top: 10%;
+    bottom: 10%;
+  }
+
+  .stairlift-hero-line-left {
+    left: 4%;
+  }
+
+  .stairlift-hero-line-right {
+    right: 4%;
+  }
+
+  .stairlift-hero-content {
+    width: 100%;
+    max-width: 100%;
+
+    padding: 0 8px;
+  }
+
+  .stairlift-hero-eyebrow {
+    gap: 9px;
+
+    margin-bottom: 20px;
+
+    font-size: 0.55rem;
+    letter-spacing: 0.16em;
+  }
+
+  .stairlift-hero-eyebrow-line {
+    width: 24px;
+  }
+
+  .stairlift-hero-title {
+    max-width: 100%;
+
+    font-size: clamp(2.5rem, 11vw, 3.2rem);
+
+    line-height: 1.08;
+    letter-spacing: -0.035em;
+  }
+
+  .stairlift-hero-description {
+    max-width: 100%;
+
+    margin-top: 22px;
+
+    font-size: 0.86rem;
+    line-height: 1.75;
+  }
+
+  .stairlift-hero-actions {
+    width: 100%;
+
+    flex-direction: column;
+
+    gap: 11px;
+
+    margin-top: 28px;
+  }
+
+  .stairlift-hero-button {
+    width: 100%;
+
+    min-height: 52px;
+
+    padding: 0 18px;
+
+    font-size: 0.65rem;
+  }
+
+  .stairlift-hero-scroll {
+    bottom: 18px;
+
+    font-size: 0.5rem;
+    letter-spacing: 0.15em;
+  }
+
+  .stairlift-hero-scroll-line {
+    height: 28px;
+  }
+
+
+  /* =======================================================
+     SECTION 2 — CONFIDENCE
+  ======================================================= */
+
+  .stairlift-confidence {
+    padding: 80px 5% 90px;
+  }
+
+  .stairlift-confidence-intro {
+    width: 100%;
+
+    margin-bottom: 48px;
+  }
+
+  .stairlift-confidence-eyebrow {
+    gap: 9px;
+
+    margin-bottom: 20px;
+
+    font-size: 0.55rem;
+    letter-spacing: 0.16em;
+  }
+
+  .stairlift-confidence-eyebrow-line {
+    width: 24px;
+  }
+
+  .stairlift-confidence-title {
+    max-width: 100%;
+
+    font-size: clamp(2.25rem, 10vw, 3rem);
+
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+  }
+
+  .stairlift-confidence-description {
+    max-width: 100%;
+
+    margin-top: 20px;
+
+    font-size: 0.84rem;
+    line-height: 1.75;
+  }
+
+  .stairlift-confidence-main {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 38px;
+  }
+
+  .stairlift-confidence-image-wrap {
+    width: 100%;
+    height: 330px;
+
+    flex-shrink: 0;
+  }
+
+  .stairlift-confidence-image-label {
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+
+    min-width: 0;
+    width: auto;
+
+    padding: 11px 12px;
+
+    gap: 11px;
+  }
+
+  .stairlift-confidence-image-number {
+    width: 34px;
+    height: 34px;
+
+    font-size: 0.62rem;
+  }
+
+  .stairlift-confidence-image-text strong {
+    font-size: 0.56rem;
+    letter-spacing: 0.1em;
+  }
+
+  .stairlift-confidence-image-text span {
+    font-size: 0.58rem;
+  }
+
+  .stairlift-confidence-content {
+    width: 100%;
+    height: auto;
+
+    display: block;
+  }
+
+  .stairlift-confidence-content-inner {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .stairlift-confidence-content-eyebrow {
+    margin-bottom: 13px;
+
+    font-size: 0.6rem;
+    letter-spacing: 0.16em;
+  }
+
+  .stairlift-confidence-content h3 {
+    font-size: 2rem;
+
+    line-height: 1.13;
+  }
+
+  .stairlift-confidence-text {
+    max-width: 100%;
+
+    margin-top: 18px;
+
+    font-size: 0.83rem;
+    line-height: 1.75;
+  }
+
+  .stairlift-confidence-text + .stairlift-confidence-text {
+    margin-top: 10px;
+  }
+
+  .stairlift-confidence-points {
+    margin-top: 25px;
+  }
+
+  .stairlift-confidence-point {
+    grid-template-columns: 38px 1fr;
+
+    gap: 13px;
+
+    padding: 15px 0;
+  }
+
+  .stairlift-confidence-point-number {
+    width: 34px;
+    height: 34px;
+
+    font-size: 0.58rem;
+  }
+
+  .stairlift-confidence-point-label {
+    font-size: 0.55rem;
+    letter-spacing: 0.1em;
+  }
+
+  .stairlift-confidence-point-content h4 {
+    font-size: 0.86rem;
+  }
+
+  .stairlift-confidence-point-content p {
+    max-width: 100%;
+
+    font-size: 0.72rem;
+    line-height: 1.6;
+  }
+
+
+  /* =======================================================
+     SECTION 3 — DESIGNED
+  ======================================================= */
+
+  .stairlift-designed {
+    padding: 80px 5% 90px;
+  }
+
+  .stairlift-designed-intro {
+    width: 100%;
+
+    margin-bottom: 50px;
+  }
+
+  .stairlift-designed-eyebrow {
+    gap: 9px;
+
+    margin-bottom: 20px;
+
+    font-size: 0.55rem;
+    letter-spacing: 0.16em;
+  }
+
+  .stairlift-designed-eyebrow-line {
+    width: 24px;
+  }
+
+  .stairlift-designed-title {
+    font-size: clamp(2.25rem, 10vw, 3rem);
+
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+  }
+
+  .stairlift-designed-description {
+    max-width: 100%;
+
+    margin-top: 21px;
+
+    font-size: 0.84rem;
+    line-height: 1.75;
+  }
+
+  .stairlift-designed-feature {
+    width: 100%;
+    min-height: 0;
+
+    margin-bottom: 42px;
+
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+  }
+
+  .stairlift-designed-feature:last-child {
+    margin-bottom: 0;
+  }
+
+  .stairlift-designed-image-wrap {
+    width: 100%;
+    height: 310px;
+
+    flex-shrink: 0;
+  }
+
+  .stairlift-designed-image-number {
+    top: 17px;
+    left: 17px;
+
+    width: 44px;
+    height: 44px;
+
+    font-size: 0.65rem;
+  }
+
+  .stairlift-designed-content {
+    width: 100%;
+
+    padding: 48px 24px;
+
+    text-align: left;
+  }
+
+  .stairlift-designed-number {
+    top: 18px;
+    right: 20px;
+
+    font-size: 58px;
+  }
+
+  .stairlift-designed-icon {
+    width: 43px;
+    height: 43px;
+
+    margin-bottom: 21px;
+  }
+
+  .stairlift-designed-icon svg {
+    width: 19px;
+    height: 19px;
+  }
+
+  .stairlift-designed-label {
+    margin-bottom: 13px;
+
+    font-size: 0.57rem;
+    letter-spacing: 0.14em;
+  }
+
+  .stairlift-designed-content h3 {
+    max-width: 100%;
+
+    margin-bottom: 17px;
+
+    font-size: 2rem;
+    line-height: 1.13;
+  }
+
+  .stairlift-designed-content > p {
+    max-width: 100%;
+
+    font-size: 0.82rem;
+    line-height: 1.75;
+  }
+
+  .stairlift-designed-detail {
+    max-width: 100%;
+
+    margin-top: 25px;
+    padding-top: 18px;
+
+    grid-template-columns: 30px 1fr;
+
+    column-gap: 12px;
+  }
+
+  .stairlift-designed-detail > span {
+    font-size: 0.65rem;
+  }
+
+  .stairlift-designed-detail strong {
+    font-size: 0.58rem;
+    letter-spacing: 0.12em;
+  }
+
+  .stairlift-designed-detail p {
+    margin-top: 5px;
+
+    font-size: 0.72rem;
+    line-height: 1.6;
+  }
+
+  /* Keep image first on every mobile feature */
+  .stairlift-designed-feature-two .stairlift-designed-image-wrap {
+    order: 1;
+  }
+
+  .stairlift-designed-feature-two .stairlift-designed-content {
+    order: 2;
+  }
+
+
+  /* =======================================================
+     SECTION 4 — PROCESS
+  ======================================================= */
+
+  .stairlift-process {
+    padding: 80px 5% 90px;
+
+    /* IMPORTANT:
+       Remove desktop overlap on mobile */
+    margin-top: 0;
+  }
+
+  .stairlift-process-intro {
+    width: 100%;
+
+    margin-bottom: 50px;
+  }
+
+  .stairlift-process-eyebrow {
+    gap: 9px;
+
+    margin-bottom: 20px;
+
+    font-size: 0.55rem;
+    letter-spacing: 0.16em;
+  }
+
+  .stairlift-process-eyebrow-line {
+    width: 24px;
+  }
+
+  .stairlift-process-title {
+    font-size: clamp(2.25rem, 10vw, 3rem);
+
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+  }
+
+  .stairlift-process-description {
+    max-width: 100%;
+
+    margin-top: 21px;
+
+    font-size: 0.84rem;
+    line-height: 1.75;
+  }
+
+  .stairlift-process-grid {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  .stairlift-process-item {
+    width: 100%;
+    min-height: 0;
+
+    padding: 30px 0 34px;
+
+    border-left: none;
+    border-top: 1px solid var(--border);
+  }
+
+  .stairlift-process-item:first-child {
+    padding-top: 0;
+
+    border-top: none;
+  }
+
+  .stairlift-process-top {
+    margin-bottom: 28px;
+  }
+
+  .stairlift-process-number {
+    font-size: 0.68rem;
+  }
+
+  .stairlift-process-icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .stairlift-process-icon svg {
+    width: 19px;
+    height: 19px;
+  }
+
+  .stairlift-process-label {
+    margin-bottom: 10px;
+
+    font-size: 0.55rem;
+    letter-spacing: 0.13em;
+  }
+
+  .stairlift-process-item h3 {
+    margin-bottom: 13px;
+
+    font-size: 1.7rem;
+  }
+
+  .stairlift-process-item p {
+    max-width: 100%;
+
+    font-size: 0.8rem;
+    line-height: 1.75;
+  }
+
+  .stairlift-process-line {
+    width: 30px;
+
+    margin-top: 25px;
+  }
+
+
+  /* =======================================================
+     SECTION 5 — SUPPORT
+  ======================================================= */
+
+  .stairlift-support {
+    padding: 80px 5% 90px;
+
+    /* IMPORTANT:
+       Remove desktop overlap on mobile */
+    margin-top: 0;
+  }
+
+  .stairlift-support-intro {
+    width: 100%;
+
+    margin-bottom: 50px;
+  }
+
+  .stairlift-support-eyebrow {
+    gap: 9px;
+
+    margin-bottom: 20px;
+
+    font-size: 0.55rem;
+    letter-spacing: 0.16em;
+  }
+
+  .stairlift-support-eyebrow-line {
+    width: 24px;
+  }
+
+  .stairlift-support-title {
+    font-size: clamp(2.25rem, 10vw, 3rem);
+
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+  }
+
+  .stairlift-support-description {
+    max-width: 100%;
+
+    margin-top: 21px;
+
+    font-size: 0.84rem;
+    line-height: 1.75;
+  }
+
+  .stairlift-support-list {
+    width: 100%;
+  }
+
+  .stairlift-support-row {
+    min-height: 0;
+
+    display: grid;
+
+    grid-template-columns: 38px minmax(0, 1fr) 42px;
+
+    align-items: start;
+
+    column-gap: 13px;
+
+    padding: 25px 0;
+  }
+
+  .stairlift-support-number {
+    padding-top: 3px;
+
+    font-size: 0.65rem;
+  }
+
+  .stairlift-support-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .stairlift-support-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .stairlift-support-content {
+    grid-column: 2;
+
+    padding: 0;
+  }
+
+  .stairlift-support-label {
+    margin-bottom: 8px;
+
+    font-size: 0.53rem;
+    letter-spacing: 0.11em;
+  }
+
+  .stairlift-support-content h3 {
+    margin-bottom: 8px;
+
+    font-size: 1.6rem;
+  }
+
+  .stairlift-support-content p {
+    max-width: 100%;
+
+    font-size: 0.78rem;
+    line-height: 1.7;
+  }
+
+  .stairlift-support-arrow {
+    grid-column: 3;
+
+    width: 42px;
+    height: 42px;
+  }
+
+  .stairlift-support-arrow svg {
+    width: 16px;
+    height: 16px;
+  }
+
+
+  /* =======================================================
+     SECTION 6 — FINAL CTA
+  ======================================================= */
+
+  .stairlift-final-cta {
+    padding: 75px 5% 90px;
+
+    /* IMPORTANT:
+       Remove desktop overlap on mobile */
+    margin-top: 0;
+  }
+
+  .stairlift-final-cta-box {
+    width: 100%;
+
+    padding: 58px 22px;
+
+    border-radius: 18px;
+  }
+
+  .stairlift-final-cta-eyebrow {
+    gap: 9px;
+
+    margin-bottom: 20px;
+
+    font-size: 0.55rem;
+    letter-spacing: 0.16em;
+  }
+
+  .stairlift-final-cta-line {
+    width: 24px;
+  }
+
+  .stairlift-final-cta-title {
+    max-width: 100%;
+
+    font-size: clamp(2.25rem, 10vw, 3rem);
+
+    line-height: 1.08;
+    letter-spacing: -0.025em;
+  }
+
+  .stairlift-final-cta-description {
+    max-width: 100%;
+
+    margin-top: 21px;
+
+    font-size: 0.84rem;
+    line-height: 1.75;
+  }
+
+  .stairlift-final-cta-actions {
+    width: 100%;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin-top: 29px;
+  }
+
+  .stairlift-final-cta-button {
+    width: 100%;
+
+    min-height: 51px;
+
+    padding: 0 18px;
+
+    font-size: 0.66rem;
+  }
+
+  .stairlift-final-cta-button svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .stairlift-final-cta-note {
+    max-width: 100%;
+
+    margin-top: 26px;
+
+    gap: 7px;
+
+    font-size: 0.57rem;
+
+    line-height: 1.6;
+  }
+
+  .stairlift-final-cta-note svg {
+    width: 15px;
+    height: 15px;
+
+    flex-shrink: 0;
+  }
+
+
+  /* =======================================================
+     RTL — MOBILE
+  ======================================================= */
+
+  [dir="rtl"] .stairlift-confidence-image-label {
+    left: 15px;
+    right: 15px;
+  }
+
+  [dir="rtl"] .stairlift-confidence-content {
+    text-align: right;
+  }
+
+  [dir="rtl"] .stairlift-designed-content {
+    text-align: right;
+  }
+
+  [dir="rtl"] .stairlift-designed-number {
+    right: auto;
+    left: 20px;
+  }
+
+  [dir="rtl"] .stairlift-designed-image-number {
+    left: auto;
+    right: 17px;
+  }
+
+  [dir="rtl"] .stairlift-process-item {
+    border-left: none;
+    border-right: none;
+  }
+
+  [dir="rtl"] .stairlift-support-row {
+    grid-template-columns: 42px minmax(0, 1fr) 38px;
+  }
+
+  [dir="rtl"] .stairlift-support-number {
+    grid-column: 3;
+  }
+
+  [dir="rtl"] .stairlift-support-icon {
+    grid-column: 1;
+  }
+
+  [dir="rtl"] .stairlift-support-content {
+    grid-column: 2;
+
+    padding: 0;
+  }
+
+  [dir="rtl"] .stairlift-support-arrow {
+    grid-column: 1;
+  }
+
+  [dir="rtl"] .stairlift-final-cta-actions {
+    direction: rtl;
+  }
+
+}
+
+
+/* =========================================================
+   iPAD MINI
+   768px — 820px
+========================================================= */
+
+@media screen and (min-width: 768px) and (max-width: 820px) {
+
+  /* =======================================================
+     SECTION 1 — HERO
+  ======================================================= */
+
+  .stairlift-hero {
+    height: 650px;
+    min-height: 650px;
+
+    padding: 80px 6%;
+  }
+
+  .stairlift-hero-content {
+    width: min(700px, 90%);
+  }
+
+  .stairlift-hero-title {
+    font-size: 3.7rem;
+  }
+
+  .stairlift-hero-description {
+    max-width: 620px;
+
+    font-size: 0.92rem;
+  }
+
+  .stairlift-hero-actions {
+    gap: 12px;
+  }
+
+
+  /* =======================================================
+     SECTION 2
+  ======================================================= */
+
+  .stairlift-confidence {
+    padding: 100px 6% 110px;
+  }
+
+  .stairlift-confidence-intro {
+    margin-bottom: 60px;
+  }
+
+  .stairlift-confidence-title {
+    font-size: 3rem;
+  }
+
+  .stairlift-confidence-main {
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 50px;
+  }
+
+  .stairlift-confidence-image-wrap {
+    width: 100%;
+    height: 430px;
+  }
+
+  .stairlift-confidence-content {
+    height: auto;
+
+    display: block;
+  }
+
+  .stairlift-confidence-content-inner {
+    max-width: 100%;
+  }
+
+  .stairlift-confidence-content h3 {
+    font-size: 2.5rem;
+  }
+
+  .stairlift-confidence-text {
+    max-width: 100%;
+  }
+
+  .stairlift-confidence-point-content p {
+    max-width: 100%;
+  }
+
+
+  /* =======================================================
+     SECTION 3
+  ======================================================= */
+
+  .stairlift-designed {
+    padding: 100px 6% 110px;
+  }
+
+  .stairlift-designed-intro {
+    margin-bottom: 65px;
+  }
+
+  .stairlift-designed-title {
+    font-size: 3rem;
+  }
+
+  .stairlift-designed-feature {
+    min-height: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    margin-bottom: 60px;
+  }
+
+  .stairlift-designed-image-wrap {
+    height: 420px;
+  }
+
+  .stairlift-designed-content {
+    padding: 60px 55px;
+  }
+
+  .stairlift-designed-content h3 {
+    font-size: 2.5rem;
+  }
+
+  /* Image always before content */
+  .stairlift-designed-feature-two .stairlift-designed-image-wrap {
+    order: 1;
+  }
+
+  .stairlift-designed-feature-two .stairlift-designed-content {
+    order: 2;
+  }
+
+
+  /* =======================================================
+     SECTION 4
+  ======================================================= */
+
+  .stairlift-process {
+    padding: 100px 6% 110px;
+
+    /* Remove desktop overlap */
+    margin-top: 0;
+  }
+
+  .stairlift-process-intro {
+    margin-bottom: 65px;
+  }
+
+  .stairlift-process-title {
+    font-size: 3rem;
+  }
+
+  .stairlift-process-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    row-gap: 55px;
+  }
+
+  .stairlift-process-item {
+    min-height: 330px;
+
+    padding: 0 32px;
+  }
+
+  .stairlift-process-item:nth-child(odd) {
+    border-left: none;
+  }
+
+  .stairlift-process-item:nth-child(3),
+  .stairlift-process-item:nth-child(4) {
+    padding-top: 20px;
+  }
+
+  .stairlift-process-item h3 {
+    font-size: 1.8rem;
+  }
+
+  .stairlift-process-item p {
+    max-width: 100%;
+  }
+
+
+  /* =======================================================
+     SECTION 5
+  ======================================================= */
+
+  .stairlift-support {
+    padding: 100px 6% 110px;
+
+    /* Remove desktop overlap */
+    margin-top: 0;
+  }
+
+  .stairlift-support-intro {
+    margin-bottom: 65px;
+  }
+
+  .stairlift-support-title {
+    font-size: 3rem;
+  }
+
+  .stairlift-support-row {
+    min-height: 145px;
+
+    grid-template-columns: 55px 58px minmax(0, 1fr) 50px;
+
+    column-gap: 22px;
+  }
+
+  .stairlift-support-content {
+    padding-right: 15px;
+  }
+
+  .stairlift-support-content h3 {
+    font-size: 1.8rem;
+  }
+
+  .stairlift-support-content p {
+    max-width: 100%;
+
+    font-size: 0.82rem;
+  }
+
+  .stairlift-support-icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .stairlift-support-arrow {
+    width: 44px;
+    height: 44px;
+  }
+
+
+  /* =======================================================
+     SECTION 6
+  ======================================================= */
+
+  .stairlift-final-cta {
+    padding: 95px 6% 110px;
+
+    /* Remove desktop overlap */
+    margin-top: 0;
+  }
+
+  .stairlift-final-cta-box {
+    width: 100%;
+
+    padding: 75px 45px;
+  }
+
+  .stairlift-final-cta-title {
+    font-size: 3.2rem;
+  }
+
+  .stairlift-final-cta-description {
+    max-width: 650px;
+
+    font-size: 0.9rem;
+  }
+
+
+  /* =======================================================
+     RTL — iPAD MINI
+  ======================================================= */
+
+  [dir="rtl"] .stairlift-process-item {
+    border-left: none;
+    border-right: 1px solid var(--border);
+  }
+
+  [dir="rtl"] .stairlift-process-item:nth-child(odd) {
+    border-right: none;
+  }
+
+  [dir="rtl"] .stairlift-support-row {
+    grid-template-columns: 50px minmax(0, 1fr) 58px 55px;
+  }
+
+  [dir="rtl"] .stairlift-support-number {
+    grid-column: 4;
+  }
+
+  [dir="rtl"] .stairlift-support-icon {
+    grid-column: 3;
+  }
+
+  [dir="rtl"] .stairlift-support-content {
+    grid-column: 2;
+
+    padding-right: 0;
+    padding-left: 15px;
+  }
+
+  [dir="rtl"] .stairlift-support-arrow {
+    grid-column: 1;
+  }
+
+}
+
+
+/* =========================================================
+   iPAD PRO 11"
+   821px — 1024px
+========================================================= */
+
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+
+  /* =======================================================
+     SECTION 1 — HERO
+  ======================================================= */
+
+  .stairlift-hero {
+    height: 690px;
+    min-height: 690px;
+
+    padding: 90px 5%;
+  }
+
+  .stairlift-hero-content {
+    width: min(800px, 90%);
+  }
+
+  .stairlift-hero-title {
+    font-size: 4rem;
+  }
+
+  .stairlift-hero-description {
+    max-width: 650px;
+
+    font-size: 0.94rem;
+  }
+
+
+  /* =======================================================
+     SECTION 2
+  ======================================================= */
+
+  .stairlift-confidence {
+    padding: 105px 5% 115px;
+  }
+
+  .stairlift-confidence-intro {
+    margin-bottom: 65px;
+  }
+
+  .stairlift-confidence-title {
+    font-size: 3.2rem;
+  }
+
+  .stairlift-confidence-main {
+    width: 100%;
+    height: 570px;
+
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+
+    gap: 40px;
+  }
+
+  .stairlift-confidence-content-inner {
+    max-width: 100%;
+  }
+
+  .stairlift-confidence-content h3 {
+    font-size: 2.25rem;
+  }
+
+  .stairlift-confidence-text {
+    max-width: 100%;
+
+    font-size: 0.84rem;
+  }
+
+  .stairlift-confidence-point {
+    padding: 15px 0;
+  }
+
+  .stairlift-confidence-point-content p {
+    max-width: 100%;
+
+    font-size: 0.72rem;
+  }
+
+
+  /* =======================================================
+     SECTION 3
+  ======================================================= */
+
+  .stairlift-designed {
+    padding: 105px 5% 115px;
+  }
+
+  .stairlift-designed-intro {
+    margin-bottom: 70px;
+  }
+
+  .stairlift-designed-title {
+    font-size: 3.2rem;
+  }
+
+  .stairlift-designed-feature {
+    min-height: 500px;
+
+    margin-bottom: 65px;
+  }
+
+  .stairlift-designed-image-wrap {
+    height: 500px;
+  }
+
+  .stairlift-designed-content {
+    padding: 55px 45px;
+  }
+
+  .stairlift-designed-content h3 {
+    font-size: 2.3rem;
+  }
+
+  .stairlift-designed-content > p {
+    font-size: 0.84rem;
+  }
+
+  .stairlift-designed-number {
+    font-size: 68px;
+  }
+
+
+  /* =======================================================
+     SECTION 4
+  ======================================================= */
+
+  .stairlift-process {
+    padding: 105px 5% 115px;
+
+    /* Remove desktop overlap */
+    margin-top: 0;
+  }
+
+  .stairlift-process-intro {
+    margin-bottom: 65px;
+  }
+
+  .stairlift-process-title {
+    font-size: 3.2rem;
+  }
+
+  .stairlift-process-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    row-gap: 60px;
+  }
+
+  .stairlift-process-item {
+    min-height: 330px;
+
+    padding: 0 35px;
+  }
+
+  .stairlift-process-item:nth-child(odd) {
+    border-left: none;
+  }
+
+  .stairlift-process-item:nth-child(3),
+  .stairlift-process-item:nth-child(4) {
+    padding-top: 20px;
+  }
+
+  .stairlift-process-item h3 {
+    font-size: 1.9rem;
+  }
+
+  .stairlift-process-item p {
+    max-width: 100%;
+  }
+
+
+  /* =======================================================
+     SECTION 5
+  ======================================================= */
+
+  .stairlift-support {
+    padding: 105px 5% 115px;
+
+    /* Remove desktop overlap */
+    margin-top: 0;
+  }
+
+  .stairlift-support-intro {
+    margin-bottom: 65px;
+  }
+
+  .stairlift-support-title {
+    font-size: 3.2rem;
+  }
+
+  .stairlift-support-row {
+    min-height: 155px;
+
+    grid-template-columns: 60px 62px minmax(0, 1fr) 52px;
+
+    column-gap: 23px;
+  }
+
+  .stairlift-support-content {
+    padding-right: 15px;
+  }
+
+  .stairlift-support-content h3 {
+    font-size: 1.9rem;
+  }
+
+  .stairlift-support-content p {
+    max-width: 100%;
+
+    font-size: 0.82rem;
+  }
+
+  .stairlift-support-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .stairlift-support-arrow {
+    width: 46px;
+    height: 46px;
+  }
+
+
+  /* =======================================================
+     SECTION 6
+  ======================================================= */
+
+  .stairlift-final-cta {
+    padding: 100px 5% 115px;
+
+    /* Remove desktop overlap */
+    margin-top: 0;
+  }
+
+  .stairlift-final-cta-box {
+    width: min(900px, 100%);
+
+    padding: 80px 50px;
+  }
+
+  .stairlift-final-cta-title {
+    font-size: 3.3rem;
+  }
+
+  .stairlift-final-cta-description {
+    max-width: 650px;
+
+    font-size: 0.9rem;
+  }
+
+
+  /* =======================================================
+     RTL — iPAD PRO
+  ======================================================= */
+
+  [dir="rtl"] .stairlift-process-item {
+    border-left: none;
+    border-right: 1px solid var(--border);
+  }
+
+  [dir="rtl"] .stairlift-process-item:nth-child(odd) {
+    border-right: none;
+  }
+
+  [dir="rtl"] .stairlift-support-row {
+    grid-template-columns: 52px minmax(0, 1fr) 62px 60px;
+  }
+
+  [dir="rtl"] .stairlift-support-number {
+    grid-column: 4;
+  }
+
+  [dir="rtl"] .stairlift-support-icon {
+    grid-column: 3;
+  }
+
+  [dir="rtl"] .stairlift-support-content {
+    grid-column: 2;
+
+    padding-right: 0;
+    padding-left: 15px;
+  }
+
+  [dir="rtl"] .stairlift-support-arrow {
+    grid-column: 1;
+  }
+
+}
+
+
+/* =========================================================
+   NEST HUB
+   1024px × 600px
+========================================================= */
+
+@media screen and (width: 1024px) and (height: 600px) {
+
+  /* =======================================================
+     SECTION 1 — HERO
+  ======================================================= */
+
+  .stairlift-hero {
+    height: 600px;
+    min-height: 600px;
+
+    padding: 70px 5%;
+  }
+
+  .stairlift-hero-content {
+    width: min(760px, 88%);
+  }
+
+  .stairlift-hero-title {
+    font-size: 3.4rem;
+  }
+
+  .stairlift-hero-description {
+    max-width: 600px;
+
+    margin-top: 20px;
+
+    font-size: 0.82rem;
+    line-height: 1.7;
+  }
+
+  .stairlift-hero-actions {
+    margin-top: 25px;
+  }
+
+  .stairlift-hero-button {
+    min-height: 48px;
+
+    padding: 0 22px;
+
+    font-size: 0.64rem;
+  }
+
+  .stairlift-hero-scroll {
+    bottom: 14px;
+  }
+
+  .stairlift-hero-scroll-line {
+    height: 24px;
+  }
+
+
+  /* =======================================================
+     SECTION 2
+  ======================================================= */
+
+  .stairlift-confidence {
+    padding: 75px 5% 85px;
+  }
+
+  .stairlift-confidence-intro {
+    margin-bottom: 45px;
+  }
+
+  .stairlift-confidence-title {
+    font-size: 2.65rem;
+  }
+
+  .stairlift-confidence-description {
+    margin-top: 18px;
+
+    font-size: 0.78rem;
+  }
+
+  .stairlift-confidence-main {
+    height: 420px;
+
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+
+    gap: 35px;
+  }
+
+  .stairlift-confidence-content-inner {
+    max-width: 100%;
+  }
+
+  .stairlift-confidence-content h3 {
+    font-size: 1.8rem;
+  }
+
+  .stairlift-confidence-text {
+    margin-top: 13px;
+
+    font-size: 0.72rem;
+    line-height: 1.6;
+  }
+
+  .stairlift-confidence-text + .stairlift-confidence-text {
+    margin-top: 7px;
+  }
+
+  .stairlift-confidence-points {
+    margin-top: 18px;
+  }
+
+  .stairlift-confidence-point {
+    grid-template-columns: 34px 1fr;
+
+    gap: 10px;
+
+    padding: 10px 0;
+  }
+
+  .stairlift-confidence-point-number {
+    width: 30px;
+    height: 30px;
+
+    font-size: 0.55rem;
+  }
+
+  .stairlift-confidence-point-label {
+    font-size: 0.5rem;
+  }
+
+  .stairlift-confidence-point-content h4 {
+    font-size: 0.75rem;
+  }
+
+  .stairlift-confidence-point-content p {
+    margin-top: 3px;
+
+    font-size: 0.62rem;
+    line-height: 1.45;
+  }
+
+  .stairlift-confidence-image-label {
+    left: 15px;
+    bottom: 15px;
+
+    min-width: 210px;
+
+    padding: 10px 12px;
+
+    gap: 10px;
+  }
+
+
+  /* =======================================================
+     SECTION 3
+  ======================================================= */
+
+  .stairlift-designed {
+    padding: 75px 5% 85px;
+  }
+
+  .stairlift-designed-intro {
+    margin-bottom: 50px;
+  }
+
+  .stairlift-designed-title {
+    font-size: 2.65rem;
+  }
+
+  .stairlift-designed-description {
+    margin-top: 18px;
+
+    font-size: 0.78rem;
+    line-height: 1.7;
+  }
+
+  .stairlift-designed-feature {
+    min-height: 420px;
+
+    margin-bottom: 45px;
+  }
+
+  .stairlift-designed-image-wrap {
+    height: 420px;
+  }
+
+  .stairlift-designed-content {
+    padding: 38px 35px;
+  }
+
+  .stairlift-designed-number {
+    top: 20px;
+    right: 25px;
+
+    font-size: 60px;
+  }
+
+  .stairlift-designed-icon {
+    width: 42px;
+    height: 42px;
+
+    margin-bottom: 18px;
+  }
+
+  .stairlift-designed-label {
+    margin-bottom: 10px;
+
+    font-size: 0.52rem;
+  }
+
+  .stairlift-designed-content h3 {
+    font-size: 1.8rem;
+
+    margin-bottom: 14px;
+  }
+
+  .stairlift-designed-content > p {
+    font-size: 0.72rem;
+    line-height: 1.6;
+  }
+
+  .stairlift-designed-detail {
+    margin-top: 20px;
+    padding-top: 15px;
+  }
+
+  .stairlift-designed-detail strong {
+    font-size: 0.52rem;
+  }
+
+  .stairlift-designed-detail p {
+    margin-top: 4px;
+
+    font-size: 0.62rem;
+    line-height: 1.5;
+  }
+
+
+  /* =======================================================
+     SECTION 4
+  ======================================================= */
+
+  .stairlift-process {
+    padding: 75px 5% 85px;
+
+    /* Remove desktop overlap */
+    margin-top: 0;
+  }
+
+  .stairlift-process-intro {
+    margin-bottom: 45px;
+  }
+
+  .stairlift-process-title {
+    font-size: 2.65rem;
+  }
+
+  .stairlift-process-description {
+    margin-top: 18px;
+
+    font-size: 0.78rem;
+    line-height: 1.7;
+  }
+
+  .stairlift-process-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .stairlift-process-item {
+    min-height: 300px;
+
+    padding: 0 18px;
+  }
+
+  .stairlift-process-top {
+    margin-bottom: 32px;
+  }
+
+  .stairlift-process-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .stairlift-process-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .stairlift-process-number {
+    font-size: 0.65rem;
+  }
+
+  .stairlift-process-label {
+    margin-bottom: 9px;
+
+    font-size: 0.48rem;
+    letter-spacing: 0.11em;
+  }
+
+  .stairlift-process-item h3 {
+    margin-bottom: 12px;
+
+    font-size: 1.45rem;
+  }
+
+  .stairlift-process-item p {
+    max-width: 100%;
+
+    font-size: 0.68rem;
+    line-height: 1.6;
+  }
+
+  .stairlift-process-line {
+    width: 28px;
+
+    margin-top: 22px;
+  }
+
+
+  /* =======================================================
+     SECTION 5
+  ======================================================= */
+
+  .stairlift-support {
+    padding: 75px 5% 85px;
+
+    /* Remove desktop overlap */
+    margin-top: 0;
+  }
+
+  .stairlift-support-intro {
+    margin-bottom: 45px;
+  }
+
+  .stairlift-support-title {
+    font-size: 2.65rem;
+  }
+
+  .stairlift-support-description {
+    margin-top: 18px;
+
+    font-size: 0.78rem;
+    line-height: 1.7;
+  }
+
+  .stairlift-support-row {
+    min-height: 120px;
+
+    grid-template-columns: 45px 48px minmax(0, 1fr) 44px;
+
+    column-gap: 15px;
+
+    padding: 18px 0;
+  }
+
+  .stairlift-support-number {
+    font-size: 0.62rem;
+  }
+
+  .stairlift-support-icon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .stairlift-support-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .stairlift-support-content {
+    padding-right: 10px;
+  }
+
+  .stairlift-support-label {
+    margin-bottom: 6px;
+
+    font-size: 0.48rem;
+    letter-spacing: 0.1em;
+  }
+
+  .stairlift-support-content h3 {
+    margin-bottom: 6px;
+
+    font-size: 1.45rem;
+  }
+
+  .stairlift-support-content p {
+    max-width: 100%;
+
+    font-size: 0.67rem;
+    line-height: 1.55;
+  }
+
+  .stairlift-support-arrow {
+    width: 40px;
+    height: 40px;
+  }
+
+  .stairlift-support-arrow svg {
+    width: 15px;
+    height: 15px;
+  }
+
+
+  /* =======================================================
+     SECTION 6
+  ======================================================= */
+
+  .stairlift-final-cta {
+    padding: 70px 5% 80px;
+
+    /* Remove desktop overlap */
+    margin-top: 0;
+  }
+
+  .stairlift-final-cta-box {
+    width: min(850px, 100%);
+
+    padding: 55px 40px;
+
+    border-radius: 18px;
+  }
+
+  .stairlift-final-cta-eyebrow {
+    margin-bottom: 18px;
+
+    font-size: 0.55rem;
+  }
+
+  .stairlift-final-cta-line {
+    width: 30px;
+  }
+
+  .stairlift-final-cta-title {
+    font-size: 2.8rem;
+  }
+
+  .stairlift-final-cta-description {
+    max-width: 600px;
+
+    margin-top: 18px;
+
+    font-size: 0.78rem;
+    line-height: 1.7;
+  }
+
+  .stairlift-final-cta-actions {
+    margin-top: 27px;
+
+    gap: 11px;
+  }
+
+  .stairlift-final-cta-button {
+    min-height: 47px;
+
+    padding: 0 20px;
+
+    font-size: 0.62rem;
+  }
+
+  .stairlift-final-cta-note {
+    margin-top: 21px;
+
+    font-size: 0.55rem;
+  }
+
+
+  /* =======================================================
+     RTL — NEST HUB
+  ======================================================= */
+
+  [dir="rtl"] .stairlift-process-item {
+    border-left: none;
+    border-right: 1px solid var(--border);
+  }
+
+  [dir="rtl"] .stairlift-process-item:first-child {
+    border-right: none;
+  }
+
+  [dir="rtl"] .stairlift-support-row {
+    grid-template-columns: 44px minmax(0, 1fr) 48px 45px;
+  }
+
+  [dir="rtl"] .stairlift-support-number {
+    grid-column: 4;
+  }
+
+  [dir="rtl"] .stairlift-support-icon {
+    grid-column: 3;
+  }
+
+  [dir="rtl"] .stairlift-support-content {
+    grid-column: 2;
+
+    padding-right: 0;
+    padding-left: 10px;
+  }
+
+  [dir="rtl"] .stairlift-support-arrow {
+    grid-column: 1;
+  }
+
+}

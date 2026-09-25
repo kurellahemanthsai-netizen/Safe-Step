@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="images/logo.png" />
+
+
+    <title>Create Account</title>
+
+    <!-- =====================================================
+         GOOGLE FONT
+    ====================================================== -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =====================================================
+         LUCIDE ICONS
+    ====================================================== -->
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- =====================================================
+         SIGNUP CSS
+    ====================================================== -->
+
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+
+  <body class="signup-page">
+    <!-- =====================================================
+         SIGNUP WRAPPER
+    ====================================================== -->
+
+    <main class="signup-wrapper">
+      <!-- =================================================
+             TOP CONTROLS
+        ================================================== -->
+
+      <div class="signup-controls">
+        <button
+          type="button"
+          class="signup-control-btn"
+          id="darkToggle"
+          aria-label="Switch to dark mode"
+          title="Dark Mode"
+        >
+          <i data-lucide="moon"></i>
+        </button>
+
+        <button
+          type="button"
+          class="signup-control-btn"
+          id="rtlToggle"
+          aria-label="Switch to right-to-left mode"
+          title="RTL Mode"
+        >
+          <i data-lucide="arrow-left-right"></i>
+        </button>
+      </div>
+
+      <!-- =================================================
+             SIGNUP CARD
+        ================================================== -->
+
+      <section class="signup-card">
+        <!-- =============================================
+                 LEFT BRAND SECTION
+            ============================================== -->
+
+        <div class="signup-brand-panel">
+          <!-- Decorative elements -->
+
+          <div class="brand-decoration brand-decoration-one"></div>
+
+          <div class="brand-decoration brand-decoration-two"></div>
+
+          <div class="brand-decoration brand-decoration-three"></div>
+
+          <div class="brand-content">
+            <!-- =====================================
+                         BRAND MESSAGE
+                    ====================================== -->
+
+            <div class="brand-message">
+              <span class="brand-eyebrow"> SAFE STEP </span>
+
+              <h1>
+                Your Home,
+                <span>Made Accessible.</span>
+              </h1>
+
+              <p>
+                Create your Safe Step account and manage your home accessibility
+                journey from one secure client portal.
+              </p>
+            </div>
+
+            <!-- =====================================
+                         BENEFITS
+                    ====================================== -->
+
+            <div class="signup-benefits">
+              <div class="signup-benefit">
+                <span class="benefit-icon">
+                  <i data-lucide="check"></i>
+                </span>
+
+                <span> Easy installation tracking </span>
+              </div>
+
+              <div class="signup-benefit">
+                <span class="benefit-icon">
+                  <i data-lucide="check"></i>
+                </span>
+
+                <span> Maintenance & service scheduling </span>
+              </div>
+
+              <div class="signup-benefit">
+                <span class="benefit-icon">
+                  <i data-lucide="check"></i>
+                </span>
+
+                <span> Warranty and service records </span>
+              </div>
+
+              <div class="signup-benefit">
+                <span class="benefit-icon">
+                  <i data-lucide="check"></i>
+                </span>
+
+                <span> Secure invoice and payment access </span>
+              </div>
+            </div>
+
+            <!-- =====================================
+                         STATISTICS
+                    ====================================== -->
+
+            <div class="brand-stats">
+              <div class="brand-stat">
+                <strong> 500+ </strong>
+
+                <span> Installations </span>
+              </div>
+
+              <div class="brand-stat">
+                <strong> 98% </strong>
+
+                <span> Client Satisfaction </span>
+              </div>
+
+              <div class="brand-stat">
+                <strong> 24/7 </strong>
+
+                <span> Support </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- =============================================
+                 RIGHT SIGNUP SECTION
+            ============================================== -->
+
+        <div class="signup-form-panel">
+          <div class="signup-form-container">
+            <!-- =====================================
+                         CENTERED SAFE STEP LOGO
+                    ====================================== -->
+
+            <div class="logo">
+              <a href="index.html" aria-label="Safe Step Home">
+                <img src="images/logo.png" alt="Safe Step Logo" />
+              </a>
+
+              <div
+                class="logo-text"
+                onclick="window.location.href = 'index.html'"
+              >
+                <h1>
+                  <span class="safe"> Safe </span>
+
+                  <span class="step"> Step </span>
+                </h1>
+
+                <p>Accessibility Solutions</p>
+              </div>
+            </div>
+
+            <!-- =====================================
+                         SIGNUP HEADING
+                    ====================================== -->
+
+            <div class="signup-heading">
+              <span class="signup-eyebrow"> CLIENT PORTAL </span>
+
+              <h2>Create Your Account</h2>
+
+              <p>
+                Join Safe Step and manage your accessibility services with ease.
+              </p>
+            </div>
+
+            <!-- =====================================
+                         SIGNUP FORM
+                    ====================================== -->
+
+            <form class="signup-form" id="signupForm" novalidate>
+              <!-- =================================
+                             FIRST NAME
+                        ================================== -->
+
+              <div class="form-group">
+                <label for="signupFirstName"> First Name </label>
+
+                <div class="input-wrapper">
+                  <i data-lucide="user" class="input-icon"></i>
+
+                  <input
+                    type="text"
+                    id="signupFirstName"
+                    name="firstName"
+                    placeholder="Enter first name"
+                    autocomplete="given-name"
+                    required
+                  />
+                </div>
+
+                <small class="form-error" id="firstNameError"></small>
+              </div>
+
+              <!-- =================================
+                             LAST NAME
+                        ================================== -->
+
+              <div class="form-group">
+                <label for="signupLastName"> Last Name </label>
+
+                <div class="input-wrapper">
+                  <i data-lucide="user" class="input-icon"></i>
+
+                  <input
+                    type="text"
+                    id="signupLastName"
+                    name="lastName"
+                    placeholder="Enter last name"
+                    autocomplete="family-name"
+                    required
+                  />
+                </div>
+
+                <small class="form-error" id="lastNameError"></small>
+              </div>
+
+              <!-- =================================
+                             EMAIL
+                        ================================== -->
+
+              <div class="form-group">
+                <label for="signupEmail"> Email Address </label>
+
+                <div class="input-wrapper">
+                  <i data-lucide="mail" class="input-icon"></i>
+
+                  <input
+                    type="email"
+                    id="signupEmail"
+                    name="email"
+                    placeholder="Enter your email address"
+                    autocomplete="email"
+                    required
+                  />
+                </div>
+
+                <small class="form-error" id="signupEmailError"></small>
+              </div>
+
+              <!-- =================================
+                             PHONE
+                        ================================== -->
+
+              <div class="form-group">
+                <label for="signupPhone"> Phone Number </label>
+
+                <div class="input-wrapper">
+                  <i data-lucide="phone" class="input-icon"></i>
+
+                  <input
+                    type="tel"
+                    id="signupPhone"
+                    name="phone"
+                    placeholder="+91 00000 00000"
+                    autocomplete="tel"
+                    required
+                  />
+                </div>
+
+                <small class="form-error" id="phoneError"></small>
+              </div>
+
+              <!-- =================================
+                             PASSWORD
+                        ================================== -->
+
+              <div class="form-group">
+                <label for="signupPassword"> Password </label>
+
+                <div class="input-wrapper">
+                  <i data-lucide="lock-keyhole" class="input-icon"></i>
+
+                  <input
+                    type="password"
+                    id="signupPassword"
+                    name="password"
+                    placeholder="Create a password"
+                    autocomplete="new-password"
+                    required
+                  />
+
+                  <button
+                    type="button"
+                    class="password-toggle"
+                    id="signupPasswordToggle"
+                    aria-label="Show password"
+                    title="Show password"
+                  >
+                    <i data-lucide="eye"></i>
+                  </button>
+                </div>
+
+                <small class="form-error" id="passwordError"></small>
+              </div>
+
+              <!-- =================================
+                             CONFIRM PASSWORD
+                        ================================== -->
+
+              <div class="form-group">
+                <label for="signupConfirmPassword"> Confirm Password </label>
+
+                <div class="input-wrapper">
+                  <i data-lucide="lock-keyhole" class="input-icon"></i>
+
+                  <input
+                    type="password"
+                    id="signupConfirmPassword"
+                    name="confirmPassword"
+                    placeholder="Re-enter your password"
+                    autocomplete="new-password"
+                    required
+                  />
+
+                  <button
+                    type="button"
+                    class="password-toggle"
+                    id="signupConfirmPasswordToggle"
+                    aria-label="Show password"
+                    title="Show password"
+                  >
+                    <i data-lucide="eye"></i>
+                  </button>
+                </div>
+
+                <small class="form-error" id="confirmPasswordError"></small>
+              </div>
+
+              <!-- =================================
+                             CREATE ACCOUNT BUTTON
+                        ================================== -->
+
+              <button type="submit" class="signup-submit-btn" id="signupSubmit">
+                <span> Create Account </span>
+
+                <i data-lucide="arrow-right"></i>
+              </button>
+
+              <!-- =================================
+                             DIVIDER
+                        ================================== -->
+
+              <div class="signup-divider">
+                <span></span>
+
+                <p>or sign up with</p>
+
+                <span></span>
+              </div>
+
+              <!-- =================================
+                             SOCIAL SIGNUP
+                        ================================== -->
+
+              <div class="social-signup">
+                <button type="button" class="social-btn" id="googleSignup">
+                  <span class="google-icon"> G </span>
+
+                  <span> Google </span>
+                </button>
+
+                <button type="button" class="social-btn" id="appleSignup">
+                  <i data-lucide="apple"></i>
+
+                  <span> Apple </span>
+                </button>
+              </div>
+
+              <!-- =================================
+                             LOGIN LINK
+                        ================================== -->
+
+              <p class="login-text">
+                Already have an account?
+
+                <a href="login.html"> Sign in </a>
+              </p>
+
+              <!-- =================================
+                             BACK HOME
+                        ================================== -->
+
+              <a href="index.html" class="back-home">
+                <i data-lucide="arrow-left"></i>
+
+                <span> Back to Safe Step </span>
+              </a>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- =====================================================
+         GLOBAL JS
+    ====================================================== -->
+
+    <script src="global.js"></script>
+
+    <!-- =====================================================
+         SIGNUP JS
+    ====================================================== -->
+
+    <script src="signup.js"></script>
+  </body>
+</html>

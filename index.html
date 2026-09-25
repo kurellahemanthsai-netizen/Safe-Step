@@ -1,0 +1,1455 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logo.png" />
+
+    <title>Home</title>
+
+    <!-- =========================================
+       GOOGLE FONT
+       ========================================= -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- =========================================
+       LUCIDE ICONS
+       ========================================= -->
+
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- =========================================================
+     SAFE STEP
+     HEADER
+     ========================================================= -->
+
+    <header class="site-header">
+      <div class="header-container">
+        <!-- =================================================
+         LOGO
+    ================================================== -->
+
+        <div class="logo">
+          <a href="index.html" aria-label="Safe Step Home">
+            <img src="images/logo.png" alt="Safe Step Logo" />
+          </a>
+
+          <div class="logo-text" onclick="window.location.href = 'index.html'">
+            <h1>
+              <span class="safe">Safe</span><span class="step">Step</span>
+            </h1>
+
+            <p>Accessibility Solutions</p>
+          </div>
+        </div>
+
+        <!-- =================================================
+         NAVIGATION
+    ================================================== -->
+
+        <nav class="navbar" aria-label="Primary Navigation">
+          <ul class="nav-links">
+            <!-- HOME -->
+
+            <li class="dropdown">
+              <a href="index.html" class="active">
+                <span>Home</span>
+
+                <i data-lucide="chevron-down" aria-hidden="true"></i>
+              </a>
+
+              <!-- HOME DROPDOWN -->
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="index.html" class="active">
+                    <i data-lucide="house" aria-hidden="true"></i>
+
+                    <span>Home 1 - Classic</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="home2.html">
+                    <i data-lucide="sparkles" aria-hidden="true"></i>
+
+                    <span>Home 2 - Premium</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- ABOUT -->
+
+            <li>
+              <a href="about.html">
+                <span>About</span>
+              </a>
+            </li>
+
+            <!-- SERVICES -->
+
+            <li>
+              <a href="services.html">
+                <span>Services</span>
+              </a>
+            </li>
+
+            <!-- PRODUCTS -->
+
+            <li>
+              <a href="products.html">
+                <span>Products</span>
+              </a>
+            </li>
+
+            <!-- CONSULTATION -->
+
+            <li>
+              <a href="consultation.html">
+                <span>Consultation</span>
+              </a>
+            </li>
+
+            <!-- PRICING -->
+
+            <li>
+              <a href="pricing.html">
+                <span>Pricing</span>
+              </a>
+            </li>
+
+            <!-- CONTACT -->
+
+            <li>
+              <a href="contact.html">
+                <span>Contact</span>
+              </a>
+            </li>
+
+            <!-- DASHBOARD -->
+
+            <li>
+              <a href="dashboard.html">
+                <span>Dashboard</span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- MOBILE LOGIN -->
+
+          <div class="mobile-login">
+            <a href="login.html" class="login-btn mobile-login-btn">
+              <i data-lucide="log-in" aria-hidden="true"></i>
+
+              <span>Login</span>
+            </a>
+          </div>
+        </nav>
+
+        <!-- =================================================
+         HEADER ACTIONS
+    ================================================== -->
+
+        <div class="header-buttons">
+          <!-- RTL -->
+
+          <button
+            class="icon-btn"
+            id="rtlToggle"
+            type="button"
+            title="RTL Mode"
+            aria-label="Toggle RTL mode"
+            aria-pressed="false"
+          >
+            <i data-lucide="arrow-left-right" aria-hidden="true"></i>
+          </button>
+
+          <!-- DARK MODE -->
+
+          <button
+            class="icon-btn"
+            id="darkToggle"
+            type="button"
+            title="Dark Mode"
+            aria-label="Toggle dark mode"
+          >
+            <i data-lucide="moon" aria-hidden="true"></i>
+          </button>
+
+          <!-- LOGIN -->
+
+          <a href="login.html" class="login-btn desktop-login">
+            <i data-lucide="log-in" aria-hidden="true"></i>
+
+            <span>Login</span>
+          </a>
+
+          <!-- MOBILE MENU -->
+
+          <button
+            class="icon-btn menu-btn"
+            id="menuToggle"
+            type="button"
+            title="Menu"
+            aria-label="Open menu"
+            aria-expanded="false"
+          >
+            <i data-lucide="menu" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- =========================================================
+     SAFE STEP — HERO SECTION
+     ========================================================= -->
+
+    <section class="safe-hero" id="hero">
+      <div class="safe-hero-container">
+        <!-- =================================================
+             HERO CONTENT
+             ================================================= -->
+
+        <div class="safe-hero-content">
+          <!-- Eyebrow -->
+          <div class="safe-hero-eyebrow">
+            <span class="safe-hero-eyebrow-line"></span>
+            <span>HOME ACCESSIBILITY • SAFETY • INDEPENDENCE</span>
+          </div>
+
+          <!-- Heading -->
+          <h1 class="safe-hero-title">
+            Move Freely.
+            <span>Live Safely.</span>
+          </h1>
+
+          <!-- Description -->
+          <p class="safe-hero-description">
+            Thoughtfully designed home elevators, stairlifts, and accessibility
+            solutions that help you move through every level of your home with
+            confidence.
+          </p>
+
+          <!-- CTA Buttons -->
+          <div class="safe-hero-actions">
+            <a
+              href="consultation.html"
+              class="safe-hero-btn safe-hero-btn-primary"
+            >
+              <span>Book a Consultation</span>
+              <i data-lucide="arrow-up-right"></i>
+            </a>
+
+            <a
+              href="products.html"
+              class="safe-hero-btn safe-hero-btn-secondary"
+            >
+              <span>Explore Our Solutions</span>
+              <i data-lucide="arrow-right"></i>
+            </a>
+          </div>
+
+          <!-- Trust Points -->
+          <div class="safe-hero-trust">
+            <div class="safe-hero-trust-item">
+              <span class="safe-hero-check">
+                <i data-lucide="check"></i>
+              </span>
+              <span>Personalized Solutions</span>
+            </div>
+
+            <div class="safe-hero-trust-item">
+              <span class="safe-hero-check">
+                <i data-lucide="check"></i>
+              </span>
+              <span>Professional Installation</span>
+            </div>
+
+            <div class="safe-hero-trust-item">
+              <span class="safe-hero-check">
+                <i data-lucide="check"></i>
+              </span>
+              <span>Ongoing Support</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- =================================================
+             HERO VISUAL
+             ================================================= -->
+
+        <div class="safe-hero-visual">
+          <!-- Main Image -->
+          <div class="safe-hero-image-wrapper">
+            <img
+              src="images/hero-1.png"
+              alt="Elegant accessible home interior with stairlift"
+              class="safe-hero-image"
+            />
+
+            <!-- Image Overlay -->
+            <div class="safe-hero-image-overlay"></div>
+          </div>
+
+          <!-- Floating Safety Card -->
+          <div class="safe-hero-floating-card">
+            <div class="safe-hero-floating-icon">
+              <i data-lucide="shield-check"></i>
+            </div>
+
+            <div class="safe-hero-floating-content">
+              <strong>Designed for Confidence</strong>
+              <span>Safety at every level of your home</span>
+            </div>
+          </div>
+
+          <!-- Decorative Element -->
+          <div class="safe-hero-decoration">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- =====================================================
+         SCROLL INDICATOR
+         ===================================================== -->
+
+      <a href="#independence" class="safe-hero-scroll">
+        <span>Discover More</span>
+
+        <span class="safe-hero-scroll-icon">
+          <i data-lucide="arrow-down"></i>
+        </span>
+      </a>
+    </section>
+
+    <!-- =========================================================
+     SAFE STEP — SECTION 2
+     INDEPENDENCE AT EVERY LEVEL
+     ========================================================= -->
+
+    <section class="safe-independence" id="independence">
+      <div class="safe-independence-container">
+        <!-- =================================================
+             CENTERED SECTION INTRO
+             ================================================= -->
+
+        <div class="safe-independence-heading">
+          <div class="safe-independence-eyebrow">
+            <span class="safe-independence-eyebrow-line"></span>
+            <span>INDEPENDENCE AT EVERY LEVEL</span>
+          </div>
+
+          <h2>Independence Begins at <span>Home.</span></h2>
+
+          <p>
+            Your home should remain a place of comfort, confidence, and
+            independence. Safe Step helps make every level of your home easier
+            to access, so you can continue living life on your terms.
+          </p>
+        </div>
+
+        <!-- =================================================
+             IMAGE + CONTENT
+             ================================================= -->
+
+        <div class="safe-independence-content">
+          <!-- =================================================
+                 LEFT — IMAGE
+                 ================================================= -->
+
+          <div class="safe-independence-image">
+            <img
+              src="images/indipendent.png"
+              alt="Safe Step home accessibility and stairlift solution"
+            />
+
+            <div class="safe-independence-image-overlay"></div>
+          </div>
+
+          <!-- =================================================
+                 RIGHT — CONTENT
+                 ================================================= -->
+
+          <div class="safe-independence-info">
+            <span class="safe-independence-small-label">
+              A MORE ACCESSIBLE HOME
+            </span>
+
+            <h3>
+              Your Home,
+              <span>Your Freedom.</span>
+            </h3>
+
+            <p class="safe-independence-info-text">
+              Safe Step helps make every level of your home easier and safer to
+              access. Our accessibility solutions are thoughtfully selected
+              around your home, your needs, and the way you live.
+            </p>
+
+            <div class="safe-independence-divider"></div>
+
+            <!-- =================================================
+                     POINT 01
+                     ================================================= -->
+
+            <div class="safe-independence-point">
+              <div class="safe-independence-point-icon">
+                <i data-lucide="move-up"></i>
+              </div>
+
+              <div class="safe-independence-point-content">
+                <h4>Move With Confidence</h4>
+
+                <p>
+                  Navigate every level with greater comfort, stability, and
+                  peace of mind.
+                </p>
+              </div>
+            </div>
+
+            <!-- =================================================
+                     POINT 02
+                     ================================================= -->
+
+            <div class="safe-independence-point">
+              <div class="safe-independence-point-icon">
+                <i data-lucide="heart-handshake"></i>
+              </div>
+
+              <div class="safe-independence-point-content">
+                <h4>Stay Independent</h4>
+
+                <p>Maintain your independence in the home you know and love.</p>
+              </div>
+            </div>
+
+            <!-- =================================================
+                     POINT 03
+                     ================================================= -->
+
+            <div class="safe-independence-point">
+              <div class="safe-independence-point-icon">
+                <i data-lucide="house"></i>
+              </div>
+
+              <div class="safe-independence-point-content">
+                <h4>Feel at Home</h4>
+
+                <p>
+                  Accessibility solutions that work naturally with the character
+                  and comfort of your home.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     SAFE STEP — SECTION 3
+     OUR ACCESSIBILITY SOLUTIONS
+     ========================================================= -->
+
+    <section class="safe-solutions" id="solutions">
+      <div class="safe-solutions-container">
+        <!-- =================================================
+             SECTION HEADING
+             ================================================= -->
+
+        <div class="safe-solutions-heading">
+          <div class="safe-solutions-eyebrow">
+            <span class="safe-solutions-eyebrow-line"></span>
+            <span>OUR ACCESSIBILITY SOLUTIONS</span>
+          </div>
+
+          <h2>
+            Solutions Designed Around
+            <span>Your Home.</span>
+          </h2>
+
+          <p>
+            Thoughtfully selected accessibility solutions for safer, easier
+            movement throughout your home.
+          </p>
+        </div>
+
+        <!-- =================================================
+             SOLUTIONS GRID
+             ================================================= -->
+
+        <div class="safe-solutions-grid">
+          <!-- =================================================
+                 CARD 01 — STAIRLIFT
+                 ================================================= -->
+
+          <article class="safe-solution-card">
+            <a href="products.html#stairlifts" class="safe-solution-image">
+              <img
+                src="images/stairfit.png"
+                alt="Residential stairlift installation"
+              />
+
+              <div class="safe-solution-image-overlay"></div>
+            </a>
+
+            <div class="safe-solution-content">
+              <span class="safe-solution-category"> MOBILITY SOLUTION </span>
+
+              <h3>Stairlifts</h3>
+
+              <p>
+                Comfortable and reliable solutions designed to make stair
+                movement safer and easier.
+              </p>
+
+              <a href="products.html#stairlifts" class="safe-solution-link">
+                <span>Explore Stairlifts</span>
+
+                <i data-lucide="arrow-up-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- =================================================
+                 CARD 02 — HOME ELEVATOR
+                 ================================================= -->
+
+          <article class="safe-solution-card">
+            <a href="products.html#home-elevators" class="safe-solution-image">
+              <img
+                src="images/home-elevator.png"
+                alt="Elegant residential home elevator"
+              />
+
+              <div class="safe-solution-image-overlay"></div>
+            </a>
+
+            <div class="safe-solution-content">
+              <span class="safe-solution-category"> HOME ELEVATION </span>
+
+              <h3>Home Elevators</h3>
+
+              <p>
+                Elegant residential elevators that connect every level while
+                complementing your home.
+              </p>
+
+              <a href="products.html#home-elevators" class="safe-solution-link">
+                <span>Explore Elevators</span>
+
+                <i data-lucide="arrow-up-right"></i>
+              </a>
+            </div>
+          </article>
+
+          <!-- =================================================
+                 CARD 03 — RAMPS
+                 ================================================= -->
+
+          <article class="safe-solution-card">
+            <a href="products.html#ramps" class="safe-solution-image">
+              <img src="images/ramp.png" alt="Residential accessibility ramp" />
+
+              <div class="safe-solution-image-overlay"></div>
+            </a>
+
+            <div class="safe-solution-content">
+              <span class="safe-solution-category"> ACCESSIBILITY </span>
+
+              <h3>Accessibility Ramps</h3>
+
+              <p>
+                Practical access solutions designed for entrances, transitions,
+                and everyday movement.
+              </p>
+
+              <a href="products.html#ramps" class="safe-solution-link">
+                <span>Explore Ramps</span>
+
+                <i data-lucide="arrow-up-right"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     SAFE STEP
+     SECTION 4 — SAFETY & COMFORT
+     ========================================================= -->
+
+    <section class="safe-safety" id="safety">
+      <!-- =====================================================
+         CENTERED SECTION INTRO
+         ===================================================== -->
+
+      <div class="safe-safety-intro">
+        <!-- Eyebrow -->
+        <div class="safe-safety-eyebrow-wrapper">
+          <span class="eyebrow-line"></span>
+
+          <span class="safe-safety-eyebrow"> SAFETY & COMFORT </span>
+        </div>
+
+        <!-- Heading -->
+        <h2 class="safe-safety-title">
+          Designed Around
+          <span>Your Safety.</span>
+        </h2>
+
+        <!-- Description -->
+        <p class="safe-safety-description">
+          Thoughtfully designed accessibility solutions that make everyday
+          movement more comfortable, secure, and natural within the home you
+          love.
+        </p>
+      </div>
+
+      <!-- =====================================================
+         CONTENT + IMAGE
+         ===================================================== -->
+
+      <div class="safe-safety-container">
+        <!-- =================================================
+             LEFT — FEATURES
+             ================================================= -->
+
+        <div class="safe-safety-content">
+          <!-- Top divider -->
+          <div class="safe-safety-divider"></div>
+
+          <!-- FEATURE 01 -->
+          <div class="safe-safety-feature">
+            <div class="safe-safety-number">01</div>
+
+            <div class="safe-safety-feature-content">
+              <h3>Safety First</h3>
+
+              <p>
+                Thoughtful safety features designed to give you confidence with
+                every journey.
+              </p>
+            </div>
+          </div>
+
+          <!-- FEATURE 02 -->
+          <div class="safe-safety-feature">
+            <div class="safe-safety-number">02</div>
+
+            <div class="safe-safety-feature-content">
+              <h3>Comfortable Design</h3>
+
+              <p>
+                Carefully considered solutions designed around comfortable
+                everyday living.
+              </p>
+            </div>
+          </div>
+
+          <!-- FEATURE 03 -->
+          <div class="safe-safety-feature">
+            <div class="safe-safety-number">03</div>
+
+            <div class="safe-safety-feature-content">
+              <h3>Professional Installation</h3>
+
+              <p>
+                Expert installation with attention to your home, your needs, and
+                every important detail.
+              </p>
+            </div>
+          </div>
+
+          <!-- FEATURE 04 -->
+          <div class="safe-safety-feature">
+            <div class="safe-safety-number">04</div>
+
+            <div class="safe-safety-feature-content">
+              <h3>Ongoing Support</h3>
+
+              <p>
+                Continued service and support to help your accessibility
+                solution perform reliably.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- =================================================
+             RIGHT — IMAGE
+             ================================================= -->
+
+        <div class="safe-safety-visual">
+          <div class="safe-safety-image-wrapper">
+            <img
+              src="images/accessibility.png"
+              alt="Safe Step home accessibility solution"
+              class="safe-safety-image"
+            />
+
+            <!-- Image overlay -->
+            <div class="safe-safety-image-overlay"></div>
+
+            <!-- Safety Badge -->
+            <div class="safe-safety-badge">
+              <div class="safe-safety-badge-icon">
+                <i data-lucide="shield-check"></i>
+              </div>
+
+              <div class="safe-safety-badge-content">
+                <strong> Safe Step </strong>
+
+                <span> Safety • Comfort • Independence </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     SAFE STEP
+     SECTION 5 — HOW SAFE STEP WORKS
+     ========================================================= -->
+
+    <section class="safe-process" id="process">
+      <!-- =====================================================
+         CENTERED SECTION INTRO
+         ===================================================== -->
+
+      <div class="safe-process-intro">
+        <div class="safe-process-eyebrow-wrapper">
+          <span class="process-eyebrow-line"></span>
+
+          <span class="safe-process-eyebrow"> HOW SAFE STEP WORKS </span>
+        </div>
+
+        <h2 class="safe-process-title">
+          A Simpler Way to
+          <span>Improve Home Access.</span>
+        </h2>
+
+        <p class="safe-process-description">
+          From your first conversation to professional installation, we keep the
+          process clear, comfortable, and focused on what works best for your
+          home.
+        </p>
+      </div>
+
+      <!-- =====================================================
+         PROCESS TIMELINE
+         ===================================================== -->
+
+      <div class="safe-process-container">
+        <div class="safe-process-timeline">
+          <!-- =================================================
+                 STEP 01
+                 ================================================= -->
+
+          <div class="safe-process-step">
+            <div class="safe-process-step-top">
+              <span class="safe-process-number"> 01 </span>
+
+              <div class="safe-process-dot">
+                <i data-lucide="message-circle"></i>
+              </div>
+            </div>
+
+            <div class="safe-process-step-content">
+              <span class="safe-process-step-label"> STEP 01 </span>
+
+              <h3>Consultation</h3>
+
+              <p>
+                Tell us about your mobility and accessibility needs so we can
+                understand how to help.
+              </p>
+            </div>
+          </div>
+
+          <!-- =================================================
+                 STEP 02
+                 ================================================= -->
+
+          <div class="safe-process-step">
+            <div class="safe-process-step-top">
+              <span class="safe-process-number"> 02 </span>
+
+              <div class="safe-process-dot">
+                <i data-lucide="house"></i>
+              </div>
+            </div>
+
+            <div class="safe-process-step-content">
+              <span class="safe-process-step-label"> STEP 02 </span>
+
+              <h3>Home Assessment</h3>
+
+              <p>
+                We understand your home's layout and identify practical
+                accessibility possibilities and needs.
+              </p>
+            </div>
+          </div>
+
+          <!-- =================================================
+                 STEP 03
+                 ================================================= -->
+
+          <div class="safe-process-step">
+            <div class="safe-process-step-top">
+              <span class="safe-process-number"> 03 </span>
+
+              <div class="safe-process-dot">
+                <i data-lucide="lightbulb"></i>
+              </div>
+            </div>
+
+            <div class="safe-process-step-content">
+              <span class="safe-process-step-label"> STEP 03 </span>
+
+              <h3>Personalized Recommendation</h3>
+
+              <p>
+                Explore a solution suited to your home, lifestyle, and everyday
+                accessibility needs.
+              </p>
+            </div>
+          </div>
+
+          <!-- =================================================
+                 STEP 04
+                 ================================================= -->
+
+          <div class="safe-process-step">
+            <div class="safe-process-step-top">
+              <span class="safe-process-number"> 04 </span>
+
+              <div class="safe-process-dot">
+                <i data-lucide="file-check-2"></i>
+              </div>
+            </div>
+
+            <div class="safe-process-step-content">
+              <span class="safe-process-step-label"> STEP 04 </span>
+
+              <h3>Clear Quote</h3>
+
+              <p>
+                Receive straightforward pricing and a clear plan for your
+                accessibility project required.
+              </p>
+            </div>
+          </div>
+
+          <!-- =================================================
+                 STEP 05
+                 ================================================= -->
+
+          <div class="safe-process-step">
+            <div class="safe-process-step-top">
+              <span class="safe-process-number"> 05 </span>
+
+              <div class="safe-process-dot">
+                <i data-lucide="wrench"></i>
+              </div>
+            </div>
+
+            <div class="safe-process-step-content">
+              <span class="safe-process-step-label"> STEP 05 </span>
+
+              <h3>Professional Installation</h3>
+
+              <p>
+                Our team carefully installs your chosen accessibility solution
+                in your home.
+              </p>
+            </div>
+          </div>
+
+          <!-- =================================================
+                 STEP 06
+                 ================================================= -->
+
+          <div class="safe-process-step">
+            <div class="safe-process-step-top">
+              <span class="safe-process-number"> 06 </span>
+
+              <div class="safe-process-dot">
+                <i data-lucide="headphones"></i>
+              </div>
+            </div>
+
+            <div class="safe-process-step-content">
+              <span class="safe-process-step-label"> STEP 06 </span>
+
+              <h3>Ongoing Support</h3>
+
+              <p>
+                We remain available for maintenance, service, and future
+                assistance when you need it.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- =====================================================
+             CTA
+             ===================================================== -->
+
+        <div class="safe-process-cta">
+          <a href="consultation.html" class="safe-process-button">
+            <span> Start Your Consultation </span>
+
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     SAFE STEP
+     SECTION 6 — WHY SAFE STEP
+     ========================================================= -->
+
+    <section class="safe-why" id="why-safe-step">
+      <!-- =====================================================
+         CENTERED INTRO
+         ===================================================== -->
+
+      <div class="safe-why-intro">
+        <div class="safe-why-eyebrow-wrapper">
+          <span class="why-eyebrow-line"></span>
+
+          <span class="safe-why-eyebrow"> WHY SAFE STEP </span>
+
+          <span class="why-eyebrow-line"></span>
+        </div>
+
+        <h2 class="safe-why-title">
+          Built Around
+          <span>Your Home.</span>
+        </h2>
+
+        <p class="safe-why-description">
+          Accessibility should feel natural, considered, and genuinely personal.
+        </p>
+      </div>
+
+      <!-- =====================================================
+         MAIN CONTENT
+         ===================================================== -->
+
+      <div class="safe-why-container">
+        <!-- =================================================
+             TOP LEFT — BENEFIT 01
+             ================================================= -->
+
+        <div class="safe-why-feature safe-why-feature-01">
+          <span class="safe-why-number"> 01 </span>
+
+          <h3>
+            Personalized
+            <span>Solutions</span>
+          </h3>
+
+          <p>Solutions selected around your home and everyday needs.</p>
+        </div>
+
+        <!-- =================================================
+             TOP RIGHT — BENEFIT 02
+             ================================================= -->
+
+        <div class="safe-why-feature safe-why-feature-02">
+          <span class="safe-why-number"> 02 </span>
+
+          <h3>
+            Experienced
+            <span>Installation</span>
+          </h3>
+
+          <p>Careful professional installation designed around your home.</p>
+        </div>
+
+        <!-- =================================================
+             CENTER IMAGE
+             ================================================= -->
+
+        <div class="safe-why-image">
+          <div class="safe-why-image-wrapper">
+            <img
+              src="images/solution.png"
+              alt="Safe Step accessibility solution in a home"
+              class="safe-why-image-element"
+            />
+
+            <div class="safe-why-image-overlay"></div>
+
+            <!-- Center Image Label -->
+
+            <div class="safe-why-image-label">
+              <span> SAFE STEP </span>
+
+              <i data-lucide="plus"></i>
+
+              <span> HOME ACCESSIBILITY </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- =================================================
+             BOTTOM LEFT — BENEFIT 03
+             ================================================= -->
+
+        <div class="safe-why-feature safe-why-feature-03">
+          <span class="safe-why-number"> 03 </span>
+
+          <h3>
+            Clear
+            <span>Guidance</span>
+          </h3>
+
+          <p>Straightforward advice without unnecessary complexity.</p>
+        </div>
+
+        <!-- =================================================
+             BOTTOM RIGHT — BENEFIT 04
+             ================================================= -->
+
+        <div class="safe-why-feature safe-why-feature-04">
+          <span class="safe-why-number"> 04 </span>
+
+          <h3>
+            Continued
+            <span>Care</span>
+          </h3>
+
+          <p>Ongoing support whenever you need it.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     SAFE STEP — YOUR FIRST STEP / CONSULTATION
+     ========================================================= -->
+
+    <section class="safe-consultation" id="consultation-step">
+      <!-- =====================================================
+         SECTION INTRO
+         ===================================================== -->
+
+      <div class="safe-consultation-intro">
+        <div class="safe-consultation-eyebrow-wrapper">
+          <span class="consultation-eyebrow-line"></span>
+
+          <span class="safe-consultation-eyebrow"> YOUR FIRST STEP </span>
+        </div>
+
+        <h2 class="safe-consultation-title">
+          What Happens During Your
+          <span>Consultation?</span>
+        </h2>
+
+        <p class="safe-consultation-description">
+          A simple, personal conversation to understand your home, your needs,
+          and the right way forward.
+        </p>
+      </div>
+
+      <!-- =====================================================
+         CONSULTATION STEPS
+         ===================================================== -->
+
+      <div class="safe-consultation-container">
+        <!-- STEP 01 -->
+        <article class="safe-consultation-item">
+          <div class="safe-consultation-number">01</div>
+
+          <div class="safe-consultation-content">
+            <h3>We Listen</h3>
+
+            <p>
+              We take the time to understand your needs, priorities, and
+              everyday challenges.
+            </p>
+          </div>
+        </article>
+
+        <!-- STEP 02 -->
+        <article class="safe-consultation-item">
+          <div class="safe-consultation-number">02</div>
+
+          <div class="safe-consultation-content">
+            <h3>We Assess</h3>
+
+            <p>
+              We look at your home's layout, available space, and access points
+              to understand what could work.
+            </p>
+          </div>
+        </article>
+
+        <!-- STEP 03 -->
+        <article class="safe-consultation-item">
+          <div class="safe-consultation-number">03</div>
+
+          <div class="safe-consultation-content">
+            <h3>We Recommend</h3>
+
+            <p>
+              We discuss suitable options and guide you toward a solution
+              designed around your home.
+            </p>
+          </div>
+        </article>
+      </div>
+
+      <!-- =====================================================
+         CTA
+         ===================================================== -->
+
+      <div class="safe-consultation-cta">
+        <a href="consultation.html" class="safe-consultation-button">
+          <span>Book My Consultation</span>
+
+          <i data-lucide="arrow-up-right"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     SAFE STEP — FINAL CONSULTATION CTA
+     ========================================================= -->
+
+    <section class="safe-final-cta" id="final-cta">
+      <div class="safe-final-cta-inner">
+        <!-- =================================================
+             EYEBROW
+             ================================================= -->
+
+        <div class="safe-final-cta-eyebrow-wrapper">
+          <span class="final-cta-eyebrow-line"></span>
+
+          <span class="safe-final-cta-eyebrow"> TAKE THE NEXT STEP </span>
+
+        </div>
+
+        <!-- =================================================
+             HEADING
+             ================================================= -->
+
+        <h2 class="safe-final-cta-title">
+          Take the Next Step Toward
+          <span>Easier Living.</span>
+        </h2>
+
+        <!-- =================================================
+             DESCRIPTION
+             ================================================= -->
+
+        <p class="safe-final-cta-description">
+          Let's create a safer, more comfortable, and more accessible way to
+          move through the home you love. Start with a simple conversation about
+          your needs, your space, and the possibilities for your home.
+        </p>
+
+        <!-- =================================================
+             ACTIONS
+             ================================================= -->
+
+        <div class="safe-final-cta-actions">
+          <a href="consultation.html" class="safe-final-cta-primary">
+            <span>Book a Consultation</span>
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+
+          <a href="contact.html" class="safe-final-cta-secondary">
+            <span>Contact Safe Step</span>
+            <i data-lucide="arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- =====================================================
+         DECORATIVE ELEMENTS
+         ===================================================== -->
+
+      <div
+        class="safe-final-cta-decoration safe-final-cta-decoration-left"
+      ></div>
+
+      <div
+        class="safe-final-cta-decoration safe-final-cta-decoration-right"
+      ></div>
+    </section>
+
+    <!-- =========================================================
+     SAFE STEP
+     FOOTER
+     ========================================================= -->
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- =================================================
+         BRAND
+    ================================================== -->
+
+        <div class="footer-col footer-brand">
+          <div class="footer-logo">
+            <a href="index.html" aria-label="Safe Step Home">
+              <img src="images/logo.png" alt="Safe Step Logo" />
+            </a>
+
+            <div
+              class="footer-branding"
+              onclick="window.location.href = 'index.html'"
+            >
+              <h2>
+                <span class="safe">Safe</span><span class="step">Step</span>
+              </h2>
+
+              <p>Accessibility Solutions</p>
+            </div>
+          </div>
+
+          <!-- DESCRIPTION -->
+
+          <p class="footer-about">
+            Safe Step provides reliable home accessibility solutions designed to
+            help people move safely, comfortably, and independently throughout
+            their homes.
+          </p>
+
+          <!-- SOCIAL MEDIA -->
+
+          <div class="social-media">
+            <!-- INSTAGRAM -->
+
+            <a href="#" aria-label="Instagram" title="Instagram">
+              <i data-lucide="camera" aria-hidden="true"></i>
+            </a>
+
+            <!-- FACEBOOK -->
+
+            <a href="#" aria-label="Facebook" title="Facebook">
+              <i data-lucide="users" aria-hidden="true"></i>
+            </a>
+
+            <!-- YOUTUBE -->
+
+            <a href="#" aria-label="YouTube" title="YouTube">
+              <i data-lucide="play" aria-hidden="true"></i>
+            </a>
+
+            <!-- EMAIL -->
+
+            <a href="mailto:info@aquacare.com" aria-label="Email" title="Email">
+              <i data-lucide="mail" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- =================================================
+         QUICK LINKS
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="about.html">About</a>
+            </li>
+
+            <li>
+              <a href="services.html">Services</a>
+            </li>
+
+            <li>
+              <a href="products.html">Products</a>
+            </li>
+
+            <li>
+              <a href="pricing.html">Pricing</a>
+            </li>
+
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         OUR SOLUTIONS
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Our Solutions</h3>
+
+          <ul>
+            <li>
+              <a href="products.html#stairlifts"> Stairlifts </a>
+            </li>
+
+            <li>
+              <a href="products.html#elevators"> Home Elevators </a>
+            </li>
+
+            <li>
+              <a href="products.html#ramps"> Accessibility Ramps </a>
+            </li>
+
+            <li>
+              <a href="services.html#installation">
+                Professional Installation
+              </a>
+            </li>
+
+            <li>
+              <a href="services.html#maintenance"> Maintenance & Support </a>
+            </li>
+
+            <li>
+              <a href="services.html#assessment"> Accessibility Assessment </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         CLIENT SERVICES
+    ================================================== -->
+
+        <div class="footer-col">
+          <h3>Client Services</h3>
+
+          <ul>
+            <li>
+              <a href="dashboard.html"> Client Dashboard </a>
+            </li>
+
+            <li>
+              <a href="dashboard.html"> Project Status </a>
+            </li>
+
+            <li>
+              <a href="dashboard.html"> Maintenance </a>
+            </li>
+
+            <li>
+              <a href="consultation.html">Consultation</a>
+            </li>
+            <li>
+              <a href="404.html">404</a>
+            </li>
+            <li>
+              <a href="comming.html">Commingsoon...</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- =================================================
+         CONTACT
+    ================================================== -->
+
+        <div class="footer-col footer-contact">
+          <h3>Get In Touch</h3>
+
+          <ul>
+            <!-- LOCATION -->
+
+            <li>
+              <i data-lucide="map-pin" aria-hidden="true"></i>
+
+              <span> Your Service Area </span>
+            </li>
+
+            <!-- PHONE -->
+
+            <li>
+              <i data-lucide="phone" aria-hidden="true"></i>
+
+              <a href="tel:+10000000000"> +1 (000) 000-0000 </a>
+            </li>
+
+            <!-- EMAIL -->
+
+            <li>
+              <i data-lucide="mail" aria-hidden="true"></i>
+
+              <a href="mailto:info@safestep.com"> info@safestep.com </a>
+            </li>
+
+            <!-- HOURS -->
+
+            <li>
+              <i data-lucide="clock" aria-hidden="true"></i>
+
+              <span> Mon – Sat: 8 AM – 6 PM </span>
+            </li>
+          </ul>
+
+          <!-- CTA -->
+
+          <a href="consultation.html" class="footer-cta">
+            <span>Book a Consultation</span>
+
+            <i data-lucide="arrow-up-right" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- =================================================
+       FOOTER BOTTOM
+  ================================================== -->
+
+      <div class="footer-bottom">
+        <p>
+          © 2026
+
+          <span class="safe">Safe</span>
+          <span class="step">Step</span>. All Rights Reserved.
+        </p>
+
+        <div class="footer-bottom-links">
+          <a href="privacy.html"> Privacy Policy </a>
+
+          <a href="terms.html"> Terms & Conditions </a>
+
+          <a href="cookies.html"> Cookies </a>
+
+          <!-- BACK TO TOP -->
+
+          <a
+            href="#"
+            class="top-btn"
+            aria-label="Back to top"
+            title="Back to top"
+          >
+            <i data-lucide="arrow-up" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="global.js"></script>
+  </body>
+</html>

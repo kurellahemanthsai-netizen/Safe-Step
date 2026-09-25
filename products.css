@@ -1,0 +1,3248 @@
+/* =========================================================
+   SAFE STEP — PRODUCTS PAGE
+   PRODUCTS HERO
+   ========================================================= */
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+.products-hero {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  margin-top: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  background-image: url("images/hero-6.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: #ffffff;
+}
+
+/* =========================================================
+   BACKGROUND OVERLAY
+   ========================================================= */
+
+.products-hero-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.42) 0%,
+    rgba(0, 0, 0, 0.52) 50%,
+    rgba(0, 0, 0, 0.62) 100%
+  );
+
+  z-index: 1;
+}
+
+/* =========================================================
+   ARCHITECTURAL SIDE LINES
+   ========================================================= */
+
+.products-hero-lines {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+
+  width: 1px;
+
+  background: rgba(255, 255, 255, 0.18);
+
+  z-index: 2;
+}
+
+.products-hero-lines::before,
+.products-hero-lines::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  width: 70px;
+  height: 1px;
+
+  background: rgba(255, 255, 255, 0.18);
+}
+
+.products-hero-lines::before {
+  top: 20%;
+}
+
+.products-hero-lines::after {
+  bottom: 20%;
+}
+
+/* Left Line */
+
+.products-hero-lines-left {
+  left: 6%;
+}
+
+/* Right Line */
+
+.products-hero-lines-right {
+  right: 6%;
+}
+
+/* =========================================================
+   HERO CONTENT
+   ========================================================= */
+
+.products-hero-content {
+  position: relative;
+
+  z-index: 3;
+
+  width: min(900px, 90%);
+
+  margin: 0 auto;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.about-hero-eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  margin-bottom: 28px;
+
+  color: var(--secondary);
+
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+.about-hero-eyebrow-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  margin-bottom: 28px;
+
+  color: var(--primary);
+
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+.about-hero-eyebrow-line {
+  display: block;
+
+  width: 42px;
+  height: 1px;
+
+  background: var(--secondary);
+}
+
+/* =========================================================
+   TITLE
+   ========================================================= */
+
+.products-hero-title {
+  margin: 0;
+
+  max-width: 900px;
+
+  color: #ffffff;
+
+  font-family: "Raleway", sans-serif;
+
+  font-size: 4.5rem;
+
+  font-weight: 500;
+
+  line-height: 1.04;
+
+  letter-spacing: -0.035em;
+}
+
+.products-hero-title span {
+  display: block;
+
+  margin-top: 5px;
+
+  color: var(--secondary);
+}
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.products-hero-description {
+  width: min(700px, 100%);
+
+  margin: 28px auto 0;
+
+  color: rgba(255, 255, 255, 0.86);
+
+  font-family: "Raleway", sans-serif;
+
+  font-size: 1rem;
+
+  font-weight: 400;
+
+  line-height: 1.8;
+
+  letter-spacing: 0.01em;
+}
+
+/* =========================================================
+   HERO ACTIONS
+   ========================================================= */
+
+.products-hero-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 14px;
+
+  margin-top: 38px;
+}
+
+/* =========================================================
+   BUTTON BASE
+   ========================================================= */
+
+.products-hero-btn {
+  min-height: 52px;
+
+  padding: 0 24px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 11px;
+
+  border: 1px solid transparent;
+  border-radius: 8px;
+
+  font-family: "Raleway", sans-serif;
+
+  font-size: 0.82rem;
+  font-weight: 700;
+
+  letter-spacing: 0.04em;
+
+  text-decoration: none;
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease;
+
+  white-space: nowrap;
+}
+
+.products-hero-btn svg {
+  width: 17px;
+  height: 17px;
+
+  stroke-width: 1.8;
+}
+
+/* =========================================================
+   PRIMARY BUTTON
+   ========================================================= */
+
+.products-hero-btn-primary {
+  background: var(--primary);
+
+  color: #ffffff;
+
+  border-color: var(--primary);
+}
+
+.products-hero-btn-primary:hover {
+  background: var(--secondary);
+
+  color: white;
+
+  border-color: var(--secondary);
+  transition: 0.3s;
+}
+
+/* =========================================================
+   SECONDARY BUTTON
+   ========================================================= */
+
+.products-hero-btn-secondary {
+  background: rgba(255, 255, 255, 0.08);
+
+  color: #ffffff;
+
+  border-color: rgba(255, 255, 255, 0.65);
+
+  backdrop-filter: blur(4px);
+}
+
+.products-hero-btn-secondary:hover {
+  background: #ffffff;
+
+  color: var(--primary);
+
+  border-color: #ffffff;
+}
+
+/* =========================================================
+   SCROLL INDICATOR
+   ========================================================= */
+
+.products-hero-scroll {
+  position: absolute;
+
+  left: 50%;
+  bottom: 30px;
+
+  transform: translateX(-50%);
+
+  z-index: 3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  color: rgba(255, 255, 255, 0.78);
+
+  font-family: "Raleway", sans-serif;
+
+  font-size: 0.62rem;
+  font-weight: 700;
+
+  letter-spacing: 0.2em;
+
+  text-decoration: none;
+
+  white-space: nowrap;
+}
+
+.products-hero-scroll svg {
+  width: 15px;
+  height: 15px;
+
+  stroke-width: 1.5;
+}
+
+/* =========================================================
+   PRODUCTS SECTION 2
+   EXPLORE OUR SOLUTIONS
+   ========================================================= */
+
+.products-solutions {
+  width: 100%;
+
+  padding: 125px 6% 140px;
+  margin-top: -90px;
+  background: var(--site-bg);
+
+  color: var(--text);
+}
+
+/* =========================================================
+   SECTION INTRO
+   ========================================================= */
+
+.products-solutions-intro {
+  width: min(850px, 100%);
+
+  margin: 0 auto 75px;
+
+  text-align: center;
+}
+
+.products-section-title {
+  margin: 0;
+
+  color: var(--text);
+
+  font-family: "Raleway", sans-serif;
+
+  font-size: 3.5rem;
+
+  font-weight: 500;
+
+  line-height: 1.08;
+
+  letter-spacing: -0.035em;
+}
+
+.products-section-title span {
+  display: block;
+
+  color: var(--secondary);
+}
+
+.products-section-description {
+  width: min(700px, 100%);
+
+  margin: 25px auto 0;
+
+  color: var(--muted);
+
+  font-family: "Raleway", sans-serif;
+
+  font-size: 0.98rem;
+
+  line-height: 1.8;
+}
+
+/* =========================================================
+   PRODUCT GRID
+   ========================================================= */
+
+.products-solutions-grid {
+  width: min(1380px, 100%);
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 28px;
+}
+
+/* =========================================================
+   PRODUCT CARD
+   ========================================================= */
+
+.product-solution-card {
+  min-width: 0;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================================================
+   PRODUCT IMAGE
+   ========================================================= */
+
+.product-solution-image-wrap {
+  position: relative;
+
+  width: 100%;
+
+  height: 390px;
+
+  overflow: hidden;
+
+  background: var(--surface);
+}
+
+.product-solution-image {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  object-position: center;
+
+  transition: transform 0.45s ease;
+}
+
+.product-solution-card:hover .product-solution-image {
+  transform: scale(1.025);
+}
+
+/* =========================================================
+   IMAGE NUMBER
+   ========================================================= */
+
+.product-solution-number {
+  position: absolute;
+
+  top: 22px;
+  left: 22px;
+
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.92);
+
+  color: var(--primary);
+
+  font-family: "Raleway", sans-serif;
+
+  font-size: 0.72rem;
+  font-weight: 700;
+
+  letter-spacing: 0.08em;
+}
+
+/* =========================================================
+   IMAGE LABEL
+   ========================================================= */
+
+.product-solution-label {
+  position: absolute;
+
+  right: 22px;
+  bottom: 22px;
+
+  padding: 9px 13px;
+
+  background: var(--primary);
+
+  color: #ffffff;
+
+  font-family: "Raleway", sans-serif;
+
+  font-size: 0.62rem;
+  font-weight: 700;
+
+  letter-spacing: 0.13em;
+}
+
+/* =========================================================
+   PRODUCT CONTENT
+   ========================================================= */
+
+.product-solution-content {
+  padding: 38px 34px 36px;
+
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+}
+
+/* =========================================================
+   PRODUCT ICON
+   ========================================================= */
+
+.product-solution-icon {
+  width: 42px;
+  height: 42px;
+
+  margin-bottom: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--primary);
+
+  border: 1px solid var(--border);
+}
+
+.product-solution-icon svg {
+  width: 20px;
+  height: 20px;
+
+  stroke-width: 1.6;
+}
+
+/* =========================================================
+   PRODUCT EYEBROW
+   ========================================================= */
+
+.product-solution-eyebrow {
+  margin-bottom: 13px;
+
+  color: var(--muted);
+
+  font-family: "Raleway", sans-serif;
+
+  font-size: 0.64rem;
+  font-weight: 700;
+
+  letter-spacing: 0.16em;
+
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   PRODUCT TITLE
+   ========================================================= */
+
+.product-solution-content h3 {
+  margin: 0;
+
+  color: var(--text);
+
+  font-family: "Raleway", sans-serif;
+
+  font-size: 1.7rem;
+
+  font-weight: 500;
+
+  line-height: 1.2;
+
+  letter-spacing: -0.025em;
+}
+
+.product-solution-content h3 span {
+  display: block;
+
+  color: var(--primary);
+}
+
+/* =========================================================
+   PRODUCT DESCRIPTION
+   ========================================================= */
+
+.product-solution-content p {
+  margin: 19px 0 28px;
+
+  color: var(--muted);
+
+  font-family: "Raleway", sans-serif;
+
+  font-size: 0.88rem;
+
+  line-height: 1.75;
+}
+
+/* =========================================================
+   PRODUCT LINK
+   ========================================================= */
+
+.product-solution-link {
+  margin-top: auto;
+
+  display: inline-flex;
+  align-items: center;
+
+  gap: 9px;
+
+  width: fit-content;
+
+  color: var(--primary);
+
+  font-family: "Raleway", sans-serif;
+
+  font-size: 0.76rem;
+  font-weight: 700;
+
+  letter-spacing: 0.04em;
+
+  text-decoration: none;
+}
+
+.product-solution-link svg {
+  width: 16px;
+  height: 16px;
+
+  stroke-width: 1.8;
+
+  transition: transform 0.25s ease;
+}
+
+.product-solution-link:hover svg {
+  transform: translate(3px, -3px);
+}
+
+/* =========================================================
+   PRODUCTS SECTION 3
+   FIND THE RIGHT SOLUTION
+   ========================================================= */
+
+.products-right-solution {
+  width: 100%;
+
+  padding: 125px 6% 135px;
+  margin-top: -90px;
+  background: var(--site-bg);
+
+  color: var(--text);
+}
+
+/* =========================================================
+   SECTION INTRO
+   ========================================================= */
+
+.products-right-solution-intro {
+  width: min(850px, 100%);
+
+  margin: 0 auto 75px;
+
+  text-align: center;
+}
+
+/* =========================================================
+   MAIN LAYOUT
+   ========================================================= */
+
+.products-right-solution-main {
+  width: min(1350px, 100%);
+
+  min-height: 650px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 70px;
+
+  align-items: stretch;
+}
+
+/* =========================================================
+   IMAGE
+   ========================================================= */
+
+.products-right-solution-image-wrap {
+  position: relative;
+
+  width: 100%;
+
+  min-height: 650px;
+
+  overflow: hidden;
+
+  border: 1px solid var(--border);
+
+  background: var(--site-bg);
+}
+
+.products-right-solution-image {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  object-position: center;
+}
+
+/* =========================================================
+   IMAGE LABEL
+   ========================================================= */
+
+.products-right-solution-image-label {
+  position: absolute;
+
+  left: 28px;
+  bottom: 28px;
+
+  padding: 11px 16px;
+
+  background: var(--primary);
+
+  color: #ffffff;
+
+  font-family: "Raleway", sans-serif;
+
+  font-size: 0.62rem;
+  font-weight: 700;
+
+  letter-spacing: 0.16em;
+}
+
+/* =========================================================
+   CONTENT
+   ========================================================= */
+
+.products-right-solution-content {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.products-right-solution-content h3 {
+  max-width: 570px;
+
+  margin: 0;
+
+  color: var(--text);
+
+  font-family: "Raleway", sans-serif;
+
+  font-size: 3.5rem;
+
+  font-weight: 500;
+
+  line-height: 1.08;
+
+  letter-spacing: -0.035em;
+}
+
+.products-right-solution-content h3 span {
+  display: block;
+
+  color: var(--secondary);
+}
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.products-right-solution-text {
+  max-width: 570px;
+
+  margin: 25px 0 35px;
+
+  color: var(--muted);
+
+  font-family: "Raleway", sans-serif;
+
+  font-size: 0.91rem;
+
+  line-height: 1.8;
+}
+
+/* =========================================================
+   FIT ROWS
+   ========================================================= */
+
+.products-fit-row {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns: 48px 1fr;
+
+  gap: 19px;
+
+  padding: 20px 0;
+
+  border-top: 1px solid var(--border);
+}
+
+.products-fit-row:last-of-type {
+  border-bottom: 1px solid var(--border);
+}
+
+/* =========================================================
+   ICON
+   ========================================================= */
+
+.products-fit-icon {
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--primary);
+
+  border: 1px solid var(--border);
+}
+
+.products-fit-icon svg {
+  width: 19px;
+  height: 19px;
+
+  stroke-width: 1.6;
+}
+
+/* =========================================================
+   FIT CONTENT
+   ========================================================= */
+
+.products-fit-content {
+  min-width: 0;
+
+  position: relative;
+}
+
+.products-fit-number {
+  display: block;
+
+  margin-bottom: 5px;
+
+  color: var(--secondary);
+
+  font-family: "Raleway", sans-serif;
+
+  font-size: 0.6rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.14em;
+}
+
+.products-fit-content h4 {
+  margin: 0;
+
+  color: var(--text);
+
+  font-family: "Raleway", sans-serif;
+
+  font-size: 1rem;
+
+  font-weight: 700;
+
+  line-height: 1.35;
+}
+
+.products-fit-content p {
+  max-width: 520px;
+
+  margin: 6px 0 0;
+
+  color: var(--muted);
+
+  font-family: "Raleway", sans-serif;
+
+  font-size: 0.78rem;
+
+  line-height: 1.65;
+}
+
+/* =========================================================
+   LINK
+   ========================================================= */
+
+.products-right-solution-link {
+  width: fit-content;
+
+  margin-top: 30px;
+
+  display: inline-flex;
+  align-items: center;
+
+  gap: 10px;
+
+  color: var(--primary);
+
+  font-family: "Raleway", sans-serif;
+
+  font-size: 0.77rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.04em;
+
+  text-decoration: none;
+}
+
+.products-right-solution-link svg {
+  width: 16px;
+  height: 16px;
+
+  stroke-width: 1.8;
+
+  transition: transform 0.25s ease;
+}
+
+.products-right-solution-link:hover svg {
+  transform: translateX(4px);
+}
+
+/* =========================================================
+   PRODUCTS SECTION 4
+   DESIGNED AROUND YOUR HOME
+   ========================================================= */
+
+.products-designed {
+  width: 100%;
+
+  padding: 125px 6% 140px;
+  margin-top: -90px;
+  background: var(--site-bg);
+
+  color: var(--text);
+}
+
+/* =========================================================
+   SECTION INTRO
+   ========================================================= */
+
+.products-designed-intro {
+  width: min(850px, 100%);
+
+  margin: 0 auto 80px;
+
+  text-align: center;
+}
+
+/* =========================================================
+   MAIN LAYOUT
+   ========================================================= */
+
+.products-designed-main {
+  width: min(1350px, 100%);
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 0.85fr 1.15fr;
+
+  gap: 100px;
+
+  align-items: start;
+}
+
+/* =========================================================
+   LEFT STATEMENT
+   ========================================================= */
+
+.products-designed-statement {
+  position: relative;
+
+  top: 120px;
+
+  padding-right: 25px;
+}
+
+.products-designed-number {
+  display: block;
+
+  margin-bottom: 25px;
+
+  color: var(--secondary);
+
+  font-family: "Raleway", sans-serif;
+
+  font-size: 0.7rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.16em;
+}
+
+.products-designed-statement h3 {
+  margin: 0;
+
+  color: var(--text);
+
+  font-family: "Raleway", sans-serif;
+
+  font-size: 3rem;
+
+  font-weight: 500;
+
+  line-height: 1.08;
+
+  letter-spacing: -0.035em;
+}
+
+.products-designed-statement h3 span {
+  display: block;
+
+  color: var(--secondary);
+}
+
+.products-designed-statement p {
+  max-width: 500px;
+
+  margin: 27px 0 0;
+
+  color: var(--muted);
+
+  font-family: "Raleway", sans-serif;
+
+  font-size: 0.9rem;
+
+  line-height: 1.8;
+}
+
+/* =========================================================
+   FEATURES
+   ========================================================= */
+
+.products-designed-features {
+  width: 100%;
+
+  border-top: 1px solid var(--border);
+}
+
+.products-designed-feature {
+  display: grid;
+
+  grid-template-columns: 55px 1fr;
+
+  gap: 24px;
+
+  padding: 31px 0;
+
+  border-bottom: 1px solid var(--border);
+}
+
+/* =========================================================
+   FEATURE ICON
+   ========================================================= */
+
+.products-designed-feature-icon {
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--border);
+
+  color: var(--primary);
+}
+
+.products-designed-feature-icon svg {
+  width: 20px;
+  height: 20px;
+
+  stroke-width: 1.6;
+}
+
+/* =========================================================
+   FEATURE CONTENT
+   ========================================================= */
+
+.products-designed-feature-content > span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: var(--secondary);
+
+  font-family: "Raleway", sans-serif;
+
+  font-size: 0.6rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.15em;
+}
+
+.products-designed-feature-content h4 {
+  margin: 0;
+
+  color: var(--text);
+
+  font-family: "Raleway", sans-serif;
+
+  font-size: 1.15rem;
+
+  font-weight: 700;
+
+  line-height: 1.35;
+}
+
+.products-designed-feature-content p {
+  max-width: 600px;
+
+  margin: 8px 0 0;
+
+  color: var(--muted);
+
+  font-family: "Raleway", sans-serif;
+
+  font-size: 0.8rem;
+
+  line-height: 1.7;
+}
+
+/* =========================================================
+   PRODUCTS SECTION 5
+   FIND YOUR RIGHT SOLUTION
+   ========================================================= */
+
+.products-choice {
+  width: 100%;
+
+  padding: 110px 6% 120px;
+  margin-top: -90px;
+  background: var(--site-bg);
+
+  color: var(--text);
+}
+
+/* =========================================================
+   SECTION INTRO
+   ========================================================= */
+
+.products-choice-intro {
+  width: min(820px, 100%);
+
+  margin: 0 auto 55px;
+
+  text-align: center;
+}
+
+/* =========================================================
+   CARD GRID
+   ========================================================= */
+
+.products-choice-grid {
+  width: min(1250px, 100%);
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 22px;
+}
+
+/* =========================================================
+   CARD
+   ========================================================= */
+
+.products-choice-card {
+  min-height: 270px;
+
+  padding: 26px 27px 25px;
+
+  display: flex;
+  flex-direction: column;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+
+  transition:
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.products-choice-card:hover {
+  border-color: var(--primary);
+
+  transform: translateY(-3px);
+}
+
+/* =========================================================
+   CARD TOP
+   ========================================================= */
+
+.products-choice-card-top {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 22px;
+}
+
+/* =========================================================
+   NUMBER
+   ========================================================= */
+
+.products-choice-number {
+  color: var(--secondary);
+
+  font-family: "Raleway", sans-serif;
+
+  font-size: 0.65rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.15em;
+}
+
+/* =========================================================
+   ICON
+   ========================================================= */
+
+.products-choice-icon {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: var(--primary);
+
+  border: 1px solid var(--border);
+}
+
+.products-choice-icon svg {
+  width: 18px;
+  height: 18px;
+
+  stroke-width: 1.6;
+}
+
+/* =========================================================
+   LABEL
+   ========================================================= */
+
+.products-choice-label {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: var(--muted);
+
+  font-family: "Raleway", sans-serif;
+
+  font-size: 0.58rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.15em;
+}
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.products-choice-card h3 {
+  margin: 0;
+
+  color: var(--text);
+
+  font-family: "Raleway", sans-serif;
+
+  font-size: 1.4rem;
+
+  font-weight: 500;
+
+  line-height: 1.2;
+
+  letter-spacing: -0.025em;
+}
+
+.products-choice-card h3 span {
+  display: block;
+
+  color: var(--primary);
+}
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.products-choice-card p {
+  max-width: 320px;
+
+  margin: 13px 0 19px;
+
+  color: var(--muted);
+
+  font-family: "Raleway", sans-serif;
+
+  font-size: 0.76rem;
+
+  line-height: 1.65;
+}
+
+/* =========================================================
+   LINK
+   ========================================================= */
+
+.products-choice-link {
+  margin-top: auto;
+
+  width: fit-content;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  color: var(--primary);
+
+  font-family: "Raleway", sans-serif;
+
+  font-size: 0.68rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.03em;
+
+  text-decoration: none;
+}
+
+.products-choice-link svg {
+  width: 15px;
+  height: 15px;
+
+  stroke-width: 1.8;
+
+  transition: transform 0.25s ease;
+}
+
+.products-choice-link:hover svg {
+  transform: translate(3px, -3px);
+}
+
+/* =========================================================
+   PRODUCTS SECTION 6
+   FINAL CTA
+   ========================================================= */
+
+.products-final-cta {
+    width: 100%;
+
+    padding: 110px 6% 125px;
+
+    background: var(--site-bg);
+
+    color: var(--text);
+}
+
+
+/* =========================================================
+   CTA BOX
+   ========================================================= */
+
+.products-final-cta-box {
+    width: min(900px, 150%);
+
+    margin: 0 auto;
+
+    padding: 75px 60px 70px;
+
+    text-align: center;
+
+    background: var(--surface);
+
+    border: 1px solid var(--border);
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 18px 50px rgba(38, 51, 44, 0.08);
+}
+
+
+/* =========================================================
+   EYEBROW
+   ========================================================= */
+
+.products-final-cta-eyebrow {
+    display: block;
+
+    margin-bottom: 20px;
+
+    color: var(--primary);
+
+    font-family: "Raleway", sans-serif;
+
+    font-size: 0.68rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.2em;
+}
+
+
+/* =========================================================
+   HEADING
+   ========================================================= */
+
+.products-final-cta-box h2 {
+    max-width: 800px;
+
+    margin: 0 auto;
+
+    color: var(--primary);
+
+    font-family: "Raleway", sans-serif;
+
+    font-size: 4rem;
+
+    font-weight: 500;
+
+    line-height: 1.08;
+
+    letter-spacing: -0.035em;
+}
+
+
+.products-final-cta-box h2 span {
+    display: block;
+
+    color: var(--secondary);
+}
+
+
+/* =========================================================
+   DESCRIPTION
+   ========================================================= */
+
+.products-final-cta-box > p {
+    width: min(680px, 100%);
+
+    margin: 24px auto 0;
+
+    color: var(--muted);
+
+    font-family: "Raleway", sans-serif;
+
+    font-size: 0.92rem;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   CTA ACTIONS
+   ========================================================= */
+
+.products-final-cta-actions {
+    margin-top: 34px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 12px;
+}
+
+
+/* =========================================================
+   BUTTON BASE
+   ========================================================= */
+
+.products-final-cta-btn {
+    min-height: 51px;
+
+    padding: 0 23px;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    font-family: "Raleway", sans-serif;
+
+    font-size: 0.75rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.04em;
+
+    text-decoration: none;
+
+    border: 1px solid var(--primary);
+
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+.products-final-cta-btn svg {
+    width: 16px;
+    height: 16px;
+
+    stroke-width: 1.8;
+}
+
+
+/* =========================================================
+   PRIMARY
+   ========================================================= */
+
+.products-final-cta-btn-primary {
+    background: var(--primary);
+
+    color: #ffffff;
+}
+
+
+.products-final-cta-btn-primary:hover {
+    background: transparent;
+
+    color: var(--primary);
+}
+
+
+/* =========================================================
+   SECONDARY
+   ========================================================= */
+
+.products-final-cta-btn-secondary {
+    background: transparent;
+
+    color: var(--primary);
+}
+
+
+.products-final-cta-btn-secondary:hover {
+    background: var(--primary);
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   NOTE
+   ========================================================= */
+
+.products-final-cta-note {
+    margin-top: 32px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 9px;
+
+    color: var(--muted);
+
+    font-family: "Raleway", sans-serif;
+
+    font-size: 0.58rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.16em;
+}
+
+
+.products-final-cta-note svg {
+    width: 16px;
+    height: 16px;
+
+    color: var(--primary);
+
+    stroke-width: 1.6;
+}
+
+
+/* =========================================================
+   SAFE STEP — PRODUCTS PAGE
+   RESPONSIVE MEDIA QUERIES
+   ========================================================= */
+
+
+/* =========================================================
+   SAMSUNG GALAXY S8+
+   360px — 740px
+   ========================================================= */
+
+@media screen and (min-width: 360px) and (max-width: 740px) {
+
+    /* -----------------------------------------------------
+       HERO
+       ----------------------------------------------------- */
+
+    .products-hero {
+        height: auto;
+        min-height: calc(100vh - 70px);
+
+        margin-top: 70px;
+
+        padding: 90px 20px 105px;
+
+        background-position: center center;
+    }
+
+    .products-hero-lines {
+        display: none;
+    }
+
+    .products-hero-content {
+        width: 100%;
+
+        margin: 0 auto;
+
+        text-align: center;
+    }
+
+    .products-hero-eyebrow,
+    .about-hero-eyebrow,
+    .about-hero-eyebrow-1 {
+        margin-bottom: 18px;
+
+        font-size: 0.62rem;
+
+        letter-spacing: 0.16em;
+    }
+
+    .products-hero-eyebrow-line {
+        width: 28px;
+    }
+
+    .products-hero-title {
+        max-width: 100%;
+
+        font-size: 2.5rem;
+
+        line-height: 1.08;
+
+        letter-spacing: -0.025em;
+    }
+
+    .products-hero-title span {
+        margin-top: 4px;
+    }
+
+    .products-hero-description {
+        width: 100%;
+
+        margin-top: 21px;
+
+        font-size: 0.84rem;
+
+        line-height: 1.7;
+    }
+
+    .products-hero-actions {
+        width: 100%;
+
+        margin-top: 29px;
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .products-hero-btn {
+        width: min(290px, 100%);
+
+        min-height: 49px;
+
+        padding: 0 18px;
+
+        font-size: 0.72rem;
+    }
+
+    .products-hero-scroll {
+        bottom: 20px;
+
+        font-size: 0.52rem;
+
+        letter-spacing: 0.15em;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 2 — SOLUTIONS
+       ----------------------------------------------------- */
+
+    .products-solutions {
+        margin-top: 0;
+
+        padding: 80px 20px 90px;
+    }
+
+    .products-solutions-intro {
+        width: 100%;
+
+        margin-bottom: 45px;
+    }
+
+    .products-section-title {
+        font-size: 2.45rem;
+
+        line-height: 1.1;
+    }
+
+    .products-section-description {
+        width: 100%;
+
+        margin-top: 18px;
+
+        font-size: 0.84rem;
+
+        line-height: 1.7;
+    }
+
+    .products-solutions-grid {
+        width: 100%;
+
+        grid-template-columns: 1fr;
+
+        gap: 22px;
+    }
+
+    .product-solution-card {
+        width: 100%;
+    }
+
+    .product-solution-image-wrap {
+        height: 290px;
+    }
+
+    .product-solution-number {
+        top: 16px;
+        left: 16px;
+
+        width: 38px;
+        height: 38px;
+
+        font-size: 0.64rem;
+    }
+
+    .product-solution-label {
+        right: 16px;
+        bottom: 16px;
+
+        padding: 8px 10px;
+
+        font-size: 0.52rem;
+
+        letter-spacing: 0.11em;
+    }
+
+    .product-solution-content {
+        padding: 28px 23px 30px;
+    }
+
+    .product-solution-icon {
+        width: 40px;
+        height: 40px;
+
+        margin-bottom: 19px;
+    }
+
+    .product-solution-icon svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    .product-solution-eyebrow {
+        margin-bottom: 10px;
+
+        font-size: 0.57rem;
+    }
+
+    .product-solution-content h3 {
+        font-size: 1.45rem;
+
+        line-height: 1.2;
+    }
+
+    .product-solution-content p {
+        margin: 13px 0 21px;
+
+        font-size: 0.78rem;
+
+        line-height: 1.65;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 3 — FIND THE RIGHT SOLUTION
+       ----------------------------------------------------- */
+
+    .products-right-solution {
+        margin-top: 0;
+
+        padding: 80px 20px 90px;
+    }
+
+    .products-right-solution-intro {
+        width: 100%;
+
+        margin-bottom: 45px;
+    }
+
+    .products-right-solution-main {
+        width: 100%;
+
+        min-height: auto;
+
+        grid-template-columns: 1fr;
+
+        gap: 38px;
+    }
+
+    .products-right-solution-image-wrap {
+        width: 100%;
+
+        min-height: 330px;
+
+        height: 330px;
+    }
+
+    .products-right-solution-image-label {
+        left: 17px;
+        bottom: 17px;
+
+        padding: 8px 11px;
+
+        font-size: 0.52rem;
+    }
+
+    [dir="rtl"] .products-right-solution-image-label {
+        left: auto;
+        right: 17px;
+    }
+
+    .products-right-solution-content {
+        width: 100%;
+
+        justify-content: flex-start;
+    }
+
+    .products-right-solution-content h3 {
+        max-width: 100%;
+
+        font-size: 2.25rem;
+
+        line-height: 1.1;
+    }
+
+    .products-right-solution-text {
+        max-width: 100%;
+
+        margin: 19px 0 26px;
+
+        font-size: 0.82rem;
+
+        line-height: 1.7;
+    }
+
+    .products-fit-row {
+        grid-template-columns: 40px 1fr;
+
+        gap: 14px;
+
+        padding: 17px 0;
+    }
+
+    .products-fit-icon {
+        width: 39px;
+        height: 39px;
+    }
+
+    .products-fit-icon svg {
+        width: 17px;
+        height: 17px;
+    }
+
+    .products-fit-number {
+        margin-bottom: 4px;
+
+        font-size: 0.55rem;
+    }
+
+    .products-fit-content h4 {
+        font-size: 0.88rem;
+    }
+
+    .products-fit-content p {
+        max-width: 100%;
+
+        margin-top: 5px;
+
+        font-size: 0.72rem;
+
+        line-height: 1.6;
+    }
+
+    .products-right-solution-link {
+        margin-top: 24px;
+
+        font-size: 0.68rem;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 4 — DESIGNED AROUND YOUR HOME
+       ----------------------------------------------------- */
+
+    .products-designed {
+        margin-top: 0;
+
+        padding: 80px 20px 90px;
+    }
+
+    .products-designed-intro {
+        width: 100%;
+
+        margin-bottom: 48px;
+    }
+
+    .products-designed-main {
+        width: 100%;
+
+        grid-template-columns: 1fr;
+
+        gap: 42px;
+    }
+
+    .products-designed-statement {
+        position: relative;
+
+        top: auto;
+
+        padding: 0;
+    }
+
+    [dir="rtl"] .products-designed-statement {
+        padding: 0;
+    }
+
+    .products-designed-number {
+        margin-bottom: 17px;
+
+        font-size: 0.6rem;
+    }
+
+    .products-designed-statement h3 {
+        max-width: 100%;
+
+        font-size: 2.25rem;
+
+        line-height: 1.1;
+    }
+
+    .products-designed-statement p {
+        max-width: 100%;
+
+        margin-top: 19px;
+
+        font-size: 0.82rem;
+
+        line-height: 1.7;
+    }
+
+    .products-designed-features {
+        width: 100%;
+    }
+
+    .products-designed-feature {
+        grid-template-columns: 40px 1fr;
+
+        gap: 15px;
+
+        padding: 21px 0;
+    }
+
+    .products-designed-feature-icon {
+        width: 39px;
+        height: 39px;
+    }
+
+    .products-designed-feature-icon svg {
+        width: 17px;
+        height: 17px;
+    }
+
+    .products-designed-feature-content > span {
+        margin-bottom: 6px;
+
+        font-size: 0.53rem;
+    }
+
+    .products-designed-feature-content h4 {
+        font-size: 0.9rem;
+    }
+
+    .products-designed-feature-content p {
+        max-width: 100%;
+
+        margin-top: 5px;
+
+        font-size: 0.72rem;
+
+        line-height: 1.6;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 5 — COMPACT PRODUCT CARDS
+       ----------------------------------------------------- */
+
+    .products-choice {
+        margin-top: 0;
+
+        padding: 80px 20px 90px;
+    }
+
+    .products-choice-intro {
+        width: 100%;
+
+        margin-bottom: 42px;
+    }
+
+    .products-choice-grid {
+        width: 100%;
+
+        grid-template-columns: 1fr;
+
+        gap: 13px;
+    }
+
+    .products-choice-card {
+        width: 100%;
+
+        min-height: 220px;
+
+        padding: 21px 20px 20px;
+    }
+
+    .products-choice-card-top {
+        margin-bottom: 17px;
+    }
+
+    .products-choice-number {
+        font-size: 0.56rem;
+    }
+
+    .products-choice-icon {
+        width: 37px;
+        height: 37px;
+    }
+
+    .products-choice-icon svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .products-choice-label {
+        margin-bottom: 8px;
+
+        font-size: 0.52rem;
+    }
+
+    .products-choice-card h3 {
+        font-size: 1.28rem;
+
+        line-height: 1.2;
+    }
+
+    .products-choice-card p {
+        max-width: 100%;
+
+        margin: 10px 0 15px;
+
+        font-size: 0.71rem;
+
+        line-height: 1.6;
+    }
+
+    .products-choice-link {
+        font-size: 0.63rem;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 6 — FINAL CTA
+       ----------------------------------------------------- */
+
+    .products-final-cta {
+        padding: 75px 20px 85px;
+    }
+
+    .products-final-cta-box {
+        width: 100%;
+
+        max-width: 100%;
+
+        padding: 47px 21px 44px;
+
+        border-radius: 18px;
+    }
+
+    .products-final-cta-eyebrow {
+        margin-bottom: 16px;
+
+        font-size: 0.57rem;
+
+        letter-spacing: 0.15em;
+    }
+
+    .products-final-cta-box h2 {
+        max-width: 100%;
+
+        font-size: 2.2rem;
+
+        line-height: 1.1;
+    }
+
+    .products-final-cta-box > p {
+        width: 100%;
+
+        margin-top: 18px;
+
+        font-size: 0.8rem;
+
+        line-height: 1.7;
+    }
+
+    .products-final-cta-actions {
+        width: 100%;
+
+        margin-top: 26px;
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+    .products-final-cta-btn {
+        width: min(280px, 100%);
+
+        min-height: 48px;
+
+        padding: 0 18px;
+
+        font-size: 0.68rem;
+    }
+
+    .products-final-cta-note {
+        margin-top: 25px;
+
+        gap: 7px;
+
+        font-size: 0.48rem;
+
+        letter-spacing: 0.1em;
+    }
+
+    .products-final-cta-note svg {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+
+/* =========================================================
+   iPAD MINI
+   768px — 820px
+   ========================================================= */
+
+@media screen and (min-width: 768px) and (max-width: 820px) {
+
+    /* -----------------------------------------------------
+       HERO
+       ----------------------------------------------------- */
+
+    .products-hero {
+        height: auto;
+        min-height: 700px;
+
+        margin-top: 78px;
+
+        padding: 100px 45px 120px;
+    }
+
+    .products-hero-lines-left {
+        left: 4%;
+    }
+
+    .products-hero-lines-right {
+        right: 4%;
+    }
+
+    .products-hero-content {
+        width: min(680px, 100%);
+    }
+
+    .products-hero-title {
+        font-size: 3.5rem;
+
+        line-height: 1.05;
+    }
+
+    .products-hero-description {
+        max-width: 620px;
+
+        font-size: 0.91rem;
+
+        line-height: 1.75;
+    }
+
+    .products-hero-actions {
+        margin-top: 34px;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 2
+       ----------------------------------------------------- */
+
+    .products-solutions {
+        margin-top: 0;
+
+        padding: 100px 45px 110px;
+    }
+
+    .products-solutions-intro {
+        margin-bottom: 58px;
+    }
+
+    .products-section-title {
+        font-size: 3.25rem;
+    }
+
+    .products-section-description {
+        max-width: 620px;
+
+        font-size: 0.9rem;
+    }
+
+    .products-solutions-grid {
+        grid-template-columns: 1fr;
+
+        gap: 26px;
+
+        max-width: 680px;
+    }
+
+    .product-solution-image-wrap {
+        height: 360px;
+    }
+
+    .product-solution-content {
+        padding: 32px 30px 34px;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 3
+       ----------------------------------------------------- */
+
+    .products-right-solution {
+        margin-top: 0;
+
+        padding: 100px 45px 110px;
+    }
+
+    .products-right-solution-intro {
+        margin-bottom: 58px;
+    }
+
+    .products-right-solution-main {
+        min-height: auto;
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+        max-width: 680px;
+    }
+
+    .products-right-solution-image-wrap {
+        min-height: 460px;
+
+        height: 460px;
+    }
+
+    .products-right-solution-content h3 {
+        font-size: 3rem;
+    }
+
+    .products-right-solution-text {
+        max-width: 650px;
+
+        font-size: 0.87rem;
+    }
+
+    .products-fit-row {
+        padding: 19px 0;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 4
+       ----------------------------------------------------- */
+
+    .products-designed {
+        margin-top: 0;
+
+        padding: 100px 45px 110px;
+    }
+
+    .products-designed-intro {
+        margin-bottom: 60px;
+    }
+
+    .products-designed-main {
+        grid-template-columns: 1fr;
+
+        gap: 52px;
+
+        max-width: 680px;
+    }
+
+    .products-designed-statement {
+        position: relative;
+
+        top: auto;
+
+        padding: 0;
+    }
+
+    [dir="rtl"] .products-designed-statement {
+        padding: 0;
+    }
+
+    .products-designed-statement h3 {
+        font-size: 3rem;
+    }
+
+    .products-designed-statement p {
+        max-width: 650px;
+
+        font-size: 0.87rem;
+    }
+
+    .products-designed-feature {
+        padding: 26px 0;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 5
+       ----------------------------------------------------- */
+
+    .products-choice {
+        margin-top: 0;
+
+        padding: 95px 45px 105px;
+    }
+
+    .products-choice-intro {
+        margin-bottom: 48px;
+    }
+
+    .products-choice-grid {
+        grid-template-columns: 1fr;
+
+        gap: 14px;
+
+        max-width: 680px;
+    }
+
+    .products-choice-card {
+        min-height: 215px;
+
+        padding: 23px 25px;
+    }
+
+    .products-choice-card h3 {
+        font-size: 1.45rem;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 6
+       ----------------------------------------------------- */
+
+    .products-final-cta {
+        padding: 90px 45px 100px;
+    }
+
+    .products-final-cta-box {
+        width: 100%;
+
+        max-width: 900px;
+
+        padding: 60px 45px 55px;
+    }
+
+    .products-final-cta-box h2 {
+        font-size: 3.3rem;
+    }
+
+    .products-final-cta-box > p {
+        max-width: 600px;
+
+        font-size: 0.86rem;
+    }
+}
+
+
+/* =========================================================
+   iPAD PRO 11"
+   821px — 1024px
+   ========================================================= */
+
+@media screen and (min-width: 821px) and (max-width: 1024px) {
+
+    /* -----------------------------------------------------
+       HERO
+       ----------------------------------------------------- */
+
+    .products-hero {
+        height: auto;
+        min-height: 730px;
+
+        margin-top: 78px;
+
+        padding: 105px 55px 120px;
+    }
+
+    .products-hero-lines-left {
+        left: 5%;
+    }
+
+    .products-hero-lines-right {
+        right: 5%;
+    }
+
+    .products-hero-content {
+        width: min(780px, 100%);
+    }
+
+    .products-hero-title {
+        font-size: 4rem;
+    }
+
+    .products-hero-description {
+        max-width: 650px;
+
+        font-size: 0.94rem;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 2
+       ----------------------------------------------------- */
+
+    .products-solutions {
+        margin-top: 0;
+
+        padding: 110px 50px 120px;
+    }
+
+    .products-solutions-intro {
+        margin-bottom: 62px;
+    }
+
+    .products-section-title {
+        font-size: 3.5rem;
+    }
+
+    .products-section-description {
+        max-width: 650px;
+
+        font-size: 0.92rem;
+    }
+
+    .products-solutions-grid {
+        grid-template-columns: repeat(2, 1fr);
+
+        gap: 24px;
+    }
+
+    .product-solution-image-wrap {
+        height: 330px;
+    }
+
+    .product-solution-content {
+        padding: 31px 28px 32px;
+    }
+
+    .product-solution-content h3 {
+        font-size: 1.55rem;
+    }
+
+    .product-solution-content p {
+        font-size: 0.82rem;
+    }
+
+    /*
+       Keep the third card centered rather than stretched.
+    */
+
+    .product-solution-card:last-child {
+        grid-column: 1 / -1;
+
+        width: calc(50% - 12px);
+
+        margin: 0 auto;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 3
+       ----------------------------------------------------- */
+
+    .products-right-solution {
+        margin-top: 0;
+
+        padding: 110px 50px 120px;
+    }
+
+    .products-right-solution-intro {
+        margin-bottom: 62px;
+    }
+
+    .products-right-solution-main {
+        min-height: 570px;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 45px;
+    }
+
+    .products-right-solution-image-wrap {
+        min-height: 570px;
+    }
+
+    .products-right-solution-content h3 {
+        font-size: 2.8rem;
+    }
+
+    .products-right-solution-text {
+        margin: 20px 0 26px;
+
+        font-size: 0.83rem;
+    }
+
+    .products-fit-row {
+        padding: 16px 0;
+    }
+
+    .products-fit-content p {
+        font-size: 0.71rem;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 4
+       ----------------------------------------------------- */
+
+    .products-designed {
+        margin-top: 0;
+
+        padding: 110px 50px 120px;
+    }
+
+    .products-designed-intro {
+        margin-bottom: 65px;
+    }
+
+    .products-designed-main {
+        grid-template-columns: 0.85fr 1.15fr;
+
+        gap: 55px;
+    }
+
+    .products-designed-statement {
+        position: relative;
+
+        top: auto;
+
+        padding-right: 15px;
+    }
+
+    [dir="rtl"] .products-designed-statement {
+        padding-right: 0;
+        padding-left: 15px;
+    }
+
+    .products-designed-statement h3 {
+        font-size: 2.75rem;
+    }
+
+    .products-designed-statement p {
+        font-size: 0.8rem;
+
+        line-height: 1.7;
+    }
+
+    .products-designed-feature {
+        grid-template-columns: 48px 1fr;
+
+        gap: 18px;
+
+        padding: 24px 0;
+    }
+
+    .products-designed-feature-content h4 {
+        font-size: 1rem;
+    }
+
+    .products-designed-feature-content p {
+        font-size: 0.71rem;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 5
+       ----------------------------------------------------- */
+
+    .products-choice {
+        margin-top: 0;
+
+        padding: 105px 50px 115px;
+    }
+
+    .products-choice-intro {
+        margin-bottom: 50px;
+    }
+
+    .products-choice-grid {
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 16px;
+    }
+
+    .products-choice-card {
+        min-height: 245px;
+
+        padding: 22px 20px;
+    }
+
+    .products-choice-card-top {
+        margin-bottom: 18px;
+    }
+
+    .products-choice-icon {
+        width: 37px;
+        height: 37px;
+    }
+
+    .products-choice-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .products-choice-card p {
+        font-size: 0.68rem;
+
+        line-height: 1.6;
+    }
+
+    .products-choice-link {
+        font-size: 0.61rem;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 6
+       ----------------------------------------------------- */
+
+    .products-final-cta {
+        padding: 100px 50px 110px;
+    }
+
+    .products-final-cta-box {
+        width: 100%;
+
+        max-width: 900px;
+
+        padding: 65px 50px 60px;
+    }
+
+    .products-final-cta-box h2 {
+        font-size: 3.6rem;
+    }
+
+    .products-final-cta-box > p {
+        max-width: 650px;
+
+        font-size: 0.86rem;
+    }
+}
+
+
+/* =========================================================
+   NEST HUB
+   1024px × 600px
+   ========================================================= */
+
+@media screen and (width: 1024px) and (height: 600px) {
+
+    /* -----------------------------------------------------
+       HERO
+       ----------------------------------------------------- */
+
+    .products-hero {
+        height: 600px;
+        min-height: 600px;
+
+        margin-top: 78px;
+
+        padding: 70px 45px 85px;
+    }
+
+    .products-hero-content {
+        width: min(760px, 100%);
+    }
+
+    .products-hero-title {
+        font-size: 3.55rem;
+
+        line-height: 1.02;
+    }
+
+    .products-hero-description {
+        max-width: 610px;
+
+        margin-top: 16px;
+
+        font-size: 0.8rem;
+
+        line-height: 1.55;
+    }
+
+    .products-hero-actions {
+        margin-top: 22px;
+    }
+
+    .products-hero-btn {
+        min-height: 45px;
+
+        padding: 0 19px;
+
+        font-size: 0.68rem;
+    }
+
+    .products-hero-scroll {
+        bottom: 16px;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 2
+       ----------------------------------------------------- */
+
+    .products-solutions {
+        margin-top: 0;
+
+        padding: 70px 45px 80px;
+    }
+
+    .products-solutions-intro {
+        margin-bottom: 42px;
+    }
+
+    .products-section-title {
+        font-size: 2.9rem;
+    }
+
+    .products-section-description {
+        max-width: 610px;
+
+        margin-top: 15px;
+
+        font-size: 0.78rem;
+
+        line-height: 1.55;
+    }
+
+    .products-solutions-grid {
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 17px;
+    }
+
+    .product-solution-image-wrap {
+        height: 215px;
+    }
+
+    .product-solution-number {
+        top: 11px;
+        left: 11px;
+
+        width: 33px;
+        height: 33px;
+
+        font-size: 0.55rem;
+    }
+
+    .product-solution-label {
+        right: 11px;
+        bottom: 11px;
+
+        padding: 6px 8px;
+
+        font-size: 0.46rem;
+    }
+
+    .product-solution-content {
+        padding: 21px 18px 23px;
+    }
+
+    .product-solution-icon {
+        width: 35px;
+        height: 35px;
+
+        margin-bottom: 15px;
+    }
+
+    .product-solution-icon svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    .product-solution-eyebrow {
+        margin-bottom: 7px;
+
+        font-size: 0.49rem;
+    }
+
+    .product-solution-content h3 {
+        font-size: 1.15rem;
+    }
+
+    .product-solution-content p {
+        margin: 10px 0 16px;
+
+        font-size: 0.65rem;
+
+        line-height: 1.55;
+    }
+
+    .product-solution-link {
+        font-size: 0.59rem;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 3
+       ----------------------------------------------------- */
+
+    .products-right-solution {
+        margin-top: 0;
+
+        padding: 70px 45px 80px;
+    }
+
+    .products-right-solution-intro {
+        margin-bottom: 42px;
+    }
+
+    .products-right-solution-main {
+        min-height: 440px;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 38px;
+    }
+
+    .products-right-solution-image-wrap {
+        min-height: 440px;
+    }
+
+    .products-right-solution-image-label {
+        left: 17px;
+        bottom: 17px;
+
+        padding: 7px 10px;
+
+        font-size: 0.47rem;
+    }
+
+    [dir="rtl"] .products-right-solution-image-label {
+        left: auto;
+        right: 17px;
+    }
+
+    .products-right-solution-content h3 {
+        font-size: 2.2rem;
+    }
+
+    .products-right-solution-text {
+        margin: 14px 0 18px;
+
+        font-size: 0.68rem;
+
+        line-height: 1.55;
+    }
+
+    .products-fit-row {
+        grid-template-columns: 35px 1fr;
+
+        gap: 11px;
+
+        padding: 10px 0;
+    }
+
+    .products-fit-icon {
+        width: 33px;
+        height: 33px;
+    }
+
+    .products-fit-icon svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    .products-fit-number {
+        margin-bottom: 3px;
+
+        font-size: 0.48rem;
+    }
+
+    .products-fit-content h4 {
+        font-size: 0.72rem;
+    }
+
+    .products-fit-content p {
+        margin-top: 3px;
+
+        font-size: 0.57rem;
+
+        line-height: 1.45;
+    }
+
+    .products-right-solution-link {
+        margin-top: 16px;
+
+        font-size: 0.58rem;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 4
+       ----------------------------------------------------- */
+
+    .products-designed {
+        margin-top: 0;
+
+        padding: 70px 45px 80px;
+    }
+
+    .products-designed-intro {
+        margin-bottom: 42px;
+    }
+
+    .products-designed-main {
+        grid-template-columns: 0.85fr 1.15fr;
+
+        gap: 38px;
+    }
+
+    .products-designed-statement {
+        position: relative;
+
+        top: auto;
+
+        padding-right: 10px;
+    }
+
+    [dir="rtl"] .products-designed-statement {
+        padding-right: 0;
+        padding-left: 10px;
+    }
+
+    .products-designed-number {
+        margin-bottom: 15px;
+
+        font-size: 0.55rem;
+    }
+
+    .products-designed-statement h3 {
+        font-size: 2.15rem;
+    }
+
+    .products-designed-statement p {
+        margin-top: 13px;
+
+        font-size: 0.66rem;
+
+        line-height: 1.55;
+    }
+
+    .products-designed-feature {
+        grid-template-columns: 36px 1fr;
+
+        gap: 12px;
+
+        padding: 14px 0;
+    }
+
+    .products-designed-feature-icon {
+        width: 34px;
+        height: 34px;
+    }
+
+    .products-designed-feature-icon svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    .products-designed-feature-content > span {
+        margin-bottom: 4px;
+
+        font-size: 0.47rem;
+    }
+
+    .products-designed-feature-content h4 {
+        font-size: 0.73rem;
+    }
+
+    .products-designed-feature-content p {
+        margin-top: 3px;
+
+        font-size: 0.58rem;
+
+        line-height: 1.45;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 5
+       ----------------------------------------------------- */
+
+    .products-choice {
+        margin-top: 0;
+
+        padding: 65px 45px 75px;
+    }
+
+    .products-choice-intro {
+        margin-bottom: 35px;
+    }
+
+    .products-choice-grid {
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 14px;
+    }
+
+    .products-choice-card {
+        min-height: 205px;
+
+        padding: 17px 17px 18px;
+    }
+
+    .products-choice-card-top {
+        margin-bottom: 14px;
+    }
+
+    .products-choice-number {
+        font-size: 0.51rem;
+    }
+
+    .products-choice-icon {
+        width: 33px;
+        height: 33px;
+    }
+
+    .products-choice-icon svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    .products-choice-label {
+        margin-bottom: 6px;
+
+        font-size: 0.44rem;
+    }
+
+    .products-choice-card h3 {
+        font-size: 1.02rem;
+    }
+
+    .products-choice-card p {
+        margin: 8px 0 12px;
+
+        font-size: 0.57rem;
+
+        line-height: 1.5;
+    }
+
+    .products-choice-link {
+        font-size: 0.54rem;
+    }
+
+    .products-choice-link svg {
+        width: 12px;
+        height: 12px;
+    }
+
+
+    /* -----------------------------------------------------
+       SECTION 6
+       ----------------------------------------------------- */
+
+    .products-final-cta {
+        padding: 65px 45px 75px;
+    }
+
+    .products-final-cta-box {
+        width: 100%;
+
+        max-width: 900px;
+
+        padding: 43px 42px 40px;
+
+        border-radius: 18px;
+    }
+
+    .products-final-cta-eyebrow {
+        margin-bottom: 12px;
+
+        font-size: 0.52rem;
+    }
+
+    .products-final-cta-box h2 {
+        font-size: 2.55rem;
+
+        line-height: 1.05;
+    }
+
+    .products-final-cta-box > p {
+        max-width: 600px;
+
+        margin-top: 14px;
+
+        font-size: 0.66rem;
+
+        line-height: 1.55;
+    }
+
+    .products-final-cta-actions {
+        margin-top: 20px;
+
+        gap: 10px;
+    }
+
+    .products-final-cta-btn {
+        min-height: 43px;
+
+        padding: 0 17px;
+
+        font-size: 0.6rem;
+    }
+
+    .products-final-cta-note {
+        margin-top: 19px;
+
+        font-size: 0.45rem;
+
+        letter-spacing: 0.1em;
+    }
+
+    .products-final-cta-note svg {
+        width: 14px;
+        height: 14px;
+    }
+}
