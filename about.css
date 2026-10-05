@@ -1639,7 +1639,7 @@
 
   gap: 12px;
 
-  border-radius: 30px;
+  border-radius: 8px;
   border: 1px solid transparent;
 
   text-decoration: none;
@@ -3375,4 +3375,812 @@
   .about-final-cta-note {
     margin-top: 28px;
   }
+}
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+body.dark-mode {
+
+  /* =======================================================
+     BRAND COLORS - KEEP FOR BUTTONS
+     ======================================================= */
+
+  --primary: #344e41;
+  --secondary: #d4b483;
+
+
+  /* =======================================================
+     DARK MODE BACKGROUNDS
+     ======================================================= */
+
+  --site-bg: #171c19;
+  --surface: #222923;
+  --surface-hover: rgba(212, 180, 131, 0.1);
+
+
+  /* =======================================================
+     DARK MODE TEXT
+     ======================================================= */
+
+  --text: #f2efe8;
+  --muted: #a9ada8;
+
+
+  /* =======================================================
+     PRIMARY TEXT COLOR IN DARK MODE
+     ======================================================= */
+
+  --primary-text: #b8c9bd;
+
+
+  /* =======================================================
+     BORDER
+     ======================================================= */
+
+  --border: rgba(242, 239, 232, 0.12);
+
+
+  /* =======================================================
+     FOOTER
+     ======================================================= */
+
+  --footer-text: #f2efe8;
+  --footer-muted: #a9ada8;
+
+
+  /* =======================================================
+     SHADOWS
+     ======================================================= */
+
+  --header-shadow: 0 6px 25px rgba(0, 0, 0, 0.28);
+  --dropdown-shadow: 0 18px 45px rgba(0, 0, 0, 0.38);
+}
+
+
+/* =========================================================
+   GLOBAL
+   ========================================================= */
+
+body.dark-mode {
+  background: var(--site-bg);
+  color: var(--text);
+}
+
+
+/* =========================================================
+   GLOBAL HEADINGS
+   ========================================================= */
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+  color: var(--text);
+}
+
+
+/* =========================================================
+   GLOBAL PARAGRAPHS
+   ========================================================= */
+
+body.dark-mode p {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   GLOBAL LINKS
+   ========================================================= */
+
+body.dark-mode a {
+  color: var(--primary-text);
+}
+
+body.dark-mode a:hover {
+  color: var(--secondary);
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+body.dark-mode .about-hero {
+  color: var(--text);
+}
+
+
+/* =========================================================
+   HERO EYEBROW
+   ========================================================= */
+
+body.dark-mode .about-hero-eyebrow {
+  color: var(--primary-text);
+}
+
+body.dark-mode .about-hero-eyebrow-line {
+  background: var(--secondary);
+}
+
+
+/* =========================================================
+   HERO TITLE
+   ========================================================= */
+
+body.dark-mode .about-hero-title {
+  color: #ffffff;
+}
+
+body.dark-mode .about-hero-title span {
+  color: var(--secondary);
+}
+
+
+/* =========================================================
+   HERO DESCRIPTION
+   ========================================================= */
+
+body.dark-mode .about-hero-description {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+
+/* =========================================================
+   HERO PRIMARY BUTTON
+   ========================================================= */
+
+body.dark-mode .about-hero-btn-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #ffffff;
+}
+
+body.dark-mode .about-hero-btn-primary:hover {
+  background: var(--secondary);
+  border-color: var(--secondary);
+  color: #26332c;
+}
+
+
+/* =========================================================
+   HERO SECONDARY BUTTON
+   ========================================================= */
+
+body.dark-mode .about-hero-btn-secondary {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.65);
+  color: #ffffff;
+}
+
+body.dark-mode .about-hero-btn-secondary:hover {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: var(--primary);
+}
+
+
+/* =========================================================
+   HERO DECORATIVE ELEMENTS
+   ========================================================= */
+
+body.dark-mode .about-hero-line {
+  background: rgba(255, 255, 255, 0.24);
+}
+
+body.dark-mode .about-hero-scroll {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+body.dark-mode .about-hero-scroll svg {
+  color: var(--secondary);
+}
+
+
+/* =========================================================
+   SECTION 02
+   OUR PHILOSOPHY
+   ========================================================= */
+
+body.dark-mode .about-philosophy {
+  background: var(--site-bg);
+  color: var(--text);
+}
+
+
+/* =========================================================
+   PHILOSOPHY EYEBROW
+   ========================================================= */
+
+body.dark-mode .about-philosophy-eyebrow {
+  color: var(--primary-text);
+}
+
+body.dark-mode .about-philosophy-eyebrow-line {
+  background: var(--secondary);
+}
+
+
+/* =========================================================
+   PHILOSOPHY TITLE
+   ========================================================= */
+
+body.dark-mode .about-philosophy-title {
+  color: var(--text);
+}
+
+body.dark-mode .about-philosophy-title span {
+  color: var(--secondary);
+}
+
+
+/* =========================================================
+   PHILOSOPHY DESCRIPTION
+   ========================================================= */
+
+body.dark-mode .about-philosophy-description {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   PHILOSOPHY IMAGE
+   ========================================================= */
+
+body.dark-mode .about-philosophy-image-wrap {
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+
+/* =========================================================
+   PHILOSOPHY IMAGE LABEL
+   ========================================================= */
+
+body.dark-mode .about-philosophy-image-label {
+  background: rgba(255, 255, 255, 0.94);
+  border-color: rgba(52, 78, 65, 0.14);
+}
+
+body.dark-mode .about-philosophy-image-number {
+  border-color: var(--secondary);
+  color: var(--primary);
+}
+
+body.dark-mode .about-philosophy-image-text strong {
+  color: var(--primary);
+}
+
+body.dark-mode .about-philosophy-image-text span {
+  color: #6e756f;
+}
+
+
+/* =========================================================
+   PHILOSOPHY CONTENT
+   ========================================================= */
+
+body.dark-mode .about-philosophy-content-eyebrow {
+  color: var(--secondary);
+}
+
+body.dark-mode .about-philosophy-content h3 {
+  color: var(--text);
+}
+
+body.dark-mode .about-philosophy-content-description {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   PHILOSOPHY POINTS
+   ========================================================= */
+
+body.dark-mode .about-philosophy-points {
+  border-color: var(--border);
+}
+
+body.dark-mode .about-philosophy-point {
+  border-color: var(--border);
+}
+
+body.dark-mode .about-philosophy-point-number {
+  border-color: var(--secondary);
+  color: var(--secondary);
+}
+
+body.dark-mode .about-philosophy-point-content h4 {
+  color: var(--text);
+}
+
+body.dark-mode .about-philosophy-point-content p {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   SECTION 03
+   SOLUTIONS
+   ========================================================= */
+
+body.dark-mode .about-solutions {
+  background: var(--site-bg);
+  color: var(--text);
+}
+
+
+/* =========================================================
+   SOLUTIONS EYEBROW
+   ========================================================= */
+
+body.dark-mode .about-solutions-eyebrow {
+  color: var(--primary-text);
+}
+
+body.dark-mode .about-solutions-eyebrow-line {
+  background: var(--secondary);
+}
+
+
+/* =========================================================
+   SOLUTIONS TITLE
+   ========================================================= */
+
+body.dark-mode .about-solutions-title {
+  color: var(--text);
+}
+
+body.dark-mode .about-solutions-description {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   SOLUTION CARDS
+   ========================================================= */
+
+body.dark-mode .about-solution-card {
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+body.dark-mode .about-solution-card:hover {
+  border-color: rgba(212, 180, 131, 0.3);
+}
+
+
+/* =========================================================
+   SOLUTION IMAGE
+   ========================================================= */
+
+body.dark-mode .about-solution-image-wrap {
+  background: var(--site-bg);
+}
+
+
+/* =========================================================
+   SOLUTION NUMBER
+   ========================================================= */
+
+body.dark-mode .about-solution-number {
+  background: rgba(255, 255, 255, 0.94);
+  border-color: var(--secondary);
+  color: var(--primary);
+}
+
+
+/* =========================================================
+   SOLUTION CONTENT
+   ========================================================= */
+
+body.dark-mode .about-solution-label {
+  color: var(--secondary);
+}
+
+body.dark-mode .about-solution-content h3 {
+  color: var(--text);
+}
+
+body.dark-mode .about-solution-content p {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   SOLUTION LINK
+   ========================================================= */
+
+body.dark-mode .about-solution-link {
+  color: var(--primary-text);
+}
+
+body.dark-mode .about-solution-link:hover {
+  color: var(--secondary);
+}
+
+
+/* =========================================================
+   SECTION 04
+   APPROACH
+   ========================================================= */
+
+body.dark-mode .about-approach {
+  background: var(--site-bg);
+  color: var(--text);
+}
+
+
+/* =========================================================
+   APPROACH EYEBROW
+   ========================================================= */
+
+body.dark-mode .about-approach-eyebrow {
+  color: var(--primary-text);
+}
+
+body.dark-mode .about-approach-eyebrow-line {
+  background: var(--secondary);
+}
+
+
+/* =========================================================
+   APPROACH TITLE
+   ========================================================= */
+
+body.dark-mode .about-approach-title {
+  color: var(--text);
+}
+
+body.dark-mode .about-approach-description {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   APPROACH PROCESS
+   ========================================================= */
+
+body.dark-mode .about-approach-process {
+  border-top-color: var(--border);
+  border-bottom-color: var(--border);
+}
+
+body.dark-mode .about-approach-step {
+  border-color: var(--border);
+}
+
+
+/* =========================================================
+   APPROACH NUMBER
+   ========================================================= */
+
+body.dark-mode .about-approach-number {
+  border-color: var(--secondary);
+  color: var(--secondary);
+}
+
+
+/* =========================================================
+   APPROACH LINE
+   ========================================================= */
+
+body.dark-mode .about-approach-line {
+  background: var(--border);
+}
+
+
+/* =========================================================
+   APPROACH CONTENT
+   ========================================================= */
+
+body.dark-mode .about-approach-label {
+  color: var(--secondary);
+}
+
+body.dark-mode .about-approach-step h3 {
+  color: var(--text);
+}
+
+body.dark-mode .about-approach-step p {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   SECTION 05
+   WHY SAFE STEP
+   ========================================================= */
+
+body.dark-mode .about-why {
+  background: var(--site-bg);
+  color: var(--text);
+}
+
+
+/* =========================================================
+   WHY EYEBROW
+   ========================================================= */
+
+body.dark-mode .about-why-eyebrow {
+  color: var(--primary-text);
+}
+
+body.dark-mode .about-why-eyebrow-line {
+  background: var(--secondary);
+}
+
+
+/* =========================================================
+   WHY TITLE
+   ========================================================= */
+
+body.dark-mode .about-why-title {
+  color: var(--text);
+}
+
+body.dark-mode .about-why-description {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   WHY IMAGE
+   ========================================================= */
+
+body.dark-mode .about-why-image-wrap {
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+
+/* =========================================================
+   WHY IMAGE LABEL
+   ========================================================= */
+
+body.dark-mode .about-why-image-label {
+  background: rgba(255, 255, 255, 0.94);
+  border-left-color: var(--secondary);
+}
+
+body.dark-mode .about-why-image-label span,
+body.dark-mode .about-why-image-label strong {
+  color: var(--primary);
+}
+
+
+/* =========================================================
+   WHY CONTENT
+   ========================================================= */
+
+body.dark-mode .about-why-content-eyebrow {
+  color: var(--secondary);
+}
+
+body.dark-mode .about-why-content h3 {
+  color: var(--text);
+}
+
+body.dark-mode .about-why-content p {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   WHY POINTS
+   ========================================================= */
+
+body.dark-mode .about-why-points {
+  border-color: var(--border);
+}
+
+body.dark-mode .about-why-point {
+  border-color: var(--border);
+}
+
+body.dark-mode .about-why-point-number {
+  border-color: var(--secondary);
+  color: var(--secondary);
+}
+
+body.dark-mode .about-why-point-label {
+  color: var(--secondary);
+}
+
+body.dark-mode .about-why-point h4 {
+  color: var(--text);
+}
+
+body.dark-mode .about-why-point p {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   SECTION 06
+   FINAL CTA
+   ========================================================= */
+
+body.dark-mode .about-final-cta {
+  background: var(--site-bg);
+  color: var(--text);
+}
+
+
+/* =========================================================
+   FINAL CTA BOX
+   ========================================================= */
+
+body.dark-mode .about-final-cta-box {
+  background: var(--primary);
+  color: #ffffff;
+  border-color: rgba(212, 180, 131, 0.3);
+}
+
+
+/* =========================================================
+   FINAL CTA DECORATIVE LINES
+   ========================================================= */
+
+body.dark-mode .about-final-cta-line {
+  background: rgba(212, 180, 131, 0.16);
+}
+
+
+/* =========================================================
+   FINAL CTA CORNERS
+   ========================================================= */
+
+body.dark-mode .about-final-cta-corner::before,
+body.dark-mode .about-final-cta-corner::after {
+  background: rgba(212, 180, 131, 0.4);
+}
+
+
+/* =========================================================
+   FINAL CTA EYEBROW
+   ========================================================= */
+
+body.dark-mode .about-final-cta-eyebrow {
+  color: var(--secondary);
+}
+
+body.dark-mode .about-final-cta-eyebrow-line {
+  background: var(--secondary);
+}
+
+
+/* =========================================================
+   FINAL CTA TITLE
+   ========================================================= */
+
+body.dark-mode .about-final-cta-title {
+  color: #ffffff;
+}
+
+body.dark-mode .about-final-cta-title span {
+  color: var(--secondary);
+}
+
+
+/* =========================================================
+   FINAL CTA DESCRIPTION
+   ========================================================= */
+
+body.dark-mode .about-final-cta-description {
+  color: rgba(255, 255, 255, 0.76);
+}
+
+
+/* =========================================================
+   FINAL CTA PRIMARY BUTTON
+   ========================================================= */
+
+body.dark-mode .about-final-cta-button-primary {
+  background: var(--secondary);
+  border-color: var(--secondary);
+  color: #26332c;
+}
+
+body.dark-mode .about-final-cta-button-primary:hover {
+  background: #ffffff;
+  border-color: #ffffff;
+  color: #26332c;
+}
+
+
+/* =========================================================
+   FINAL CTA SECONDARY BUTTON
+   ========================================================= */
+
+body.dark-mode .about-final-cta-button-secondary {
+  background: transparent;
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+}
+
+body.dark-mode .about-final-cta-button-secondary:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--secondary);
+  color: var(--secondary);
+}
+
+
+/* =========================================================
+   FINAL CTA NOTE
+   ========================================================= */
+
+body.dark-mode .about-final-cta-note span {
+  background: rgba(212, 180, 131, 0.45);
+}
+
+body.dark-mode .about-final-cta-note p {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+
+/* =========================================================
+   FORM ELEMENTS
+   ========================================================= */
+
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+  background: var(--surface);
+  color: var(--text);
+  border-color: var(--border);
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+  color: var(--muted);
+}
+
+body.dark-mode input:focus,
+body.dark-mode textarea:focus,
+body.dark-mode select:focus {
+  border-color: var(--secondary);
+  outline: none;
+}
+
+
+/* =========================================================
+   RTL + DARK MODE
+   ========================================================= */
+
+body.dark-mode.rtl {
+  direction: rtl;
+}
+
+body.dark-mode.rtl .about-hero,
+body.dark-mode.rtl .about-philosophy,
+body.dark-mode.rtl .about-solutions,
+body.dark-mode.rtl .about-approach,
+body.dark-mode.rtl .about-why,
+body.dark-mode.rtl .about-final-cta {
+  direction: rtl;
+}
+
+
+/* =========================================================
+   DARK MODE SCROLLBAR
+   ========================================================= */
+
+body.dark-mode::-webkit-scrollbar {
+  width: 8px;
+}
+
+body.dark-mode::-webkit-scrollbar-track {
+  background: var(--site-bg);
+}
+
+body.dark-mode::-webkit-scrollbar-thumb {
+  background: rgba(242, 239, 232, 0.18);
+  border-radius: 10px;
+}
+
+body.dark-mode::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
 }

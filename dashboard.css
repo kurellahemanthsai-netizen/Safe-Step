@@ -236,6 +236,9 @@ svg {
   font-weight: 700;
   letter-spacing: -0.03em;
 }
+body.dark-mode .sidebar-logo-text h2{
+  color: white;
+}
 .sidebar-logo-text h2 span{
      margin: 0;
 

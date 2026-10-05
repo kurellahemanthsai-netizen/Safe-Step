@@ -480,6 +480,9 @@ a {
 .logo-text .safe {
   color: var(--primary);
 }
+body.dark-mode .logo-text .safe{
+  color: white;
+}
 
 .logo-text .step {
   color: var(--secondary);
@@ -538,6 +541,9 @@ a {
   font-weight: 800;
 
   letter-spacing: 1.8px;
+} 
+body.dark-mode .login-eyebrow{
+  color: var(--secondary);
 }
 
 .login-heading h2 {
@@ -802,6 +808,13 @@ a {
 
   font-weight: 700;
 }
+body.dark-mode .forgot-link{
+  color: white;
+}
+body.dark-mode .forgot-link:hover{
+  color: var(--secondary);
+}
+
 
 .forgot-link:hover {
   color: var(--secondary);
@@ -980,6 +993,12 @@ a {
   color: var(--primary);
 
   font-weight: 800;
+}
+body.dark-mode .register-text a{
+  color: white;
+}
+body.dark-mode .register-text a:hover{
+  color: var(--secondary);
 }
 
 .register-text a:hover {

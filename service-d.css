@@ -3528,3 +3528,750 @@
   }
 
 }
+
+/* =========================================================
+   DARK MODE
+   STAIRLIFT INSTALLATION
+   ========================================================= */
+
+body.dark-mode {
+  /* BRAND COLORS - KEEP FOR BUTTONS */
+  --primary: #344e41;
+  --secondary: #d4b483;
+
+  /* DARK MODE BACKGROUNDS */
+  --site-bg: #171c19;
+  --surface: #222923;
+  --surface-hover: rgba(212, 180, 131, 0.1);
+
+  /* DARK MODE TEXT */
+  --text: #f2efe8;
+  --muted: #a9ada8;
+
+  /* PRIMARY TEXT COLOR IN DARK MODE */
+  --primary-text: #b8c9bd;
+
+  --border: rgba(242, 239, 232, 0.12);
+
+  --footer-text: #f2efe8;
+  --footer-muted: #a9ada8;
+
+  --header-shadow: 0 6px 25px rgba(0, 0, 0, 0.28);
+  --dropdown-shadow: 0 18px 45px rgba(0, 0, 0, 0.38);
+}
+
+
+/* =========================================================
+   GLOBAL DARK MODE
+   ========================================================= */
+
+body.dark-mode {
+  background: var(--site-bg);
+  color: var(--text);
+}
+
+
+/* =========================================================
+   SECTION 1 — HERO
+   ========================================================= */
+
+body.dark-mode .stairlift-hero {
+  color: var(--text);
+}
+
+body.dark-mode .stairlift-hero-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(10, 15, 12, 0.58) 0%,
+    rgba(10, 15, 12, 0.68) 50%,
+    rgba(10, 15, 12, 0.82) 100%
+  );
+}
+
+body.dark-mode .stairlift-hero-line {
+  background: rgba(212, 180, 131, 0.35);
+}
+
+body.dark-mode .stairlift-hero-eyebrow {
+  color: var(--secondary);
+}
+
+body.dark-mode .stairlift-hero-eyebrow-line {
+  background: var(--secondary);
+}
+
+body.dark-mode .stairlift-hero-title {
+  color: var(--text);
+}
+
+body.dark-mode .stairlift-hero-title span {
+  color: var(--secondary);
+}
+
+body.dark-mode .stairlift-hero-description {
+  color: rgba(242, 239, 232, 0.78);
+}
+
+body.dark-mode .stairlift-hero-button-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #ffffff;
+}
+
+body.dark-mode .stairlift-hero-button-primary:hover {
+  background: var(--secondary);
+  border-color: var(--secondary);
+  color: #171c19;
+}
+
+body.dark-mode .stairlift-hero-button-secondary {
+  background: rgba(242, 239, 232, 0.04);
+  border-color: rgba(242, 239, 232, 0.55);
+  color: var(--text);
+}
+
+body.dark-mode .stairlift-hero-button-secondary:hover {
+  background: var(--secondary);
+  border-color: var(--secondary);
+  color: #171c19;
+}
+
+body.dark-mode .stairlift-hero-scroll {
+  color: rgba(242, 239, 232, 0.72);
+}
+
+body.dark-mode .stairlift-hero-scroll-line {
+  background: var(--secondary);
+}
+
+
+/* =========================================================
+   SECTION 2 — CONFIDENCE
+   ========================================================= */
+
+body.dark-mode .stairlift-confidence {
+  background: var(--site-bg);
+  color: var(--text);
+}
+
+body.dark-mode .stairlift-confidence-eyebrow {
+  color: var(--primary-text);
+}
+
+body.dark-mode .stairlift-confidence-eyebrow-line {
+  background: var(--secondary);
+}
+
+body.dark-mode .stairlift-confidence-title {
+  color: var(--text);
+}
+
+body.dark-mode .stairlift-confidence-title span {
+  color: var(--secondary);
+}
+
+body.dark-mode .stairlift-confidence-description {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   CONFIDENCE IMAGE
+   ========================================================= */
+
+body.dark-mode .stairlift-confidence-image-wrap {
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+body.dark-mode .stairlift-confidence-image-label {
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+body.dark-mode .stairlift-confidence-image-number {
+  border-color: var(--secondary);
+  color: var(--secondary);
+}
+
+body.dark-mode .stairlift-confidence-image-text strong {
+  color: var(--secondary);
+}
+
+body.dark-mode .stairlift-confidence-image-text span {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   CONFIDENCE CONTENT
+   ========================================================= */
+
+body.dark-mode .stairlift-confidence-content-eyebrow {
+  color: var(--secondary);
+}
+
+body.dark-mode .stairlift-confidence-content h3 {
+  color: var(--text);
+}
+
+body.dark-mode .stairlift-confidence-content h3 span {
+  color: var(--primary-text);
+}
+
+body.dark-mode .stairlift-confidence-text {
+  color: var(--muted);
+}
+
+body.dark-mode .stairlift-confidence-points {
+  border-color: var(--border);
+}
+
+body.dark-mode .stairlift-confidence-point {
+  border-color: var(--border);
+}
+
+body.dark-mode .stairlift-confidence-point-number {
+  border-color: var(--secondary);
+  color: var(--secondary);
+}
+
+body.dark-mode .stairlift-confidence-point-label {
+  color: var(--secondary);
+}
+
+body.dark-mode .stairlift-confidence-point-content h4 {
+  color: var(--text);
+}
+
+body.dark-mode .stairlift-confidence-point-content p {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   SECTION 3 — DESIGNED
+   ========================================================= */
+
+body.dark-mode .stairlift-designed {
+  background: var(--site-bg);
+  color: var(--text);
+}
+
+body.dark-mode .stairlift-designed-intro {
+  color: var(--text);
+}
+
+body.dark-mode .stairlift-designed-eyebrow {
+  color: var(--primary-text);
+}
+
+body.dark-mode .stairlift-designed-eyebrow-line {
+  background: var(--secondary);
+}
+
+body.dark-mode .stairlift-designed-title {
+  color: var(--text);
+}
+
+body.dark-mode .stairlift-designed-title span {
+  color: var(--secondary);
+}
+
+body.dark-mode .stairlift-designed-description {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   DESIGNED FEATURE
+   ========================================================= */
+
+body.dark-mode .stairlift-designed-feature {
+  background: var(--site-bg);
+  border-color: var(--border);
+}
+
+body.dark-mode .stairlift-designed-image-wrap {
+  background: var(--surface);
+}
+
+body.dark-mode .stairlift-designed-image-number {
+  background: var(--surface);
+  border-color: var(--border);
+  color: var(--secondary);
+}
+
+body.dark-mode .stairlift-designed-content {
+  background: var(--site-bg);
+}
+
+body.dark-mode .stairlift-designed-number {
+  color: rgba(242, 239, 232, 0.08);
+}
+
+body.dark-mode .stairlift-designed-icon {
+  color: var(--primary-text);
+  border-color: var(--border);
+}
+
+body.dark-mode .stairlift-designed-label {
+  color: var(--secondary);
+}
+
+body.dark-mode .stairlift-designed-content h3 {
+  color: var(--primary-text);
+}
+
+body.dark-mode .stairlift-designed-content h3 span {
+  color: var(--secondary);
+}
+
+body.dark-mode .stairlift-designed-content > p {
+  color: var(--muted);
+}
+
+body.dark-mode .stairlift-designed-detail {
+  border-color: var(--border);
+}
+
+body.dark-mode .stairlift-designed-detail > span {
+  color: var(--secondary);
+}
+
+body.dark-mode .stairlift-designed-detail strong {
+  color: var(--primary-text);
+}
+
+body.dark-mode .stairlift-designed-detail p {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   SECTION 4 — PROCESS
+   ========================================================= */
+
+body.dark-mode .stairlift-process {
+  background: var(--site-bg);
+  color: var(--text);
+}
+
+body.dark-mode .stairlift-process-eyebrow {
+  color: var(--primary-text);
+}
+
+body.dark-mode .stairlift-process-eyebrow-line {
+  background: var(--secondary);
+}
+
+body.dark-mode .stairlift-process-title {
+  color: var(--text);
+}
+
+body.dark-mode .stairlift-process-title span {
+  color: var(--secondary);
+}
+
+body.dark-mode .stairlift-process-description {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   PROCESS ITEMS
+   ========================================================= */
+
+body.dark-mode .stairlift-process-item {
+  border-color: var(--border);
+}
+
+body.dark-mode .stairlift-process-number {
+  color: var(--secondary);
+}
+
+body.dark-mode .stairlift-process-icon {
+  border-color: var(--border);
+  color: var(--primary-text);
+  background: transparent;
+}
+
+body.dark-mode .stairlift-process-label {
+  color: var(--secondary);
+}
+
+body.dark-mode .stairlift-process-item h3 {
+  color: var(--primary-text);
+}
+
+body.dark-mode .stairlift-process-item p {
+  color: var(--muted);
+}
+
+body.dark-mode .stairlift-process-line {
+  background: var(--secondary);
+}
+
+
+/* =========================================================
+   SECTION 5 — SUPPORT
+   ========================================================= */
+
+body.dark-mode .stairlift-support {
+  background: var(--site-bg);
+  color: var(--text);
+}
+
+body.dark-mode .stairlift-support-eyebrow {
+  color: var(--primary-text);
+}
+
+body.dark-mode .stairlift-support-eyebrow-line {
+  background: var(--secondary);
+}
+
+body.dark-mode .stairlift-support-title {
+  color: var(--text);
+}
+
+body.dark-mode .stairlift-support-title span {
+  color: var(--secondary);
+}
+
+body.dark-mode .stairlift-support-description {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   SUPPORT ROWS
+   ========================================================= */
+
+body.dark-mode .stairlift-support-row {
+  border-color: var(--border);
+}
+
+body.dark-mode .stairlift-support-row:last-child {
+  border-color: var(--border);
+}
+
+body.dark-mode .stairlift-support-number {
+  color: var(--secondary);
+}
+
+body.dark-mode .stairlift-support-icon {
+  border-color: var(--border);
+  color: var(--primary-text);
+  background: transparent;
+}
+
+body.dark-mode .stairlift-support-label {
+  color: var(--secondary);
+}
+
+body.dark-mode .stairlift-support-content h3 {
+  color: var(--primary-text);
+}
+
+body.dark-mode .stairlift-support-content p {
+  color: var(--muted);
+}
+
+body.dark-mode .stairlift-support-arrow {
+  border-color: var(--border);
+  color: var(--primary-text);
+  background: transparent;
+}
+
+body.dark-mode .stairlift-support-row:hover {
+  background: var(--surface-hover);
+}
+
+body.dark-mode .stairlift-support-row:hover .stairlift-support-arrow {
+  background: var(--primary);
+  color: var(--surface);
+}
+
+
+/* =========================================================
+   SECTION 6 — FINAL CTA
+   ========================================================= */
+
+body.dark-mode .stairlift-final-cta {
+  background: var(--site-bg);
+  color: var(--text);
+}
+
+body.dark-mode .stairlift-final-cta-box {
+  background: var(--surface);
+  border-color: var(--border);
+  box-shadow: 0 18px 55px rgba(0, 0, 0, 0.28);
+}
+
+body.dark-mode .stairlift-final-cta-eyebrow {
+  color: var(--primary-text);
+}
+
+body.dark-mode .stairlift-final-cta-line {
+  background: var(--secondary);
+}
+
+body.dark-mode .stairlift-final-cta-title {
+  color: var(--primary-text);
+}
+
+body.dark-mode .stairlift-final-cta-title span {
+  color: var(--secondary);
+}
+
+body.dark-mode .stairlift-final-cta-description {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   FINAL CTA BUTTONS
+   ========================================================= */
+
+body.dark-mode .stairlift-final-cta-button-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #ffffff;
+}
+
+body.dark-mode .stairlift-final-cta-button-primary:hover {
+  background: var(--secondary);
+  border-color: var(--secondary);
+  color: #171c19;
+}
+
+body.dark-mode .stairlift-final-cta-button-secondary {
+  background: transparent;
+  border-color: var(--primary-text);
+  color: var(--primary-text);
+}
+
+body.dark-mode .stairlift-final-cta-button-secondary:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #ffffff;
+}
+
+body.dark-mode .stairlift-final-cta-note {
+  color: var(--muted);
+}
+
+body.dark-mode .stairlift-final-cta-note svg {
+  color: var(--secondary);
+}
+
+
+/* =========================================================
+   GENERAL DARK MODE FORM / LINK SUPPORT
+   ========================================================= */
+
+body.dark-mode a {
+  color: var(--primary-text);
+}
+
+body.dark-mode a:hover {
+  color: var(--secondary);
+}
+
+body.dark-mode button {
+  color: var(--text);
+}
+
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+  background: var(--surface);
+  color: var(--text);
+  border-color: var(--border);
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   RTL — GLOBAL
+   ========================================================= */
+
+body.rtl {
+  direction: rtl;
+}
+
+body.dark-mode.rtl {
+  direction: rtl;
+}
+
+
+/* =========================================================
+   RTL — STAIRLIFT HERO
+   ========================================================= */
+
+body.rtl .stairlift-hero-content {
+  text-align: center;
+}
+
+body.rtl .stairlift-hero-eyebrow {
+  direction: rtl;
+}
+
+body.rtl .stairlift-hero-actions {
+  direction: rtl;
+}
+
+
+/* =========================================================
+   RTL — CONFIDENCE
+   ========================================================= */
+
+body.rtl .stairlift-confidence {
+  direction: rtl;
+}
+
+body.rtl .stairlift-confidence-content {
+  text-align: right;
+}
+
+body.rtl .stairlift-confidence-image-label {
+  left: auto;
+  right: 24px;
+}
+
+body.rtl .stairlift-confidence-content-inner {
+  text-align: right;
+}
+
+body.rtl .stairlift-confidence-point {
+  grid-template-columns: 45px 1fr;
+  text-align: right;
+}
+
+
+/* =========================================================
+   RTL — DESIGNED
+   ========================================================= */
+
+body.rtl .stairlift-designed {
+  direction: rtl;
+}
+
+body.rtl .stairlift-designed-content {
+  text-align: right;
+}
+
+body.rtl .stairlift-designed-image-number {
+  left: auto;
+  right: 30px;
+}
+
+body.rtl .stairlift-designed-number {
+  right: auto;
+  left: 35px;
+}
+
+body.rtl .stairlift-designed-detail {
+  grid-template-columns: 35px 1fr;
+  direction: rtl;
+}
+
+
+/* =========================================================
+   RTL — PROCESS
+   ========================================================= */
+
+body.rtl .stairlift-process {
+  direction: rtl;
+}
+
+body.rtl .stairlift-process-item {
+  border-left: none;
+  border-right: 1px solid var(--border);
+}
+
+body.rtl .stairlift-process-item:first-child {
+  border-right: none;
+}
+
+body.rtl .stairlift-process-top {
+  direction: rtl;
+}
+
+body.rtl .stairlift-process-item {
+  text-align: right;
+}
+
+
+/* =========================================================
+   RTL — SUPPORT
+   ========================================================= */
+
+body.rtl .stairlift-support {
+  direction: rtl;
+}
+
+body.rtl .stairlift-support-row {
+  direction: rtl;
+}
+
+body.rtl .stairlift-support-content {
+  padding-right: 0;
+  padding-left: 30px;
+  text-align: right;
+}
+
+body.rtl .stairlift-support-arrow {
+  transform: scaleX(-1);
+}
+
+
+/* =========================================================
+   RTL — FINAL CTA
+   ========================================================= */
+
+body.rtl .stairlift-final-cta {
+  direction: rtl;
+}
+
+body.rtl .stairlift-final-cta-actions {
+  direction: rtl;
+}
+
+body.rtl .stairlift-final-cta-note {
+  direction: rtl;
+}
+
+
+/* =========================================================
+   DARK MODE + RTL
+   ========================================================= */
+
+body.dark-mode.rtl .stairlift-confidence-image-label {
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+body.dark-mode.rtl .stairlift-designed-content h3,
+body.dark-mode.rtl .stairlift-process-item h3,
+body.dark-mode.rtl .stairlift-support-content h3 {
+  color: var(--primary-text);
+}
+
+body.dark-mode.rtl .stairlift-designed-detail {
+  border-color: var(--border);
+}
+
+body.dark-mode.rtl .stairlift-support-content {
+  padding-right: 0;
+  padding-left: 30px;
+}
+
+
+/* =========================================================
+   END — DARK MODE
+   ========================================================= */

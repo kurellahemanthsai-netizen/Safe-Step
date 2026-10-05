@@ -2854,7 +2854,10 @@
 
   color: #ffffff;
 
-  border-bottom: 1px solid rgba(255, 255, 255, 0.55);
+  border: 1px solid var(--secondary);
+  border-radius: 8px;
+    padding: 0 28px;
+
 
   text-decoration: none;
 
@@ -5114,4 +5117,237 @@
     right: -97px;
     top: -97px;
   }
+}
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+body.dark-mode {
+  /* BRAND COLORS - KEEP FOR BUTTONS */
+  --primary: #344e41;
+  --secondary: #d4b483;
+
+  /* DARK MODE BACKGROUNDS */
+  --site-bg: #171c19;
+  --surface: #222923;
+  --surface-hover: rgba(212, 180, 131, 0.1);
+
+  /* DARK MODE TEXT */
+  --text: #f2efe8;
+  --muted: #a9ada8;
+
+  /* PRIMARY TEXT COLOR IN DARK MODE */
+  --primary-text: #b8c9bd;
+
+  --border: rgba(242, 239, 232, 0.12);
+
+  --footer-text: #f2efe8;
+  --footer-muted: #a9ada8;
+
+  --header-shadow: 0 6px 25px rgba(0, 0, 0, 0.28);
+  --dropdown-shadow: 0 18px 45px rgba(0, 0, 0, 0.38);
+}
+
+
+/* =========================================================
+   DARK MODE — GENERAL
+   ========================================================= */
+
+body.dark-mode {
+  background: var(--site-bg);
+  color: var(--text);
+}
+
+
+/* =========================================================
+   DARK MODE — PRIMARY TEXT
+   ========================================================= */
+
+/* Hero */
+body.dark-mode .safe-hero-eyebrow {
+  color: var(--primary-text);
+}
+
+body.dark-mode .safe-hero-scroll:hover {
+  color: var(--primary-text);
+}
+
+
+/* Independence */
+body.dark-mode .safe-independence-eyebrow {
+  color: var(--primary-text);
+}
+
+body.dark-mode .safe-independence-info h3 span {
+  color: var(--primary-text);
+}
+
+
+/* Solutions */
+body.dark-mode .safe-solutions-eyebrow {
+  color: var(--primary-text);
+}
+
+body.dark-mode .safe-solution-link:hover {
+  color: var(--primary-text);
+}
+
+
+/* Safety & Comfort */
+body.dark-mode .safe-safety-eyebrow {
+  color: var(--primary-text);
+}
+
+body.dark-mode .safe-safety-image-fallback::before {
+  color: var(--primary-text);
+}
+
+
+/* Process */
+body.dark-mode .safe-process-eyebrow {
+  color: var(--primary-text);
+}
+
+
+/* Why Safe Step */
+body.dark-mode .safe-why-eyebrow {
+  color: var(--primary-text);
+}
+
+body.dark-mode .safe-why-feature h3 span {
+  color: var(--primary-text);
+}
+
+body.dark-mode .safe-why-image-label span {
+  color: var(--primary);
+}
+
+
+/* Consultation */
+body.dark-mode .safe-consultation-eyebrow {
+  color: var(--primary-text);
+}
+
+
+/* =========================================================
+   DARK MODE — BUTTONS
+   ========================================================= */
+
+/* Primary buttons KEEP BRAND PRIMARY */
+body.dark-mode .safe-hero-btn-primary,
+body.dark-mode .safe-process-button,
+body.dark-mode .safe-consultation-button {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+
+/* Primary button hover */
+body.dark-mode .safe-hero-btn-primary:hover,
+body.dark-mode .safe-process-button:hover,
+body.dark-mode .safe-consultation-button:hover {
+  background: var(--secondary);
+  color: #ffffff;
+}
+
+
+/* Secondary hero button */
+body.dark-mode .safe-hero-btn-secondary {
+  color: var(--primary-text);
+  border-color: var(--border);
+}
+
+body.dark-mode .safe-hero-btn-secondary:hover {
+  color: var(--primary-text);
+  background: var(--surface-hover);
+  border-color: var(--secondary);
+}
+
+
+/* =========================================================
+   DARK MODE — HEADER / NAVIGATION
+   ========================================================= */
+
+body.dark-mode .site-header,
+body.dark-mode .site-footer {
+  background: var(--site-bg);
+  border-color: var(--border);
+}
+
+body.dark-mode .nav-links > li > a {
+  color: var(--text);
+}
+
+body.dark-mode .nav-links > li > a:hover {
+  color: var(--primary-text);
+}
+
+body.dark-mode .dropdown-menu {
+  background: var(--surface);
+  border-color: var(--border);
+  box-shadow: var(--dropdown-shadow);
+}
+
+body.dark-mode .dropdown-menu li a {
+  color: var(--text);
+}
+
+body.dark-mode .dropdown-menu li a:hover {
+  background: var(--surface-hover);
+  color: var(--primary-text);
+}
+
+
+/* =========================================================
+   DARK MODE — ICON BUTTONS
+   ========================================================= */
+
+body.dark-mode .icon-btn {
+  background: var(--surface);
+  border-color: var(--secondary);
+  color: var(--secondary);
+}
+
+body.dark-mode .icon-btn:hover {
+  background: var(--secondary);
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   DARK MODE — LOGIN / TOP BUTTON
+   ========================================================= */
+
+body.dark-mode .login-btn,
+body.dark-mode .top-btn {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+body.dark-mode .login-btn:hover,
+body.dark-mode .top-btn:hover {
+  background: var(--secondary);
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   DARK MODE — PROCESS DOT
+   ========================================================= */
+
+body.dark-mode .safe-process-step:hover .safe-process-dot {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--secondary);
+}
+
+
+/* =========================================================
+   DARK MODE — CONSULTATION NUMBER
+   ========================================================= */
+
+body.dark-mode .safe-consultation-number {
+  border-color: var(--primary-text);
+  color: var(--primary-text);
 }

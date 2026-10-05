@@ -1474,7 +1474,7 @@
 
     margin: 0 auto;
 
-    color: var(--primary);
+    color: var(--text);
 
     font-family: "Raleway", sans-serif;
 
@@ -3245,4 +3245,697 @@
         width: 14px;
         height: 14px;
     }
+}
+
+/* =========================================================
+   DARK MODE
+   SAFE STEP — PRODUCTS PAGE
+   ========================================================= */
+
+body.dark-mode {
+  /* BRAND COLORS - KEEP FOR BUTTONS */
+  --primary: #344e41;
+  --secondary: #d4b483;
+
+  /* DARK MODE BACKGROUNDS */
+  --site-bg: #171c19;
+  --surface: #222923;
+  --surface-hover: rgba(212, 180, 131, 0.1);
+
+  /* DARK MODE TEXT */
+  --text: #f2efe8;
+  --muted: #a9ada8;
+
+  /* PRIMARY TEXT COLOR IN DARK MODE */
+  --primary-text: #b8c9bd;
+
+  --border: rgba(242, 239, 232, 0.12);
+
+  --footer-text: #f2efe8;
+  --footer-muted: #a9ada8;
+
+  --header-shadow: 0 6px 25px rgba(0, 0, 0, 0.28);
+  --dropdown-shadow: 0 18px 45px rgba(0, 0, 0, 0.38);
+}
+
+
+/* =========================================================
+   GLOBAL DARK MODE
+   ========================================================= */
+
+body.dark-mode {
+  background: var(--site-bg);
+  color: var(--text);
+}
+
+
+/* =========================================================
+   PRODUCTS HERO
+   ========================================================= */
+
+body.dark-mode .products-hero {
+  color: var(--text);
+}
+
+body.dark-mode .products-hero-overlay {
+  background: linear-gradient(
+    180deg,
+    rgba(10, 15, 12, 0.58) 0%,
+    rgba(10, 15, 12, 0.68) 50%,
+    rgba(10, 15, 12, 0.82) 100%
+  );
+}
+
+body.dark-mode .products-hero-lines,
+body.dark-mode .products-hero-lines::before,
+body.dark-mode .products-hero-lines::after {
+  background: rgba(242, 239, 232, 0.18);
+}
+
+body.dark-mode .about-hero-eyebrow,
+body.dark-mode .about-hero-eyebrow-1 {
+  color: var(--secondary);
+}
+
+body.dark-mode .about-hero-eyebrow-line {
+  background: var(--secondary);
+}
+
+body.dark-mode .products-hero-title {
+  color: var(--text);
+}
+
+body.dark-mode .products-hero-title span {
+  color: var(--secondary);
+}
+
+body.dark-mode .products-hero-description {
+  color: rgba(242, 239, 232, 0.78);
+}
+
+
+/* =========================================================
+   PRODUCTS HERO BUTTONS
+   ========================================================= */
+
+body.dark-mode .products-hero-btn-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #ffffff;
+}
+
+body.dark-mode .products-hero-btn-primary:hover {
+  background: var(--secondary);
+  border-color: var(--secondary);
+  color: #171c19;
+}
+
+body.dark-mode .products-hero-btn-secondary {
+  background: rgba(242, 239, 232, 0.04);
+  border-color: rgba(242, 239, 232, 0.55);
+  color: var(--text);
+}
+
+body.dark-mode .products-hero-btn-secondary:hover {
+  background: var(--secondary);
+  border-color: var(--secondary);
+  color: #171c19;
+}
+
+body.dark-mode .products-hero-scroll {
+  color: rgba(242, 239, 232, 0.72);
+}
+
+body.dark-mode .products-hero-scroll svg {
+  color: var(--secondary);
+}
+
+
+/* =========================================================
+   PRODUCTS SOLUTIONS
+   ========================================================= */
+
+body.dark-mode .products-solutions {
+  background: var(--site-bg);
+  color: var(--text);
+}
+
+body.dark-mode .products-solutions-intro {
+  color: var(--text);
+}
+
+body.dark-mode .products-section-title {
+  color: var(--text);
+}
+
+body.dark-mode .products-section-title span {
+  color: var(--secondary);
+}
+
+body.dark-mode .products-section-description {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   PRODUCT SOLUTION CARDS
+   ========================================================= */
+
+body.dark-mode .product-solution-card {
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+body.dark-mode .product-solution-image-wrap {
+  background: var(--surface);
+}
+
+body.dark-mode .product-solution-number {
+  background: var(--surface);
+  color: var(--secondary);
+  border-color: var(--border);
+}
+
+body.dark-mode .product-solution-label {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+body.dark-mode .product-solution-content {
+  background: var(--surface);
+}
+
+body.dark-mode .product-solution-icon {
+  color: var(--primary-text);
+  border-color: var(--border);
+}
+
+body.dark-mode .product-solution-eyebrow {
+  color: var(--muted);
+}
+
+body.dark-mode .product-solution-content h3 {
+  color: var(--text);
+}
+
+body.dark-mode .product-solution-content h3 span {
+  color: var(--secondary);
+}
+
+body.dark-mode .product-solution-content p {
+  color: var(--muted);
+}
+
+body.dark-mode .product-solution-link {
+  color: var(--secondary);
+}
+
+body.dark-mode .product-solution-link:hover {
+  color: var(--primary-text);
+}
+
+
+/* =========================================================
+   RIGHT SOLUTION SECTION
+   ========================================================= */
+
+body.dark-mode .products-right-solution {
+  background: var(--site-bg);
+  color: var(--text);
+}
+
+body.dark-mode .products-right-solution-content h3 {
+  color: var(--text);
+}
+
+body.dark-mode .products-right-solution-content h3 span {
+  color: var(--secondary);
+}
+
+body.dark-mode .products-right-solution-text {
+  color: var(--muted);
+}
+
+body.dark-mode .products-right-solution-image-wrap {
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+body.dark-mode .products-right-solution-image-label {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+body.dark-mode .products-fit-row {
+  border-color: var(--border);
+}
+
+body.dark-mode .products-fit-icon {
+  color: var(--primary-text);
+  border-color: var(--border);
+}
+
+body.dark-mode .products-fit-number {
+  color: var(--secondary);
+}
+
+body.dark-mode .products-fit-content h4 {
+  color: var(--text);
+}
+
+body.dark-mode .products-fit-content p {
+  color: var(--muted);
+}
+
+body.dark-mode .products-right-solution-link {
+  color: var(--secondary);
+}
+
+body.dark-mode .products-right-solution-link:hover {
+  color: var(--primary-text);
+}
+
+
+/* =========================================================
+   DESIGNED AROUND YOUR HOME
+   ========================================================= */
+
+body.dark-mode .products-designed {
+  background: var(--site-bg);
+  color: var(--text);
+}
+
+body.dark-mode .products-designed-statement {
+  color: var(--text);
+}
+
+body.dark-mode .products-designed-number {
+  color: var(--secondary);
+}
+
+body.dark-mode .products-designed-statement h3 {
+  color: var(--text);
+}
+
+body.dark-mode .products-designed-statement h3 span {
+  color: var(--secondary);
+}
+
+body.dark-mode .products-designed-statement p {
+  color: var(--muted);
+}
+
+body.dark-mode .products-designed-features {
+  border-color: var(--border);
+}
+
+body.dark-mode .products-designed-feature {
+  border-color: var(--border);
+}
+
+body.dark-mode .products-designed-feature-icon {
+  color: var(--primary-text);
+  border-color: var(--border);
+}
+
+body.dark-mode .products-designed-feature-content > span {
+  color: var(--secondary);
+}
+
+body.dark-mode .products-designed-feature-content h4 {
+  color: var(--text);
+}
+
+body.dark-mode .products-designed-feature-content p {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   PRODUCT CHOICE SECTION
+   ========================================================= */
+
+body.dark-mode .products-choice {
+  background: var(--site-bg);
+  color: var(--text);
+}
+
+body.dark-mode .products-choice-card {
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+body.dark-mode .products-choice-card:hover {
+  background: var(--surface-hover);
+  border-color: var(--secondary);
+}
+
+body.dark-mode .products-choice-number {
+  color: var(--secondary);
+}
+
+body.dark-mode .products-choice-icon {
+  color: var(--primary-text);
+  border-color: var(--border);
+}
+
+body.dark-mode .products-choice-label {
+  color: var(--muted);
+}
+
+body.dark-mode .products-choice-card h3 {
+  color: var(--text);
+}
+
+body.dark-mode .products-choice-card h3 span {
+  color: var(--secondary);
+}
+
+body.dark-mode .products-choice-card p {
+  color: var(--muted);
+}
+
+body.dark-mode .products-choice-link {
+  color: var(--secondary);
+}
+
+body.dark-mode .products-choice-link:hover {
+  color: var(--primary-text);
+}
+
+
+/* =========================================================
+   FINAL CTA
+   ========================================================= */
+
+body.dark-mode .products-final-cta {
+  background: var(--site-bg);
+  color: var(--text);
+}
+
+body.dark-mode .products-final-cta-box {
+  background: var(--surface);
+  border-color: var(--border);
+
+  box-shadow:
+    0 18px 50px rgba(0, 0, 0, 0.28);
+}
+
+body.dark-mode .products-final-cta-eyebrow {
+  color: var(--primary-text);
+}
+
+body.dark-mode .products-final-cta-eyebrow-line {
+  background: var(--secondary);
+}
+
+body.dark-mode .products-final-cta-title {
+  color: var(--primary-text);
+}
+
+body.dark-mode .products-final-cta-title span {
+  color: var(--secondary);
+}
+
+body.dark-mode .products-final-cta-description {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   FINAL CTA BUTTONS
+   ========================================================= */
+
+body.dark-mode .products-final-cta-btn-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #ffffff;
+}
+
+body.dark-mode .products-final-cta-btn-primary:hover {
+  background: var(--secondary);
+  border-color: var(--secondary);
+  color: #171c19;
+}
+
+body.dark-mode .products-final-cta-btn-secondary {
+  background: transparent;
+  border-color: var(--primary-text);
+  color: var(--primary-text);
+}
+
+body.dark-mode .products-final-cta-btn-secondary:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #ffffff;
+}
+
+body.dark-mode .products-final-cta-note {
+  color: var(--muted);
+}
+
+body.dark-mode .products-final-cta-note svg {
+  color: var(--secondary);
+}
+
+
+/* =========================================================
+   GENERAL DARK MODE
+   ========================================================= */
+
+body.dark-mode a {
+  color: var(--primary-text);
+}
+
+body.dark-mode a:hover {
+  color: var(--secondary);
+}
+
+body.dark-mode button {
+  color: var(--text);
+}
+
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+  background: var(--surface);
+  color: var(--text);
+  border-color: var(--border);
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   RTL
+   ========================================================= */
+
+body.rtl {
+  direction: rtl;
+}
+
+body.dark-mode.rtl {
+  direction: rtl;
+}
+
+
+/* =========================================================
+   RTL — HERO
+   ========================================================= */
+
+body.rtl .products-hero {
+  direction: rtl;
+}
+
+body.rtl .products-hero-content {
+  text-align: center;
+}
+
+body.rtl .products-hero-actions {
+  direction: rtl;
+}
+
+body.rtl .products-hero-scroll {
+  direction: rtl;
+}
+
+
+/* =========================================================
+   RTL — SOLUTIONS
+   ========================================================= */
+
+body.rtl .products-solutions,
+body.rtl .products-solutions-grid {
+  direction: rtl;
+}
+
+body.rtl .product-solution-card {
+  text-align: right;
+}
+
+body.rtl .product-solution-number {
+  left: auto;
+  right: 22px;
+}
+
+body.rtl .product-solution-label {
+  right: auto;
+  left: 22px;
+}
+
+body.rtl .product-solution-content {
+  text-align: right;
+}
+
+body.rtl .product-solution-link {
+  direction: rtl;
+}
+
+body.rtl .product-solution-link svg {
+  transform: scaleX(-1);
+}
+
+
+/* =========================================================
+   RTL — RIGHT SOLUTION
+   ========================================================= */
+
+body.rtl .products-right-solution {
+  direction: rtl;
+}
+
+body.rtl .products-right-solution-main {
+  direction: rtl;
+}
+
+body.rtl .products-right-solution-content {
+  text-align: right;
+}
+
+body.rtl .products-right-solution-image-label {
+  left: 28px;
+  right: auto;
+}
+
+body.rtl .products-fit-row {
+  direction: rtl;
+}
+
+body.rtl .products-fit-content {
+  text-align: right;
+}
+
+body.rtl .products-right-solution-link {
+  direction: rtl;
+}
+
+body.rtl .products-right-solution-link svg {
+  transform: scaleX(-1);
+}
+
+
+/* =========================================================
+   RTL — DESIGNED AROUND YOUR HOME
+   ========================================================= */
+
+body.rtl .products-designed {
+  direction: rtl;
+}
+
+body.rtl .products-designed-main {
+  direction: rtl;
+}
+
+body.rtl .products-designed-statement {
+  text-align: right;
+}
+
+body.rtl .products-designed-feature {
+  direction: rtl;
+}
+
+body.rtl .products-designed-feature-content {
+  text-align: right;
+}
+
+
+/* =========================================================
+   RTL — CHOICE CARDS
+   ========================================================= */
+
+body.rtl .products-choice {
+  direction: rtl;
+}
+
+body.rtl .products-choice-grid {
+  direction: rtl;
+}
+
+body.rtl .products-choice-card {
+  text-align: right;
+}
+
+body.rtl .products-choice-card-top {
+  direction: rtl;
+}
+
+body.rtl .products-choice-link {
+  direction: rtl;
+}
+
+body.rtl .products-choice-link svg {
+  transform: scaleX(-1);
+}
+
+
+/* =========================================================
+   RTL — FINAL CTA
+   ========================================================= */
+
+body.rtl .products-final-cta {
+  direction: rtl;
+}
+
+body.rtl .products-final-cta-box {
+  direction: rtl;
+}
+
+body.rtl .products-final-cta-actions {
+  direction: rtl;
+}
+
+body.rtl .products-final-cta-note {
+  direction: rtl;
+}
+
+
+/* =========================================================
+   DARK MODE + RTL
+   ========================================================= */
+
+body.dark-mode.rtl .product-solution-card,
+body.dark-mode.rtl .products-choice-card {
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+body.dark-mode.rtl .products-designed-statement,
+body.dark-mode.rtl .products-right-solution-content,
+body.dark-mode.rtl .products-fit-content,
+body.dark-mode.rtl .products-choice-card,
+body.dark-mode.rtl .product-solution-content {
+  color: var(--text);
+}
+
+body.dark-mode.rtl .products-designed-feature,
+body.dark-mode.rtl .products-fit-row {
+  border-color: var(--border);
+}
+
+body.dark-mode.rtl .products-final-cta-box {
+  background: var(--surface);
+  border-color: var(--border);
 }

@@ -1150,7 +1150,7 @@
 .home2-levels-title span {
   display: block;
 
-  color: var(--primary);
+  color: var(--secondary);
 }
 
 /* =========================================================
@@ -2878,7 +2878,7 @@
 
   border: 1px solid transparent;
 
-  border-radius: 30px;
+  border-radius: 8px;
 
   font-family: "Raleway", sans-serif;
 
@@ -5386,4 +5386,760 @@
     font-size: 0.72rem;
   }
 
+}
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+body.dark-mode {
+
+  /* =======================================================
+     BRAND COLORS - KEEP FIXED
+     ======================================================= */
+
+  --primary: #344e41;
+  --secondary: #d4b483;
+
+
+  /* =======================================================
+     DARK MODE BACKGROUNDS
+     ======================================================= */
+
+  --site-bg: #171c19;
+  --surface: #222923;
+  --surface-hover: rgba(212, 180, 131, 0.1);
+
+
+  /* =======================================================
+     DARK MODE TEXT
+     ======================================================= */
+
+  --text: #f2efe8;
+  --muted: #a9ada8;
+
+
+  /* =======================================================
+     PRIMARY TEXT COLOR IN DARK MODE
+     ======================================================= */
+
+  --primary-text: #b8c9bd;
+
+
+  /* =======================================================
+     BORDERS
+     ======================================================= */
+
+  --border: rgba(242, 239, 232, 0.12);
+
+
+  /* =======================================================
+     FOOTER
+     ======================================================= */
+
+  --footer-text: #f2efe8;
+  --footer-muted: #a9ada8;
+
+
+  /* =======================================================
+     SHADOWS
+     ======================================================= */
+
+  --header-shadow: 0 6px 25px rgba(0, 0, 0, 0.28);
+  --dropdown-shadow: 0 18px 45px rgba(0, 0, 0, 0.38);
+}
+
+
+/* =========================================================
+   GLOBAL DARK MODE
+   ========================================================= */
+
+body.dark-mode {
+  background: var(--site-bg);
+  color: var(--text);
+}
+
+
+/* =========================================================
+   HEADER
+   ========================================================= */
+
+body.dark-mode .site-header {
+  background: var(--surface);
+  box-shadow: var(--header-shadow);
+}
+
+body.dark-mode .site-header a {
+  color: var(--text);
+}
+
+body.dark-mode .site-header a:hover {
+  color: var(--secondary);
+}
+
+body.dark-mode .logo,
+body.dark-mode .site-logo {
+  color: var(--text);
+}
+
+body.dark-mode .nav-link {
+  color: var(--text);
+}
+
+body.dark-mode .nav-link:hover,
+body.dark-mode .nav-link.active {
+  color: var(--secondary);
+}
+
+
+/* =========================================================
+   HEADER DROPDOWN
+   ========================================================= */
+
+body.dark-mode .dropdown-menu {
+  background: var(--surface);
+  border-color: var(--border);
+  box-shadow: var(--dropdown-shadow);
+}
+
+body.dark-mode .dropdown-menu a {
+  color: var(--text);
+}
+
+body.dark-mode .dropdown-menu a:hover {
+  background: var(--surface-hover);
+  color: var(--secondary);
+}
+
+
+/* =========================================================
+   MOBILE MENU
+   ========================================================= */
+
+body.dark-mode .mobile-menu,
+body.dark-mode .mobile-nav,
+body.dark-mode .hamburger-menu {
+  background: var(--surface);
+  color: var(--text);
+}
+
+body.dark-mode .mobile-menu a,
+body.dark-mode .mobile-nav a {
+  color: var(--text);
+}
+
+body.dark-mode .mobile-menu a:hover,
+body.dark-mode .mobile-nav a:hover {
+  color: var(--secondary);
+}
+
+
+/* =========================================================
+   HERO
+   ========================================================= */
+
+body.dark-mode .home2-hero {
+  background: var(--site-bg);
+  color: var(--text);
+}
+
+body.dark-mode .home2-hero h1,
+body.dark-mode .home2-hero h2,
+body.dark-mode .home2-hero h3 {
+  color: var(--text);
+}
+
+body.dark-mode .home2-hero p {
+  color: var(--muted);
+}
+
+body.dark-mode .home2-hero-eyebrow {
+  color: var(--primary-text);
+}
+
+
+/* =========================================================
+   HERO PRIMARY BUTTON
+   ========================================================= */
+
+body.dark-mode .home2-hero .btn-primary,
+body.dark-mode .home2-hero .primary-btn {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+
+body.dark-mode .home2-hero .btn-primary:hover,
+body.dark-mode .home2-hero .primary-btn:hover {
+  background: var(--secondary);
+  border-color: var(--secondary);
+  color: #171c19;
+}
+
+
+/* =========================================================
+   HERO SECONDARY BUTTON
+   ========================================================= */
+
+body.dark-mode .home2-hero .btn-secondary,
+body.dark-mode .home2-hero .secondary-btn {
+  background: transparent;
+  color: var(--text);
+  border-color: var(--border);
+}
+
+body.dark-mode .home2-hero .btn-secondary:hover,
+body.dark-mode .home2-hero .secondary-btn:hover {
+  background: var(--surface);
+  border-color: var(--secondary);
+  color: var(--secondary);
+}
+
+
+/* =========================================================
+   GENERAL SECTIONS
+   ========================================================= */
+
+body.dark-mode section {
+  color: var(--text);
+}
+
+body.dark-mode .home2-section {
+  background: var(--site-bg);
+}
+
+body.dark-mode .home2-section-alt {
+  background: var(--surface);
+}
+
+
+/* =========================================================
+   HEADINGS
+   ========================================================= */
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+  color: var(--text);
+}
+
+
+/* =========================================================
+   PARAGRAPHS
+   ========================================================= */
+
+body.dark-mode p {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   LINKS
+   ========================================================= */
+
+body.dark-mode a {
+  color: var(--primary-text);
+}
+
+body.dark-mode a:hover {
+  color: var(--secondary);
+}
+
+
+/* =========================================================
+   LEVELS / FREEDOM SECTION
+   ========================================================= */
+
+body.dark-mode .home2-levels {
+  background: var(--site-bg);
+}
+
+body.dark-mode .home2-levels h2,
+body.dark-mode .home2-levels h3 {
+  color: var(--text);
+}
+
+body.dark-mode .home2-levels p {
+  color: var(--muted);
+}
+
+body.dark-mode .home2-levels-eyebrow {
+  color: var(--primary-text);
+}
+
+
+/* =========================================================
+   LEVEL CARDS
+   ========================================================= */
+
+body.dark-mode .home2-level-card {
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+body.dark-mode .home2-level-card:hover {
+  background: var(--surface-hover);
+  border-color: rgba(212, 180, 131, 0.3);
+}
+
+body.dark-mode .home2-level-card h3 {
+  color: var(--text);
+}
+
+body.dark-mode .home2-level-card p {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   SOLUTIONS SECTION
+   ========================================================= */
+
+body.dark-mode .home2-solutions {
+  background: var(--surface);
+}
+
+body.dark-mode .home2-solutions h2,
+body.dark-mode .home2-solutions h3 {
+  color: var(--text);
+}
+
+body.dark-mode .home2-solutions p {
+  color: var(--muted);
+}
+
+body.dark-mode .home2-solutions-eyebrow {
+  color: var(--primary-text);
+}
+
+
+/* =========================================================
+   SOLUTION CARDS
+   ========================================================= */
+
+body.dark-mode .home2-solution-card {
+  background: var(--site-bg);
+  border-color: var(--border);
+}
+
+body.dark-mode .home2-solution-card:hover {
+  background: var(--surface);
+  border-color: rgba(212, 180, 131, 0.3);
+}
+
+body.dark-mode .home2-solution-card h3 {
+  color: var(--text);
+}
+
+body.dark-mode .home2-solution-card p {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   SAFETY SECTION
+   ========================================================= */
+
+body.dark-mode .home2-safety {
+  background: var(--site-bg);
+}
+
+body.dark-mode .home2-safety h2,
+body.dark-mode .home2-safety h3 {
+  color: var(--text);
+}
+
+body.dark-mode .home2-safety p {
+  color: var(--muted);
+}
+
+body.dark-mode .home2-safety-eyebrow {
+  color: var(--primary-text);
+}
+
+
+/* =========================================================
+   SAFETY CARDS
+   ========================================================= */
+
+body.dark-mode .home2-safety-card {
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+body.dark-mode .home2-safety-card:hover {
+  background: var(--surface-hover);
+  border-color: rgba(212, 180, 131, 0.3);
+}
+
+body.dark-mode .home2-safety-card h3 {
+  color: var(--text);
+}
+
+body.dark-mode .home2-safety-card p {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   BESPOKE / EVERY HOME SECTION
+   ========================================================= */
+
+body.dark-mode .home2-bespoke {
+  background: var(--surface);
+}
+
+body.dark-mode .home2-bespoke h2,
+body.dark-mode .home2-bespoke h3 {
+  color: var(--text);
+}
+
+body.dark-mode .home2-bespoke p {
+  color: var(--muted);
+}
+
+body.dark-mode .home2-bespoke-cards-eyebrow {
+  color: var(--primary-text);
+}
+
+
+/* =========================================================
+   BESPOKE CARDS
+   ========================================================= */
+
+body.dark-mode .home2-bespoke-card {
+  background: var(--site-bg);
+  border-color: var(--border);
+}
+
+body.dark-mode .home2-bespoke-card:hover {
+  background: var(--surface);
+  border-color: rgba(212, 180, 131, 0.3);
+}
+
+body.dark-mode .home2-bespoke-card h3 {
+  color: var(--text);
+}
+
+body.dark-mode .home2-bespoke-card p {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   FUTURE SECTION
+   ========================================================= */
+
+body.dark-mode .home2-future {
+  background: var(--site-bg);
+}
+
+body.dark-mode .home2-future h2,
+body.dark-mode .home2-future h3 {
+  color: var(--text);
+}
+
+body.dark-mode .home2-future p {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   FUTURE ICON
+   ========================================================= */
+
+body.dark-mode .home2-future-icon {
+  background: var(--surface);
+  color: var(--primary-text);
+  border-color: var(--border);
+}
+
+body.dark-mode .home2-future-icon:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+
+/* =========================================================
+   FUTURE CARDS
+   ========================================================= */
+
+body.dark-mode .home2-future-card {
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+body.dark-mode .home2-future-card:hover {
+  background: var(--surface-hover);
+  border-color: rgba(212, 180, 131, 0.3);
+}
+
+body.dark-mode .home2-future-card h3 {
+  color: var(--text);
+}
+
+body.dark-mode .home2-future-card p {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   FINAL CTA
+   ========================================================= */
+
+body.dark-mode .home2-final-cta {
+  background: var(--surface);
+  color: var(--text);
+}
+
+body.dark-mode .home2-final-cta h2,
+body.dark-mode .home2-final-cta h3 {
+  color: var(--text);
+}
+
+body.dark-mode .home2-final-cta p {
+  color: var(--muted);
+}
+
+body.dark-mode .home2-final-cta-eyebrow-text {
+  color: var(--primary-text);
+}
+
+
+/* =========================================================
+   FINAL CTA PRIMARY BUTTON
+   ========================================================= */
+
+body.dark-mode .home2-final-cta .btn-primary,
+body.dark-mode .home2-final-cta .primary-btn {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+
+body.dark-mode .home2-final-cta .btn-primary:hover,
+body.dark-mode .home2-final-cta .primary-btn:hover {
+  background: var(--secondary);
+  border-color: var(--secondary);
+  color: #171c19;
+}
+
+
+/* =========================================================
+   FINAL CTA SECONDARY BUTTON
+   ========================================================= */
+
+body.dark-mode .home2-final-cta .btn-secondary,
+body.dark-mode .home2-final-cta .secondary-btn {
+  background: transparent;
+  border-color: var(--primary);
+  color: var(--primary-text);
+}
+
+body.dark-mode .home2-final-cta .btn-secondary:hover,
+body.dark-mode .home2-final-cta .secondary-btn:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+
+
+/* =========================================================
+   BUTTONS - GLOBAL
+   ========================================================= */
+
+body.dark-mode button {
+  color: var(--text);
+}
+
+body.dark-mode button:hover {
+  color: var(--secondary);
+}
+
+
+/* =========================================================
+   CARDS - GLOBAL
+   ========================================================= */
+
+body.dark-mode .card {
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+body.dark-mode .card:hover {
+  background: var(--surface-hover);
+}
+
+
+/* =========================================================
+   ICONS
+   ========================================================= */
+
+body.dark-mode .icon {
+  color: var(--primary-text);
+}
+
+body.dark-mode .icon:hover {
+  color: var(--secondary);
+}
+
+
+/* =========================================================
+   BORDERS
+   ========================================================= */
+
+body.dark-mode hr {
+  border-color: var(--border);
+}
+
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+  background: var(--surface);
+  color: var(--text);
+  border-color: var(--border);
+}
+
+body.dark-mode input::placeholder,
+body.dark-mode textarea::placeholder {
+  color: var(--muted);
+}
+
+body.dark-mode input:focus,
+body.dark-mode textarea:focus,
+body.dark-mode select:focus {
+  border-color: var(--secondary);
+  outline: none;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+body.dark-mode footer,
+body.dark-mode .site-footer {
+  background: var(--surface);
+  color: var(--footer-text);
+  border-top: 1px solid var(--border);
+}
+
+body.dark-mode footer h3,
+body.dark-mode footer h4,
+body.dark-mode .site-footer h3,
+body.dark-mode .site-footer h4 {
+  color: var(--footer-text);
+}
+
+body.dark-mode footer p,
+body.dark-mode footer span,
+body.dark-mode .site-footer p,
+body.dark-mode .site-footer span {
+  color: var(--footer-muted);
+}
+
+body.dark-mode footer a,
+body.dark-mode .site-footer a {
+  color: var(--footer-text);
+}
+
+body.dark-mode footer a:hover,
+body.dark-mode .site-footer a:hover {
+  color: var(--secondary);
+}
+
+
+/* =========================================================
+   SOCIAL ICONS
+   ========================================================= */
+
+body.dark-mode .social-icon {
+  color: var(--footer-text);
+  border-color: var(--border);
+}
+
+body.dark-mode .social-icon:hover {
+  background: var(--secondary);
+  color: #171c19;
+  border-color: var(--secondary);
+}
+
+
+/* =========================================================
+   MOBILE MENU ICON
+   ========================================================= */
+
+body.dark-mode .hamburger span,
+body.dark-mode .menu-toggle span {
+  background: var(--text);
+}
+
+
+/* =========================================================
+   DARK MODE TOGGLE
+   ========================================================= */
+
+body.dark-mode .theme-toggle {
+  background: var(--surface);
+  color: var(--text);
+  border-color: var(--border);
+}
+
+body.dark-mode .theme-toggle:hover {
+  background: var(--secondary);
+  color: #171c19;
+  border-color: var(--secondary);
+}
+
+
+/* =========================================================
+   RTL SUPPORT
+   ========================================================= */
+
+body.dark-mode.rtl {
+  direction: rtl;
+}
+
+body.dark-mode.rtl .home2-hero,
+body.dark-mode.rtl .home2-levels,
+body.dark-mode.rtl .home2-solutions,
+body.dark-mode.rtl .home2-safety,
+body.dark-mode.rtl .home2-bespoke,
+body.dark-mode.rtl .home2-future,
+body.dark-mode.rtl .home2-final-cta {
+  text-align: right;
+}
+
+
+/* =========================================================
+   IMAGE CAPTIONS / PRIMARY ACCENT
+   ========================================================= */
+
+body.dark-mode .home2-image-caption {
+  color: var(--primary);
+}
+
+
+/* =========================================================
+   SCROLLBAR
+   ========================================================= */
+
+body.dark-mode::-webkit-scrollbar {
+  width: 8px;
+}
+
+body.dark-mode::-webkit-scrollbar-track {
+  background: var(--site-bg);
+}
+
+body.dark-mode::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 10px;
+}
+
+body.dark-mode::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary);
 }

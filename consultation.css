@@ -2803,3 +2803,643 @@
         font-size: 0.48rem;
     }
 }
+
+/* =========================================================
+   SAFE STEP — CONSULTATION PAGE
+   DARK MODE
+   ========================================================= */
+
+body.dark-mode {
+
+    /* =====================================================
+       BRAND COLORS — DO NOT CHANGE
+       ===================================================== */
+
+    --primary: #344e41;
+    --secondary: #d4b483;
+
+
+    /* =====================================================
+       DARK MODE BACKGROUNDS
+       ===================================================== */
+
+    --site-bg: #171c19;
+    --surface: #222923;
+    --surface-hover: rgba(212, 180, 131, 0.1);
+
+
+    /* =====================================================
+       DARK MODE TEXT
+       ===================================================== */
+
+    --text: #f2efe8;
+    --muted: #a9ada8;
+
+    --primary-text: #b8c9bd;
+
+
+    /* =====================================================
+       BORDERS
+       ===================================================== */
+
+    --border: rgba(242, 239, 232, 0.12);
+
+
+    /* =====================================================
+       FOOTER
+       ===================================================== */
+
+    --footer-text: #f2efe8;
+    --footer-muted: #a9ada8;
+
+
+    /* =====================================================
+       SHADOWS
+       ===================================================== */
+
+    --header-shadow: 0 6px 25px rgba(0, 0, 0, 0.28);
+    --dropdown-shadow: 0 18px 45px rgba(0, 0, 0, 0.38);
+}
+
+
+/* =========================================================
+   CONSULTATION HERO
+   ========================================================= */
+
+body.dark-mode .consultation-hero {
+    background-color: var(--site-bg);
+    color: #ffffff;
+}
+
+
+/* Hero image overlay */
+
+body.dark-mode .consultation-hero-overlay {
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.48) 0%,
+        rgba(0, 0, 0, 0.58) 55%,
+        rgba(0, 0, 0, 0.72) 100%
+    );
+}
+
+
+/* Architectural lines */
+
+body.dark-mode .consultation-hero-lines {
+    opacity: 0.14;
+}
+
+
+/* Hero eyebrow */
+
+body.dark-mode .about-hero-eyebrow {
+    color: var(--secondary);
+}
+
+body.dark-mode .about-hero-eyebrow-1 {
+    color: var(--secondary);
+}
+
+body.dark-mode .about-hero-eyebrow-line {
+    background: var(--secondary);
+}
+
+
+/* Hero heading */
+
+body.dark-mode .consultation-hero-title {
+    color: #ffffff;
+}
+
+body.dark-mode .consultation-hero-title span {
+    color: var(--secondary);
+}
+
+
+/* Hero description */
+
+body.dark-mode .consultation-hero-description {
+    color: rgba(255, 255, 255, 0.88);
+}
+
+
+/* Hero primary button */
+
+body.dark-mode .consultation-hero-btn-primary {
+    background: var(--primary);
+    color: #ffffff;
+    border-color: var(--primary);
+}
+
+body.dark-mode .consultation-hero-btn-primary:hover {
+    background: var(--secondary);
+    color: #171c19;
+    border-color: var(--secondary);
+}
+
+
+/* Hero secondary button */
+
+body.dark-mode .consultation-hero-btn-secondary {
+    background: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.65);
+}
+
+body.dark-mode .consultation-hero-btn-secondary:hover {
+    background: #ffffff;
+    color: #171c19;
+    border-color: #ffffff;
+}
+
+
+/* Hero scroll */
+
+body.dark-mode .consultation-hero-scroll {
+    color: rgba(255, 255, 255, 0.78);
+}
+
+body.dark-mode .consultation-hero-scroll i {
+    color: var(--secondary);
+}
+
+
+/* =========================================================
+   CONSULTATION INTRO
+   ========================================================= */
+
+body.dark-mode .consultation-intro {
+    background: var(--site-bg);
+    color: var(--text);
+}
+
+
+/* Section title */
+
+body.dark-mode .consultation-section-title {
+    color: var(--text);
+}
+
+body.dark-mode .consultation-section-title span {
+    color: var(--secondary);
+}
+
+
+/* Section description */
+
+body.dark-mode .consultation-section-description {
+    color: var(--muted);
+}
+
+
+/* Intro image */
+
+body.dark-mode .consultation-intro-image-wrap {
+    background: var(--surface);
+    border-color: var(--border);
+}
+
+
+/* Intro image label */
+
+body.dark-mode .consultation-intro-image-label {
+    background: rgba(34, 41, 35, 0.94);
+    color: var(--text);
+    border: 1px solid var(--border);
+}
+
+body.dark-mode .consultation-intro-image-label span {
+    color: var(--secondary);
+}
+
+
+/* Intro items */
+
+body.dark-mode .consultation-intro-item {
+    border-bottom-color: var(--border);
+}
+
+body.dark-mode .consultation-intro-number {
+    color: var(--secondary);
+}
+
+body.dark-mode .consultation-intro-item-content span {
+    color: var(--muted);
+}
+
+body.dark-mode .consultation-intro-item-content h3 {
+    color: var(--text);
+}
+
+body.dark-mode .consultation-intro-item-content p {
+    color: var(--muted);
+}
+
+
+/* =========================================================
+   CONSULTATION FORM SECTION
+   ========================================================= */
+
+body.dark-mode .consultation-form-section {
+    background: var(--site-bg);
+    color: var(--text);
+}
+
+
+/* Form heading */
+
+body.dark-mode .consultation-form-heading .consultation-section-title {
+    color: var(--text);
+}
+
+body.dark-mode .consultation-form-heading .consultation-section-title span {
+    color: var(--secondary);
+}
+
+body.dark-mode .consultation-form-heading .consultation-section-description {
+    color: var(--muted);
+}
+
+
+/* Left information */
+
+body.dark-mode .consultation-form-info-label {
+    color: var(--secondary);
+}
+
+body.dark-mode .consultation-form-info h3 {
+    color: var(--primary-text);
+}
+
+body.dark-mode .consultation-form-info > p {
+    color: var(--muted);
+}
+
+
+/* Form points */
+
+body.dark-mode .consultation-form-points {
+    border-top-color: var(--border);
+}
+
+body.dark-mode .consultation-form-point {
+    border-bottom-color: var(--border);
+}
+
+body.dark-mode .consultation-form-point-icon {
+    background: var(--surface);
+    border-color: var(--border);
+    color: var(--secondary);
+}
+
+body.dark-mode .consultation-form-point strong {
+    color: var(--text);
+}
+
+body.dark-mode .consultation-form-point span {
+    color: var(--muted);
+}
+
+
+/* =========================================================
+   FORM BOX
+   ========================================================= */
+
+body.dark-mode .consultation-form-box {
+    background: var(--surface);
+    border-color: var(--border);
+    box-shadow: 0 18px 45px rgba(0, 0, 0, 0.22);
+}
+
+
+/* Form box heading */
+
+body.dark-mode .consultation-form-box-heading {
+    border-bottom-color: var(--border);
+}
+
+body.dark-mode .consultation-form-box-heading > span {
+    color: var(--secondary);
+}
+
+body.dark-mode .consultation-form-box-heading p {
+    color: var(--muted);
+}
+
+
+/* =========================================================
+   FORM FIELDS
+   ========================================================= */
+
+body.dark-mode .consultation-field label {
+    color: var(--text);
+}
+
+body.dark-mode .consultation-field input,
+body.dark-mode .consultation-field select,
+body.dark-mode .consultation-field textarea {
+    background: #1b211d;
+    color: var(--text);
+    border-color: var(--border);
+}
+
+body.dark-mode .consultation-field input::placeholder,
+body.dark-mode .consultation-field textarea::placeholder {
+    color: var(--muted);
+    opacity: 0.75;
+}
+
+body.dark-mode .consultation-field input:focus,
+body.dark-mode .consultation-field select:focus,
+body.dark-mode .consultation-field textarea:focus {
+    border-color: var(--secondary);
+    box-shadow: 0 0 0 2px rgba(212, 180, 131, 0.08);
+}
+
+
+/* Select dropdown */
+
+body.dark-mode .consultation-field select {
+    color-scheme: dark;
+}
+
+
+/* =========================================================
+   CONSULTATION PREFERENCE
+   ========================================================= */
+
+body.dark-mode .consultation-preference > span {
+    color: var(--text);
+}
+
+body.dark-mode .consultation-radio-group label {
+    color: var(--muted);
+}
+
+body.dark-mode .consultation-radio-group input {
+    accent-color: var(--secondary);
+}
+
+
+/* =========================================================
+   FORM SUBMIT
+   ========================================================= */
+
+body.dark-mode .consultation-form-submit {
+    background: var(--primary);
+    border-color: var(--primary);
+    color: #ffffff;
+}
+
+body.dark-mode .consultation-form-submit:hover {
+    background: var(--secondary);
+    border-color: var(--secondary);
+    color: #171c19;
+}
+
+
+/* Form note */
+
+body.dark-mode .consultation-form-note i {
+    color: var(--secondary);
+}
+
+body.dark-mode .consultation-form-note span {
+    color: var(--muted);
+}
+
+
+/* =========================================================
+   CONSULTATION PROCESS
+   ========================================================= */
+
+body.dark-mode .consultation-process {
+    background: var(--site-bg);
+    color: var(--text);
+}
+
+
+/* Process heading */
+
+body.dark-mode .consultation-process-heading .consultation-section-title {
+    color: var(--text);
+}
+
+body.dark-mode .consultation-process-heading .consultation-section-title span {
+    color: var(--secondary);
+}
+
+body.dark-mode .consultation-process-heading .consultation-section-description {
+    color: var(--muted);
+}
+
+
+/* Timeline */
+
+body.dark-mode .consultation-timeline::before {
+    background: var(--border);
+}
+
+
+/* Timeline number */
+
+body.dark-mode .consultation-timeline-number {
+    color: var(--secondary);
+}
+
+
+/* Timeline icon */
+
+body.dark-mode .consultation-timeline-icon {
+    background: var(--surface);
+    border-color: var(--border);
+    color: var(--secondary);
+}
+
+
+/* Timeline dot */
+
+body.dark-mode .consultation-timeline-dot {
+    background: var(--secondary);
+    border-color: var(--site-bg);
+    box-shadow: 0 0 0 1px var(--secondary);
+}
+
+
+/* Timeline content */
+
+body.dark-mode .consultation-timeline-label {
+    color: var(--muted);
+}
+
+body.dark-mode .consultation-timeline-content h3 {
+    color: var(--text);
+}
+
+body.dark-mode .consultation-timeline-content p {
+    color: var(--muted);
+}
+
+
+/* Process note */
+
+body.dark-mode .consultation-process-note {
+    border-color: var(--border);
+}
+
+body.dark-mode .consultation-process-note i {
+    color: var(--secondary);
+}
+
+body.dark-mode .consultation-process-note span {
+    color: var(--muted);
+}
+
+
+/* =========================================================
+   FINAL CTA
+   ========================================================= */
+
+body.dark-mode .consultation-final-cta {
+    background: var(--site-bg);
+    color: var(--text);
+}
+
+
+/* CTA box */
+
+body.dark-mode .consultation-final-cta-box {
+    background: var(--surface);
+    border-color: var(--border);
+    box-shadow: 0 18px 50px rgba(0, 0, 0, 0.20);
+}
+
+
+/* CTA eyebrow */
+
+body.dark-mode .consultation-final-cta-eyebrow {
+    color: var(--secondary);
+}
+
+
+/* CTA heading */
+
+body.dark-mode .consultation-final-cta-box h2 {
+    color: var(--text);
+}
+
+body.dark-mode .consultation-final-cta-box h2 span {
+    color: var(--secondary);
+}
+
+
+/* CTA description */
+
+body.dark-mode .consultation-final-cta-box > p {
+    color: var(--muted);
+}
+
+
+/* =========================================================
+   FINAL CTA BUTTONS
+   ========================================================= */
+
+body.dark-mode .consultation-final-cta-btn-primary {
+    background: var(--primary);
+    color: #ffffff;
+    border-color: var(--primary);
+}
+
+body.dark-mode .consultation-final-cta-btn-primary:hover {
+    background: var(--secondary);
+    color: #171c19;
+    border-color: var(--secondary);
+}
+
+
+body.dark-mode .consultation-final-cta-btn-secondary {
+    background: transparent;
+    color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+body.dark-mode .consultation-final-cta-btn-secondary:hover {
+    background: var(--secondary);
+    color: #171c19;
+    border-color: var(--secondary);
+}
+
+
+/* CTA note */
+
+body.dark-mode .consultation-final-cta-note i {
+    color: var(--secondary);
+}
+
+body.dark-mode .consultation-final-cta-note span {
+    color: var(--muted);
+}
+
+
+/* =========================================================
+   COMMON DARK MODE SAFETY OVERRIDES
+   ========================================================= */
+
+body.dark-mode .consultation-intro,
+body.dark-mode .consultation-form-section,
+body.dark-mode .consultation-process,
+body.dark-mode .consultation-final-cta {
+    background-color: var(--site-bg);
+}
+
+body.dark-mode .consultation-form-box,
+body.dark-mode .consultation-intro-image-wrap,
+body.dark-mode .consultation-timeline-icon,
+body.dark-mode .consultation-form-point-icon,
+body.dark-mode .consultation-final-cta-box {
+    border-color: var(--border);
+}
+
+
+/* =========================================================
+   IMPORTANT:
+   KEEP HERO TEXT WHITE BECAUSE IT IS OVER THE IMAGE
+   ========================================================= */
+
+body.dark-mode .consultation-hero-title,
+body.dark-mode .consultation-hero-description,
+body.dark-mode .consultation-hero-scroll {
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   DARK MODE — ICONS
+   ========================================================= */
+
+body.dark-mode .consultation-form-point-icon i,
+body.dark-mode .consultation-timeline-icon i,
+body.dark-mode .consultation-form-submit i,
+body.dark-mode .consultation-final-cta-note i {
+    color: inherit;
+}
+
+
+/* =========================================================
+   DARK MODE — INPUT AUTOFILL
+   ========================================================= */
+
+body.dark-mode .consultation-field input:-webkit-autofill,
+body.dark-mode .consultation-field input:-webkit-autofill:hover,
+body.dark-mode .consultation-field input:-webkit-autofill:focus,
+body.dark-mode .consultation-field textarea:-webkit-autofill,
+body.dark-mode .consultation-field textarea:-webkit-autofill:hover,
+body.dark-mode .consultation-field textarea:-webkit-autofill:focus,
+body.dark-mode .consultation-field select:-webkit-autofill,
+body.dark-mode .consultation-field select:-webkit-autofill:hover,
+body.dark-mode .consultation-field select:-webkit-autofill:focus {
+    -webkit-text-fill-color: var(--text);
+    -webkit-box-shadow: 0 0 0 1000px #1b211d inset;
+    transition: background-color 5000s ease-in-out 0s;
+}

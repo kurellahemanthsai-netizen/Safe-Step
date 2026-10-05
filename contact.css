@@ -2188,3 +2188,500 @@
         padding: 5px 0 15px 5px;
     }
 }
+
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+body.dark-mode {
+  /* BRAND COLORS - KEEP FOR BUTTONS */
+  --primary: #344e41;
+  --secondary: #d4b483;
+
+  /* DARK MODE BACKGROUNDS */
+  --site-bg: #171c19;
+  --surface: #222923;
+  --surface-hover: rgba(212, 180, 131, 0.1);
+
+  /* DARK MODE TEXT */
+  --text: #f2efe8;
+  --muted: #a9ada8;
+
+  /* PRIMARY TEXT COLOR IN DARK MODE */
+  --primary-text: #b8c9bd;
+
+  --border: rgba(242, 239, 232, 0.12);
+
+  --footer-text: #f2efe8;
+  --footer-muted: #a9ada8;
+
+  --header-shadow: 0 6px 25px rgba(0, 0, 0, 0.28);
+  --dropdown-shadow: 0 18px 45px rgba(0, 0, 0, 0.38);
+}
+
+
+/* =========================================================
+   CONTACT HERO
+   ========================================================= */
+
+body.dark-mode .contact-hero {
+  color: var(--text);
+}
+
+
+/* =========================================================
+   HERO OVERLAY
+   ========================================================= */
+
+body.dark-mode .contact-hero-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(15, 20, 17, 0.38),
+    rgba(15, 20, 17, 0.78)
+  );
+}
+
+
+/* =========================================================
+   ARCHITECTURAL LINES
+   ========================================================= */
+
+body.dark-mode .contact-hero-lines-left {
+  border-right-color: rgba(242, 239, 232, 0.18);
+
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    transparent 68%,
+    rgba(242, 239, 232, 0.035) 68%,
+    rgba(242, 239, 232, 0.035) 69%,
+    transparent 69%
+  );
+}
+
+body.dark-mode .contact-hero-lines-right {
+  border-left-color: rgba(242, 239, 232, 0.18);
+
+  background: linear-gradient(
+    to left,
+    transparent 0%,
+    transparent 68%,
+    rgba(242, 239, 232, 0.035) 68%,
+    rgba(242, 239, 232, 0.035) 69%,
+    transparent 69%
+  );
+}
+
+
+/* =========================================================
+   HERO TITLE
+   ========================================================= */
+
+body.dark-mode .contact-hero-title {
+  color: var(--text);
+}
+
+
+/* =========================================================
+   HERO DESCRIPTION
+   ========================================================= */
+
+body.dark-mode .contact-hero-description {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   HERO PRIMARY BUTTON
+   BRAND COLORS STAY THE SAME
+   ========================================================= */
+
+body.dark-mode .contact-hero-btn-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #ffffff;
+}
+
+body.dark-mode .contact-hero-btn-primary:hover {
+  background: var(--secondary);
+  border-color: var(--secondary);
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   HERO SECONDARY BUTTON
+   ========================================================= */
+
+body.dark-mode .contact-hero-btn-secondary {
+  background: rgba(242, 239, 232, 0.05);
+  border-color: rgba(242, 239, 232, 0.28);
+  color: var(--text);
+}
+
+body.dark-mode .contact-hero-btn-secondary:hover {
+  background: var(--surface-hover);
+  border-color: var(--secondary);
+  color: var(--secondary);
+}
+
+
+/* =========================================================
+   HERO SCROLL
+   ========================================================= */
+
+body.dark-mode .contact-hero-scroll {
+  color: var(--muted);
+}
+
+body.dark-mode .contact-hero-scroll i {
+  color: var(--secondary);
+}
+
+
+/* =========================================================
+   CONTACT INFORMATION
+   ========================================================= */
+
+body.dark-mode .contact-information {
+  background: var(--site-bg);
+  color: var(--text);
+}
+
+
+/* =========================================================
+   SECTION HEADINGS
+   ========================================================= */
+
+body.dark-mode .contact-section-eyebrow,
+body.dark-mode .contact-section-eyebrow-1 {
+  color: var(--primary-text);
+}
+
+body.dark-mode .contact-section-eyebrow::before,
+body.dark-mode .contact-section-eyebrow-1::before {
+  background: var(--secondary);
+}
+
+body.dark-mode .contact-section-title {
+  color: var(--text);
+}
+
+body.dark-mode .contact-section-title span {
+  color: var(--secondary);
+}
+
+body.dark-mode .contact-section-description {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   INFORMATION CARDS
+   ========================================================= */
+
+body.dark-mode .contact-information-card {
+  background: var(--surface);
+  border-color: var(--border);
+  color: var(--text);
+}
+
+body.dark-mode .contact-information-card:hover {
+  background: var(--surface-hover);
+  border-color: var(--secondary);
+}
+
+body.dark-mode .contact-information-card-content h3 {
+  color: var(--text);
+}
+
+body.dark-mode .contact-information-card-content p {
+  color: var(--muted);
+}
+
+body.dark-mode .contact-information-card-content a {
+  color: var(--primary-text);
+}
+
+body.dark-mode .contact-information-hours {
+  color: var(--primary-text);
+}
+
+
+/* =========================================================
+   LOCATION
+   ========================================================= */
+
+body.dark-mode .contact-location {
+  background: var(--site-bg);
+  color: var(--text);
+}
+
+body.dark-mode .contact-location-title {
+  color: var(--text);
+}
+
+body.dark-mode .contact-location-title span {
+  color: var(--secondary);
+}
+
+body.dark-mode .contact-location-description {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   LOCATION DETAILS
+   ========================================================= */
+
+body.dark-mode .contact-location-icon {
+  background: var(--surface);
+  border-color: var(--border);
+  color: var(--primary-text);
+}
+
+body.dark-mode .contact-location-label {
+  color: var(--primary-text);
+}
+
+body.dark-mode .contact-location-detail p {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   LOCATION BUTTON
+   BRAND COLORS STAY THE SAME
+   ========================================================= */
+
+body.dark-mode .contact-location-button {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #ffffff;
+}
+
+body.dark-mode .contact-location-button:hover {
+  background: var(--secondary);
+  border-color: var(--secondary);
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   LOCATION MAP
+   ========================================================= */
+
+body.dark-mode .contact-location-map {
+  background: var(--site-bg);
+  border-color: var(--border);
+}
+
+
+/* =========================================================
+   MAP CARD
+   ========================================================= */
+
+body.dark-mode .contact-location-map-card {
+  background: rgba(34, 41, 35, 0.96);
+  border-color: var(--border);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.28);
+}
+
+body.dark-mode .contact-location-map-card-icon {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+body.dark-mode .contact-location-map-card span {
+  color: var(--primary-text);
+}
+
+body.dark-mode .contact-location-map-card p {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   SEND A MESSAGE
+   ========================================================= */
+
+body.dark-mode .contact-message {
+  background: var(--site-bg);
+  color: var(--text);
+}
+
+body.dark-mode .contact-message-intro-number {
+  color: var(--secondary);
+}
+
+body.dark-mode .contact-message-intro h3 {
+  color: var(--primary-text);
+}
+
+body.dark-mode .contact-message-intro h3 span {
+  color: var(--secondary);
+}
+
+body.dark-mode .contact-message-intro > p {
+  color: var(--muted);
+}
+
+body.dark-mode .contact-message-point {
+  color: var(--text);
+}
+
+body.dark-mode .contact-message-point i {
+  background: var(--primary);
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   CONTACT FORM
+   ========================================================= */
+
+body.dark-mode .contact-message-form {
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+body.dark-mode .contact-form-field label {
+  color: var(--primary-text);
+}
+
+body.dark-mode .contact-form-field input,
+body.dark-mode .contact-form-field select,
+body.dark-mode .contact-form-field textarea {
+  background: var(--site-bg);
+  border-color: var(--border);
+  color: var(--text);
+}
+
+body.dark-mode .contact-form-field input::placeholder,
+body.dark-mode .contact-form-field textarea::placeholder {
+  color: var(--muted);
+}
+
+body.dark-mode .contact-form-field input:focus,
+body.dark-mode .contact-form-field select:focus,
+body.dark-mode .contact-form-field textarea:focus {
+  background: var(--surface);
+  border-color: var(--secondary);
+}
+
+
+/* =========================================================
+   FORM BOTTOM
+   ========================================================= */
+
+body.dark-mode .contact-form-bottom {
+  border-top-color: var(--border);
+}
+
+body.dark-mode .contact-form-note {
+  color: var(--muted);
+}
+
+body.dark-mode .contact-form-note i {
+  color: var(--primary-text);
+}
+
+
+/* =========================================================
+   FORM SUBMIT
+   BRAND COLORS STAY THE SAME
+   ========================================================= */
+
+body.dark-mode .contact-form-submit {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #ffffff;
+}
+
+body.dark-mode .contact-form-submit:hover {
+  background: var(--secondary);
+  border-color: var(--secondary);
+}
+
+
+/* =========================================================
+   SUCCESS MESSAGE
+   ========================================================= */
+
+body.dark-mode .contact-form-success {
+  border-color: rgba(212, 180, 131, 0.25);
+  background: rgba(212, 180, 131, 0.08);
+  color: var(--secondary);
+}
+
+
+/* =========================================================
+   FINAL CTA
+   ========================================================= */
+
+body.dark-mode .contact-final-cta {
+  background: var(--site-bg);
+  color: var(--text);
+}
+
+body.dark-mode .contact-final-cta-box {
+  background: var(--surface);
+  border-color: var(--border);
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.22);
+}
+
+body.dark-mode .contact-final-cta-eyebrow {
+  color: var(--primary-text);
+}
+
+body.dark-mode .contact-final-cta-eyebrow::before {
+  background: var(--secondary);
+}
+
+body.dark-mode .contact-final-cta-title {
+  color: var(--primary-text);
+}
+
+body.dark-mode .contact-final-cta-title span {
+  color: var(--secondary);
+}
+
+body.dark-mode .contact-final-cta-description {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   FINAL CTA PRIMARY BUTTON
+   BRAND COLORS STAY THE SAME
+   ========================================================= */
+
+body.dark-mode .contact-final-cta-btn-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #ffffff;
+}
+
+body.dark-mode .contact-final-cta-btn-primary:hover {
+  background: var(--secondary);
+  border-color: var(--secondary);
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   FINAL CTA SECONDARY BUTTON
+   ========================================================= */
+
+body.dark-mode .contact-final-cta-btn-secondary {
+  background: transparent;
+  border-color: var(--primary);
+  color: var(--primary-text);
+}
+
+body.dark-mode .contact-final-cta-btn-secondary:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #ffffff;
+}

@@ -2725,3 +2725,434 @@
     }
 
 }
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+body.dark-mode {
+  /* BRAND COLORS - KEEP FOR BUTTONS */
+  --primary: #344e41;
+  --secondary: #d4b483;
+
+  /* DARK MODE BACKGROUNDS */
+  --site-bg: #171c19;
+  --surface: #222923;
+  --surface-hover: rgba(212, 180, 131, 0.1);
+
+  /* DARK MODE TEXT */
+  --text: #f2efe8;
+  --muted: #a9ada8;
+
+  /* PRIMARY TEXT COLOR IN DARK MODE */
+  --primary-text: #b8c9bd;
+
+  --border: rgba(242, 239, 232, 0.12);
+
+  --footer-text: #f2efe8;
+  --footer-muted: #a9ada8;
+
+  --header-shadow: 0 6px 25px rgba(0, 0, 0, 0.28);
+  --dropdown-shadow: 0 18px 45px rgba(0, 0, 0, 0.38);
+}
+
+
+/* =========================================================
+   PRICING HERO
+   ========================================================= */
+
+body.dark-mode .pricing-hero {
+  color: var(--text);
+}
+
+body.dark-mode .pricing-hero-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(23, 28, 25, 0.42),
+    rgba(23, 28, 25, 0.82)
+  );
+}
+
+body.dark-mode .pricing-hero-lines-left {
+  border-right-color: rgba(242, 239, 232, 0.18);
+
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    transparent 68%,
+    rgba(242, 239, 232, 0.04) 68%,
+    rgba(242, 239, 232, 0.04) 69%,
+    transparent 69%
+  );
+}
+
+body.dark-mode .pricing-hero-lines-right {
+  border-left-color: rgba(242, 239, 232, 0.18);
+
+  background: linear-gradient(
+    to left,
+    transparent 0%,
+    transparent 68%,
+    rgba(242, 239, 232, 0.04) 68%,
+    rgba(242, 239, 232, 0.04) 69%,
+    transparent 69%
+  );
+}
+
+body.dark-mode .pricing-hero-eyebrow {
+  color: var(--secondary);
+}
+
+body.dark-mode .pricing-hero-eyebrow::before {
+  background: var(--secondary);
+}
+
+body.dark-mode .pricing-hero-title {
+  color: var(--text);
+}
+
+body.dark-mode .pricing-hero-title span {
+  color: var(--secondary);
+}
+
+body.dark-mode .pricing-hero-description {
+  color: var(--muted);
+}
+
+body.dark-mode .pricing-hero-btn-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--text);
+}
+
+body.dark-mode .pricing-hero-btn-primary:hover {
+  background: var(--secondary);
+  border-color: var(--secondary);
+  color: #171c19;
+}
+
+body.dark-mode .pricing-hero-btn-secondary {
+  background: rgba(242, 239, 232, 0.05);
+  border-color: rgba(242, 239, 232, 0.22);
+  color: var(--text);
+}
+
+body.dark-mode .pricing-hero-btn-secondary:hover {
+  background: var(--surface-hover);
+  border-color: var(--secondary);
+  color: var(--secondary);
+}
+
+body.dark-mode .pricing-hero-scroll {
+  color: var(--muted);
+}
+
+body.dark-mode .pricing-hero-scroll i {
+  color: var(--secondary);
+}
+
+
+/* =========================================================
+   COMMON SECTION HEADINGS
+   ========================================================= */
+
+body.dark-mode .pricing-section-eyebrow {
+  color: var(--primary-text);
+}
+
+body.dark-mode .pricing-section-eyebrow::before {
+  background: var(--secondary);
+}
+
+body.dark-mode .pricing-section-title {
+  color: var(--text);
+}
+
+body.dark-mode .pricing-section-title span {
+  color: var(--secondary);
+}
+
+body.dark-mode .pricing-section-description {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   PRICING INTRO
+   ========================================================= */
+
+body.dark-mode .pricing-intro {
+  background: var(--site-bg);
+  color: var(--text);
+}
+
+body.dark-mode .pricing-intro-image-wrap {
+  border-color: var(--border);
+  background: var(--surface);
+}
+
+body.dark-mode .pricing-intro-image-label {
+  background: rgba(23, 28, 25, 0.88);
+  border-color: var(--border);
+  color: var(--text);
+}
+
+body.dark-mode .pricing-intro-image-label span {
+  color: var(--secondary);
+}
+
+body.dark-mode .pricing-intro-number {
+  color: var(--secondary);
+}
+
+body.dark-mode .pricing-intro-item {
+  border-bottom-color: var(--border);
+}
+
+body.dark-mode .pricing-intro-item-content > span {
+  color: var(--primary-text);
+}
+
+body.dark-mode .pricing-intro-item-content h3 {
+  color: var(--text);
+}
+
+body.dark-mode .pricing-intro-item-content p {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   PRICING PLANS
+   ========================================================= */
+
+body.dark-mode .pricing-plans {
+  background: var(--site-bg);
+  color: var(--text);
+}
+
+body.dark-mode .pricing-plan-card {
+  background: var(--surface);
+  border-color: var(--border);
+  color: var(--text);
+}
+
+body.dark-mode .pricing-plan-card-popular {
+  border-color: var(--primary);
+  box-shadow: 0 16px 45px rgba(0, 0, 0, 0.24);
+}
+
+body.dark-mode .pricing-plan-popular-badge {
+  background: var(--primary);
+  color: var(--text);
+}
+
+body.dark-mode .pricing-plan-number {
+  color: var(--secondary);
+}
+
+body.dark-mode .pricing-plan-icon {
+  border-color: var(--border);
+  background: var(--surface);
+  color: var(--primary-text);
+}
+
+body.dark-mode .pricing-plan-label {
+  color: var(--primary-text);
+}
+
+body.dark-mode .pricing-plan-heading h3 {
+  color: var(--text);
+}
+
+body.dark-mode .pricing-plan-heading p {
+  color: var(--muted);
+}
+
+body.dark-mode .pricing-plan-price-label {
+  color: var(--muted);
+}
+
+body.dark-mode .pricing-plan-price strong {
+  color: var(--primary-text);
+}
+
+body.dark-mode .pricing-plan-price small {
+  color: var(--muted);
+}
+
+body.dark-mode .pricing-plan-divider {
+  background: var(--border);
+}
+
+body.dark-mode .pricing-plan-features-title {
+  color: var(--primary-text);
+}
+
+body.dark-mode .pricing-plan-features li {
+  color: var(--muted);
+}
+
+body.dark-mode .pricing-plan-features li i {
+  color: var(--primary-text);
+}
+
+body.dark-mode .pricing-plan-btn {
+  border-color: var(--primary);
+  background: transparent;
+  color: var(--primary-text);
+}
+
+body.dark-mode .pricing-plan-btn:hover {
+  background: var(--primary);
+  color: var(--text);
+}
+
+body.dark-mode .pricing-plan-btn-primary {
+  background: var(--primary);
+  color: var(--text);
+}
+
+body.dark-mode .pricing-plan-btn-primary:hover {
+  background: var(--secondary);
+  border-color: var(--secondary);
+  color: #171c19;
+}
+
+
+/* =========================================================
+   PRICING FACTORS
+   ========================================================= */
+
+body.dark-mode .pricing-factors-section {
+  background: var(--site-bg);
+  color: var(--text);
+}
+
+body.dark-mode .pricing-factor-card {
+  background: var(--surface);
+  border-color: var(--border);
+  color: var(--text);
+}
+
+body.dark-mode .pricing-factor-card:hover {
+  border-color: var(--secondary);
+  background: var(--surface-hover);
+}
+
+body.dark-mode .pricing-factor-icon {
+  border-color: var(--border);
+  background: var(--site-bg);
+  color: var(--primary-text);
+}
+
+body.dark-mode .pricing-factor-label {
+  color: var(--primary-text);
+}
+
+body.dark-mode .pricing-factor-card-content h3 {
+  color: var(--text);
+}
+
+body.dark-mode .pricing-factor-card-content p {
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   FAQ
+   ========================================================= */
+
+body.dark-mode .pricing-faq {
+  background: var(--site-bg);
+  color: var(--text);
+}
+
+body.dark-mode .pricing-faq-item {
+  background: var(--surface);
+  border-color: var(--border);
+}
+
+body.dark-mode .pricing-faq-question {
+  background: transparent;
+  color: var(--text);
+}
+
+body.dark-mode .pricing-faq-question i {
+  color: var(--primary-text);
+}
+
+body.dark-mode .pricing-faq-question:hover {
+  color: var(--primary-text);
+}
+
+body.dark-mode .pricing-faq-item:hover {
+  border-color: rgba(212, 180, 131, 0.35);
+}
+
+body.dark-mode .pricing-faq-answer p {
+  color: var(--muted);
+}
+
+body.dark-mode .pricing-faq-item.active {
+  border-color: var(--primary);
+}
+
+
+/* =========================================================
+   FINAL CTA
+   ========================================================= */
+
+body.dark-mode .pricing-final-cta {
+  background: var(--site-bg);
+  color: var(--text);
+}
+
+body.dark-mode .pricing-final-cta-box {
+  background: var(--surface);
+  border-color: var(--border);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.24);
+}
+
+body.dark-mode .pricing-final-cta-eyebrow {
+  color: var(--primary-text);
+}
+
+body.dark-mode .pricing-final-cta-eyebrow::before {
+  background: var(--secondary);
+}
+
+body.dark-mode .pricing-final-cta-title {
+  color: var(--primary-text);
+}
+
+body.dark-mode .pricing-final-cta-title span {
+  color: var(--secondary);
+}
+
+body.dark-mode .pricing-final-cta-description {
+  color: var(--muted);
+}
+
+body.dark-mode .pricing-final-cta-btn-primary {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: var(--text);
+}
+
+body.dark-mode .pricing-final-cta-btn-primary:hover {
+  background: var(--secondary);
+  border-color: var(--secondary);
+  color: #171c19;
+}
+
+body.dark-mode .pricing-final-cta-btn-secondary {
+  background: transparent;
+  border-color: var(--primary);
+  color: var(--primary-text);
+}
+
+body.dark-mode .pricing-final-cta-btn-secondary:hover {
+  background: var(--primary);
+  color: var(--text);
+}

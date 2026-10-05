@@ -214,6 +214,9 @@ button {
 .logo-text .safe {
   color: var(--primary);
 }
+body.dark-mode .logo-text .safe{
+  color: white;
+}
 
 .logo-text .step {
   color: var(--secondary);
@@ -578,7 +581,7 @@ body.dark-mode .nav-links a.active{
 
   margin: 0 auto;
 
-  padding: 70px 50px 45px;
+  padding: 50px 50px 50px;
 
   display: grid;
 
@@ -655,7 +658,9 @@ body.dark-mode .nav-links a.active{
 .footer-branding .safe {
   color: var(--primary);
 }
-
+body.dark-mode .footer-branding .safe{
+  color: white;
+}
 .footer-branding .step {
   color: var(--secondary);
 }
@@ -764,6 +769,9 @@ body.dark-mode .nav-links a.active{
   font-size: 15px;
 
   font-weight: 700;
+}
+body.dark-mode .footer-col h3{
+  color: white;
 }
 
 .footer-col li {

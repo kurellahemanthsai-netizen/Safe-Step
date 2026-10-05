@@ -163,7 +163,7 @@ if (homeDropdown) {
   const homeLink = homeDropdown.querySelector(":scope > a");
 
   homeLink?.addEventListener("click", (event) => {
-    if (window.innerWidth <= 950) {
+    if (window.innerWidth <= 1100) {
       event.preventDefault();
 
       homeDropdown.classList.toggle("active");
@@ -177,7 +177,7 @@ if (homeDropdown) {
 
 document.querySelectorAll(".navbar a").forEach((link) => {
   link.addEventListener("click", () => {
-    if (window.innerWidth <= 950) {
+    if (window.innerWidth <= 1100) {
       const isHomeLink =
         link.closest(".dropdown") &&
         link.parentElement.classList.contains("dropdown");
@@ -194,7 +194,7 @@ document.querySelectorAll(".navbar a").forEach((link) => {
    ========================================================= */
 
 window.addEventListener("resize", () => {
-  if (window.innerWidth > 950) {
+  if (window.innerWidth > 1100) {
     closeMobileMenu();
   }
 });
@@ -219,7 +219,7 @@ topButton?.addEventListener("click", (event) => {
    ========================================================= */
 
 document.addEventListener("click", (event) => {
-  if (window.innerWidth > 950) {
+  if (window.innerWidth > 1100) {
     return;
   }
 

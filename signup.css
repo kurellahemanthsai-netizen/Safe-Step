@@ -618,6 +618,9 @@ a {
 .logo-text .safe {
   color: var(--primary);
 }
+body.dark-mode .logo-text .safe {
+  color: white;
+}
 
 
 .logo-text .step {
@@ -666,7 +669,9 @@ a {
 
   letter-spacing: 1.8px;
 }
-
+body.dark-mode .signup-eyebrow{
+  color: var(--secondary);
+}
 
 .signup-heading h2 {
   color: var(--signup-text);
@@ -1104,7 +1109,12 @@ a {
 
   font-weight: 800;
 }
-
+body.dark-mode .login-text a{
+  color: white;
+}
+body.dark-mode .login-text a:hover{
+  color: var(--secondary);
+}
 
 .login-text a:hover {
   color: var(--secondary);
