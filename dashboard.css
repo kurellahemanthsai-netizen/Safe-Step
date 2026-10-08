@@ -1725,6 +1725,12 @@ html[dir="rtl"] .dashboard-body.sidebar-hidden .dashboard-main {
 
   color: var(--primary);
 }
+body.dark-mode .progress-status{
+  color: white;
+}
+body.dark-mode .confirmed-status{
+  color: white;
+}
 
 
 /* =========================================================
@@ -2032,7 +2038,9 @@ html[dir="rtl"] .dashboard-body.sidebar-hidden .dashboard-main {
   font-size: 9px;
   white-space: nowrap;
 }
-
+body.dark-mode .milestone-card > strong{
+  color: white;
+}
 
 /* =========================================================
    MAINTENANCE SUMMARY
@@ -2346,6 +2354,9 @@ html[dir="rtl"] .dashboard-body.sidebar-hidden .dashboard-main {
   color: var(--primary);
 
   font-size: 12px;
+}
+body.dark-mode .warranty-date strong{
+  color: white;
 }
 
 
